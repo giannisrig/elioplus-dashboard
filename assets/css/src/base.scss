@@ -22,7 +22,11 @@
   }
 
   table th {
-    @apply text-textGray font-semibold text-base-15
+    @apply text-textGray font-semibold text-base-15 border-b border-gray text-left
+  }
+
+  table td {
+    @apply text-sm font-semibold
   }
 
 }

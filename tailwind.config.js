@@ -48,7 +48,7 @@ module.exports = {
       'hawkesBlue': '#BACFF1',
       'yellow': '#FFB618',
       'linkedin': '#2E78B6',
-      'green': '#1CC9BD',
+      'elioGreen': '#1CC9BD',
     },
     fontFamily: {
       'inter': ['Inter'],
