@@ -7,9 +7,9 @@ html(lang="en")
         include components/header/menu-vendor.pug
         main.active
             include components/header/header.pug
-            div(class='py-80px w-full')
+            div(id="dashboardPage" class='py-80px w-full')
                 .container
                     div(id="dashboardPageContent" class='w-full flex flex-col gap-30px')
                         h1 Dashboard
-
+            include components/footer/footer.pug
         include components/scripts.pug

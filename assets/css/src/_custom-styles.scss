@@ -3,7 +3,6 @@
 @import "components/faq";
 
 main {
-  min-height: 100vh;
   margin-left: auto;
   width: 100%;
   transition: 0.2s ease-in;
@@ -13,6 +12,11 @@ main {
   }
 
 }
+
+#dashboardPage {
+  min-height: calc(100vh - 130px);
+}
+
 
 .separator {
   width:1px;
