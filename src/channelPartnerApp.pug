@@ -9,10 +9,19 @@ html(lang="en")
             include components/header/header-channel-partner.pug
             div(id="dashboardPage" class='py-80px w-full')
                 .container
-                    div(id="dashboardPageContent" class='w-full flex flex-col gap-30px')
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
                         - var title = 'Integrations'
                         - var desc = 'Connect your CRM system with Elioplus PRM to automatically transfer data between your channel partners and your company in order to eliminate manual processes and critical errors. The Elioplus PRM integration with your CRM can help transfer data for the Deal Registration and Lead Distribution features.'
                         - var btn = 'Read more about the Integrations Feature'
                         include components/text-block.pug
+
+                        div(class='card')
+                            h2(class='font-inter font-bold text-2xl') Deals
+
+                        <!----------- Content End ------------------------------>
+
             include components/footer/footer.pug
         include components/scripts.pug

@@ -17,10 +17,24 @@
     display: block;
   }
 
+  table {
+    width:100%;
+  }
+
+  table th {
+    @apply text-textGray font-semibold text-base-15
+  }
+
 }
 
 @layer components {
   .btn {
     @apply flex gap-5px px-15px text-sm font-semibold rounded-30px border w-max py-7px transition-colors duration-200 bg-white
+  }
+  .card {
+    @apply bg-white rounded-10px px-30px py-25px flex flex-col gap-30px w-full shadow-card
+  }
+  .table-container {
+    @apply border border-gray rounded-12px overflow-hidden
   }
 }
