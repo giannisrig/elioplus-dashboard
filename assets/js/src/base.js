@@ -57,6 +57,13 @@
 
         });
 
+        $('.open-menu').on('click', function(e){
+            e.preventDefault();
+            let id = $(this).attr('href')
+            let el = $(id);
+            el.toggleClass('hidden');
+        });
+
         $('.tab-item').on('click', function(e){
             e.preventDefault();
             let id = $(this).attr('href')
