@@ -3,12 +3,12 @@ mixin menuItem(name,href)
         a(href=href class='hover:text-blue text-sm transition-colors duration-200 w-full').flex.items-center.gap-5px
             span=name
 div.relative
-    a( href='#useMenu'  class='font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px pr-5px open-menu')
+    a( href='#userMenu'  class='font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px pr-5px open-menu')
         img(src="../assets/images/global/profile-image.png" alt="Profile Image" title="Your profile image" class='rounded-full' width="30" height="30")
         span Giannis Riganas
         img(src="../assets/images/global/arrow-down.svg" alt="Quick Actions Icon" title="Click to open the account menu" width="12" height="9")
 
-    div(id="useMenu" class='absolute right-0 top-full bg-white shadow-card w-[270px] rounded-8px py-20px mt-10px hidden')
+    div(id="userMenu" class='absolute right-0 top-full bg-white shadow-card w-[270px] rounded-8px py-20px mt-10px hidden')
         div(class='flex flex-col gap-10px w-full')
             div(class='flex items-center gap-10px w-full px-25px')
                 img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-iconGray' width="40" height="40")
