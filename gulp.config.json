@@ -1,0 +1,32 @@
+{
+  "settings": {
+    "pug": true,
+    "css": {
+      "src": "assets/css/src",
+      "dest": "assets/css/dist",
+      "minify": true
+    },
+    "js": {
+      "src": "assets/js/src",
+      "dest": "assets/js/dist"
+    }
+  },
+  "styles": [
+    {
+      "name" : "style.min",
+      "src" : [
+        "/base.scss"
+      ]
+    }
+  ],
+  "scripts": [
+    {
+      "name" : "script.min",
+      "src" : [
+        "/libs/jquery.slim.min.js",
+        "/libs/owl.carousel.js",
+        "/base.js"
+      ]
+    }
+  ]
+}
