@@ -25,17 +25,29 @@
 <link rel="stylesheet" href="../assets/css/dist/style.min.css"/>
   </head>
   <body class="text-blackBlue overflow-x-hidden bg-gray2">
-    <header class="bg-white z-10 fixed top-0 left-0 border-b border-gray w-screen h-[60px]">
+    <header class="bg-white z-10 fixed top-0 left-0 border-b border-gray w-screen h-[60px] text-base-15">
       <div class="flex w-full h-full">
         <div class="w-[230px] px-20px border-r border-gray flex items-center"><a class="w-[80px] pb-5px block header-logo" href="../templates/index.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a></div>
-        <div class="grow px-20px flex">
-          <div class="flex gap-15px"><a class="flex items-center gap-5px hamburger transition-colors duration-200 hover:text-blue" id="toggleMobileMenu" href="#mobileMenu"><span class="font-semibold text-sm">Menu</span></a>
+        <div class="grow px-20px flex justify-between">
+          <div class="flex gap-15px"><a class="flex items-center gap-5px hamburger transition-colors duration-200 hover:text-blue" id="toggleMobileMenu" href="#mobileMenu"><img class="w-full h-auto" src="../assets/images/global/hamburger.svg" alt="Hamburger Menu Icon" title="Click to toggle the navigation menu" width="110" height="52"><span class="font-semibold text-sm">Menu</span></a>
             <div class="h-full">
               <div class="separator"></div>
             </div>
-            <ul class="flex items-center gap-10px text-base-15">
-              <li><a class="text-textGray" href="#">Dashboard</a></li>
+            <ul class="flex items-center gap-5px">
+              <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Dashboard</a></li>
+              <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
+              <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Partner Recruitment</a></li>
+              <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
+              <li><span class="font-semibold">Analytics</span></li>
             </ul>
+          </div>
+          <div class="flex gap-15px items-center"><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px" href="#" id="quickActionsToggle"><img src="../assets/images/global/quick-actions.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="20" height="20"><span>Quick Actions</span></a><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px" href="#"><img src="../assets/images/global/help.svg" alt="Help Icon" title="Click to visit the help center" width="20" height="20"><span>Help Center</span></a>
+            <div class="h-full">
+              <div class="separator"></div>
+            </div><a class="text-[13px] font-semibold text-textGray p-[8px] bg-gray rounded-[6px]" href="#" id="subscriptionPlan">Startup Plan</a>
+            <div class="h-full">
+              <div class="separator"></div>
+            </div><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px" href="#"><img class="rounded-full" src="../assets/images/global/profile-image.png" alt="Profile Image" title="Your profile image" width="30" height="30"><span>Giannis Riganas</span><img src="../assets/images/global/arrow-down.svg" alt="Quick Actions Icon" title="Click to open the account menu" width="12" height="9"></a>
           </div>
         </div>
       </div>
