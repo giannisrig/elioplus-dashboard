@@ -1,0 +1,18 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Vendor Dashboard | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main.active
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-30px')
+                        - var title = 'Integrations'
+                        - var desc = 'Connect your CRM system with Elioplus PRM to automatically transfer data between your channel partners and your company in order to eliminate manual processes and critical errors. The Elioplus PRM integration with your CRM can help transfer data for the Deal Registration and Lead Distribution features.'
+                        - var btn = 'Read more about the Integrations Feature'
+                        include components/text-block.pug
+            include components/footer/footer.pug
+        include components/scripts.pug

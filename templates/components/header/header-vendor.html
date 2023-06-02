@@ -1,0 +1,61 @@
+
+<header class="bg-white z-10 sticky w-full top-0 left-0 border-b border-gray h-[60px] text-sm">
+  <div class="flex w-full h-full">
+    <div class="px-20px border-r border-gray flex items-center hidden" id="headerLogo"><a class="w-[80px] pb-5px block header-logo" href="../templates/index.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"/></a></div>
+    <div class="grow px-20px flex justify-between">
+      <div class="flex gap-15px"><a class="flex items-center gap-5px hamburger transition-colors duration-200 hover:text-blue" id="toggleMobileMenu" href="#mobileMenu"><img class="w-full h-auto" src="../assets/images/global/hamburger.svg" alt="Hamburger Menu Icon" title="Click to toggle the navigation menu" width="110" height="52"/><span class="font-semibold">Menu</span></a>
+        <div class="h-full">
+          <div class="separator"></div>
+        </div>
+        <ul class="flex items-center gap-5px">
+          <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Dashboard</a></li>
+          <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"/></li>
+          <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Partner Management</a></li>
+          <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"/></li>
+          <li><span class="font-semibold">Integrations</span></li>
+        </ul>
+      </div>
+      <div class="flex gap-15px items-center">
+        <div class="relative"><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px open-menu" href="#quickActionsMenu" id="quickActionsToggle"><img src="../assets/images/global/quick-actions.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="20" height="20"/><span>Quick Actions</span></a>
+          <div class="absolute right-1/2 translate-x-[50%] top-full bg-white shadow-card w-max rounded-8px  mt-10px text-center overflow-hidden hidden" id="quickActionsMenu">
+            <div class="grid grid-cols-2 bg-gray gap-1px"><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/partner-locator.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"/><span class="text-sm font-semibold">Partner Locator</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/portal-login.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"/><span class="text-sm font-semibold">Partner Portal Login</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/roles-management.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"/><span class="text-sm font-semibold">Add Team Members</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/team-management.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"/><span class="text-sm font-semibold">Roles Management</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/tiers.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"/><span class="text-sm font-semibold">Tier Management</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/integrations.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"/><span class="text-sm font-semibold">Integrations</span></a></div>
+          </div>
+        </div><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px" href="#"><img src="../assets/images/global/help.svg" alt="Help Icon" title="Click to visit the help center" width="20" height="20"/><span>Help Center</span></a>
+        <div class="h-full">
+          <div class="separator"></div>
+        </div><a class="text-[13px] font-semibold text-textGray p-[8px] bg-gray rounded-[6px] transition-colors duration-200 hover:bg-blue  hover:text-white " href="#" id="subscriptionPlan">Startup Plan</a>
+        <div class="h-full">
+          <div class="separator"></div>
+        </div>
+        <div class="relative"><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px pr-5px open-menu" href="#userMenu"><img class="rounded-full" src="../assets/images/global/profile-image.png" alt="Profile Image" title="Your profile image" width="30" height="30"/><span>Giannis Riganas</span><img src="../assets/images/global/arrow-down.svg" alt="Quick Actions Icon" title="Click to open the account menu" width="12" height="9"/></a>
+          <div class="absolute right-0 top-full bg-white shadow-card w-[270px] rounded-8px py-20px mt-10px hidden" id="userMenu">
+            <div class="flex flex-col gap-10px w-full">
+              <div class="flex items-center gap-10px w-full px-25px"><img class="rounded-full border border-iconGray" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="40" height="40"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class=" font-semibold  leading-[14px]">Acmonsen</span><span class=" font-normal text-textGray text-[13px] leading-[13px]">info@acmonsen.com</span></div>
+              </div>
+              <div class="w-full">
+                <div class="divider"></div>
+              </div>
+              <div class="flex items-center gap-10px w-full px-25px py-10px"><img class="rounded-full border border-iconGray" src="../assets/images/global/profile-image.png" alt="Profile Image" title="Your profile image" width="40" height="40"/>
+                <div class="flex flex-col gap-5px w-full"><span class=" font-semibold  leading-[14px]">Giannis Riganas</span><span class=" font-normal text-textGray text-[13px] leading-[13px]">giannisrig@hotmail.gr</span></div>
+              </div>
+              <div class="w-full">
+                <div class="divider"></div>
+              </div>
+              <ul class="flex flex-col gap-15px w-full px-25px py-10px">
+                <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="#"><img src="../assets/images/global/dashboard.svg" alt="dashboard icon"/><span>Dashboard</span></a><span class="text-textGray font-normal text-[13px]">View your partners updates and your account overview.</span></li>
+                <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="#"><img src="../assets/images/global/view.svg" alt="view icon" width="20" height="20"/><span>View Profile</span></a><span class="text-textGray font-normal text-[13px]">View your public Elioplus profile and how users see it.</span></li>
+                <li class="flex-col w-ful"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="#"><img src="../assets/images/global/edit-profile.svg" alt="edit profile icon" width="20" height="20"/><span>Edit Profile</span></a><span class="text-textGray font-normal text-[13px]">Edit your profile and your account settings.</span></li>
+                <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="#"><img src="../assets/images/global/billing.svg" alt="billing icon" width="20" height="20"/><span>Billing & Subscriptions</span></a><span class="text-textGray font-normal text-[13px]">Manage your subscriptions & billing information.</span></li>
+              </ul>
+              <div class="w-full">
+                <div class="divider"></div>
+              </div>
+              <div class="w-full px-25px"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold text-textGray block" href="#"><img src="../assets/images/global/logout.svg" alt="edit profile icon" width="18" height="18"/><span>Logout from your account</span></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
