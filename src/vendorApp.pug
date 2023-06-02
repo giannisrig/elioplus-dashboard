@@ -27,8 +27,8 @@ html(lang="en")
                                         th Client
                                         th Location
                                         th Website
-                                        th State
-                                        th Status
+                                        th(class='w-[100px] text-center') State
+                                        th(class='w-[100px] text-center') Status
                                         th.text-center Date
                                         th Actions
                                     tbody
@@ -41,8 +41,8 @@ html(lang="en")
                                                 -var text2 = 'someusermail1@domain.com'
                                                 include components/table-cell/double-text
                                             td
-                                                -var text1 = 'United States'
-                                                -var text2 = 'North America'
+                                                -var text1 = 'United Kingdom'
+                                                -var text2 = 'North Europe'
                                                 include components/table-cell/double-text
 
                                             td
@@ -50,8 +50,12 @@ html(lang="en")
                                                 include components/table-cell/website
 
                                             td
+                                                -var text = 'Open'
                                                 include components/table-cell/status
-                                            td Status
+                                            td
+                                                -var className = 'bg-yellow'
+                                                -var text = 'Pending'
+                                                include components/table-cell/status
                                             td.text-center 2023/04/15
                                             td Actions
 
