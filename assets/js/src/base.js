@@ -30,24 +30,15 @@
 
         });
 
-        const mobileMenu = $('#mobileMenu');
-        const blurItems = $('main, header, footer');
+        const activeItems = $('#mobileMenu, main');
         const overlay = $('#overlay');
 
         $('#toggleMobileMenu').on('click', function (e) {
             e.preventDefault();
-            mobileMenu.addClass('active');
-            blurItems.addClass('blur-md overflow-hidden');
-            overlay.removeClass('hidden');
+            activeItems.toggleClass('active');
+            $('#headerLogo').toggleClass('hidden');
         });
 
-        $('#closeMobileMenu, #overlay').on('click', function (e) {
-            e.preventDefault();
-            mobileMenu.removeClass('active');
-            blurItems.removeClass('blur-md overflow-hidden');
-            overlay.addClass('hidden');
-            $(document).trigger('overlayClicked');
-        });
 
         $('.has-submenu').on('click', function (e) {
             e.preventDefault();

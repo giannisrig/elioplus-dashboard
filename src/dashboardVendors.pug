@@ -4,6 +4,12 @@ html(lang="en")
         - var title = 'Vendor Dashboard | Elioplus'
         include components/head.pug
     body.text-blackBlue.overflow-x-hidden.bg-gray2
-        include components/header/header.pug
-        main
-            h1 Dashboard
+        include components/header/menu-vendor.pug
+        main.active
+            include components/header/header.pug
+            div(class='py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-30px')
+                        h1 Dashboard
+
+        include components/scripts.pug

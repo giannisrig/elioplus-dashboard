@@ -2,6 +2,18 @@
 @import "components/modal";
 @import "components/faq";
 
+main {
+  min-height: 100vh;
+  margin-left: auto;
+  width: 100%;
+  transition: 0.2s ease-in;
+
+  &.active {
+    width: calc(100% - 230px);
+  }
+
+}
+
 .separator {
   width:1px;
   background-color: #E2EDFF;
@@ -161,7 +173,7 @@ a:not(.btn).text-blue {
 
 #mobileMenu {
   transition: 0.2s ease-in;
-  transform: translateX(101%);
+  transform: translateX(-101%);
 
   &.active {
     transform: translateX(0);
