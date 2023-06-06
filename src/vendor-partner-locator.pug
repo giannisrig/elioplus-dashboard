@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Partner Locator | Partner Management | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Partner Locator'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Partner Locator'
+                        - var desc = 'Partner Locator is the place that presents all your channel partners in a single page. You can upload your unique partner locator URL on your corporate’s website in order to make your channel partners accessible to all your visitors in order to get in touch with them and win more leads.'
+                        - var btn = 'Read more about the Partner Locator'
+                        include components/text-block.pug
+
+                        include components/cards/card-partner-locator
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
