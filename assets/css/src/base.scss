@@ -14,7 +14,7 @@
   }
 
   a {
-    display: block;
+    @apply block transition-colors duration-200;
   }
 
   table {
@@ -22,11 +22,11 @@
   }
 
   table th {
-    @apply text-textGray font-semibold text-base-15 border-b border-gray text-left
+    @apply text-textGray font-semibold text-base-15 border-b border-gray text-left px-10px
   }
 
   table td {
-    @apply text-sm font-semibold transition-colors duration-200
+    @apply text-sm font-semibold transition-colors duration-200 px-10px
   }
 
   table tr:hover td {
@@ -40,9 +40,22 @@
     @apply flex gap-5px px-15px text-sm font-semibold rounded-30px border w-max py-7px transition-colors duration-200 bg-white
   }
   .card {
-    @apply bg-white rounded-10px px-30px py-25px flex flex-col gap-30px w-full shadow-card
+    @apply bg-white rounded-10px px-20px md:px-30px py-25px flex flex-col gap-30px w-full shadow-card relative
   }
   .table-container {
-    @apply border border-gray rounded-12px overflow-hidden
+    @apply border border-gray rounded-12px overflow-x-auto w-full
   }
+
+  .tab-item {
+    @apply pb-10px px-5px border-b-2 border-white transition-colors duration-200 hover:text-blackBlue
+  }
+
+  .tab-item.active {
+    @apply border-blue text-blue
+  }
+
+  .card-filter {
+    @apply flex gap-10px text-textGray border-gray border-2 rounded-10px bg-gray2 items-center transition-colors duration-200 hover:border-blue text-sm px-15px py-10px text-left cursor-pointer
+  }
+
 }

@@ -1,0 +1,11 @@
+div(class='flex-col sm:flex-row').flex.items-center.gap-15px.text-textGray.font-semibold.text-base-15.justify-between
+    div(class='w-full sm:w-max justify-between sm:justify-start').flex.items-center.gap-15px
+        div(class='card-filter rounded-40px gap-5px bg-white py-5px')
+            label(for='dealsItemsPerPage' class='w-max') Items per page:
+            select(id='dealsItemsPerPage' name='dealsItemsPerPage').bg-transparent.text-blackBlue.font-bold
+                option 10
+                option 25
+                option 50
+                option 100
+        include ../../components/cards/card-pagination
+    div(class='text-right sm:text-left w-full sm:w-max').text-sm <span class='text-blackBlue'>98</span> items in <span class='text-blackBlue'>10</span> Pages

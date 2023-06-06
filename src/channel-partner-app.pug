@@ -1,12 +1,14 @@
 doctype html
 html(lang="en")
     head
-        - var title = 'Vendor Dashboard | Elioplus'
+        - var title = 'Channel Partner Dashboard | Elioplus'
         include components/head.pug
     body.text-blackBlue.overflow-x-hidden.bg-gray2
-        include components/header/menu-vendor.pug
+        include components/header/menu-channel-partner.pug
         main
-            include components/header/header-vendor
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Deal Registration'
+            include components/header/header-channel-partner.pug
             div(id="dashboardPage" class='py-50px lg:py-80px w-full')
                 .container
                     div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
@@ -20,8 +22,6 @@ html(lang="en")
 
                         div(class='card')
                             h2(class='font-inter font-bold text-2xl') Deals
-                            include components/tables/deals
-
 
                         <!----------- Content End ------------------------------>
 

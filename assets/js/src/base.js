@@ -70,10 +70,32 @@
             let el = $(id);
 
             $('.tab-content').addClass('hidden');
-            $('.tab-item.active').removeClass('active');
+            $(this).closest('.tabs').find('.tab-item.active').removeClass('active');
             $(this).addClass('active');
             el.removeClass('hidden');
         })
+
+        $('.trigger-filters').on('click', function(e){
+            e.preventDefault();
+            $(this).parent().find('.filters').toggleClass('hidden');
+
+        })
+
+        $('.actions-trigger').on('click', function(e){
+            e.preventDefault();
+            $(this).parent('.cell-actions').find('.actions-content').toggleClass('hidden');
+
+        });
+
+        $(document).on('click', function(e){
+
+            if($(e.target).closest('.cell-actions').length)
+                return;
+
+            $('.actions-content').addClass('hidden');
+
+
+        });
 
 
     });

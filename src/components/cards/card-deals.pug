@@ -1,0 +1,11 @@
+div(class='card')
+    h2(class='font-inter font-bold text-2xl') Deals
+    include ../../components/cards/card-tabs
+    include ../../components/cards/card-filters
+    div(id='pendingDeals' class='tab-content')
+        include ../tables/deals-pending
+    div(id='openDeals' class='tab-content hidden')
+        include ../tables/deals-open
+    div(id='pastDeals' class='tab-content hidden')
+        include ../tables/deals-past
+    include ../../components/cards/card-table-footer

@@ -1,0 +1,16 @@
+mixin pageItem(name, active)
+    if active
+        div( class='w-[30px] h-[30px] rounded-full border border-blue').bg-blue.flex.justify-center.text-center.items-center.text-white
+            span(class='text-xs lg:text-sm').font-semibold=name
+    else
+        a( href='#' class='w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray').bg-white.flex.justify-center.text-center.items-center
+            span(class='text-xs lg:text-sm ').font-semibold=name
+
+
+div(class='').flex.justify-center.gap-15px
+
+    +pageItem('<',false)
+    +pageItem(1,true)
+    +pageItem(2,false)
+    +pageItem(3,false)
+    +pageItem('>',false)
