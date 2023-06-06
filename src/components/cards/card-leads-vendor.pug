@@ -1,0 +1,20 @@
+div(class='card')
+    h2(class='font-inter font-bold text-2xl') Leads
+
+    <!----------- Tabs Start ------------------------------>
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+        div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+            a(href='#newLeads' class='tab-item active') New Leads
+            a(href='#closedLeads' class='tab-item') Closed Leads
+
+
+    <!----------- Tabs End ------------------------------>
+
+
+
+    div(id='newLeads' class='tab-content')
+        include ../tables/leads-new
+    div(id='closedLeads' class='tab-content hidden')
+        include ../tables/leads-closed
+    include ../../components/cards/card-table-footer

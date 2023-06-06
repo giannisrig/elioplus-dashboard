@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head><meta charset="utf-8">
-    <title>Vendor Dashboard | Elioplus</title>
+    <title>Lead Distribution | Partner Management | Elioplus</title>
     <meta name="description"><meta name='robots' content='index,follow' />
 <meta name="copyright" content="Elioplus" />
 <meta name="author" content="Elioplus" />
 <meta name="distribution" content="global" />
 <meta name="theme-color" content="#39B4EF" />
-    <meta name="og:title" content="Vendor Dashboard | Elioplus">
+    <meta name="og:title" content="Lead Distribution | Partner Management | Elioplus">
     <meta name="og:url">
     <meta name="og:description"><meta property="og:image" content="../assets/images/global/social.png" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Elioplus" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site:id" content="@elioplus" />
-    <meta name="twitter:title" content="Vendor Dashboard | Elioplus">
+    <meta name="twitter:title" content="Lead Distribution | Partner Management | Elioplus">
     <meta name="twitter:description"><meta name="twitter:image" content="../assets/images/global/social.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -128,7 +128,7 @@
                 <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
                 <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Partner Management</a></li>
                 <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
-                <li><span class="font-semibold">Deal Registration</span></li>
+                <li><span class="font-semibold">Lead Distribution</span></li>
               </ul>
             </div>
             <div class="flex gap-15px items-center">
@@ -179,29 +179,15 @@
         <div class="container">
           <div class="w-full flex flex-col gap-60px" id="dashboardPageContent"><!----------- Content Start ------------------------------>
             <div class="w-full flex flex-col gap-15px">
-              <h1 class="text-3xl font-inter font-bold">Deal Registration</h1>
-              <p>Connect your CRM system with Elioplus PRM to automatically transfer data between your channel partners and your company in order to eliminate manual processes and critical errors. The Elioplus PRM integration with your CRM can help transfer data for the Deal Registration and Lead Distribution features.</p><a class="btn border-blue hover:text-blue" href="#">Read more about the Integrations Feature</a>
+              <h1 class="text-3xl font-inter font-bold">Lead Distribution</h1>
+              <p>Lead Distribution is a feature that must be included in a Partner Relationship Management software. It is the feature that a channel partner is using in order to avoid any conflict with you or your channel partners when they are trying to close a deal.</p><a class="btn border-blue hover:text-blue" href="#">Read more about the Lead Distribution</a>
             </div>
             <div class="card">
-              <h2 class="font-inter font-bold text-2xl">Deals</h2>
+              <h2 class="font-inter font-bold text-2xl">Leads</h2><!----------- Tabs Start ------------------------------>
               <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#pendingDeals">Pending Deals</a><a class="tab-item" href="#openDeals">Open Deals</a><a class="tab-item" href="#pastDeals">Past Deals</a></div><a class="btn border-blue bg-blue text-white hover:bg-blueDark absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm" href="#"><span>Add New Deal</span><img src="../assets/images/global/add.svg" alt="Add Icon" title="Add Icon" width="17" height="17"></a>
-              </div>
-              <div class="flex gap-15px flex-col md:flex-row md:gap-10px"><a class="hover:text-blue flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"><span class="text-sm sm:text-base-15">Partner Filters</span></a>
-                <div class="filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px items-center text-textGray font-semibold text-base-15">
-                  <div class="card-filter w-full md:w-[380px]">
-                    <input class="grow text-sm outline-none" placeholder="Type a name, email, phone to search for a partner..."><img src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15">
-                  </div>
-                  <div class="card-filter w-full md:w-max">
-                    <label class="w-max" for="dealsVendor">Select a vendor:</label>
-                    <select class="bg-transparent text-blackBlue font-bold" id="dealsVendor" name="dealsVendor">
-                      <option>No vendor selected</option>
-                      <option>Channel Partners</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-content" id="pendingDeals">
+                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#newLeads">New Leads</a><a class="tab-item" href="#closedLeads">Closed Leads</a></div>
+              </div><!----------- Tabs End ------------------------------>
+              <div class="tab-content" id="newLeads">
                 <div class="table-container">
                   <table>
                     <thead>
@@ -249,7 +235,7 @@
                         <td class="text-center">2023/04/15</td>
                         <td>
                           <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
+                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Lead</a><a href="#">Delete Lead</a></div>
                           </div>
                         </td>
                       </tr>
@@ -287,7 +273,7 @@
                         <td class="text-center">2023/04/15</td>
                         <td>
                           <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
+                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Lead</a><a href="#">Delete Lead</a></div>
                           </div>
                         </td>
                       </tr>
@@ -325,7 +311,7 @@
                         <td class="text-center">2023/04/15</td>
                         <td>
                           <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
+                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Lead</a><a href="#">Delete Lead</a></div>
                           </div>
                         </td>
                       </tr>
@@ -363,7 +349,7 @@
                         <td class="text-center">2023/04/15</td>
                         <td>
                           <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
+                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Lead</a><a href="#">Delete Lead</a></div>
                           </div>
                         </td>
                       </tr>
@@ -371,7 +357,7 @@
                   </table>
                 </div>
               </div>
-              <div class="tab-content hidden" id="openDeals">
+              <div class="tab-content hidden" id="closedLeads">
                 <div class="table-container">
                   <table>
                     <thead>
@@ -408,83 +394,7 @@
                         </td>
                         <td>
                           <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Open</div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
-                          </div>
-                        </td>
-                        <td class="text-center">2023/04/15</td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Test Lead Client 1</span><span class="text-textGray text-[13px] leading-[13px]">someusermail1@domain.com</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">https://somelongwebs...</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Website</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Open</div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
-                          </div>
-                        </td>
-                        <td class="text-center">2023/04/15</td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Test Lead Client 1</span><span class="text-textGray text-[13px] leading-[13px]">someusermail1@domain.com</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">https://somelongwebs...</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Website</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Open</div>
+                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-iconGray">Close</div>
                           </div>
                         </td>
                         <td>
@@ -495,7 +405,7 @@
                         <td class="text-center">2023/04/15</td>
                         <td>
                           <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
+                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Lead</a><a href="#">Delete Lead</a></div>
                           </div>
                         </td>
                       </tr>
@@ -522,7 +432,45 @@
                         </td>
                         <td>
                           <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Open</div>
+                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-iconGray">Close</div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Won</div>
+                          </div>
+                        </td>
+                        <td class="text-center">2023/04/15</td>
+                        <td>
+                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
+                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Lead</a><a href="#">Delete Lead</a></div>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
+                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-start gap-10px w-max h-40px">
+                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Test Lead Client 1</span><span class="text-textGray text-[13px] leading-[13px]">someusermail1@domain.com</span></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-start gap-10px w-max h-40px">
+                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-start gap-10px w-max h-40px">
+                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">https://somelongwebs...</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Website</a></div>
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-iconGray">Close</div>
                           </div>
                         </td>
                         <td>
@@ -533,63 +481,7 @@
                         <td class="text-center">2023/04/15</td>
                         <td>
                           <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <div class="tab-content hidden" id="pastDeals">
-                <div class="table-container">
-                  <table>
-                    <thead>
-                      <th>Vendor</th>
-                      <th>Client</th>
-                      <th>Location</th>
-                      <th class="w-[175px]">Website</th>
-                      <th class="w-[100px] text-center">State</th>
-                      <th class="w-[100px] text-center">Status</th>
-                      <th class="text-center">Date</th>
-                      <th>Actions</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Test Lead Client 1</span><span class="text-textGray text-[13px] leading-[13px]">someusermail1@domain.com</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">https://somelongwebs...</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Website</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Open</div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
-                          </div>
-                        </td>
-                        <td class="text-center">2022/09/03</td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
+                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Lead</a><a href="#">Delete Lead</a></div>
                           </div>
                         </td>
                       </tr>
@@ -616,7 +508,7 @@
                         </td>
                         <td>
                           <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Open</div>
+                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-iconGray">Close</div>
                           </div>
                         </td>
                         <td>
@@ -624,86 +516,10 @@
                             <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-red">Lost</div>
                           </div>
                         </td>
-                        <td class="text-center">2022/09/03</td>
+                        <td class="text-center">2023/04/15</td>
                         <td>
                           <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Test Lead Client 1</span><span class="text-textGray text-[13px] leading-[13px]">someusermail1@domain.com</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">https://somelongwebs...</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Website</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Open</div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
-                          </div>
-                        </td>
-                        <td class="text-center">2022/09/03</td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Test Lead Client 1</span><span class="text-textGray text-[13px] leading-[13px]">someusermail1@domain.com</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">https://somelongwebs...</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Website</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Open</div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
-                            <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-elioGreen">Won</div>
-                          </div>
-                        </td>
-                        <td class="text-center">2022/09/03</td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Deal</a><a href="#">Delete Deal</a></div>
+                            <div class="actions-content flex flex-col rounded-8px p-20px gap-15px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden"><a href="#">Edit Lead</a><a href="#">Delete Lead</a></div>
                           </div>
                         </td>
                       </tr>
