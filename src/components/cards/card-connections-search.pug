@@ -1,0 +1,17 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        h2(class='font-inter font-bold text-2xl') Search Results - <span class='text-blue'>98</span> Connections
+
+        a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+            span Add selected companies to matches
+            img(src="../assets/images/global/add-blackBlue.svg" alt="Add Icon" title="Invite Icon" width="17" height="17")
+
+
+    <!----------- Title End ------------------------------>
+
+
+    include ../tables/connections-search
+    include ../../components/cards/card-table-footer

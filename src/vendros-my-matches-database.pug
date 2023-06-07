@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'My Matches | Partner Recruitment Database | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Recruitment'
+            - var breadcrumbsCurrent = 'My Matches'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'My Matches'
+                        - var desc = 'We provide you with a number of channel partners that exact match your selected criteria. We start providing you the best matches directly in your dashboard along with contact details from each company and more than 30 attributes about the company and the contact person.'
+                        - var btn = 'Read more about Partner Recruitment Matches'
+                        include components/text-block.pug
+
+                        div(class='tabs-section flex flex-col gap-30px')
+                            div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+                                div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+                                    a(href='#searchConnections' class='tab-item active') Search for Connections
+                                    a(href='#matches' class='tab-item') My Matches
+
+
+                            div(id='searchConnections' class='tab-content')
+                                .flex.flex-col.gap-30px.w-full
+                                    include components/cards/card-connections-search-criteria
+                                    include components/cards/card-connections-search
+                            div(id='matches' class='tab-content hidden')
+                                include components/cards/card-matches-automate
+
+
+
+
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
