@@ -33,6 +33,14 @@
     @apply bg-gray
   }
 
+  table td:first-child {
+    @apply text-left
+  }
+
+  table td:last-child {
+    @apply text-right
+  }
+
 }
 
 @layer components {

@@ -1,0 +1,122 @@
+.table-container
+    table
+        thead
+            th Country
+            th Currency
+            th Exchange Rate
+            th Frontier Transfers
+            th
+                div.text-left.w-full Payout Fees
+
+        tbody
+            tr
+                td
+                    -var text1 = 'Australia'
+                    -var text2 = 'Asia Pacific'
+                    -var img = '../assets/images/flags/Australia.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    -var text1 = 'AUD'
+                    -var text2 = 'Australian Dollars'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '0,61 EUR'
+                    -var text2 = 'Equivalent: 1 AUD'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '1%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'A$0.25 + 0.25%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+            tr
+                td
+                    -var text1 = 'United States'
+                    -var text2 = 'North America'
+                    -var img = '../assets/images/flags/United_States_of_America.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    -var text1 = 'USD'
+                    -var text2 = 'United States Dollars'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '0,92 EUR'
+                    -var text2 = 'Equivalent: 1 USD'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '0%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '$0.25 + 0.25%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+            tr
+                td
+                    -var text1 = 'Canada'
+                    -var text2 = 'North America'
+                    -var img = '../assets/images/flags/Australia.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    -var text1 = 'CAD'
+                    -var text2 = 'Canadian Dollars'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '0,68 EUR'
+                    -var text2 = 'Equivalent: 1 CAD'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '0.25%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'C$0.25 + 0.25%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+            tr
+                td
+                    -var text1 = 'Germany'
+                    -var text2 = 'Europe'
+                    -var img = '../assets/images/flags/Germany.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    -var text1 = 'EUR'
+                    -var text2 = 'Euro'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '1,00 EUR'
+                    -var text2 = 'Equivalent: 1 EUR'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '0.25%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '€0.10 + 0.25%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+            tr
+                td
+                    -var text1 = 'India'
+                    -var text2 = 'Asia'
+                    -var img = '../assets/images/flags/India.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    -var text1 = 'INR'
+                    -var text2 = 'Indian Rupee'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '0,011 EUR'
+                    -var text2 = 'Equivalent: 1 INR'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = '0.75%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+                td.text-left
+                    -var text1 = '₹20 + 0.25%'
+                    -var text2 = 'Commission Fee'
+                    include ../../components/table-cell/double-text
+
