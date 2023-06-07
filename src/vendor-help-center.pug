@@ -1,0 +1,59 @@
+mixin faqItem(question, answer)
+    details(class='text-sm lg:text-base').faq-item.bg-white.shadow-card.relative.rounded-4px.h-fit
+        summary(class='px-10px py-15px lg:p-20px pr-30px lg:pr-40px').flex.gap-7px.font-bold.relative
+            div.text-blue Q.
+            div=question
+        p(class='px-10px lg:px-20px py-25px')=answer
+
+doctype html
+html(lang="en")
+    head
+        - var title = 'Help Center | Dashboard | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = ''
+            - var breadcrumbsCurrent = 'Help Center'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Help Center'
+                        - var desc = 'Frequently asked questions regarding the Partner Recruitment and PRM services. If you need further assistance don’t hesitate to send us a message.'
+                        - var btn = 'Contact us'
+                        include components/text-block.pug
+
+
+                        div(class='gap-50px lg:gap-80px').flex.flex-col
+                            .flex.flex-col.gap-30px
+                                h3(class='text-xl lg:text-2xl font-bold font-inter') Partner Recruitment
+                                div(class='grid-cols-1 lg:grid-cols-2 gap-30px').grid
+                                    +faqItem('Which companies should create a profile as a Vendor?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('Which companies should create a profile as a Channel Partner?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('Can I promote my partner programs for free?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('Is there a way to promote my offering more actively?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('Can I upgrade, downgrade or cancel my Premium plan?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('I am a channel partner. Why should I join ?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('Are the company profiles and partner programs vetted?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+
+                            .flex.flex-col.gap-30px
+                                h3(class='text-xl lg:text-2xl font-bold font-inter') Partner Management
+                                div(class='grid-cols-1 lg:grid-cols-2 gap-30px').grid
+                                    +faqItem('What’s the matching process feature and how it works?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('What happens when I go premium?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('Are the matches quality ones and is the data up-to-date?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('How can I see my possible partnership opportunities?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('How the matches look like and how often the platform provides them into my dashboard?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('Why to submit and save the partnership criteria of the matching process?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+                                    +faqItem('When I upload the CSV file with my partners is the data private or public?', 'We do our best to check and verify the data provided by our users but it their responsibility to give us accurate data. We want to keep the quality of content on our website very high and we are developing tools towards this direction in order to provide accurate and relevant information.')
+
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
