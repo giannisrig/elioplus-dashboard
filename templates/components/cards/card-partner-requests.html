@@ -1,0 +1,325 @@
+
+<div class="card"><!----------- Title Start ------------------------------>
+  <h2 class="font-inter font-bold text-2xl">Partner Requests</h2><!----------- Title End ------------------------------>
+<!----------- Tabs Start ------------------------------>
+  <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
+    <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#pendingInvitations">Pending Invitations</a><a class="tab-item flex items-center gap-5px" href="#pendingRequests"><span>Pending Requests</span>
+        <div class="bg-yellow w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white">10</div></a></div><a class="btn border-blue bg-blue text-white hover:bg-blueDark absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm" href="#"><img src="../assets/images/global/invite-white.svg" alt="Invite Icon" title="Invite Icon" width="17" height="17"/><span>Invite Partners</span></a>
+  </div><!----------- Tabs End ------------------------------>
+<!----------- Filters Start ------------------------------>
+  <div class="flex justify-between w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
+    <div class="flex gap-15px flex-col md:flex-row md:gap-10px"><a class="hover:text-blue flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/><span class="text-sm sm:text-base-15">Partner Filters</span></a>
+      <div class="filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px items-center text-textGray font-semibold text-base-15">
+        <div class="card-filter w-full md:w-[380px]">
+          <input class="grow text-sm outline-none" placeholder="Type a name, email, phone to search for a partner..."/><img src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/>
+        </div>
+        <div class="card-filter w-full md:w-max">
+          <label class="w-max" for="dealsVendor">Select a country:</label>
+          <select class="bg-transparent text-blackBlue font-bold" id="dealsVendor" name="dealsVendor">
+            <option>No country selected</option>
+            <option>United States</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div><!----------- Filters End ------------------------------>
+  <div class="tab-content" id="pendingInvitations">
+    <div class="table-container">
+      <table>
+        <thead>
+          <th>Partner Company</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Location</th>
+          <th class="w-[100px] text-center">Status</th>
+          <th class="text-center">Invitation Sent</th>
+          <th><span class="text-center w-full block">Actions</span></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">Call Partner</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
+              </div>
+            </td>
+            <td class="text-center">2023/04/15</td>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px relative"><a class="flex items-center gap-5px text-sm text-blue" href="#"><img src="../assets/images/global/invite-blue.svg" alt="Invite icon"/><span>Invite again</span></a><a class="flex items-center gap-5px text-sm  text-red" href="#"><img src="../assets/images/global/delete-red.svg" alt="Delete icon"/><span>Delete</span></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">Call Partner</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
+              </div>
+            </td>
+            <td class="text-center">2023/04/15</td>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px relative"><a class="flex items-center gap-5px text-sm text-blue" href="#"><img src="../assets/images/global/invite-blue.svg" alt="Invite icon"/><span>Invite again</span></a><a class="flex items-center gap-5px text-sm  text-red" href="#"><img src="../assets/images/global/delete-red.svg" alt="Delete icon"/><span>Delete</span></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">Call Partner</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
+              </div>
+            </td>
+            <td class="text-center">2023/04/15</td>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px relative"><a class="flex items-center gap-5px text-sm text-blue" href="#"><img src="../assets/images/global/invite-blue.svg" alt="Invite icon"/><span>Invite again</span></a><a class="flex items-center gap-5px text-sm  text-red" href="#"><img src="../assets/images/global/delete-red.svg" alt="Delete icon"/><span>Delete</span></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">Call Partner</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
+              </div>
+            </td>
+            <td class="text-center">2023/04/15</td>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px relative"><a class="flex items-center gap-5px text-sm text-blue" href="#"><img src="../assets/images/global/invite-blue.svg" alt="Invite icon"/><span>Invite again</span></a><a class="flex items-center gap-5px text-sm  text-red" href="#"><img src="../assets/images/global/delete-red.svg" alt="Delete icon"/><span>Delete</span></a></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="tab-content hidden" id="pendingRequests">
+    <div class="table-container">
+      <table>
+        <thead>
+          <th><span class="text-center w-full block">Select</span></th>
+          <th>Partner Company</th>
+          <th>Email</th>
+          <th>Location</th>
+          <th class="w-[100px] text-center">Status</th>
+          <th class="text-center">Requested</th>
+          <th class="w-[250px]"><span class="text-center w-full block">Actions</span></th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px">
+                <input type="checkbox" id="partnerID" name="partner_requests"/>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
+              </div>
+            </td>
+            <td class="text-center">2023/04/15</td>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px relative"><a class="btn bg-red text-white" href="#"><img src="../assets/images/global/reject-white.svg" alt="Reject icon"/><span>Reject</span></a><a class="btn bg-elioGreen text-white" href="#"><img src="../assets/images/global/accept-white.svg" alt="Accept icon"/><span>Accept</span></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px">
+                <input type="checkbox" id="partnerID" name="partner_requests"/>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
+              </div>
+            </td>
+            <td class="text-center">2023/04/15</td>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px relative"><a class="btn bg-red text-white" href="#"><img src="../assets/images/global/reject-white.svg" alt="Reject icon"/><span>Reject</span></a><a class="btn bg-elioGreen text-white" href="#"><img src="../assets/images/global/accept-white.svg" alt="Accept icon"/><span>Accept</span></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px">
+                <input type="checkbox" id="partnerID" name="partner_requests"/>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
+              </div>
+            </td>
+            <td class="text-center">2023/04/15</td>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px relative"><a class="btn bg-red text-white" href="#"><img src="../assets/images/global/reject-white.svg" alt="Reject icon"/><span>Reject</span></a><a class="btn bg-elioGreen text-white" href="#"><img src="../assets/images/global/accept-white.svg" alt="Accept icon"/><span>Accept</span></a></div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px">
+                <input type="checkbox" id="partnerID" name="partner_requests"/>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+                <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-max h-40px">
+                <div class="flex flex-col gap-5px"><span class="leading-[14px]">United Kingdom</span><span class="text-textGray text-[13px] leading-[13px]">North Europe</span></div>
+              </div>
+            </td>
+            <td>
+              <div class="flex items-start gap-10px w-full h-40px justify-center text-center">
+                <div class="p-[8px] rounded-[6px] bg-elioGreen text-white w-max text-[12px] bg-yellow">Pending</div>
+              </div>
+            </td>
+            <td class="text-center">2023/04/15</td>
+            <td>
+              <div class="flex items-center justify-center gap-10px w-full h-40px relative"><a class="btn bg-red text-white" href="#"><img src="../assets/images/global/reject-white.svg" alt="Reject icon"/><span>Reject</span></a><a class="btn bg-elioGreen text-white" href="#"><img src="../assets/images/global/accept-white.svg" alt="Accept icon"/><span>Accept</span></a></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="flex-col sm:flex-row flex items-center gap-15px text-textGray font-semibold text-base-15 justify-between">
+    <div class="w-full sm:w-max justify-between sm:justify-start flex items-center gap-15px">
+      <div class="card-filter rounded-40px gap-5px bg-white py-5px">
+        <label class="w-max" for="dealsItemsPerPage">Items per page:</label>
+        <select class="bg-transparent text-blackBlue font-bold" id="dealsItemsPerPage" name="dealsItemsPerPage">
+          <option>10</option>
+          <option>25</option>
+          <option>50</option>
+          <option>100</option>
+        </select>
+      </div>
+      <div class="flex justify-center gap-15px"><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">&lt;</span></a>
+              <div class="w-[30px] h-[30px] rounded-full border border-blue bg-blue flex justify-center text-center items-center text-white"><span class="text-xs lg:text-sm font-semibold">1</span></div><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">2</span></a><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">3</span></a><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">&gt;</span></a>
+      </div>
+    </div>
+    <div class="text-right sm:text-left w-full sm:w-max text-sm"><span class='text-blackBlue'>98</span> items in <span class='text-blackBlue'>10</span> Pages</div>
+  </div>
+</div>

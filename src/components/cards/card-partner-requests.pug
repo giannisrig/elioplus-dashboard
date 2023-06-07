@@ -1,0 +1,52 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    h2(class='font-inter font-bold text-2xl') Partner Requests
+    <!----------- Title End ------------------------------>
+
+    <!----------- Tabs Start ------------------------------>
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+            a(href='#pendingInvitations' class='tab-item active') Pending Invitations
+            a(href='#pendingRequests' class='tab-item flex items-center gap-5px')
+                span Pending Requests
+                div(class='bg-yellow w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 10
+
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+            img(src="../assets/images/global/invite-white.svg" alt="Invite Icon" title="Invite Icon" width="17" height="17")
+            span Invite Partners
+
+
+    <!----------- Tabs End ------------------------------>
+
+
+    <!----------- Filters Start ------------------------------>
+
+    div(class='flex justify-between w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        div(class="flex gap-15px flex-col md:flex-row md:gap-10px")
+            a(href='#' class='hover:text-blue').flex.items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-filters
+                img(src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+                span(class='text-sm sm:text-base-15') Partner Filters
+            div(class='filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px').items-center.text-textGray.font-semibold.text-base-15
+                div(class='card-filter w-full md:w-[380px]')
+                    input(placeholder="Type a name, email, phone to search for a partner...").grow.text-sm.outline-none
+                    img(src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+                div(class='card-filter w-full md:w-max')
+                    label(for='dealsVendor' class='w-max') Select a country:
+                    select(id='dealsVendor' name='dealsVendor').bg-transparent.text-blackBlue.font-bold
+                        option No country selected
+                        option United States
+
+
+
+    <!----------- Filters End ------------------------------>
+
+    div(id='pendingInvitations' class='tab-content')
+        include ../tables/partner-invitations
+    div(id='pendingRequests' class='tab-content hidden')
+        include ../tables/partner-requests
+
+    include ../../components/cards/card-table-footer
