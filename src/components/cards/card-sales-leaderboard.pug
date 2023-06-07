@@ -1,0 +1,39 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        h2(class='font-inter font-bold text-2xl') Sales Leaderboard
+
+
+
+    <!----------- Title End ------------------------------>
+
+
+
+    <!----------- Filters Start ------------------------------>
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        div(class="flex gap-15px flex-col md:flex-row md:gap-10px")
+            a(href='#' class='hover:text-blue').flex.items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-filters
+                img(src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+                span(class='text-sm sm:text-base-15') Partner Filters
+            div(class='filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px').items-center.text-textGray.font-semibold.text-base-15
+                div(class='card-filter w-full md:w-[380px]')
+                    input(placeholder="Type a name, email, phone to search for a partner...").grow.text-sm.outline-none
+                    img(src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+                div(class='card-filter w-full md:w-max')
+                    label(for='dealsVendor' class='w-max') Select a country:
+                    select(id='dealsVendor' name='dealsVendor').bg-transparent.text-blackBlue.font-bold
+                        option No country selected
+                        option United States
+
+        a(href='#' class='btn border-blue text-blue hover:text-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+            span Export Data
+            img(src="../assets/images/global/export-blue.svg" alt="Export Icon" title="Export Icon" width="17" height="17")
+
+    <!----------- Filters End ------------------------------>
+
+    include ../tables/sales-leaderboard
+    include ../../components/cards/card-table-footer

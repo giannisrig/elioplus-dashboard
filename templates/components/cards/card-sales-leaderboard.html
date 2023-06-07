@@ -1,0 +1,217 @@
+
+<div class="card"><!----------- Title Start ------------------------------>
+  <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
+    <h2 class="font-inter font-bold text-2xl">Sales Leaderboard</h2>
+  </div><!----------- Title End ------------------------------>
+<!----------- Filters Start ------------------------------>
+  <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
+    <div class="flex gap-15px flex-col md:flex-row md:gap-10px"><a class="hover:text-blue flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/><span class="text-sm sm:text-base-15">Partner Filters</span></a>
+      <div class="filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px items-center text-textGray font-semibold text-base-15">
+        <div class="card-filter w-full md:w-[380px]">
+          <input class="grow text-sm outline-none" placeholder="Type a name, email, phone to search for a partner..."/><img src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/>
+        </div>
+        <div class="card-filter w-full md:w-max">
+          <label class="w-max" for="dealsVendor">Select a country:</label>
+          <select class="bg-transparent text-blackBlue font-bold" id="dealsVendor" name="dealsVendor">
+            <option>No country selected</option>
+            <option>United States</option>
+          </select>
+        </div>
+      </div>
+    </div><a class="btn border-blue text-blue hover:text-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm" href="#"><span>Export Data</span><img src="../assets/images/global/export-blue.svg" alt="Export Icon" title="Export Icon" width="17" height="17"/></a>
+  </div><!----------- Filters End ------------------------------>
+  <div class="table-container">
+    <table>
+      <thead>
+        <th class="border-r-2 border-gray text-blackBlue">Company</th>
+        <th class="text-blackBlue pl-15px">Deals</th>
+        <th>Won Lost</th>
+        <th class="border-r-2 border-gray">Avg size & cycle</th>
+        <th class="text-blackBlue pl-15px">Leads</th>
+        <th class="border-r-2 border-gray">Won Lost</th>
+        <th class="text-blackBlue text-left pl-15px">
+          <div class="w-full text-left">Opportunities</div>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+              <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">5/5</span><span class="text-textGray text-[13px] leading-[13px]">100%</span></div>
+            </div>
+          </td>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">$5,000</span><span class="text-textGray text-[13px] leading-[13px]">10 days</span></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+            </div>
+          </td>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">5/5</span><span class="text-textGray text-[13px] leading-[13px]">100%</span></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px">
+                <div class="flex items-center gap-3px"><span class="leading-[14px]">8</span><span class="leading-[14px] text-textGray">leads</span></div>
+                <div class="flex items-center gap-3px"><span class="leading-[14px]">2</span><span class="leading-[14px] text-textGray">deals</span></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+              <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">5/5</span><span class="text-textGray text-[13px] leading-[13px]">100%</span></div>
+            </div>
+          </td>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">$5,000</span><span class="text-textGray text-[13px] leading-[13px]">10 days</span></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+            </div>
+          </td>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">5/5</span><span class="text-textGray text-[13px] leading-[13px]">100%</span></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px">
+                <div class="flex items-center gap-3px"><span class="leading-[14px]">8</span><span class="leading-[14px] text-textGray">leads</span></div>
+                <div class="flex items-center gap-3px"><span class="leading-[14px]">2</span><span class="leading-[14px] text-textGray">deals</span></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+              <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">5/5</span><span class="text-textGray text-[13px] leading-[13px]">100%</span></div>
+            </div>
+          </td>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">$5,000</span><span class="text-textGray text-[13px] leading-[13px]">10 days</span></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+            </div>
+          </td>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">5/5</span><span class="text-textGray text-[13px] leading-[13px]">100%</span></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px">
+                <div class="flex items-center gap-3px"><span class="leading-[14px]">8</span><span class="leading-[14px] text-textGray">leads</span></div>
+                <div class="flex items-center gap-3px"><span class="leading-[14px]">2</span><span class="leading-[14px] text-textGray">deals</span></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35"/>
+              <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+            </div>
+          </td>
+          <td>
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">5/5</span><span class="text-textGray text-[13px] leading-[13px]">100%</span></div>
+            </div>
+          </td>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">$5,000</span><span class="text-textGray text-[13px] leading-[13px]">10 days</span></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+            </div>
+          </td>
+          <td class="border-r-2 border-gray">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px"><span class="leading-[14px]">5/5</span><span class="text-textGray text-[13px] leading-[13px]">100%</span></div>
+            </div>
+          </td>
+          <td class="pl-15px">
+            <div class="flex items-start gap-10px w-max h-40px">
+              <div class="flex flex-col gap-5px">
+                <div class="flex items-center gap-3px"><span class="leading-[14px]">8</span><span class="leading-[14px] text-textGray">leads</span></div>
+                <div class="flex items-center gap-3px"><span class="leading-[14px]">2</span><span class="leading-[14px] text-textGray">deals</span></div>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="flex-col sm:flex-row flex items-center gap-15px text-textGray font-semibold text-base-15 justify-between">
+    <div class="w-full sm:w-max justify-between sm:justify-start flex items-center gap-15px">
+      <div class="card-filter rounded-40px gap-5px bg-white py-5px">
+        <label class="w-max" for="dealsItemsPerPage">Items per page:</label>
+        <select class="bg-transparent text-blackBlue font-bold" id="dealsItemsPerPage" name="dealsItemsPerPage">
+          <option>10</option>
+          <option>25</option>
+          <option>50</option>
+          <option>100</option>
+        </select>
+      </div>
+      <div class="flex justify-center gap-15px"><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">&lt;</span></a>
+              <div class="w-[30px] h-[30px] rounded-full border border-blue bg-blue flex justify-center text-center items-center text-white"><span class="text-xs lg:text-sm font-semibold">1</span></div><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">2</span></a><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">3</span></a><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">&gt;</span></a>
+      </div>
+    </div>
+    <div class="text-right sm:text-left w-full sm:w-max text-sm"><span class='text-blackBlue'>98</span> items in <span class='text-blackBlue'>10</span> Pages</div>
+  </div>
+</div>
