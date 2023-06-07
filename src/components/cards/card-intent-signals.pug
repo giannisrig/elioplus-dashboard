@@ -1,0 +1,43 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        h2(class='font-inter font-bold text-2xl') Intent Signals
+
+        a(href='#' class='btn border-blue text-blue hover:text-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+            span Export Data
+            img(src="../assets/images/global/export-blue.svg" alt="Export Icon" title="Export Icon" width="17" height="17")
+
+
+    <!----------- Title End ------------------------------>
+
+    <!----------- Tabs Start ------------------------------>
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+            a(href='#allLeads' class='tab-item active') All Leads
+            a(href='#intentData' class='tab-item') Intent Data
+            a(href='#rfqs' class='tab-item' ) RFQs
+            a(href='#messages' class='tab-item' ) Messages
+
+        div(class='card-filter w-full md:w-max')
+            label(for='dealsVendor' class='w-max') Showing:
+            select(id='dealsVendor' name='dealsVendor').bg-transparent.text-blackBlue.font-bold
+                option Last 30 days
+                option Last 6 months
+                option Last Year
+
+    <!----------- Tabs End ------------------------------>
+
+
+    div(id='allLeads' class='tab-content')
+        include ../tables/table-leads
+    div(id='intentData' class='tab-content hidden')
+        include ../tables/table-intent-data
+    div(id='rfqs' class='tab-content hidden')
+        include ../tables/table-rfqs
+    div(id='messages' class='tab-content hidden')
+        include ../tables/table-messages
+    include ../../components/cards/card-table-footer
