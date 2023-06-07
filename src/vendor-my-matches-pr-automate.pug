@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'My Matches | Partner Recruitment Automate | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Recruitment'
+            - var breadcrumbsCurrent = 'My Matches'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'My Matches'
+                        - var desc = 'We provide you with a number of channel partners that exact match your selected criteria. We start providing you the best matches directly in your dashboard along with contact details from each company and more than 30 attributes about the company and the contact person.'
+                        - var btn = 'Read more about Partner Recruitment Matches'
+                        include components/text-block.pug
+
+                        include components/cards/card-matches-automate
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
