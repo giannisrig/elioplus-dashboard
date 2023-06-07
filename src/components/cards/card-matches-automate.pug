@@ -27,13 +27,10 @@ div(class='card')
                 div(class='card-filter w-full md:w-[380px]')
                     input(placeholder="Type a name, email, phone to search for a partner...").grow.text-sm.outline-none
                     img(src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
-                div(class='card-filter w-full md:w-max')
-                    label(for='dealsVendor' class='w-max') Select a year:
-                    select(id='dealsVendor' name='dealsVendor').bg-transparent.text-blackBlue.font-bold
-                        option 2023
-                        option 2022
-                        option 2021
-                        option 2020
+                - var text1= 'Matches from:'
+                include ../filters/datepicker
+                - var text1= 'Matches to:'
+                include ../filters/datepicker
 
         a(href='#' class='btn border-blue text-blue hover:text-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
             span Export Data
