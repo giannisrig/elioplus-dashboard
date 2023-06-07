@@ -1,0 +1,143 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Billing Information | Settings | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-channel-partner.pug
+        main
+            - var breadcrumbsParent = 'Settings'
+            - var breadcrumbsCurrent = 'Billing Information'
+            include components/header/header-channel-partner.pug
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Billing Information'
+                        - var desc = 'Billing, payment, credit card information and your transaction history.'
+                        include components/text-block.pug
+
+                        div(class='tabs-section flex flex-col gap-30px')
+                            div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+                                div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+                                    a(href='#subscriptionsServices' class='tab-item active') Subscriptions & Services
+                                    a(href='#billingPyament' class='tab-item') Billing & Payment Information
+                                    a(href='#transactionHistory' class='tab-item') Transaction History
+
+                            <!----------- Tab Content: #subscriptionsServices ---------->
+                            div(id='subscriptionsServices' class='tab-content')
+
+                                div(class='w-full flex flex-col gap-30px')
+                                    div(class='w-full flex flex-col gap-15px')
+                                        h2(class='font-inter font-bold text-2.5xl') Subscriptions & Services
+                                        p Manage your subscriptions for the Elioplus services.
+
+                                    div(class='grid grid-cols-1 mdl:grid-cols-3 gap-30px')
+
+                                        <!----- Partner Recruitment Automate ----->
+                                        div(class='card gap-15px')
+                                            .flex.flex-col.gap-5px
+                                                div(class='flex items-center gap-5px')
+                                                    div(class='w-[12px] h-[12px] rounded-full bg-green')
+                                                    div(class='lead-[14px] text-sm text-textGray') Enabled & Active
+                                                h3(class='font-inter font-bold text-xl') Partner Recruitment Automate
+                                            .flex.gap-5px
+                                                div(class='text-[13px] font-semibold text-blue p-[8px] bg-gray rounded-[6px]') Startup $399
+                                                div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Growth $419
+                                                div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Enterprise $1200+
+                                            p(class='text-sm')
+                                                | Get matched and recruit the best partners with the Elioplus Partner Recruitment Automate service.
+                                            .flex.w-full.justify-between
+                                                a(href='#' class='btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm') Cancel Subscription
+                                                a(href='#' class='btn bg-blue text-white hover:bg-blueDark text-sm') Upgrade Plan
+
+                                        <!----- Partner Recruitment Database ----->
+                                        div(class='card gap-15px')
+                                            .flex.flex-col.gap-5px
+                                                div(class='flex items-center gap-5px')
+                                                    div(class='w-[12px] h-[12px] rounded-full bg-iconGray')
+                                                    div(class='lead-[14px] text-sm text-textGray') Not Enabled
+                                                h3(class='font-inter font-bold text-xl') Partner Recruitment Database
+                                            .flex.gap-5px
+                                                div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Startup $399
+                                                div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Growth $419
+                                                div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Enterprise $1200+
+                                            p(class='text-sm')
+                                                | Get matched and recruit the best partners with the Elioplus Partner Recruitment Database service.
+                                            .flex.w-full.justify-between
+                                                a(href='#' class='btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm') Product Details
+                                                a(href='#' class='btn bg-blue text-white hover:bg-blueDark text-sm') Purchase a Plan
+
+                                        <!----- Partner Relationship Management ----->
+                                        div(class='card gap-15px')
+                                            .flex.flex-col.gap-5px
+                                                div(class='flex items-center gap-5px')
+                                                    div(class='w-[12px] h-[12px] rounded-full bg-yellow')
+                                                    div(class='lead-[14px] text-sm text-textGray') Enabled - Pending Payment
+                                                h3(class='font-inter font-bold text-xl') Partner Relationship Management
+                                            .flex.gap-5px
+                                                div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Startup $399
+                                                div(class='text-[13px] font-semibold text-blue p-[8px] bg-gray rounded-[6px]') Growth $419
+                                                div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Enterprise $1200+
+                                            p(class='text-sm')
+                                                | Get matched and recruit the best partners with the Elioplus Partner Recruitment Automate service.
+                                            .flex.w-full.justify-between
+                                                a(href='#' class='btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm') Cancel Subscription
+                                                a(href='#' class='btn bg-blue text-white hover:bg-blueDark text-sm') Make Payment
+
+                                    div(class='grid grid-cols-1 mdl:grid-cols-2 gap-30px')
+
+                                        <!----- Managed Service - Addon ----->
+                                        div(class='card gap-15px')
+                                            .flex.flex-col.gap-5px
+                                                div(class='flex items-center gap-5px')
+                                                    div(class='w-[12px] h-[12px] rounded-full bg-iconGray')
+                                                    div(class='lead-[14px] text-sm text-textGray') Not Enabled
+
+                                                .flex.gap-15px
+                                                    h3(class='font-inter font-bold text-xl') Managed Service - Addon
+                                                    div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Basic $299
+
+                                            p(class='text-sm')
+                                                | Add an Account Manager to your account that will follow up with all your connections and send you qualified leads that are ready for Demo or Meeting.
+                                            .flex.w-full.justify-between
+                                                a(href='#' class='btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm') Addon Details
+                                                a(href='#' class='btn bg-blue text-white hover:bg-blueDark text-sm') Purchase Managed Service
+
+                                        <!----- Partner Recruitment Database ----->
+                                        div(class='card gap-15px')
+                                            .flex.flex-col.gap-5px
+                                                div(class='flex items-center gap-5px')
+                                                    div(class='w-[12px] h-[12px] rounded-full bg-iconGray')
+                                                    div(class='lead-[14px] text-sm text-textGray') Support
+                                                h3(class='font-inter font-bold text-xl') Do you need help with your subscriptions?
+
+                                            p(class='text-sm')
+                                                | If you need help and assistance with managing your billing information and subscription plans, please free to contact us and an agent will assist you asap.
+                                            .flex.w-full.justify-between
+                                                a(href='#' class='btn border-blue text-blue hover:text-white hover:bg-blue text-sm') Visit Help Center
+                                                a(href='#' class='btn border-blue text-blue hover:text-white hover:bg-blue text-sm') Chat with an agent
+                                                a(href='#' class='btn bg-blue text-white hover:bg-blueDark text-sm') Purchase a Plan
+
+
+                            div(id='billingPyament' class='tab-content hidden')
+
+                                .flex.flex-col.gap-30px
+                                    div(class='w-full flex flex-col gap-15px')
+                                        h2(class='font-inter font-bold text-2.5xl') Billing & Payment Information
+                                        p Manage your subscriptions for the Elioplus services.
+                                    include components/cards/card-edit-billing-information
+                                    include components/cards/card-payment-information
+                            div(id='transactionHistory' class='tab-content hidden')
+                                include components/cards/card-transaction-history
+
+
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug

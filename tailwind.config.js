@@ -45,6 +45,7 @@ module.exports = {
       'red': '#EF6079',
       'iconGray': '#B3C7EB',
       'borderGray': '#BACFF1',
+      'iconGray2': '#97B0DD',
       'hawkesBlue': '#BACFF1',
       'yellow': '#FFB618',
       'linkedin': '#2E78B6',

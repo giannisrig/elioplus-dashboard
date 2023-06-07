@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head><meta charset="utf-8">
-    <title>Integrations | Team &amp; Integrations | Dashboard | Elioplus</title>
+    <title>Billing Information | Settings | Elioplus</title>
     <meta name="description"><meta name='robots' content='index,follow' />
 <meta name="copyright" content="Elioplus" />
 <meta name="author" content="Elioplus" />
 <meta name="distribution" content="global" />
 <meta name="theme-color" content="#39B4EF" />
-    <meta name="og:title" content="Integrations | Team &amp; Integrations | Dashboard | Elioplus">
+    <meta name="og:title" content="Billing Information | Settings | Elioplus">
     <meta name="og:url">
     <meta name="og:description"><meta property="og:image" content="../assets/images/global/social.png" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Elioplus" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:site:id" content="@elioplus" />
-    <meta name="twitter:title" content="Integrations | Team &amp; Integrations | Dashboard | Elioplus">
+    <meta name="twitter:title" content="Billing Information | Settings | Elioplus">
     <meta name="twitter:description"><meta name="twitter:image" content="../assets/images/global/social.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -104,9 +104,9 @@
               <ul class="hidden mdl:flex items-center gap-5px">
                 <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Dashboard</a></li>
                 <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
-                <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Team &amp; Integrations</a></li>
+                <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Settings</a></li>
                 <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
-                <li><span class="font-semibold">Integrations</span></li>
+                <li><span class="font-semibold">Billing Information</span></li>
               </ul>
             </div>
             <div class="flex gap-15px items-center">
@@ -157,118 +157,229 @@
         <div class="container">
           <div class="w-full flex flex-col gap-60px" id="dashboardPageContent"><!----------- Content Start ------------------------------>
             <div class="w-full flex flex-col gap-15px">
-              <h1 class="text-3xl font-inter font-bold">Integrations</h1>
-              <p>Connect your CRM system with Elioplus PRM to automatically transfer data between your channel partners and your company in order to eliminate manual processes and critical errors. The Elioplus PRM integration with your CRM can help transfer data for the Deal Registration and Lead Distribution features.</p><a class="btn border-blue hover:text-blue" href="#">Read more about the CRM Integrations</a>
+              <h1 class="text-3xl font-inter font-bold">Billing Information</h1>
+              <p>Billing, payment, credit card information and your transaction history.</p>
             </div>
-            <div class="card"><!----------- Title Start ------------------------------>
-              <h2 class="font-inter font-bold text-2xl">Manage Integrations</h2><!----------- Title End ------------------------------>
-              <div class="table-container">
-                <table>
-                  <thead>
-                    <th>CRM Integration</th>
-                    <th>Status</th>
-                    <th>Api Key</th>
-                    <th>
-                      <div class="text-left">Useful Links</div>
-                    </th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>
-                        <div class="flex items-center gap-10px w-max h-40px"><img src="../assets/images/integrations/crm-small-1.png" alt="Hubspot CRM" title="Hubspot CRM">
-                          <div class="flex flex-col gap-5px mb-5px">Hubspot CRM</div>
+            <div class="tabs-section flex flex-col gap-30px">
+              <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
+                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#subscriptionsServices">Subscriptions & Services</a><a class="tab-item" href="#billingPyament">Billing & Payment Information</a><a class="tab-item" href="#transactionHistory">Transaction History</a></div>
+              </div><!----------- Tab Content: #subscriptionsServices ---------->
+              <div class="tab-content" id="subscriptionsServices">
+                <div class="w-full flex flex-col gap-30px">
+                  <div class="w-full flex flex-col gap-15px">
+                    <h2 class="font-inter font-bold text-2.5xl">Subscriptions & Services</h2>
+                    <p>Manage your subscriptions for the Elioplus services.</p>
+                  </div>
+                  <div class="grid grid-cols-1 mdl:grid-cols-3 gap-30px"><!----- Partner Recruitment Automate ----->
+                    <div class="card gap-15px">
+                      <div class="flex flex-col gap-5px">
+                        <div class="flex items-center gap-5px">
+                          <div class="w-[12px] h-[12px] rounded-full bg-green"></div>
+                          <div class="lead-[14px] text-sm text-textGray">Enabled & Active</div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="flex items-center gap-15px w-max h-40px">
-                          <div class="flex items-center gap-5px">
-                            <div class="w-[12px] h-[12px] rounded-full bg-green"></div>
-                            <div class="lead-[14px]">Active Integration</div>
-                          </div>
-                          <label class="relative inline-flex items-center gap-5px cursor-pointer">
-                            <input class="sr-only peer" type="checkbox" value="" name="hubspot_enable">
-                            <div class="w-11 h-6 border-blackBlue border peer-focus:outline-none  rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[5px] after:bg-white after:border-blackBlue after:border after:rounded-full after:h-[15px] after:w-[15px] after:transition-all peer-checked:bg-blue peer-checked:border-blue"></div><span class="text-sm mb-2px">Toggle to enable</span>
-                          </label>
+                        <h3 class="font-inter font-bold text-xl">Partner Recruitment Automate</h3>
+                      </div>
+                      <div class="flex gap-5px">
+                        <div class="text-[13px] font-semibold text-blue p-[8px] bg-gray rounded-[6px]">Startup $399</div>
+                        <div class="text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]">Growth $419</div>
+                        <div class="text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]">Enterprise $1200+</div>
+                      </div>
+                      <p class="text-sm">Get matched and recruit the best partners with the Elioplus Partner Recruitment Automate service.</p>
+                      <div class="flex w-full justify-between"><a class="btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm" href="#">Cancel Subscription</a><a class="btn bg-blue text-white hover:bg-blueDark text-sm" href="#">Upgrade Plan</a></div>
+                    </div><!----- Partner Recruitment Database ----->
+                    <div class="card gap-15px">
+                      <div class="flex flex-col gap-5px">
+                        <div class="flex items-center gap-5px">
+                          <div class="w-[12px] h-[12px] rounded-full bg-iconGray"></div>
+                          <div class="lead-[14px] text-sm text-textGray">Not Enabled</div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="flex items-center gap-10px w-max h-40px relative"><span>●●●●●●a86d18</span><a class="flex items-center gap-5px text-sm text-textGray" href="#"><img src="../assets/images/global/edit-gray.svg" alt="Edit icon"><span>Edit</span></a>
+                        <h3 class="font-inter font-bold text-xl">Partner Recruitment Database</h3>
+                      </div>
+                      <div class="flex gap-5px">
+                        <div class="text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]">Startup $399</div>
+                        <div class="text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]">Growth $419</div>
+                        <div class="text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]">Enterprise $1200+</div>
+                      </div>
+                      <p class="text-sm">Get matched and recruit the best partners with the Elioplus Partner Recruitment Database service.</p>
+                      <div class="flex w-full justify-between"><a class="btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm" href="#">Product Details</a><a class="btn bg-blue text-white hover:bg-blueDark text-sm" href="#">Purchase a Plan</a></div>
+                    </div><!----- Partner Relationship Management ----->
+                    <div class="card gap-15px">
+                      <div class="flex flex-col gap-5px">
+                        <div class="flex items-center gap-5px">
+                          <div class="w-[12px] h-[12px] rounded-full bg-yellow"></div>
+                          <div class="lead-[14px] text-sm text-textGray">Enabled - Pending Payment</div>
                         </div>
-                      </td>
-                      <td><a class="flex items-center gap-5px text-sm text-textGray hover:text-blue w-max" href="#"><img src="../assets/images/global/info-gray.svg" alt="Edit icon"><span>Find my Api Key</span></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="flex items-center gap-10px w-max h-40px"><img src="../assets/images/integrations/crm-small-2.png" alt="Microsoft Dynamic CRM" title="Microsoft Dynamic CRM">
-                          <div class="flex flex-col gap-5px mb-5px">Microsoft Dynamic CRM</div>
+                        <h3 class="font-inter font-bold text-xl">Partner Relationship Management</h3>
+                      </div>
+                      <div class="flex gap-5px">
+                        <div class="text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]">Startup $399</div>
+                        <div class="text-[13px] font-semibold text-blue p-[8px] bg-gray rounded-[6px]">Growth $419</div>
+                        <div class="text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]">Enterprise $1200+</div>
+                      </div>
+                      <p class="text-sm">Get matched and recruit the best partners with the Elioplus Partner Recruitment Automate service.</p>
+                      <div class="flex w-full justify-between"><a class="btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm" href="#">Cancel Subscription</a><a class="btn bg-blue text-white hover:bg-blueDark text-sm" href="#">Make Payment</a></div>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-1 mdl:grid-cols-2 gap-30px"><!----- Managed Service - Addon ----->
+                    <div class="card gap-15px">
+                      <div class="flex flex-col gap-5px">
+                        <div class="flex items-center gap-5px">
+                          <div class="w-[12px] h-[12px] rounded-full bg-iconGray"></div>
+                          <div class="lead-[14px] text-sm text-textGray">Not Enabled</div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="flex items-center gap-15px w-max h-40px">
-                          <div class="flex items-center gap-5px">
-                            <div class="w-[12px] h-[12px] rounded-full bg-iconGray"></div>
-                            <div class="lead-[14px]">Inactive Integration</div>
-                          </div>
-                          <label class="relative inline-flex items-center gap-5px cursor-pointer">
-                            <input class="sr-only peer" type="checkbox" value="" name="microsoft_enable">
-                            <div class="w-11 h-6 border-blackBlue border peer-focus:outline-none  rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[5px] after:bg-white after:border-blackBlue after:border after:rounded-full after:h-[15px] after:w-[15px] after:transition-all peer-checked:bg-blue peer-checked:border-blue"></div><span class="text-sm mb-2px">Toggle to enable</span>
-                          </label>
+                        <div class="flex gap-15px">
+                          <h3 class="font-inter font-bold text-xl">Managed Service - Addon</h3>
+                          <div class="text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]">Basic $299</div>
                         </div>
-                      </td>
-                      <td>
-                        <div class="flex items-center gap-10px w-max h-40px relative"><span>No API Key</span><a class="flex items-center gap-5px text-sm text-textGray" href="#"><img src="../assets/images/global/edit-gray.svg" alt="Edit icon"><span>Add a key</span></a>
+                      </div>
+                      <p class="text-sm">Add an Account Manager to your account that will follow up with all your connections and send you qualified leads that are ready for Demo or Meeting.</p>
+                      <div class="flex w-full justify-between"><a class="btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm" href="#">Addon Details</a><a class="btn bg-blue text-white hover:bg-blueDark text-sm" href="#">Purchase Managed Service</a></div>
+                    </div><!----- Partner Recruitment Database ----->
+                    <div class="card gap-15px">
+                      <div class="flex flex-col gap-5px">
+                        <div class="flex items-center gap-5px">
+                          <div class="w-[12px] h-[12px] rounded-full bg-iconGray"></div>
+                          <div class="lead-[14px] text-sm text-textGray">Support</div>
                         </div>
-                      </td>
-                      <td><a class="flex items-center gap-5px text-sm text-textGray hover:text-blue w-max" href="#"><img src="../assets/images/global/info-gray.svg" alt="Edit icon"><span>Find my Api Key</span></a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <div class="flex items-center gap-10px w-max h-40px"><img src="../assets/images/integrations/crm-small-3.png" alt="Salesforce CRMM" title="Salesforce CRMM">
-                          <div class="flex flex-col gap-5px mb-5px">Salesforce CRMM</div>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="flex items-center gap-15px w-max h-40px">
-                          <div class="flex items-center gap-5px">
-                            <div class="w-[12px] h-[12px] rounded-full bg-red"></div>
-                            <div class="lead-[14px]">Not Available - Coming soon</div>
-                          </div>
-                          <label class="relative inline-flex items-center gap-5px cursor-pointer">
-                            <input class="sr-only peer" type="checkbox" value="" name="microsoft_enable">
-                            <div class="w-11 h-6 border-blackBlue border peer-focus:outline-none  rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[5px] after:bg-white after:border-blackBlue after:border after:rounded-full after:h-[15px] after:w-[15px] after:transition-all peer-checked:bg-blue peer-checked:border-blue"></div><span class="text-sm mb-2px">Toggle to enable</span>
-                          </label>
-                        </div>
-                      </td>
-                      <td>
-                        <div class="flex items-center gap-10px w-max h-40px relative"><span>No API Key</span><a class="flex items-center gap-5px text-sm text-textGray" href="#"><img src="../assets/images/global/edit-gray.svg" alt="Edit icon"><span>Add a key</span></a>
-                        </div>
-                      </td>
-                      <td><a class="flex items-center gap-5px text-sm text-textGray hover:text-blue w-max" href="#"><img src="../assets/images/global/info-gray.svg" alt="Edit icon"><span>Find my Api Key</span></a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                        <h3 class="font-inter font-bold text-xl">Do you need help with your subscriptions?</h3>
+                      </div>
+                      <p class="text-sm">If you need help and assistance with managing your billing information and subscription plans, please free to contact us and an agent will assist you asap.</p>
+                      <div class="flex w-full justify-between"><a class="btn border-blue text-blue hover:text-white hover:bg-blue text-sm" href="#">Visit Help Center</a><a class="btn border-blue text-blue hover:text-white hover:bg-blue text-sm" href="#">Chat with an agent</a><a class="btn bg-blue text-white hover:bg-blueDark text-sm" href="#">Purchase a Plan</a></div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="flex flex-col gap-30px">
-              <h2 class="font-inter font-bold text-2.5xl">CRMs</h2>
-              <div class="grid grid-cols-1 mdl:grid-cols-3 gap-30px">
-                <div class="card text-center items-center justify-center gap-15px">
-                  <div class="w-full flex justify-center"><img src="../assets/images/integrations/crm-big-1.png" alt="Hubspot CRM" title="Hubspot CRM"></div>
-                  <h2 class="font-inter font-bold text-2xl">Hubspot CRM</h2>
-                  <p class="text-base-15">Elioplus PRM offers a quick, effective and easy to maintain integration with Hubspot CRM to help you transfer data between the two applications seamlessly.</p><a class="btn border-blue hover:text-blue" href="#">Read about this integration</a>
+              <div class="tab-content hidden" id="billingPyament">
+                <div class="flex flex-col gap-30px">
+                  <div class="w-full flex flex-col gap-15px">
+                    <h2 class="font-inter font-bold text-2.5xl">Billing & Payment Information</h2>
+                    <p>Manage your subscriptions for the Elioplus services.</p>
+                  </div>
+                  <div class="card"><!----------- Title Start ------------------------------>
+                    <div class="w-full flex flex-col gap-15px">
+                      <h2 class="font-inter font-bold text-2xl">Edit your Billing Information</h2>
+                      <div class="divider"></div>
+                    </div><!----------- Title End ------------------------------>
+                    <div class="w-full grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-4 gap-60px">
+                      <div class="flex flex-col gap-15px w-full">
+                        <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Company name:</span><span class="text-textGray text-sm">Please enter your company name.</span></div>
+                        <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Enter your company name">
+                      </div>
+                      <div class="flex flex-col gap-15px w-full">
+                        <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Company Billing Address:</span><span class="text-textGray text-sm">Please enter your billing address.</span></div>
+                        <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Enter your billing address">
+                      </div>
+                      <div class="flex flex-col gap-15px w-full">
+                        <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Company Post Code:</span><span class="text-textGray text-sm">Please enter your company name.</span></div>
+                        <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Enter your company name">
+                      </div>
+                      <div class="flex flex-col gap-15px w-full">
+                        <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Company Vat Number:</span><span class="text-textGray text-sm">Please enter your company vat number.</span></div>
+                        <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Enter your VAT number">
+                      </div>
+                    </div><a class="btn bg-blue border-blue text-white hover:bg-blueDark" href="#">Save Changes</a>
+                  </div>
+                  <div class="card"><!----------- Title Start ------------------------------>
+                    <div class="w-full flex flex-col gap-15px">
+                      <h2 class="font-inter font-bold text-2xl">Payment Information</h2>
+                      <div class="divider"></div>
+                    </div><!----------- Title End ------------------------------>
+                    <div class="w-full grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-4 gap-60px">
+                      <div class="flex flex-col gap-15px w-full">
+                        <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Credit Card Number:</span><span class="text-textGray text-sm">Please enter your Credit Card Number.</span></div>
+                        <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Enter your company name">
+                      </div>
+                      <div class="flex flex-col gap-15px w-full">
+                        <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">CVC:</span><span class="text-textGray text-sm">Enter your 3-digit CVC written in your card.</span></div>
+                        <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Enter your CVC number">
+                      </div>
+                      <div class="flex flex-col gap-15px w-full">
+                        <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Expiration Month:</span><span class="text-textGray text-sm">Please enter your credit card expiration month</span></div>
+                        <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Expiration Month">
+                      </div>
+                      <div class="flex flex-col gap-15px w-full">
+                        <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Expiration Year:</span><span class="text-textGray text-sm">Last 2 digits.</span></div>
+                        <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Expiration Year">
+                      </div>
+                    </div><a class="btn bg-blue border-blue text-white hover:bg-blueDark" href="#">Save Changes</a>
+                  </div>
                 </div>
-                <div class="card text-center items-center justify-center gap-15px">
-                  <div class="w-full flex justify-center"><img src="../assets/images/integrations/crm-big-2.png" alt="Hubspot CRM" title="Hubspot CRM"></div>
-                  <h2 class="font-inter font-bold text-2xl">Microsoft Dynamic CRM</h2>
-                  <p class="text-base-15">Elioplus PRM offers an easy, effective and automatically custom integration with Salesforce to help you transfer data seamlessly between your company and your partners.</p><a class="btn border-blue hover:text-blue" href="#">Read about this integration</a>
-                </div>
-                <div class="card text-center items-center justify-center gap-15px">
-                  <div class="w-full flex justify-center"><img src="../assets/images/integrations/crm-big-3.png" alt="Hubspot CRM" title="Hubspot CRM"></div>
-                  <h2 class="font-inter font-bold text-2xl">Salesforce CRM</h2>
-                  <p class="text-base-15">Elioplus PRM offers an easy, effective and automatically custom integration with Salesforce to help you transfer data seamlessly between your company and your partners.</p><a class="btn border-blue hover:text-blue" href="#">Read about this integration</a>
+              </div>
+              <div class="tab-content hidden" id="transactionHistory">
+                <div class="card"><!----------- Title Start ------------------------------>
+                  <h2 class="font-inter font-bold text-2xl">Transaction History</h2><!----------- Title End ------------------------------>
+                  <div class="table-container">
+                    <table>
+                      <thead>
+                        <th>Subscription</th>
+                        <th>Service</th>
+                        <th>Status</th>
+                        <th>
+                          <div class="text-center">Date Created</div>
+                        </th>
+                        <th>
+                          <div class="text-center">Amount</div>
+                        </th>
+                        <th>
+                          <div class="text-left">Download Invoice</div>
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Startup Plan</td>
+                          <td>Partner Recruitment - Automate</td>
+                          <td>
+                            <div class="flex items-center gap-5px">
+                              <div class="w-[12px] h-[12px] rounded-full bg-green"></div>
+                              <div class="flex flex-col gap-5px lead-[14px]">Active & Paid</div>
+                            </div>
+                          </td>
+                          <td class="text-center">2023/04/15</td>
+                          <td class="text-center">$298</td>
+                          <td class="flex justify-start"><a class="text-blue" href="#">Eacmonsen_virtual-0015.pdf</a></td>
+                        </tr>
+                        <tr>
+                          <td>Startup Plan</td>
+                          <td>Partner Recruitment - Automate</td>
+                          <td>
+                            <div class="flex items-center gap-5px">
+                              <div class="w-[12px] h-[12px] rounded-full bg-green"></div>
+                              <div class="flex flex-col gap-5px lead-[14px]">Active & Paid</div>
+                            </div>
+                          </td>
+                          <td class="text-center">2023/04/15</td>
+                          <td class="text-center">$298</td>
+                          <td class="flex justify-start"><a class="text-blue" href="#">Eacmonsen_virtual-0015.pdf</a></td>
+                        </tr>
+                        <tr>
+                          <td>Startup Plan</td>
+                          <td>Partner Recruitment - Database</td>
+                          <td>
+                            <div class="flex items-center gap-5px">
+                              <div class="w-[12px] h-[12px] rounded-full bg-green"></div>
+                              <div class="flex flex-col gap-5px lead-[14px]">Active & Paid</div>
+                            </div>
+                          </td>
+                          <td class="text-center">2023/04/15</td>
+                          <td class="text-center">$298</td>
+                          <td class="flex justify-start"><a class="text-blue" href="#">Eacmonsen_virtual-0015.pdf</a></td>
+                        </tr>
+                        <tr>
+                          <td>Startup Plan</td>
+                          <td>Partner Relationship Management</td>
+                          <td>
+                            <div class="flex items-center gap-5px">
+                              <div class="w-[12px] h-[12px] rounded-full bg-green"></div>
+                              <div class="flex flex-col gap-5px lead-[14px]">Active & Paid</div>
+                            </div>
+                          </td>
+                          <td class="text-center">2023/04/15</td>
+                          <td class="text-center">$298</td>
+                          <td class="flex justify-start"><a class="text-blue" href="#">Eacmonsen_virtual-0015.pdf</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div><!----------- Content End ------------------------------>

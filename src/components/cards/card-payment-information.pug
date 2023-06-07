@@ -1,0 +1,35 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-2xl') Payment Information
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-4 gap-60px')
+
+
+        - var title = 'Credit Card Number:'
+        - var desc = 'Please enter your Credit Card Number.'
+        - var placeholder = 'Enter your company name'
+        include ../../components/form/form-input
+
+
+        - var title = 'CVC:'
+        - var desc = 'Enter your 3-digit CVC written in your card.'
+        - var placeholder = 'Enter your CVC number'
+        include ../../components/form/form-input
+
+
+        - var title = 'Expiration Month:'
+        - var desc = 'Please enter your credit card expiration month'
+        - var placeholder = 'Expiration Month'
+        include ../../components/form/form-input
+
+
+        - var title = 'Expiration Year:'
+        - var desc = 'Last 2 digits.'
+        - var placeholder = 'Expiration Year'
+        include ../../components/form/form-input
+
+    a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes

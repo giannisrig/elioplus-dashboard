@@ -1,0 +1,35 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-2xl') Edit your Billing Information
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-4 gap-60px')
+
+
+        - var title = 'Company name:'
+        - var desc = 'Please enter your company name.'
+        - var placeholder = 'Enter your company name'
+        include ../../components/form/form-input
+
+
+        - var title = 'Company Billing Address:'
+        - var desc = 'Please enter your billing address.'
+        - var placeholder = 'Enter your billing address'
+        include ../../components/form/form-input
+
+
+        - var title = 'Company Post Code:'
+        - var desc = 'Please enter your company name.'
+        - var placeholder = 'Enter your company name'
+        include ../../components/form/form-input
+
+
+        - var title = 'Company Vat Number:'
+        - var desc = 'Please enter your company vat number.'
+        - var placeholder = 'Enter your VAT number'
+        include ../../components/form/form-input
+
+    a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes

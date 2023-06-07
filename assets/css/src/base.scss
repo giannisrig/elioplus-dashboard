@@ -13,8 +13,8 @@
     background-color: #F3F8FF;
   }
 
-  a {
-    @apply block transition-colors duration-200;
+  a, input {
+    @apply block transition-colors duration-200 focus:outline-0 focus:shadow-transparent focus:drop-shadow-none;
   }
 
   table {
