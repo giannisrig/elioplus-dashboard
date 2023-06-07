@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Integrations | Team & Integrations | Dashboard | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Team & Integrations'
+            - var breadcrumbsCurrent = 'Integrations'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Integrations'
+                        - var desc = 'Connect your CRM system with Elioplus PRM to automatically transfer data between your channel partners and your company in order to eliminate manual processes and critical errors. The Elioplus PRM integration with your CRM can help transfer data for the Deal Registration and Lead Distribution features.'
+                        - var btn = 'Read more about the CRM Integrations'
+                        include components/text-block.pug
+
+                        include components/cards/card-manage-integrations
+
+                        div.flex.flex-col.gap-30px
+                            h2(class='font-inter font-bold text-2.5xl') CRMs
+                            div(class='grid grid-cols-1 mdl:grid-cols-3 gap-30px')
+                                div(class='card text-center items-center justify-center gap-15px')
+                                    div.w-full.flex.justify-center
+                                        img( src="../assets/images/integrations/crm-big-1.png" alt="Hubspot CRM" title="Hubspot CRM" )
+                                    h2(class='font-inter font-bold text-2xl') Hubspot CRM
+                                    p(class='text-base-15')
+                                        | Elioplus PRM offers a quick, effective and easy to maintain integration with Hubspot CRM to help you transfer data between the two applications seamlessly.
+                                    a(href='#' class='btn border-blue hover:text-blue') Read about this integration
+                                div(class='card text-center items-center justify-center gap-15px')
+                                    div.w-full.flex.justify-center
+                                        img( src="../assets/images/integrations/crm-big-2.png" alt="Hubspot CRM" title="Hubspot CRM" )
+                                    h2(class='font-inter font-bold text-2xl') Microsoft Dynamic CRM
+                                    p(class='text-base-15')
+                                        | Elioplus PRM offers an easy, effective and automatically custom integration with Salesforce to help you transfer data seamlessly between your company and your partners.
+                                    a(href='#' class='btn border-blue hover:text-blue') Read about this integration
+                                div(class='card text-center items-center justify-center gap-15px')
+                                    div.w-full.flex.justify-center
+                                        img( src="../assets/images/integrations/crm-big-3.png" alt="Hubspot CRM" title="Hubspot CRM" )
+                                    h2(class='font-inter font-bold text-2xl') Salesforce CRM
+                                    p(class='text-base-15')
+                                        | Elioplus PRM offers an easy, effective and automatically custom integration with Salesforce to help you transfer data seamlessly between your company and your partners.
+                                    a(href='#' class='btn border-blue hover:text-blue') Read about this integration
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug

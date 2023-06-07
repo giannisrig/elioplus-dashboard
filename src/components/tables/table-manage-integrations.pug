@@ -1,0 +1,64 @@
+.table-container
+    table
+        thead
+            th CRM Integration
+            th Status
+            th Api Key
+            th
+                div.text-left Useful Links
+        tbody
+            tr
+                td
+                    -var img = '../assets/images/integrations/crm-small-1.png'
+                    -var name = 'Hubspot CRM'
+                    include ../../components/table-cell/crm-integration
+                td
+                    -var name = 'Active Integration'
+                    -var className = 'bg-green'
+                    -var toggleInputName = 'hubspot_enable'
+                    include ../../components/table-cell/crm-status
+                td
+                    -var text1 = '●●●●●●a86d18'
+                    -var text2 = 'Edit'
+                    include ../../components/table-cell/crm-api-key
+
+
+                td
+                    -var href = '#'
+                    include ../../components/table-cell/crm-info
+            tr
+                td
+                    -var img = '../assets/images/integrations/crm-small-2.png'
+                    -var name = 'Microsoft Dynamic CRM'
+                    include ../../components/table-cell/crm-integration
+                td
+                    -var name = 'Inactive Integration'
+                    -var className = 'bg-iconGray'
+                    -var toggleInputName = 'microsoft_enable'
+                    include ../../components/table-cell/crm-status
+                td
+                    -var text1 = 'No API Key'
+                    -var text2 = 'Add a key'
+                    include ../../components/table-cell/crm-api-key
+
+
+                td
+                    -var href = '#'
+                    include ../../components/table-cell/crm-info
+            tr
+                td
+                    -var img = '../assets/images/integrations/crm-small-3.png'
+                    -var name = 'Salesforce CRMM'
+                    include ../../components/table-cell/crm-integration
+                td
+                    -var name = 'Not Available - Coming soon'
+                    -var className = 'bg-red'
+                    include ../../components/table-cell/crm-status
+                td
+                    -var text1 = 'No API Key'
+                    include ../../components/table-cell/crm-api-key
+
+
+                td
+                    -var href = '#'
+                    include ../../components/table-cell/crm-info
