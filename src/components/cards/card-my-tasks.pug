@@ -1,0 +1,65 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        h2(class='font-inter font-bold text-2xl') Manage tasks
+
+
+
+    <!----------- Title End ------------------------------>
+
+    <!----------- Tabs Start ------------------------------>
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+            a(href='#upcomingTasks' class='tab-item active') Upcoming Tasks
+            a(href='#overdueTasks' class='tab-item flex items-center gap-5px')
+                span Overdue Tasks
+                div(class='bg-red w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 10
+
+
+    <!----------- Tabs End ------------------------------>
+
+
+    <!----------- Filters Start ------------------------------>
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        div(class="flex gap-15px flex-col md:flex-row md:gap-10px")
+            a(href='#' class='hover:text-blue').flex.items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-filters
+                img(src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+                span(class='text-sm sm:text-base-15') Task Filters
+            div(class='filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px').items-center.text-textGray.font-semibold.text-base-15
+
+                div(class='card-filter w-full md:w-max')
+                    label(for='opportunities' class='w-max') Select Opportunities:
+                    select(id='opportunities' name='opportunities').bg-transparent.text-blackBlue.font-bold
+                        option All Opportunities
+                        option Channel Partners
+
+                div(class='card-filter w-full md:w-max')
+                    label(for='status_pipeline' class='w-max') Status/Pipeline:
+                    select(id='status_pipeline' name='status_pipeline').bg-transparent.text-blackBlue.font-bold
+                        option All Statuses
+                        option Channel Partners
+
+                - var text1= 'Task Date:'
+                include ../filters/datepicker
+
+                div(class='card-filter w-full grow')
+                    input(placeholder="Type a name, email, phone to search for a partner...").grow.text-sm.outline-none
+                    img(src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+
+
+
+    <!----------- Filters End ------------------------------>
+
+    div(id='upcomingTasks' class='tab-content')
+        include ../tables/table-tasks
+    div(id='overdueTasks' class='tab-content hidden')
+        include ../tables/table-tasks
+
+
+    include ../../components/cards/card-table-footer

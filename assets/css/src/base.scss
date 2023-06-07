@@ -74,4 +74,8 @@
     @apply flex gap-10px text-textGray border-gray border-2 rounded-10px bg-gray2 items-center transition-colors duration-200 hover:border-blue text-sm px-15px py-10px text-left cursor-pointer
   }
 
+  .card-filter input {
+    @apply bg-transparent
+  }
+
 }
