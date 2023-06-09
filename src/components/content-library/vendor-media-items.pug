@@ -1,0 +1,46 @@
+div(class='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-25px')
+
+    -var type = 'png'
+    -var title = 'Logo.png'
+    -var vendor = 'Vendor 1'
+    include ../../components/content-library/media-item
+    -var type = 'ppt'
+    -var title = 'presentation.ptt'
+    -var vendor = 'Vendor 2'
+    include ../../components/content-library/media-item
+    -var type = 'xls'
+    -var title = 'pricing.xls'
+    -var vendor = 'Vendor 3'
+    include ../../components/content-library/media-item
+
+
+    -var type = 'file'
+    -var title = 'sales.txt'
+    -var vendor = 'Vendor 2'
+    include ../../components/content-library/media-item
+    -var type = 'doc'
+    -var title = 'product-desc.doc'
+    -var vendor = 'Vendor 2'
+    include ../../components/content-library/media-item
+    -var type = 'ai'
+    -var title = 'graphics.ai'
+    -var vendor = 'Vendor 3'
+    include ../../components/content-library/media-item
+
+
+    -var type = 'jpg'
+    -var title = 'account.jpg'
+    -var vendor = 'Vendor 1'
+    include ../../components/content-library/media-item
+
+    <!----------- Media Item ------------------------------>
+    a(href='#uploadFiles' class='border-2 border-dashed border-blue tab-item').card.items-center.justify-center.text-center.bg-gray
+        div(class='w-[70px] flex justify-center')
+            img(src='../assets/images/file-icons/upload.svg')
+        h3.text-base.text-blue.font-bold Upload New File
+
+
+
+
+
+

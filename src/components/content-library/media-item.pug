@@ -1,5 +1,15 @@
 <!----------- Media Item ------------------------------>
-.card
-    img(src='../assets/images/file-icons/'+type+'.svg')
-    h3.text-base Logo.png
-    h4.text-sm.text-textGray 17/05/2023
+.card.items-center.justify-center.text-center
+    div(class='w-[70px] flex justify-center')
+        img(src='../assets/images/file-icons/'+type+'.svg')
+    div.w-full.flex.flex-col.gap-5px
+        h3.text-base.font-bold Logo.png
+        h4.text-sm.text-textGray 17/05/2023
+    div(class='flex items-center justify-end gap-10px w-full h-40px absolute top-10px right-15px cell-actions')
+        a(href='#' class='actions-trigger')
+            img(src='../assets/images/global/dots-blue-vertical.svg')
+        div(class='actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1')
+            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Delete
+            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Upload Preview Icon
+
+

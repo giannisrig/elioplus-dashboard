@@ -1,0 +1,50 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Partner OnBoarding | Partner Management | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Partner OnBoarding'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Partner OnBoarding'
+                        - var desc = 'Onboarding channel partners is the mechanism that allows your channel partners to have access to the necessary knowledge and material that will help them understand your product quickly and become familiar with the sales and marketing process that must be followed.'
+                        - var btn = 'Read more about Partner OnBoarding'
+                        include components/text-block.pug
+
+                        div(class='tabs-section flex flex-col gap-30px')
+                            div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+                                div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+                                    a(href='#onBoardingFiles' class='tab-item active') Onboarding files
+                                    a(href='#uploadFiles' class='tab-item') Upload new file
+
+
+                            div(id='onBoardingFiles' class='tab-content')
+
+                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px tabs-section')
+                                    div
+                                        include components/content-library/vendor-folders
+
+                                    div.w-full
+                                        div.flex.flex-col.gap-50px.w-full
+                                            include components/cards/card-onboarding-files
+                                            include components/content-library/vendor-media-items
+
+
+                            div(id='uploadFiles' class='tab-content hidden')
+                                div.w-full.flex.flex-col.gap-50px
+                                    include components/cards/card-upload-files
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug

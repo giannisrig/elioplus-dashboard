@@ -1,0 +1,49 @@
+div(class='card px-15px lg:px-25px sticky top-0').gap-10px
+    .flex.gap-15px.flex-col.w-full
+        div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+            h2(class='font-inter font-bold text-2xl') Folders
+            a(href='#' class='text-sm font-semibold text-blue flex gap-5px')
+                img(src="../assets/images/global/add-blue.svg" alt="upload Icon" title="upload Icon" width="17" height="17")
+                span Add Folder
+        .divider
+    div.flex.flex-col.w-full
+        a(href='#' class='hover:text-blue w-max flex md:hidden').items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-folders
+            img(src="../assets/images/global/folder.svg" alt="folder Icon" title="folder Icon" width="15" height="15")
+            span(class='text-sm sm:text-base-15') Show Folders:
+        div(class="flex hidden md:flex").flex-col.w-full.folders
+            -var title='All Files'
+            -var files='7 Files'
+            -var vendor='Vendor 1'
+            include ../../components/content-library/folder-item
+            -var title='Documentation (PDF)'
+            -var files='7 Files'
+            -var vendor='Vendor 1'
+            include ../../components/content-library/folder-item
+            -var title='Email Templates'
+            -var files='2 Files'
+            -var vendor='Vendor 2'
+            include ../../components/content-library/folder-item
+            -var title='Marketing Material'
+            -var files='7 Files'
+            -var vendor='Vendor 1'
+            include ../../components/content-library/folder-item
+            -var title='Sales Material'
+            -var files='17 Files'
+            -var vendor='Vendor 1'
+            include ../../components/content-library/folder-item
+            -var title='New Campaign'
+            -var files='12 Files'
+            -var vendor='Vendor 1'
+            include ../../components/content-library/folder-item
+            -var title='Newsletter Issue'
+            -var files='1 File'
+            -var vendor='Vendor 1'
+            include ../../components/content-library/folder-item
+            -var title='Product Updates'
+            -var files='1 File'
+            -var vendor='Vendor 1'
+            include ../../components/content-library/folder-item
+
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm w-full justify-center')
+            img(src="../assets/images/global/add-white.svg" alt="Add Icon" title="Add Icon" width="17" height="17")
+            span Add New Folder
