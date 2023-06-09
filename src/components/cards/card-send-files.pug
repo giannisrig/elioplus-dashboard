@@ -1,0 +1,31 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+
+    .flex.flex-col.gap-15px
+        .flex.flex-col.gap-5px
+            h2(class='font-inter font-bold text-2xl') 2. Send Files to Partners
+            p.text-textGray.text-base-15 You can upload multiple files in multiple categories. The resellers will be able to view all these materials on their “Vendor Resources” tab of their dashboard, connected with your “Partner Onboarding” tab.
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='grid grid-cols-2 lg:grid-cols-5-7 gap-30px')
+        <div class="drop-zone border-blue bg-gray w-full">
+        <span class="drop-zone__prompt font-bold text-base">Drag & drop files or <span class="text-blue">Browse</span>
+        <span class="block w-full text-sm text-center text-textGray font-normal">Supported formats: JPEG, PNG, XLS, PDF, PSD, AI, Word, PPT</span>
+        </span>
+        <input type="file" name="myFile" class="drop-zone__input">
+        </div>
+
+        div
+            .flex.w-full.flex-col.gap-15px
+                -var cats = ['Documentation PDF', 'Marketing', 'Newsletter', 'Campaign', 'Assets']
+                -var uploadedFile = 'filename.pdf'
+                include ../../components/content-library/upload-file
+                include ../../components/content-library/upload-file
+                include ../../components/content-library/upload-file
+
+    div(class='flex justify-end w-full')
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark text-sm')
+            span Send selected file
+            img(src="../assets/images/global/send-white.svg" alt="Add Icon" title="Add Icon" width="20" height="20")

@@ -69,7 +69,7 @@
             let id = $(this).attr('href')
             let el = $(id);
 
-            $(this).closest('.tabs-section, .card').children('.tab-content').addClass('hidden');
+            $(this).closest('.tabs-section, .card').find('.tab-content').addClass('hidden');
             $(this).closest('.tabs').find('.tab-item.active').removeClass('active');
             $(this).addClass('active');
             el.removeClass('hidden');

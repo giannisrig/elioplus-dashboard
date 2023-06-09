@@ -25,7 +25,8 @@
       "src" : [
         "/libs/jquery.slim.min.js",
         "/libs/owl.carousel.js",
-        "/base.js"
+        "/base.js",
+        "/media-upload.js"
       ]
     }
   ]

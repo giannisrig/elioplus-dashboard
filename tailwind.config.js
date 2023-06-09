@@ -119,6 +119,7 @@ module.exports = {
         '3': '3',
       },
       gridTemplateColumns: {
+        '5-7': '5fr 7fr',
         '7-5': '7fr 5fr',
         '3-9': '3fr 9fr',
       },
