@@ -162,7 +162,7 @@
             </div>
             <div class="tabs-section flex flex-col gap-30px">
               <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#paymentsCommissions">Payments & Commissions</a><a class="tab-item" href="#payoutSettings">Payout Settings</a><a class="tab-item" href="#feesTerms">Fees & Terms</a></div>
+                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#paymentsCommissions">Payments & Commissions</a><a class="tab-item" href="#payoutSettings">Company Payout Settings</a><a class="tab-item" href="#feesTerms">Fees & Terms</a></div>
               </div>
               <div class="tab-content" id="paymentsCommissions">
                 <div class="card"><!----------- Title Start ------------------------------>
@@ -749,7 +749,59 @@
                 </div>
               </div>
               <div class="tab-content hidden" id="payoutSettings">
-                <h2>Settings</h2>
+                <div class="card"><!----------- Title Start ------------------------------>
+                  <div class="w-full flex flex-col gap-15px">
+                    <h2 class="font-inter font-bold text-2xl">Payout Settings</h2>
+                    <div class="divider"></div>
+                  </div><!----------- Title End ------------------------------>
+                  <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-30px">
+                    <div class="flex flex-col gap-15px w-full">
+                      <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Account Type:</span><span class="text-textGray text-sm">Some description about this setting which is more or less the same length as this one which is around 113 chars.</span></div>
+                                          <div class="bg-transparent font-semibold flex items-center gap-10px">
+                                            <div class="flex gap-3px items-center">
+                                              <input type="radio" id="Standard" name="deal_available_for" value="Standard">
+                                              <label class="text-sm font-semibold">Standard</label>
+                                            </div>
+                                            <div class="flex gap-3px items-center">
+                                              <input type="radio" id="Express" name="deal_available_for" value="Express">
+                                              <label class="text-sm font-semibold">Express</label>
+                                            </div>
+                                            <div class="flex gap-3px items-center">
+                                              <input type="radio" id="Custom" name="deal_available_for" value="Custom">
+                                              <label class="text-sm font-semibold">Custom</label>
+                                            </div>
+                                          </div>
+                    </div>
+                    <div class="flex flex-col gap-15px w-full">
+                      <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Business Type:</span><span class="text-textGray text-sm">Some description about this setting which is more or less the same length as this one which is around 113 chars.</span></div>
+                                          <div class="bg-transparent font-semibold flex items-center gap-10px">
+                                            <div class="flex gap-3px items-center">
+                                              <input type="radio" id="Individual" name="deal_available_for" value="Individual">
+                                              <label class="text-sm font-semibold">Individual</label>
+                                            </div>
+                                            <div class="flex gap-3px items-center">
+                                              <input type="radio" id="Company" name="deal_available_for" value="Company">
+                                              <label class="text-sm font-semibold">Company</label>
+                                            </div>
+                                            <div class="flex gap-3px items-center">
+                                              <input type="radio" id="Custom" name="deal_available_for" value="Custom">
+                                              <label class="text-sm font-semibold">Custom</label>
+                                            </div>
+                                          </div>
+                    </div>
+                    <div class="flex flex-col gap-15px w-full">
+                      <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Country</span><span class="text-textGray text-sm">Some description about this setting which is more or less the same length as this one which is around 113 chars.</span></div>
+                      <div class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
+                        <label class="text-textGray">Select number of days:</label>
+                                            <select class="bg-transparent font-semibold">
+                                              <option value="United States">United States</option>
+                                              <option value="Canada">Canada</option>
+                                              <option value="Greece">Greece</option>
+                                            </select>
+                      </div>
+                    </div>
+                  </div><a class="btn bg-blue border-blue text-white hover:bg-blueDark" href="#">Save Changes</a>
+                </div>
               </div>
               <div class="tab-content hidden" id="feesTerms">
                 <div class="card"><!----------- Title Start ------------------------------>

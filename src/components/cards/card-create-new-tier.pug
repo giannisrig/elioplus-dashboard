@@ -1,0 +1,38 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-2xl') Create a new Tier
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+
+        - var title = 'Tier Name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter the tier name'
+        include ../../components/form/form-input
+
+
+        - var title = 'Commission:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Enter a number:'
+        - var value = '1000'
+        include ../../components/form/form-number
+
+        - var title = 'Sales Volume From:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Enter a number:'
+        - var value = '25000'
+        include ../../components/form/form-number
+
+        - var title = 'Sales Volume To:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Enter a number:'
+        - var value = '125000'
+        include ../../components/form/form-number
+
+
+
+    a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes

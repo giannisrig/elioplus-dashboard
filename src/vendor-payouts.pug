@@ -32,7 +32,60 @@ html(lang="en")
                             div(id='paymentsCommissions' class='tab-content')
                                 include components/cards/card-comissions
                             div(id='payoutSettings' class='tab-content hidden')
-                                h2 Settings
+
+                                div(class='card')
+
+                                    <!----------- Title Start ------------------------------>
+                                    .w-full.flex.flex-col.gap-15px
+                                        h2(class='font-inter font-bold text-2xl') Payout Settings
+                                        .divider
+                                    <!----------- Title End ------------------------------>
+
+                                    div(class='w-full grid grid-cols-1 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'Payment Method:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'deal_available_for'
+                                        - var options = ['Manual', 'Automatic']
+                                        include components/form/form-radio
+
+                                        - var title = 'Payments after (days):'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var label = 'Select number of days:'
+                                        - var options = ['30 days', '10 days', '60 days']
+                                        include components/form/form-select
+
+
+                                    div(class='w-full grid grid-cols-1 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'Payment Notifications:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'annual_sales'
+                                        - var label = 'Toggle to enable'
+                                        include components/form/form-toggle
+
+
+                                    div(class='w-full grid grid-cols-1 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'First Notification Before:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var label = 'Select number of days:'
+                                        - var options = ['5 days', '2 days', '1 day']
+                                        include components/form/form-select
+
+                                        - var title = 'Second Notification Before:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var label = 'Select number of days:'
+                                        - var options = ['2 days', '5 days', '1 day']
+                                        include components/form/form-select
+
+
+                                    a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+
                             div(id='feesTerms' class='tab-content hidden')
                                 include components/cards/card-fees
 

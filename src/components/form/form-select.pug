@@ -1,0 +1,11 @@
+mixin selectDropdown(options)
+    select.bg-transparent.font-semibold
+        each option in options ? options : []
+            option(value=option)= option
+
+div(class='flex flex-col gap-15px w-full')
+    include ../form/form-text
+    div(class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px")
+        label.text-textGray=label
+        +selectDropdown(options)
+

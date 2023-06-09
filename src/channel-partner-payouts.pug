@@ -25,14 +25,49 @@ html(lang="en")
 
                                 div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
                                     a(href='#paymentsCommissions' class='tab-item active') Payments & Commissions
-                                    a(href='#payoutSettings' class='tab-item') Payout Settings
+                                    a(href='#payoutSettings' class='tab-item') Company Payout Settings
                                     a(href='#feesTerms' class='tab-item') Fees & Terms
 
 
                             div(id='paymentsCommissions' class='tab-content')
                                 include components/cards/card-comissions
                             div(id='payoutSettings' class='tab-content hidden')
-                                h2 Settings
+
+                                div(class='card')
+
+                                    <!----------- Title Start ------------------------------>
+                                    .w-full.flex.flex-col.gap-15px
+                                        h2(class='font-inter font-bold text-2xl') Payout Settings
+                                        .divider
+                                    <!----------- Title End ------------------------------>
+
+                                    div(class='w-full grid grid-cols-1 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'Account Type:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'deal_available_for'
+                                        - var options = ['Standard', 'Express', 'Custom']
+                                        include components/form/form-radio
+
+
+                                        - var title = 'Business Type:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'deal_available_for'
+                                        - var options = ['Individual', 'Company', 'Custom']
+                                        include components/form/form-radio
+
+
+                                        - var title = 'Country'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var label = 'Select number of days:'
+                                        - var options = ['United States', 'Canada', 'Greece']
+                                        include components/form/form-select
+
+
+
+                                    a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
                             div(id='feesTerms' class='tab-content hidden')
                                 include components/cards/card-fees
 

@@ -1,0 +1,25 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-2xl') Tier Permissions
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30px')
+
+
+        - var title = 'Deal Registration available for:'
+        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+        - var inputName = 'deal_available_for'
+        - var options = ['Silver', 'Gold', 'Platinum']
+        include ../../components/form/form-radio
+
+        - var title = 'Lead Distribution available for:'
+        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+        - var inputName = 'deal_available_for'
+        - var options = ['Silver', 'Gold', 'Platinum']
+        include ../../components/form/form-radio
+
+
+    a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes

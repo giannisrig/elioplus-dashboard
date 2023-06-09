@@ -771,7 +771,71 @@
                 </div>
               </div>
               <div class="tab-content hidden" id="payoutSettings">
-                <h2>Settings</h2>
+                <div class="card"><!----------- Title Start ------------------------------>
+                  <div class="w-full flex flex-col gap-15px">
+                    <h2 class="font-inter font-bold text-2xl">Payout Settings</h2>
+                    <div class="divider"></div>
+                  </div><!----------- Title End ------------------------------>
+                  <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-30px">
+                    <div class="flex flex-col gap-15px w-full">
+                      <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Payment Method:</span><span class="text-textGray text-sm">Some description about this setting which is more or less the same length as this one which is around 113 chars.</span></div>
+                                          <div class="bg-transparent font-semibold flex items-center gap-10px">
+                                            <div class="flex gap-3px items-center">
+                                              <input type="radio" id="Manual" name="deal_available_for" value="Manual">
+                                              <label class="text-sm font-semibold">Manual</label>
+                                            </div>
+                                            <div class="flex gap-3px items-center">
+                                              <input type="radio" id="Automatic" name="deal_available_for" value="Automatic">
+                                              <label class="text-sm font-semibold">Automatic</label>
+                                            </div>
+                                          </div>
+                    </div>
+                    <div class="flex flex-col gap-15px w-full">
+                      <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Payments after (days):</span><span class="text-textGray text-sm">Some description about this setting which is more or less the same length as this one which is around 113 chars.</span></div>
+                      <div class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
+                        <label class="text-textGray">Select number of days:</label>
+                                            <select class="bg-transparent font-semibold">
+                                              <option value="30 days">30 days</option>
+                                              <option value="10 days">10 days</option>
+                                              <option value="60 days">60 days</option>
+                                            </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-30px">
+                    <div class="flex flex-col gap-15px w-full">
+                      <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Payment Notifications:</span><span class="text-textGray text-sm">Some description about this setting which is more or less the same length as this one which is around 113 chars.</span></div>
+                      <label class="relative inline-flex items-center gap-5px cursor-pointer">
+                        <input class="sr-only peer" type="checkbox" value="" name="annual_sales">
+                        <div class="w-11 h-6 border-blackBlue border peer-focus:outline-none  rounded-full peer  peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[5px] after:left-[5px] after:bg-white after:border-blackBlue after:border after:rounded-full after:h-[15px] after:w-[15px] after:transition-all peer-checked:bg-blue peer-checked:border-blue"></div><span class="text-sm mb-2px font-semibold">Toggle to enable</span>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="w-full grid grid-cols-1 lg:grid-cols-3 gap-30px">
+                    <div class="flex flex-col gap-15px w-full">
+                      <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">First Notification Before:</span><span class="text-textGray text-sm">Some description about this setting which is more or less the same length as this one which is around 113 chars.</span></div>
+                      <div class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
+                        <label class="text-textGray">Select number of days:</label>
+                                            <select class="bg-transparent font-semibold">
+                                              <option value="5 days">5 days</option>
+                                              <option value="2 days">2 days</option>
+                                              <option value="1 day">1 day</option>
+                                            </select>
+                      </div>
+                    </div>
+                    <div class="flex flex-col gap-15px w-full">
+                      <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Second Notification Before:</span><span class="text-textGray text-sm">Some description about this setting which is more or less the same length as this one which is around 113 chars.</span></div>
+                      <div class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
+                        <label class="text-textGray">Select number of days:</label>
+                                            <select class="bg-transparent font-semibold">
+                                              <option value="2 days">2 days</option>
+                                              <option value="5 days">5 days</option>
+                                              <option value="1 day">1 day</option>
+                                            </select>
+                      </div>
+                    </div>
+                  </div><a class="btn bg-blue border-blue text-white hover:bg-blueDark" href="#">Save Changes</a>
+                </div>
               </div>
               <div class="tab-content hidden" id="feesTerms">
                 <div class="card"><!----------- Title Start ------------------------------>
