@@ -20,48 +20,54 @@ html(lang="en")
                         - var btn = 'Read more about the Vendor Resources'
                         include components/text-block.pug
 
-                        div(class='grid grid-cols-3-9 w-full gap-30px')
-                            div(class='card').gap-10px
-                                .flex.gap-15px.flex-col
-                                    h2(class='font-inter font-bold text-2xl') Folders
-                                    .divider
-                                div.flex.flex-col
-                                    -var title='All Files'
-                                    -var files='7 Files'
-                                    -var vendor='Vendor 1'
-                                    include components/content-library/folder-item-vendor
-                                    -var title='Documentation (PDF)'
-                                    -var files='7 Files'
-                                    -var vendor='Vendor 1'
-                                    include components/content-library/folder-item-vendor
-                                    -var title='Email Templates'
-                                    -var files='2 Files'
-                                    -var vendor='Vendor 2'
-                                    include components/content-library/folder-item-vendor
-                                    -var title='Marketing Material'
-                                    -var files='7 Files'
-                                    -var vendor='Vendor 1'
-                                    include components/content-library/folder-item-vendor
-                                    -var title='Sales Material'
-                                    -var files='17 Files'
-                                    -var vendor='Vendor 1'
-                                    include components/content-library/folder-item-vendor
-                                    -var title='New Campaign'
-                                    -var files='12 Files'
-                                    -var vendor='Vendor 1'
-                                    include components/content-library/folder-item-vendor
-                                    -var title='Newsletter Issue'
-                                    -var files='1 File'
-                                    -var vendor='Vendor 1'
-                                    include components/content-library/folder-item-vendor
-                                    -var title='Product Updates'
-                                    -var files='1 File'
-                                    -var vendor='Vendor 1'
-                                    include components/content-library/folder-item-vendor
+                        div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px')
+                            div
+                                div(class='card px-15px lg:px-25px sticky top-0').gap-10px
+                                    .flex.gap-15px.flex-col.w-full
+                                        h2(class='font-inter font-bold text-2xl') Folders
+                                        .divider
+                                    div.flex.flex-col.w-full
+                                        a(href='#' class='hover:text-blue w-max flex md:hidden').items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-folders
+                                            img(src="../assets/images/global/folder.svg" alt="folder Icon" title="folder Icon" width="15" height="15")
+                                            span(class='text-sm sm:text-base-15') Show Folders:
+                                        div(class="flex hidden md:flex").flex-col.w-full.folders
+                                            -var title='All Files'
+                                            -var files='7 Files'
+                                            -var vendor='Vendor 1'
+                                            include components/content-library/folder-item-vendor
+                                            -var title='Documentation (PDF)'
+                                            -var files='7 Files'
+                                            -var vendor='Vendor 1'
+                                            include components/content-library/folder-item-vendor
+                                            -var title='Email Templates'
+                                            -var files='2 Files'
+                                            -var vendor='Vendor 2'
+                                            include components/content-library/folder-item-vendor
+                                            -var title='Marketing Material'
+                                            -var files='7 Files'
+                                            -var vendor='Vendor 1'
+                                            include components/content-library/folder-item-vendor
+                                            -var title='Sales Material'
+                                            -var files='17 Files'
+                                            -var vendor='Vendor 1'
+                                            include components/content-library/folder-item-vendor
+                                            -var title='New Campaign'
+                                            -var files='12 Files'
+                                            -var vendor='Vendor 1'
+                                            include components/content-library/folder-item-vendor
+                                            -var title='Newsletter Issue'
+                                            -var files='1 File'
+                                            -var vendor='Vendor 1'
+                                            include components/content-library/folder-item-vendor
+                                            -var title='Product Updates'
+                                            -var files='1 File'
+                                            -var vendor='Vendor 1'
+                                            include components/content-library/folder-item-vendor
 
-                            div.flex.flex-col.gap-50px.w-full
-                                include components/cards/card-resources-files
-                                include components/content-library/channel-partner-media-items
+                            div.w-full
+                                div.flex.flex-col.gap-50px.w-full
+                                    include components/cards/card-resources-files
+                                    include components/content-library/channel-partner-media-items
 
 
 

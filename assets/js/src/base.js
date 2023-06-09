@@ -80,6 +80,11 @@
             $(this).parent().find('.filters').toggleClass('hidden');
 
         })
+        $('.trigger-folders').on('click', function(e){
+            e.preventDefault();
+            $(this).parent().find('.folders').toggleClass('hidden');
+
+        })
 
         $('.actions-trigger').on('click', function(e){
             e.preventDefault();
