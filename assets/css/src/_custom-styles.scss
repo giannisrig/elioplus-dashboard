@@ -2,6 +2,11 @@
 @import "components/modal";
 @import "components/faq";
 
+svg {
+  width:100%;
+  height:auto;
+}
+
 main {
   margin-left: auto;
   width: 100%;

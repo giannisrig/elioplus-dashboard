@@ -1,0 +1,69 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Vendor Resources | Dashboard | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-channel-partner.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Vendor Resources'
+            include components/header/header-channel-partner.pug
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Vendor Resources'
+                        - var desc = 'Onboarding channel partners is the mechanism that allows your channel partners to have access to the necessary knowledge and material that will help them understand your product quickly and become familiar with the sales and marketing process that must be followed.'
+                        - var btn = 'Read more about the Vendor Resources'
+                        include components/text-block.pug
+
+                        div(class='grid grid-cols-3-9 w-full gap-30px')
+                            div(class='card').gap-10px
+                                .flex.gap-15px.flex-col
+                                    h2(class='font-inter font-bold text-2xl') Folders
+                                    .divider
+                                div.flex.flex-col
+                                    -var title='All Files'
+                                    -var files='7 Files'
+                                    -var vendor='Vendor 1'
+                                    include components/content-library/folder-item-vendor
+                                    -var title='Documentation (PDF)'
+                                    -var files='7 Files'
+                                    -var vendor='Vendor 1'
+                                    include components/content-library/folder-item-vendor
+                                    -var title='Email Templates'
+                                    -var files='2 Files'
+                                    -var vendor='Vendor 2'
+                                    include components/content-library/folder-item-vendor
+                                    -var title='Marketing Material'
+                                    -var files='7 Files'
+                                    -var vendor='Vendor 1'
+                                    include components/content-library/folder-item-vendor
+                                    -var title='Sales Material'
+                                    -var files='17 Files'
+                                    -var vendor='Vendor 1'
+                                    include components/content-library/folder-item-vendor
+                                    -var title='New Campaign'
+                                    -var files='12 Files'
+                                    -var vendor='Vendor 1'
+                                    include components/content-library/folder-item-vendor
+                                    -var title='Newsletter Issue'
+                                    -var files='1 File'
+                                    -var vendor='Vendor 1'
+                                    include components/content-library/folder-item-vendor
+                                    -var title='Product Updates'
+                                    -var files='1 File'
+                                    -var vendor='Vendor 1'
+                                    include components/content-library/folder-item-vendor
+
+                            div.flex.flex-col.gap-50px.w-full
+                                include components/cards/card-resources-files
+                                include components/content-library/channel-partner-media-items
+
+
+
+            include components/footer/footer.pug
+        include components/scripts.pug

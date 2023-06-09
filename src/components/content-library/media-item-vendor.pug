@@ -1,0 +1,14 @@
+<!----------- Media Item Vendor ------------------------------>
+.card.flex-row.justify-between.w-full.px-15px.py-20px.gap-0
+    .flex.flex-row.gap-15px
+        div(class='w-[80px] flex items-center')
+            img(src='../assets/images/file-icons/'+type+'.svg')
+        .flex.flex-col.gap-10px
+            .flex.flex-col
+                h3.text-base.font-semibold=title
+                h4.text-sm.text-textGray 17/05/2023
+            .flex.flex-col
+                h5.text-sm.font-semibold=vendor
+                h6.text-sm.text-textGray View Files
+    a(href='#' class='relative top-5px w-[30px]')
+        img(src='../assets/images/global/download.svg' width="30" height="30")

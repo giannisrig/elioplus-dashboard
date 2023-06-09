@@ -119,12 +119,8 @@ module.exports = {
         '3': '3',
       },
       gridTemplateColumns: {
-        'legal': '9fr 3fr',
         '7-5': '7fr 5fr',
-        'alternative': '8fr 4fr',
-        'company': '1fr 220px',
-        'search': '3fr 9fr',
-        'letters': '1fr 11fr',
+        '3-9': '3fr 9fr',
       },
       width: {
         '1/10': '10%',
