@@ -1,0 +1,158 @@
+mixin checkboxes(cols, inputName, terms)
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 gap-15px lg:grid-cols-'+cols)
+        each term in terms ? terms : []
+            div.flex.gap-3px.items-center
+                input(type="checkbox" id=inputName+term name=inputName value=term)
+                label(for=inputName+term).text-sm.font-semibold=term
+
+mixin industryVerticals(openval, title,inputName, terms)
+    details(class='text-sm w-full bg-gray rounded-8px' open=openval)
+        summary(class='px-10px py-15px lg:p-20px pr-30px lg:pr-40px w-full').flex.gap-7px.font-bold.relative.relative.rounded-4px.cursor-pointer
+            h4.text-lg=title
+        div(class='w-full p-25px border-t border-iconGray')
+            +checkboxes(4, inputName, terms)
+
+
+doctype html
+html(lang="en")
+    head
+        - var title = 'Business Preferences | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Settings'
+            - var breadcrumbsCurrent = 'Business Preferences'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Business Preferences'
+                        - var desc = 'Industries verticals, market specialization, partners programs and business preferences.'
+                        include components/text-block.pug
+
+                        <!----------- Card Start ------------------------------>
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                .w-full.flex.flex-col.gap-5px
+                                    h2(class='font-inter font-bold text-2xl') Industries Selection
+                                    p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            +checkboxes(4, 'industries', [
+                                'Email & Marketing',
+                                'SEO',
+                                'Ad Serving',
+                                'Campaign Management',
+                                'Marketing Automation',
+                                'Content Marketing',
+                                'Surveys & Forms',
+                                'Quotes & orders',
+                                'Document Management',
+                                'Social Media Marketing',
+                                'Event Management',
+                                'Sales Management',
+                                'Engagement Tools'])
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+                        <!----------- Card Start ------------------------------>
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                .w-full.flex.flex-col.gap-5px
+                                    h2(class='font-inter font-bold text-2xl') Partner Programs Selection
+                                    p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+
+                            +checkboxes(4, 'partner_programs', [
+                                'White Label',
+                                'Reseller',
+                                'Value Added Reseller (VAR)',
+                                'Distributor',
+                                'API Program (Developers)',
+                                'System Integrator (SI)',
+                                'Managed Service Provider (MSP)',
+                              ])
+
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+                        <!----------- Card Start ------------------------------>
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                .w-full.flex.flex-col.gap-5px
+                                    h2(class='font-inter font-bold text-2xl') Market Specialization
+                                    p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            +checkboxes(4, 'partner_programs', [
+                                'Consumers (B2C)',
+                                'Small office - home office: SOHO (B2B)',
+                                'Small & mid-sized businesses (B2B)',
+                                'Enterprise (B2B)',
+
+                            ])
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+                        <!----------- Card Start ------------------------------>
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                .w-full.flex.flex-col.gap-5px
+                                    h2(class='font-inter font-bold text-2xl') API Selection
+                                    p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            +checkboxes(5, 'partner_programs', [
+                                'Business Services',
+                                'Media & Entertainment',
+                                'Retail & eCommerce',
+                                'Geolocation',
+                                'Social',
+                            ])
+
+                        <!----------- Card Start ------------------------------>
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                .w-full.flex.flex-col.gap-5px
+                                    h2(class='font-inter font-bold text-2xl') Industries Verticals
+                                    p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            .w-full.flex.flex-col.gap-20px
+                                +industryVerticals(true, 'Sales & Marketing', 'sales', ['Email & Marketing','SEO','Ad Serving','Campaign Management','Marketing Automation','Content Marketing','Surveys & Forms','Quotes & orders', 'Document Management', 'Social Media Marketing', 'Event Management', 'Sales Management', 'Engagement Tools'])
+                                +industryVerticals(false, 'Customer', 'customer', ['Email & Marketing','SEO','Ad Serving','Campaign Management','Marketing Automation','Content Marketing','Surveys & Forms','Quotes & orders', 'Document Management', 'Social Media Marketing', 'Event Management', 'Sales Management', 'Engagement Tools'])
+                                +industryVerticals(false, 'Project Management', 'project', ['Email & Marketing','SEO','Ad Serving','Campaign Management','Marketing Automation','Content Marketing','Surveys & Forms','Quotes & orders', 'Document Management', 'Social Media Marketing', 'Event Management', 'Sales Management', 'Engagement Tools'])
+                                +industryVerticals(false, 'Operations & Workflow', 'operations', ['Email & Marketing','SEO','Ad Serving','Campaign Management','Marketing Automation','Content Marketing','Surveys & Forms','Quotes & orders', 'Document Management', 'Social Media Marketing', 'Event Management', 'Sales Management', 'Engagement Tools'])
+                                +industryVerticals(false, 'Tracking & Measurement', 'tracking', ['Email & Marketing','SEO','Ad Serving','Campaign Management','Marketing Automation','Content Marketing','Surveys & Forms','Quotes & orders', 'Document Management', 'Social Media Marketing', 'Event Management', 'Sales Management', 'Engagement Tools'])
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
