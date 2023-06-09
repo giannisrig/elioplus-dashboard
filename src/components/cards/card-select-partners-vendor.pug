@@ -1,0 +1,74 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    h2(class='font-inter font-bold text-2xl') 1. Select Partners
+    <!----------- Title End ------------------------------>
+
+
+    <!----------- Filters Start ------------------------------>
+
+    div(class='flex justify-between w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        div(class="flex gap-15px flex-col md:flex-row md:gap-10px")
+            a(href='#' class='hover:text-blue').flex.items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-filters
+                img(src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+                span(class='text-sm sm:text-base-15') Partner Filters
+
+
+            div(class='filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px').items-center.text-textGray.font-semibold.text-base-15
+
+                div(class='card-filter w-full lg:w-max px-5px')
+                    label(for='tiers' class='w-max') Filter Partners by tier:
+                    select(id='tiers' name='opportunities').bg-transparent.text-blackBlue.font-bold
+                        option All Tiers
+                        option Silver
+                        option Gold
+                        option Platinum
+
+                div(class='card-filter w-full lg:w-max px-5px')
+                    label(for='opportunities' class='w-max') Vendor:
+                    select(id='opportunities' name='opportunities').bg-transparent.text-blackBlue.font-bold
+                        option Partners
+                        option Partner 1
+                        option Partner 2
+                        option Partner 3
+
+                div(class='card-filter w-full md:w-[380px]')
+                    input(placeholder="Type a name, email, phone to search for a partner...").grow.text-sm.outline-none
+                    img(src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+
+
+
+
+    <!----------- Filters End ------------------------------>
+    div(class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px")
+        -var name='Partner Name 1'
+        -var files='7 Files'
+        include ../../components/content-library/partner-select
+        -var name='Partner Name 2'
+        -var files='7 Files'
+        include ../../components/content-library/partner-select
+        -var name='Partner Name 3'
+        -var files='2 Files'
+        include ../../components/content-library/partner-select
+        -var name='Partner Name 4'
+        -var files='3 Files'
+        include ../../components/content-library/partner-select
+        -var name='Partner Name 5'
+        -var files='7 Files'
+        include ../../components/content-library/partner-select
+        -var name='Partner Name 6'
+        -var files='7 Files'
+        include ../../components/content-library/partner-select
+        -var name='Partner Name 7'
+        -var files='2 Files'
+        include ../../components/content-library/partner-select
+        -var name='Partner Name 8'
+        -var files='3 Files'
+        include ../../components/content-library/partner-select
+
+    div(class='flex justify-between w-full')
+        a(href='#' class='btn border-blackBlue bg-white text-blackBlue hover:text--blue hover:border-blue text-sm')
+            span Load More Partners
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark text-sm')
+            span Continue with selected partners

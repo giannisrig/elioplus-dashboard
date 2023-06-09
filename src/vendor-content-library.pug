@@ -33,24 +33,24 @@ html(lang="en")
 
                                 div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px tabs-section')
                                     div
-                                        include components/content-library/channel-partner-folders
+                                        include components/content-library/vendor-folders
 
                                     div.w-full
                                         div.flex.flex-col.gap-50px.w-full
                                             include components/cards/card-content-library-my-files
                                             div(id='allFiles' class='tab-content')
-                                                include components/content-library/channel-partner-media-items
+                                                include components/content-library/vendor-media-items
                                             div(id='receivedFiles' class='tab-content hidden')
-                                                include components/content-library/channel-partner-media-items-receieved
+                                                include components/content-library/vendor-media-items
                                             div(id='sentFiles' class='tab-content hidden')
-                                                include components/content-library/channel-partner-media-items-sent
+                                                include components/content-library/vendor-media-items
                                             include components/cards/card-table-footer
 
                             div(id='partnerFiles' class='tab-content hidden')
                                 include components/content-library/partner-files
                             div(id='sendFile' class='tab-content hidden')
                                 div.w-full.flex.flex-col.gap-50px
-                                    include components/cards/card-select-partners
+                                    include components/cards/card-select-partners-vendor
                                     include components/cards/card-send-files
 
                         <!----------- Content End ------------------------------>
