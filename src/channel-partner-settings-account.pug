@@ -1,0 +1,177 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Account Settings | Dashboard | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-channel-partner.pug
+        main
+            - var breadcrumbsParent = 'Settings'
+            - var breadcrumbsCurrent = 'Account Settings'
+            include components/header/header-channel-partner.pug
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Account Settings'
+                        - var desc = 'General account information and basic company profile information.'
+                        include components/text-block.pug
+
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                h2(class='font-inter font-bold text-2xl') Basic Information
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+
+                                - var title = 'Company Name:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your company name'
+                                include components/form/form-input
+
+
+                                - var title = 'Username:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your username'
+                                include components/form/form-input
+
+                                - var title = 'Email Address:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your email address'
+                                include components/form/form-input
+
+                                - var title = 'Company Email Address:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter the company email'
+                                include components/form/form-input
+
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                h2(class='font-inter font-bold text-2xl') Change Password
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+
+                                - var title = 'Current Password:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your company name'
+                                - var value = '123456789'
+                                include components/form/form-password
+
+
+                                - var title = 'New Password:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your new password'
+                                - var value = null
+                                include components/form/form-password
+
+                                - var title = 'Repeat Password:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Repeat your new password'
+                                - var value = null
+                                include components/form/form-password
+
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+
+
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                h2(class='font-inter font-bold text-2xl') Contact Information
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+
+                                - var title = 'Country:'
+                                - var desc = 'Some short description about this setting.'
+                                - var label = 'Select a country:'
+                                - var options = ['United States', 'Greece', 'Canada']
+                                include components/form/form-select
+
+
+                                - var title = 'Address:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your full address'
+                                - var value = null
+                                include components/form/form-input
+
+                                - var title = 'Phone:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your phone number'
+                                include components/form/form-input
+
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                h2(class='font-inter font-bold text-2xl') Company Profile
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            div(class='w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-30px')
+
+
+                                - var title = 'Upload your Logo:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your product demo url'
+                                - var value = null
+                                include components/form/form-upload
+
+                                - var title = 'Product Demo Link:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your product demo url'
+                                - var value = null
+                                include components/form/form-input
+
+                                - var title = 'Website:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your website url'
+                                include components/form/form-input
+
+                            div(class='w-full grid grid-cols-1 md:grid-cols-2 gap-30px')
+
+
+                                - var title = 'Overview:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Partner program overview: We are looking for resellers in Africa and we promise the best support and training experience'
+                                include components/form/form-textarea
+
+                                - var title = 'Description:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Partner program overview: We are looking for resellers in Africa and we promise the best support and training experience'
+                                include components/form/form-textarea
+
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
