@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Content Library | Partner Management | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Content Library'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Content Library'
+                        - var desc = 'Distributing material to your channel partners and receiving files are very important in order to work productively with your network. Through Elioplus, we cover all the different ways of distributing material to your partners. You can send material or multiple materials to one channel partner, to more channel partners, to groups of channel partners that you have created and to specific tiers that you have created too.'
+                        - var btn = 'Read more about Content Library'
+                        include components/text-block.pug
+
+                        div(class='tabs-section flex flex-col gap-30px')
+                            div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+                                div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+                                    a(href='#myFiles' class='tab-item active') My Files
+                                    a(href='#partnerFiles' class='tab-item') Partner Files
+                                    a(href='#sendFile' class='tab-item') Send new file
+
+
+                            div(id='myFiles' class='tab-content')
+
+                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px tabs-section')
+                                    div
+                                        include components/content-library/channel-partner-folders
+
+                                    div.w-full
+                                        div.flex.flex-col.gap-50px.w-full
+                                            include components/cards/card-content-library-my-files
+                                            div(id='allFiles' class='tab-content')
+                                                include components/content-library/channel-partner-media-items
+                                            div(id='receivedFiles' class='tab-content hidden')
+                                                include components/content-library/channel-partner-media-items-receieved
+                                            div(id='sentFiles' class='tab-content hidden')
+                                                include components/content-library/channel-partner-media-items-sent
+                                            include components/cards/card-table-footer
+
+                            div(id='partnerFiles' class='tab-content hidden')
+                                include components/content-library/partner-files
+                            div(id='sendFile' class='tab-content hidden')
+                                div.w-full.flex.flex-col.gap-50px
+                                    include components/cards/card-select-partners
+                                    include components/cards/card-send-files
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
