@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Collaboration | Partner Management | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Collaboration'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Collaboration'
+                        - var desc = 'Connect your CRM system with Elioplus PRM to automatically transfer data between your channel partners and your company in order to eliminate manual processes and critical errors. The Elioplus PRM integration with your CRM can help transfer data for the Deal Registration and Lead Distribution features.'
+                        - var btn = 'Read more about Collaboration'
+                        include components/text-block.pug
+
+                        div(class='tabs-section flex flex-col gap-30px')
+                            div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+                                div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+                                    a(href='#partnersList' class='tab-item active') Partners List
+                                    a(href='#groups' class='tab-item') Groups
+
+
+                            div(id='partnersList' class='tab-content')
+                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px')
+                                    div
+                                        include components/cards/card-collaboration-partners
+
+                                    div.w-full
+                                        div.flex.flex-col.gap-50px.w-full
+                                            include components/cards/card-chat-1-1
+                            div(id='groups' class='tab-content hidden')
+
+                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px')
+                                    div
+                                        include components/cards/card-collaboration-groups
+
+                                    div.w-full
+                                        div.flex.flex-col.gap-50px.w-full
+                                            include components/cards/card-chat-group
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
