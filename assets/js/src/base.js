@@ -16,8 +16,13 @@
 
             $(id).removeClass('hidden').addClass('opened');
 
+        });
 
-
+        $('#triggerClose, #overlay').on('click', function (e) {
+            e.preventDefault();
+            blurItemsMenu.removeClass('blur-md overflow-hidden');
+            overlay.addClass('hidden');
+            $(document).trigger('overlayClicked');
         });
 
         $(document).on('overlayClicked', function(){
