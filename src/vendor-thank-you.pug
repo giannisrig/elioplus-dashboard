@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Successful Payment | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Deal Registration'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        .flex.w-full.justify-center
+                            div(class='w-full md:w-[730px]').flex.flex-col.gap-50px
+
+                                div(class='text-center gap-5px lg:gap-10px').flex.flex-col.items-center.w-full
+
+                                    a( class="w-[70px] md:w-[120px] pb-5px block header-logo" href="../templates/index.html")
+                                        img(class="w-full h-auto" src="../assets/images/global/thank-you.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52")
+
+                                    h1(class='text-2.5xl  font-bold font-inter') Thank you for your payment
+                                    p(class='text-base text-center w-full') We have successfully processed  your payment and your subscription has started. You can now start using the Elioplus Partner Recruitment - Automate.
+
+                                <!----- Partner Recruitment Automate ----->
+                                div(class='card gap-15px')
+                                    .flex.flex-col.gap-5px
+                                        div(class='flex items-center gap-5px')
+                                            div(class='w-[12px] h-[12px] rounded-full bg-green')
+                                            div(class='lead-[14px] text-sm text-textGray') Enabled & Active
+                                        h3(class='font-inter font-bold text-xl') Partner Recruitment Automate
+                                    .flex.gap-5px
+                                        div(class='text-[13px] font-semibold text-blue p-[8px] bg-gray rounded-[6px]') Startup $399
+                                        div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Growth $419
+                                        div(class='text-[13px] font-semibold text-iconGray2 p-[8px] bg-gray rounded-[6px]') Enterprise $1200+
+                                    p(class='text-sm')
+                                        | Get matched and recruit the best partners with the Elioplus Partner Recruitment Automate service.
+                                    .flex.w-full.gap-15px
+                                        a(href='#' class='btn border-iconGray2 text-iconGray2 hover:text-blue hover:border-blue text-sm') Cancel Subscription
+                                        a(href='#' class='btn bg-white text-blue border-blue hover:border-blueDark text-sm') Upgrade Plan
+                                        a(href='#' class='btn bg-blue text-white hover:bg-blueDark text-sm') View Partner Recruitment
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
