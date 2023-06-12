@@ -1,0 +1,113 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Team Management | Team & Integrations | Dashboard | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Team & Integrations'
+            - var breadcrumbsCurrent = 'Team Management'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Edit Team Member'
+                        - var desc = 'General account information and basic company profile information.'
+                        include components/text-block.pug
+
+
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                h2(class='font-inter font-bold text-2xl') Basic Information
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            div(class='w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-30px')
+
+
+                                - var title = 'Activate Account:'
+                                - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                - var inputName = 'activate-account'
+                                - var label = 'Toggle to enable'
+                                include components/form/form-toggle
+
+                            div(class='w-full grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-50px')
+
+                                - var title = 'First Name:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your first name...'
+                                - var value = null
+                                include components/form/form-input
+
+                                - var title = 'Last Name:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your last name...'
+                                include components/form/form-input
+
+                                - var title = 'Email Address:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your email address...'
+                                include components/form/form-input
+
+                                - var title = 'Profile Photo:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your product demo url'
+                                - var value = null
+                                include components/form/form-upload
+
+                                - var title = 'Position:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your company position...'
+                                include components/form/form-input
+
+                                - var title = 'Team Role:'
+                                - var desc = 'Some short description about this setting.'
+                                - var label = 'Select user role:'
+                                - var options = ['CTO', 'CEO', 'CFO']
+                                include components/form/form-select
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+
+
+
+
+                        div(class='card')
+
+                            <!----------- Title Start ------------------------------>
+                            .w-full.flex.flex-col.gap-15px
+                                h2(class='font-inter font-bold text-2xl') Change Password
+                                .divider
+                            <!----------- Title End ------------------------------>
+
+                            div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+                                - var title = 'New Password:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Enter your new password'
+                                - var value = null
+                                include components/form/form-password
+
+                                - var title = 'Repeat Password:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Repeat your new password'
+                                - var value = null
+                                include components/form/form-password
+
+
+
+                            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes
+
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug

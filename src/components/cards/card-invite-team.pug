@@ -1,0 +1,23 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-2xl') Invite a new user
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full flex gap-30px')
+
+        - var title = 'Email Address:'
+        - var desc = 'Team member email'
+        - var placeholder = 'Enter your email address'
+        include ../../components/form/form-input
+
+        - var title = 'Select a Role:'
+        - var desc = 'Team member role.'
+        - var label = 'Select user role:'
+        - var options = ['Channel Manager', 'CEO', 'CTO', 'CFO']
+        include ../../components/form/form-select
+
+        div.h-full.flex.items-end
+            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Send invitation
