@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Team Management | Team & Integrations | Dashboard | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-channel-partner.pug
+        main
+            - var breadcrumbsParent = 'Team & Integrations'
+            - var breadcrumbsCurrent = 'Team Management'
+            include components/header/header-channel-partner.pug
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Team Management'
+                        - var desc = 'The vast majority of vendors choose to create different tiers for their channel partners in order to create incentives for the top performing partners. These incentives may come in the form of payouts or access to specific areas in the partner portal. While many vendors opt in for 3 tiers such as Silver, Gold and Platinum you can create unlimited tiers on the Elioplus PRM to better manage your partners and commissions.'
+                        - var btn = 'Read more about Team Management'
+                        include components/text-block.pug
+
+                        div(class='grid grid-cols-8-4 w-full gap-30px')
+                            include components/cards/card-invite-team
+                            include components/cards/card-team-overview
+
+
+                        include components/cards/card-manage-team
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
