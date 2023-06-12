@@ -1,0 +1,23 @@
+.w-full.flex.flex-col.gap-30px
+    .w-full.flex.flex-col.gap-10px
+        h2(class='font-inter font-bold text-2xl') Vendors you might be interested in
+        p You can see some recommended vendors based on your business preferences.
+
+    div(class='grid grid-cols-2 gap-20px')
+        -var img = '../assets/images/partner-directory/company-vendor.png'
+        -var name = 'Loqate a GBG solution'
+        include ../../components/partner-directory/company
+        -var img = '../assets/images/partner-directory/company-vendor.png'
+        -var name = 'Loqate a GBG solution'
+        include ../../components/partner-directory/company
+        -var img = '../assets/images/partner-directory/company-vendor.png'
+        -var name = 'Loqate a GBG solution'
+        include ../../components/partner-directory/company
+        -var img = '../assets/images/partner-directory/company-vendor.png'
+        -var name = 'Loqate a GBG solution'
+        include ../../components/partner-directory/company
+
+    div(class='w-full flex items-center gap-10px')
+        div More partner programs offered by IT Vendors:
+        a( href='#' class='btn border-blue text-blue')
+            span Search & Browse Vendor Companies

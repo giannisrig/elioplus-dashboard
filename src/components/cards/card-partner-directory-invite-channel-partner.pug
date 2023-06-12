@@ -1,0 +1,27 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        .w-full.flex.flex-col.gap-10px
+            h2(class='font-inter font-bold text-2xl') Invite your Tech Partners
+            p Use the following form to send email invitations to your tech partners to join your partner network. You can bulk import partners with email addresses from a csv file.
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full flex flex-col gap-30px')
+
+        - var title = 'Email Addresses:'
+        - var desc = 'Comma separated emails...'
+        - var placeholder = 'Enter email addresses...'
+        include ../../components/form/form-input
+
+        - var title = 'Import CSV:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter a description...'
+        include ../../components/form/file
+
+
+        a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark w-full justify-center')
+            img(src='../assets/images/global/invite-white.svg')
+            span Send Partner Invitations
+
