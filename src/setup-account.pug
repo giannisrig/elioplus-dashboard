@@ -1,0 +1,372 @@
+mixin checkboxes(cols, inputName, terms)
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 gap-15px lg:grid-cols-'+cols)
+        each term in terms ? terms : []
+            div.flex.gap-3px.items-center
+                input(type="checkbox" id=inputName+term name=inputName value=term)
+                label(for=inputName+term).text-sm.font-semibold=term
+
+mixin industryVerticals2(openval, title,inputName, terms)
+    details(class='text-sm w-full bg-gray rounded-8px' open=openval)
+        summary(class='px-10px py-15px lg:p-20px pr-30px lg:pr-40px w-full').flex.gap-7px.font-bold.relative.relative.rounded-4px.cursor-pointer
+            h4.text-base=title
+        div(class='w-full p-25px border-t border-iconGray')
+            +checkboxes(3, inputName, terms)
+
+doctype html
+html(lang="en")
+    head
+        - var title = 'Set up your Account | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+
+        main
+
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        .flex.w-full.justify-center
+                            div(class='w-full md:w-[800px]').flex.flex-col.gap-30px
+                                div(class='text-center gap-5px lg:gap-10px').flex.flex-col.items-center.w-full
+                                    h1(class='text-2.5xl  font-bold font-inter') Complete your registration
+                                    p(class='text-base text-center w-full') It’s time to setup your Elioplus account and get started with our services.
+
+
+                                div(id='steps' class='px-10px lg:px-25px').flex.items-center.justify-between.w-full.relative
+                                    a(id='triggerStep1' href='#step1').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2.active
+                                        div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
+                                        h4(class='text-sm lg:text-base').font-semibold.text-textGray Company Information
+                                    a(id='triggerStep2' href='#step2').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
+                                        div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
+                                        h4(class='text-sm lg:text-base').font-semibold.text-textGray Business Interests
+                                    a(id='triggerStep3' href='#step3').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
+                                        div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
+                                        h4(class='text-sm lg:text-base').font-semibold.text-textGray Industry Products
+                                    a(id='triggerStep4' href='#step4').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
+                                        div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
+                                        h4(class='text-sm lg:text-base').font-semibold.text-textGray Profile Descriptions
+
+                                form(method='POST' class='w-full card')
+
+                                    .w-full.flex.flex-col.gap-30px
+
+                                        div(id='step1').w-full.flex.flex-col.gap-30px.step-content.active
+
+                                            <!----------- Title Start ------------------------------>
+                                            .w-full.flex.flex-col.gap-15px
+                                                h2(class='font-inter font-bold text-2xl') Step <span class='text-blue'>1</span> of 4: Company Information
+                                                .divider
+                                            <!----------- Title End ------------------------------>
+
+                                            - var title = 'Select your company type:'
+                                            - var desc = 'Select Vendor if you offer unique products and looking for channel partners. Choose Channel Partner if you are a local IT company or service provider that offers software and cloud services and third party products.'
+                                            - var options = ['I am a Channel Partner', 'I am a Vendor']
+                                            - var inputName ='company_type'
+                                            include components/form/form-radio
+
+                                            div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-30px gap-x-80px')
+
+
+                                                - var title = 'Company Name:'
+                                                - var desc = 'Some short description about this setting.'
+                                                - var placeholder = 'Enter your company name...'
+                                                include components/form/form-input
+
+                                                - var title = 'Company email:'
+                                                - var desc = 'Some short description about this setting.'
+                                                - var placeholder = 'Enter your email address...'
+                                                include components/form/form-input
+
+
+                                                - var title = 'Country:'
+                                                - var desc = 'Some short description about this setting.'
+                                                - var label = 'Select a country:'
+                                                - var options = ['United States', 'Greece', 'Canada']
+                                                include components/form/form-select
+
+                                                - var title = 'Address:'
+                                                - var desc = 'Some short description about this setting.'
+                                                - var placeholder = 'Enter your address...'
+                                                include components/form/form-input
+
+                                                - var title = 'Phone:'
+                                                - var desc = 'Some short description about this setting.'
+                                                - var placeholder = 'Enter your phone...'
+                                                include components/form/form-input
+
+                                                - var title = 'Company email:'
+                                                - var desc = 'Some short description about this setting.'
+                                                - var placeholder = 'Enter your website...'
+                                                include components/form/form-input
+
+                                                - var title = 'Profile Photo:'
+                                                - var desc = 'Some short description about this setting.'
+                                                - var placeholder = 'Enter your product demo url'
+                                                - var value = null
+                                                include components/form/form-upload
+
+                                            .w-full.flex.justify-end.gap-20px
+
+                                                a(href='#triggerStep2' class='step-nav-btn btn large font-bold text-sm bg-blue text-white justify-center')
+                                                    span Next Step
+
+
+                                        div(id='step2' class='flex hidden').w-full.flex-col.gap-30px.step-content
+
+                                            <!----------- Title Start ------------------------------>
+                                            .w-full.flex.flex-col.gap-15px
+                                                h2(class='font-inter font-bold text-2xl') Step <span class='text-blue'>2</span> of 4: Business Interests
+                                                .divider
+                                            <!----------- Title End ------------------------------>
+
+                                            div(class='table-container')
+
+                                                .w-full.flex.flex-col.gap-0
+
+                                                    .w-full.flex.flex-col.gap-5px.p-15px
+                                                        h2(class='font-inter font-bold text-2xl') Industries*
+                                                        p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                                    .divider
+
+                                                    .p-15px
+                                                        +checkboxes(3, 'industries', [
+                                                            'Email & Marketing',
+                                                            'SEO',
+                                                            'Ad Serving',
+                                                            'Campaign Management',
+                                                            'Marketing Automation',
+                                                            'Content Marketing',
+                                                            'Surveys & Forms',
+                                                            'Quotes & orders',
+                                                            'Document Management',
+                                                            'Social Media Marketing',
+                                                            'Event Management',
+                                                            'Sales Management',
+                                                            'Engagement Tools'])
+
+                                            div(class='table-container')
+
+                                                .w-full.flex.flex-col.gap-0
+
+                                                    .w-full.flex.flex-col.gap-5px.p-15px
+                                                        h2(class='font-inter font-bold text-2xl') Partner Programs*
+                                                        p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                                    .divider
+
+                                                    .p-15px
+                                                        +checkboxes(3, 'partner_programs', [
+                                                            'White Label',
+                                                            'Reseller',
+                                                            'Value Added Reseller (VAR)',
+                                                            'Distributor',
+                                                            'API Program (Developers)',
+                                                            'System Integrator (SI)',
+                                                            'Managed Service Provider (MSP)',
+                                                        ])
+
+                                            div(class='table-container')
+
+                                                .w-full.flex.flex-col.gap-0
+
+                                                    .w-full.flex.flex-col.gap-5px.p-15px
+                                                        h2(class='font-inter font-bold text-2xl') Market Specialization*
+                                                        p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                                    .divider
+
+                                                    .p-15px
+                                                        +checkboxes(2, 'partner_programs', [
+                                                            'Consumers (B2C)',
+                                                            'Small office - home office: SOHO (B2B)',
+                                                            'Small & mid-sized businesses (B2B)',
+                                                            'Enterprise (B2B)',
+
+                                                        ])
+
+
+                                            div(class='table-container')
+
+                                                .w-full.flex.flex-col.gap-0
+
+                                                    .w-full.flex.flex-col.gap-5px.p-15px
+                                                        h2(class='font-inter font-bold text-2xl') API Category Selection
+                                                        p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                                    .divider
+
+                                                    .p-15px
+                                                        +checkboxes(3, 'partner_programs', [
+                                                            'Business Services',
+                                                            'Media & Entertainment',
+                                                            'Retail & eCommerce',
+                                                            'Geolocation',
+                                                            'Social',
+                                                        ])
+
+
+                                            div(class='table-container')
+
+                                                .w-full.flex.flex-col.gap-0
+
+                                                    .w-full.flex.flex-col.gap-5px.p-15px
+                                                        h2(class='font-inter font-bold text-2xl') Integrations/Products*
+                                                        p.text-textGray.text-base-15 Industries verticals, market specialization, partners programs and business preferences.
+                                                    .divider
+
+                                                    input(class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue rounded-30px w-max-[360px] px-15px h-[35px] outline-0" placeholder='Type the name of the integration that you want to use')
+
+
+
+                                            .w-full.flex.justify-end.gap-20px
+
+                                                a(href='#triggerStep1' class='step-nav-btn btn large font-bold text-sm justify-center text-blue')
+
+                                                    span Previous Step
+
+                                                a(href='#triggerStep3' class='step-nav-btn btn large font-bold text-sm bg-blue text-white justify-center')
+                                                    span Next Step
+
+
+                                        div(id='step3' class='flex hidden').w-full.flex-col.gap-30px.step-content
+
+                                            <!----------- Title Start ------------------------------>
+                                            .w-full.flex.flex-col.gap-15px
+                                                h2(class='font-inter font-bold text-2xl') Step <span class='text-blue'>3</span> of 4: Industry Products
+                                                .divider
+                                            <!----------- Title End ------------------------------>
+
+                                            div(class='table-container')
+
+                                                .w-full.flex.flex-col.gap-0
+
+                                                    .w-full.flex.flex-col.gap-5px.p-15px
+                                                        h2(class='font-inter font-bold text-2xl') Industries Verticals*
+                                                        p.text-textGray.text-base-15 Select up to 15max industry verticals that apply to your preferable products.
+                                                    .divider
+
+                                                    .p-15px
+
+                                                        .w-full.flex.flex-col.gap-20px
+                                                            +industryVerticals2(true, 'Sales & Marketing', 'sales', [
+                                                                'Email & Marketing',
+                                                                'SEO',
+                                                                'Ad Serving',
+                                                                'Campaign Management',
+                                                                'Marketing Automation',
+                                                                'Content Marketing',
+                                                                'Surveys & Forms',
+                                                                'Quotes & orders',
+                                                                'Document Management',
+                                                                'Social Media Marketing',
+                                                                'Event Management',
+                                                                'Sales Management',
+                                                                'Engagement Tools'])
+                                                            +industryVerticals2(false, 'Customer', 'customer', [
+                                                                'Email & Marketing',
+                                                                'SEO',
+                                                                'Ad Serving',
+                                                                'Campaign Management',
+                                                                'Marketing Automation',
+                                                                'Content Marketing',
+                                                                'Surveys & Forms',
+                                                                'Quotes & orders',
+                                                                'Document Management',
+                                                                'Social Media Marketing',
+                                                                'Event Management',
+                                                                'Sales Management',
+                                                                'Engagement Tools'])
+                                                            +industryVerticals2(false, 'Project Management', 'project', [
+                                                                'Email & Marketing',
+                                                                'SEO',
+                                                                'Ad Serving',
+                                                                'Campaign Management',
+                                                                'Marketing Automation',
+                                                                'Content Marketing',
+                                                                'Surveys & Forms',
+                                                                'Quotes & orders',
+                                                                'Document Management',
+                                                                'Social Media Marketing',
+                                                                'Event Management',
+                                                                'Sales Management',
+                                                                'Engagement Tools'])
+                                                            +industryVerticals2(false, 'Operations & Workflow', 'operations', [
+                                                                'Email & Marketing',
+                                                                'SEO',
+                                                                'Ad Serving',
+                                                                'Campaign Management',
+                                                                'Marketing Automation',
+                                                                'Content Marketing',
+                                                                'Surveys & Forms',
+                                                                'Quotes & orders',
+                                                                'Document Management',
+                                                                'Social Media Marketing',
+                                                                'Event Management',
+                                                                'Sales Management',
+                                                                'Engagement Tools'])
+                                                            +industryVerticals2(false, 'Tracking & Measurement', 'tracking', [
+                                                                'Email & Marketing',
+                                                                'SEO',
+                                                                'Ad Serving',
+                                                                'Campaign Management',
+                                                                'Marketing Automation',
+                                                                'Content Marketing',
+                                                                'Surveys & Forms',
+                                                                'Quotes & orders',
+                                                                'Document Management',
+                                                                'Social Media Marketing',
+                                                                'Event Management',
+                                                                'Sales Management',
+                                                                'Engagement Tools'])
+
+
+                                            .w-full.flex.justify-end.gap-20px
+
+                                                a(href='#triggerStep2' class='step-nav-btn btn large font-bold text-sm justify-center text-blue')
+
+                                                    span Previous Step
+
+                                                a(href='#triggerStep4' class='step-nav-btn btn large font-bold text-sm bg-blue text-white justify-center')
+                                                    span Next Step
+
+                                        div(id='step4' class='flex hidden').w-full.flex-col.gap-30px.step-content
+
+                                            <!----------- Title Start ------------------------------>
+                                            .w-full.flex.flex-col.gap-15px
+                                                h2(class='font-inter font-bold text-2xl') Step <span class='text-blue'>4</span> of 4: Company & partner program descriptions
+                                                .divider
+                                            <!----------- Title End ------------------------------>
+
+                                            .w-full.flex.flex-col.gap-30px
+
+                                                - var title = 'Company Overview*'
+                                                - var desc = 'Describe your company what yo do and what you offer. This company overview will be displayed in your company’s public profile and will be visible by everyone.'
+                                                - var placeholder = 'Enter your text here...'
+                                                include components/form/form-textarea
+
+                                                - var title = 'Partner Program Description*'
+                                                - var desc = 'Describe your partner program, focus on the benefits of your program and any mandatory requirements that you might have. This description will be displayed in your company’s public profile and will be visible by everyone.'
+                                                - var placeholder = 'Enter your text here...'
+                                                include components/form/form-textarea
+
+                                                div.flex.gap-3px.items-center.w-full
+                                                    input(type="checkbox" id='consent' name='consent' value='consent')
+                                                    label(for='consent').text-sm.font-semibold.flex.gap-3px I have read and consent to the <a href='#' class='text-blue'>Privacy Policy</a> & the <a href='#' class='text-blue'>Terms of Use</a .
+
+                                            .w-full.flex.justify-end.gap-20px
+
+                                                a(href='#triggerStep2' class='step-nav-btn btn large font-bold text-sm justify-center text-blue')
+
+                                                    span Previous Step
+
+                                                button(type='submit' class='step-nav-btn btn large font-bold text-sm bg-blue text-white justify-center')
+                                                    span Complete Registration
+
+
+
+
+
+
+                        <!----------- Content End ------------------------------>
+
+
+        include components/scripts.pug

@@ -102,6 +102,24 @@
 
         });
 
+        $('.stepTab').on('click', function(e){
+            e.preventDefault();
+            let id = $(this).attr('href')
+            let el = $(id);
+
+            $('.step-content').addClass('hidden');
+            $('.stepTab.active').removeClass('active');
+            $(this).addClass('active');
+            el.removeClass('hidden');
+        })
+
+        $('.step-nav-btn').on('click', function(e){
+            e.preventDefault();
+            let id = $(this).attr('href')
+            let el = $(id);
+            el.trigger('click');
+        })
+
 
     });
 

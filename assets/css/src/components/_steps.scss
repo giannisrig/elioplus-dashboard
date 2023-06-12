@@ -1,0 +1,38 @@
+#steps {
+
+  &::before {
+    content:'';
+    display: block;
+    position: absolute;
+    top:14px;
+    left: 5%;
+    width: 90%;
+    background-color: #B3C7EB;
+    height: 2px;
+  }
+
+  .stepTab {
+    cursor: pointer;
+
+    h4 {
+      transition: 0.2s ease-in;
+    }
+
+    &.active,
+    &:hover,
+    &:focus,
+    &:active {
+      h4 {
+        color:#002E47!important;
+      }
+    }
+
+    &.active {
+      .circle {
+        background-color:#39B4EF!important;
+      }
+    }
+
+  }
+
+}
