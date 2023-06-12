@@ -1,0 +1,27 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        .w-full.flex.flex-col.gap-10px
+            h2(class='font-inter font-bold text-2xl') Invite Companies to your Partner Portal
+            p Use the following form to send email invitations to your partners to join your partner portal. You can bulk import email address from a csv file.
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-5-7 gap-30px')
+
+        - var title = 'Email Addresses:'
+        - var desc = 'Comma separated emails...'
+        - var placeholder = 'Enter email addresses...'
+        include ../../components/form/form-input
+
+        - var title = 'Import CSV:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter a description...'
+        include ../../components/form/file
+
+
+        div.h-full.flex.items-end
+            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark')
+                img(src='../assets/images/global/invite-white.svg')
+                span Send Partner Invitations
