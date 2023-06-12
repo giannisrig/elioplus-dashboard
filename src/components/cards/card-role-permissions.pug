@@ -1,0 +1,23 @@
+div(class='card')
+    h2(class='font-inter font-bold text-2xl') Role Permissions
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+        div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+            a(href='#marketing' class='tab-item active') Marketing
+            a(href='#sales' class='tab-item') Sales
+            a(href='#channelManager' class='tab-item' ) Channel Manager
+            a(href='#channelManager' class='tab-item' ) Business Development
+            a(href='#channelManager' class='tab-item' ) Admin
+            a(href='#channelManager' class='tab-item' ) CFO
+            a(href='#channelManager' class='tab-item' ) CTO
+            a(href='#channelManager' class='tab-item' ) CEO
+            a(href='#channelManager' class='tab-item' ) Test
+
+
+
+    div(id='marketing' class='tab-content')
+        include ../tables/table-role-permissions
+    div(id='sales' class='tab-content hidden')
+        include ../tables/table-role-permissions
+    div(id='channelManager' class='tab-content hidden')
+        include ../tables/table-role-permissions
