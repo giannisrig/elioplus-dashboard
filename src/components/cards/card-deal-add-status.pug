@@ -1,0 +1,32 @@
+div(class='card')
+
+    h2(class='font-inter font-bold text-2xl') 2. Deal Status
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+
+        - var title = 'Open/Expired State:'
+        - var desc = 'Some short description this.'
+        - var label = 'Select the deal state:'
+        - var options = ['Open', 'Closed']
+        include ../../components/form/form-select
+
+        - var title = 'Won/Lost Status:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Select deal status:'
+        - var options = ['Pending', 'Won', 'Lost']
+        include ../../components/form/form-select
+
+        - var title = 'Approved/Rejected Status:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Select a status:'
+        - var options = ['Not Confirmed', 'Confirmed']
+        include ../../components/form/form-select
+
+        - var title = 'Month Duration:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Deal’s month duration:'
+        - var value = 6
+        include ../../components/form/form-number
+
+

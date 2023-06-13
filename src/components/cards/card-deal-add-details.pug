@@ -1,0 +1,84 @@
+div(class='card')
+
+    h2(class='font-inter font-bold text-2xl') 3. Fill in the Deal Details
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-30px gap-x-80px')
+
+
+        - var title = 'First name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your first name...'
+        include ../../components/form/form-input
+
+        - var title = 'Last name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your last name...'
+        include ../../components/form/form-input
+
+        - var title = 'Company name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your company name...'
+        include ../../components/form/form-input
+
+        - var title = 'Email address:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter the client email address...'
+        include ../../components/form/form-input
+
+        - var title = 'Phone:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your phone...'
+        include ../../components/form/form-input
+
+        - var title = 'Website:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your website...'
+        include ../../components/form/form-input
+
+        - var title = 'Location/Address:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter the client email address...'
+        include ../../components/form/form-input
+
+        - var title = 'Product:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your phone...'
+        include ../../components/form/form-input
+
+        - var title = 'Forecast:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Forecasting:'
+        - var options = ['Unknown', 'Won', 'Lost']
+        include ../../components/form/form-select
+
+        - var title = 'Amount:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Type the amount:'
+        - var value = 125000
+        include ../../components/form/form-number
+
+        - var title = 'Currency:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Forecasting:'
+        - var options = ['$USD', 'EUR', 'CAD']
+        include ../../components/form/form-select
+
+
+        - var title = 'Expected closed date of deal:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Select a date:'
+        - var value = '2023/01/01'
+        include ../../components/form/form-date
+
+    - var title = 'Comments:'
+    - var desc = 'Some short description about this setting.'
+    - var placeholder = 'Type any comments about the lead here...'
+    include ../../components/form/form-textarea
+
+
+
+    div(class='flex justify-between w-full')
+        a(href='#' class='btn border-blackBlue bg-white text-blackBlue hover:text--blue hover:border-blue text-sm')
+            span Clear Fields
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark text-sm')
+            span Add New Deal
