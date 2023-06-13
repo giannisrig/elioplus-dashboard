@@ -1,0 +1,57 @@
+div(class='card')
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        h2(class='font-inter font-bold text-2xl') 2. Fill in the Lead Details
+
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+            span Pull Data from CRM
+            img(src="../assets/images/global/cloud-download.svg" alt="download Icon" title="download Icon" width="17" height="17")
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-30px gap-x-80px')
+
+
+        - var title = 'First name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your first name...'
+        include ../../components/form/form-input
+
+        - var title = 'Last name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your last name...'
+        include ../../components/form/form-input
+
+        - var title = 'Company name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your company name...'
+        include ../../components/form/form-input
+
+        - var title = 'Email address:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter the client email address...'
+        include ../../components/form/form-input
+
+        - var title = 'Phone:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your phone...'
+        include ../../components/form/form-input
+
+
+        - var title = 'Website:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your website...'
+        include ../../components/form/form-input
+
+    div(class='gri grid-cols-2')
+        - var title = 'Comments:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Type any comments about the lead here...'
+        include ../../components/form/form-textarea
+
+
+
+    div(class='flex justify-between w-full')
+        a(href='#' class='btn border-blackBlue bg-white text-blackBlue hover:text--blue hover:border-blue text-sm')
+            span Clear Fields
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark text-sm')
+            span Add New Lead

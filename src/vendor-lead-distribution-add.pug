@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Lead Distribution | Partner Management | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Lead Distribution'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Add New Lead'
+                        - var desc = 'Onboarding channel partners is the mechanism that allows your channel partners to have access to the necessary knowledge and material that will help them understand your product quickly and become familiar with the sales and marketing process that must be followed.'
+                        include components/text-block.pug
+
+                        include components/cards/card-select-partners-lead
+                        include components/cards/card-lead-add-details
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
