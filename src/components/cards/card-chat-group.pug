@@ -3,32 +3,22 @@ div(class='card px-15px lg:px-25px sticky top-0').gap-20px
         h2(class='font-inter font-bold text-2xl') Your are chatting with
         .divider
 
-    .flex.flex-col.gap-15px
-        div(  class='flex items-start gap-10px w-full')
-            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border-2 border-blue' width="45" height="45")
+    .flex.w-full.justify-between.items-center
+        div( class='relative flex items-center gap-10px w-max')
+            <div class="flex -space-x-5">
+            <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="../assets/images/users/profile-picture-5.jpg" alt="">
+            <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="../assets/images/users/profile-picture-2.jpg" alt="">
+            <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="../assets/images/users/profile-picture-3.jpg" alt="">
+
+            </div>
             div(class='flex flex-col gap-5px mb-5px')
-                div(class='flex items-center gap-5px')
-                    span(class='leading-[14px] font-semibold transition-colors duration-200') Partner Name 1
-                    div(class='w-[7px] h-[7px] bg-iconGray rounded-full')
-                    a(href='#' class='font-semibold text-blue text-sm') View Profile
-                div(class='text-sm').flex.items-center.flex-wrap.gap-10px
-                    .flex.items-center.gap-3px
-                        span( class='text-textGray') Country:
-                        span( class='text-blackBlue') United States (North America)
+                span(class='leading-[14px] font-semibold group-hover:text-blue transition-colors duration-200') Europe Resellers
+                span( class='text-textGray text-[13px] leading-[13px]') 12 Partners
+        div(class='flex items-center gap-5px')
+            img(src='../assets/images/global/edit-blackBlue.svg' width="20" height="20")
+            span( class='text-textGray text-sm') Edit Group
 
-                    div(class='w-[7px] h-[7px] bg-iconGray rounded-full')
 
-                    .flex.items-center.gap-3px
-                        span( class='text-textGray') Partnered:
-                        span( class='text-blackBlue') 12/01/2023
-
-                    div(class='w-[7px] h-[7px] bg-iconGray rounded-full')
-
-                    .flex.items-center.gap-3px
-                        span( class='text-textGray') Type:
-                        span( class='text-blackBlue') Managed Service Provider (MSP)
-
-        .divider
 
     div.flex.flex-col.w-full.border.border-gray.rounded-12px.overflow-hidden.pt-10px
         div(class='w-full text-center text-textGray text-sm') 8/10/2022
@@ -41,12 +31,21 @@ div(class='card px-15px lg:px-25px sticky top-0').gap-20px
 
             div.w-full.flex.justify-start
                 .flex.gap-10px.items-start
-                    img(src="../assets/images/global/user.jpg" alt="Profile Image" title="Your profile image" class='rounded-full' width="35" height="35")
+                    img(src="../assets/images/users/profile-picture-3.jpg" alt="Profile Image" title="Your profile image" class='rounded-full' width="35" height="35")
                     div(class='flex flex-col gap-5px w-[500px] bg-gray p-10px rounded-8px text-sm')
                         div(class='flex items-center gap-5px text-sm')
-                            h5 Jav
+                            h5 Georgia
                             span.text-textGray Partner Name 1
                         p Hey, everything’s ready for the campaign we just wait for the sponsor logo to add.
+                        .w-full.text-right.text-sm.text-lightBlue.text-textGray 13:12 AM
+            div.w-full.flex.justify-start
+                .flex.gap-10px.items-start
+                    img(src="../assets/images/users/profile-picture-5.jpg" alt="Profile Image" title="Your profile image" class='rounded-full' width="35" height="35")
+                    div(class='flex flex-col gap-5px w-[500px] bg-gray p-10px rounded-8px text-sm')
+                        div(class='flex items-center gap-5px text-sm')
+                            h5 Mike
+                            span.text-textGray Partner Name 1
+                        p Yeap, we have prepared everything and we are waiting for the final asset.
                         .w-full.text-right.text-sm.text-lightBlue.text-textGray 12:34 AM
 
             div.w-full.flex.justify-end

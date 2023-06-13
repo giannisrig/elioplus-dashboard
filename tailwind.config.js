@@ -114,6 +114,7 @@ module.exports = {
         'particles': "url('../../images/global/particles.svg')",
       },
       zIndex: {
+        '0': '0',
         '1': '1',
         '2': '2',
         '3': '3',

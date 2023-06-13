@@ -9,34 +9,27 @@ div(class='card px-15px lg:px-25px sticky top-0').gap-20px
 
 
     div.flex.flex-col.w-full
-        a( href='#' class='flex items-start gap-10px border-t border-gray w-full py-15px group hover:bg-gray')
-            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
-            div(class='flex flex-col gap-5px mb-5px')
-                span(class='leading-[14px] font-semibold group-hover:text-blue transition-colors duration-200') Partner Name 1
-                span( class='text-textGray text-[13px] leading-[13px]') United States (North America)
-        a( href='#' class='flex items-start gap-10px border-t border-gray w-full py-15px group hover:bg-gray')
-            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
-            div(class='flex flex-col gap-5px mb-5px')
-                span(class='leading-[14px] font-semibold group-hover:text-blue transition-colors duration-200') Partner Name 2
-                span( class='text-textGray text-[13px] leading-[13px]') United States (North America)
-        a( href='#' class='flex items-start gap-10px border-t border-gray w-full py-15px group hover:bg-gray')
-            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
-            div(class='flex flex-col gap-5px mb-5px')
-                span(class='leading-[14px] font-semibold group-hover:text-blue transition-colors duration-200') Partner Name 3
-                span( class='text-textGray text-[13px] leading-[13px]') United States (North America)
-        a( href='#' class='flex items-start gap-10px border-t border-gray w-full py-15px group hover:bg-gray')
-            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
-            div(class='flex flex-col gap-5px mb-5px')
-                span(class='leading-[14px] font-semibold group-hover:text-blue transition-colors duration-200') Partner Name 4
-                span( class='text-textGray text-[13px] leading-[13px]') United States (North America)
+        -var text1 = 'Europe Resellers'
+        -var text2 = '15 Partners'
+        include ../../components/collaboration/group-item
+        -var text1 = 'Middle East'
+        -var text2 = '11 Partners'
+        include ../../components/collaboration/group-item
+        -var text1 = 'VARs'
+        -var text2 = '7 Partners'
+        include ../../components/collaboration/group-item
+        -var text1 = 'North America'
+        -var text2 = '22 Partners'
+        include ../../components/collaboration/group-item
+        -var text1 = 'Asia Pacific'
+        -var text2 = '9 Partners'
+        include ../../components/collaboration/group-item
+        -var text1 = 'Product 1'
+        -var text2 = '3 Partners'
+        include ../../components/collaboration/group-item
 
-        a( href='#' class='flex items-start gap-10px border-t border-gray w-full py-15px group hover:bg-gray')
-            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
-            div(class='flex flex-col gap-5px mb-5px')
-                span(class='leading-[14px] font-semibold group-hover:text-blue transition-colors duration-200') Partner Name 5
-                span( class='text-textGray text-[13px] leading-[13px]') United States (North America)
 
-    a(href='#modalNewMessage' class='btn bg-blue text-white hover:bg-darkBlue w-full justify-center h-[40px] items-center modal-trigger')
+    a(href='#modalNewCollaborationGroup' class='btn bg-blue text-white hover:bg-darkBlue w-full justify-center h-[40px] items-center modal-trigger')
         span(class='text-sm font-semibold') Create new Group
         img( src='../assets/images/global/group-add-white.svg' alt='Add Group icon' loading='lazy' width="20" height="20")
 
