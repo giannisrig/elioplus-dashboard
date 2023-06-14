@@ -1,0 +1,55 @@
+.table-container
+    table
+        thead
+            th Country
+            th
+                div.text-left Partners
+
+        tbody
+            tr
+                td
+                    -var text1 = 'Australia'
+                    -var text2 = 'Asia Pacific'
+                    -var img = '../assets/images/flags/Australia.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    div.text-left
+                        -var text1 = '35'
+                        -var text2 = 'Partners'
+                        include ../../components/table-cell/double-text
+
+            tr
+                td
+                    -var text1 = 'United States'
+                    -var text2 = 'North America'
+                    -var img = '../assets/images/flags/United_States_of_America.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    div.text-left
+                        -var text1 = '35'
+                        -var text2 = 'Partners'
+                        include ../../components/table-cell/double-text
+            tr
+                td
+                    -var text1 = 'Canada'
+                    -var text2 = 'North America'
+                    -var img = '../assets/images/flags/Australia.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    div.text-left
+                        -var text1 = '35'
+                        -var text2 = 'Partners'
+                        include ../../components/table-cell/double-text
+            tr
+                td
+                    -var text1 = 'Germany'
+                    -var text2 = 'Europe'
+                    -var img = '../assets/images/flags/Germany.svg'
+                    include ../../components/table-cell/countryFlag
+                td
+                    div.text-left
+                        -var text1 = '35'
+                        -var text2 = 'Partners'
+                        include ../../components/table-cell/double-text
+
+

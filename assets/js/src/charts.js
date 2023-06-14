@@ -187,7 +187,7 @@
                     datasets: [{
                         label: $(this).attr('data-label'),
                         data: $(this).attr('data-values').split(','),
-                        backgroundColor: '#C4E9FB',
+                        backgroundColor: $(this).attr('data-bgcolors'),
                         borderColor: $(this).attr('data-colors'),
                         fill:true,
                         hoverOffset: 4

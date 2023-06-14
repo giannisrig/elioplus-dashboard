@@ -4,7 +4,26 @@
     <h2 class="font-inter font-bold text-lg">Partners/Tier</h2>
     <div class="divider"></div>
   </div>
-  <div>
-    <canvas class="doughnut-chart" data-labels="Platinum,Gold,Silver" data-values="24,32,44" data-colors="#0088C9,#39B4EF,#C4E9FB" data-label="Partners"></canvas>
+  <div class="grid grid-cols-2 lg:grid-cols-7-5 gap-15px">
+    <div class="w-[140px]">
+      <canvas class="doughnut-chart" data-labels="Platinum,Gold,Silver" data-values="24,32,44" data-colors="#0088C9,#39B4EF,#C4E9FB" data-label="Partners"></canvas>
+    </div>
+    <div class="flex flex-col gap-10px">
+      <div class="flex flex-col w-max"><span class="text-textGray text-sm">Platinum Tier:</span>
+        <div class="flex items-center gap-5px">
+          <div class="w-[12px] h-[12px] block bg-blueChart2 rounded-full"></div><span class="text-sm font-semibold">24 Partners</span>
+        </div>
+      </div>
+      <div class="flex flex-col w-max"><span class="text-textGray text-sm">Gold Tier:</span>
+        <div class="flex items-center gap-5px">
+          <div class="w-[12px] h-[12px] block bg-blue rounded-full"></div><span class="text-sm font-semibold">32 Partners</span>
+        </div>
+      </div>
+      <div class="flex flex-col w-max"><span class="text-textGray text-sm">Silver Tier:</span>
+        <div class="flex items-center gap-5px">
+          <div class="w-[12px] h-[12px] block bg-blueChart rounded-full"></div><span class="text-sm font-semibold">44 Partners</span>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

@@ -3,8 +3,31 @@
   <div class="flex gap-15px flex-col w-full">
     <h2 class="font-inter font-bold text-lg">Partner Revenues</h2>
     <div class="divider"></div>
+    <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
+      <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#totalRevenue">Total Revenues</a><a class="tab-item" href="#perMonthRevenue">Revenues per month</a></div>
+      <div class="card-filter w-full md:w-max bg-transparent border-transparent px-5px">
+        <label class="w-max" for="leads_chart_year">Select a year:</label>
+        <select class="bg-transparent text-blackBlue font-bold" id="leads_chart_year" name="leads_chart_year">
+          <option>2023</option>
+          <option>2022</option>
+          <option>2021</option>
+          <option>2020</option>
+          <option>2019</option>
+          <option>2018</option>
+          <option>2017</option>
+          <option>2016</option>
+        </select>
+      </div>
+    </div>
   </div>
-  <div class="h-[320px]">
-    <canvas class="line-chart" data-label="Revenue" data-labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" data-values="247,322,195,523,348,485,322,466,523,348,349,583" data-colors="#39B4EF"></canvas>
+  <div class="tab-content" id="totalRevenue">
+    <div class="h-[320px]">
+      <canvas class="line-chart" data-label="Revenue" data-labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" data-values="247,322,195,523,348,485,322,466,523,348,349,583" data-colors="#39B4EF" data-bgcolors="#C4E9FB"></canvas>
+    </div>
+  </div>
+  <div class="tab-content hidden" id="perMonthRevenue">
+    <div class="h-[320px]">
+      <canvas class="line-chart" data-label="Revenue" data-labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" data-values="247,322,195,523,348,485,322,466,523,348,349,583" data-colors="#1DE39C" data-bgcolors="#BCF7E2"></canvas>
+    </div>
   </div>
 </div>
