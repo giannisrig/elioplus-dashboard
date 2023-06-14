@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Analytics | Partner Management | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Analytics'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Analytics'
+                        include components/text-block.pug
+
+                        div(class='grid grid-cols-3')
+                            include components/cards/card-analytics-deal-overview
+                            include components/cards/card-analytics-tiers-overview
+
+                        div(class='grid grid-cols-2')
+                            include components/cards/card-analytics-revenue-tier
+
+
+                        div(class='w-full')
+                            include components/cards/card-analytics-partners-revenue
+
+                        div(class='grid grid-cols-2 gap-30px')
+                            include components/cards/card-analytics-deals-closed
+                            include components/cards/card-analytics-leads-closed
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug

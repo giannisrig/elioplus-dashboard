@@ -51,6 +51,9 @@ module.exports = {
       'linkedin': '#2E78B6',
       'elioGreen': '#1DE39C',
       'green': '#1DE39C',
+      'blueChart': '#C4E9FB',
+      'blueChart2': '#0088C9',
+      'greenChart': '#BCF7E2',
     },
     fontFamily: {
       'inter': ['Inter'],

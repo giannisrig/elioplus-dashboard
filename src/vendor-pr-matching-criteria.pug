@@ -1,0 +1,377 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'My Matches | Partner Recruitment Automate | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Recruitment'
+            - var breadcrumbsCurrent = 'My Matches'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Matching Criteria'
+                        - var btn = 'Back to My Matches'
+                        include components/text-block.pug
+
+                        div(id='steps' class='px-10px lg:px-25px').flex.items-center.justify-between.w-full.relative
+                            a(id='triggerStep1' href='#step1').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2.active
+                                div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
+                                h4(class='text-sm lg:text-base').font-semibold.text-textGray Basic Criteria
+                            a(id='triggerStep2' href='#step2').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
+                                div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
+                                h4(class='text-sm lg:text-base').font-semibold.text-textGray Optional Criteria
+                            a(id='triggerStep3' href='#step3').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
+                                div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
+                                h4(class='text-sm lg:text-base').font-semibold.text-textGray Advanced Criteria
+                            a(id='triggerStep4' href='#step4').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
+                                div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
+                                h4(class='text-sm lg:text-base').font-semibold.text-textGray Summary
+
+                        form(method='POST' class='w-full card')
+
+                            .w-full.flex.flex-col.gap-30px
+
+                                div(id='step1').w-full.flex.flex-col.gap-30px.step-content.active
+
+                                    <!----------- Title Start ------------------------------>
+                                    .w-full.flex.flex-col.gap-15px
+                                        h2(class='font-inter font-bold text-2xl') 1. Configure your basic matching options
+                                        .divider
+                                    <!----------- Title End ------------------------------>
+
+                                    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'Set Up Fee: *'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='setup_fee'
+                                        include components/form/form-radio
+
+                                        - var title = 'Revenue Model: *'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['Annual Fee', 'Commission']
+                                        - var inputName ='revenue_model'
+                                        include components/form/form-radio
+
+                                        - var title = 'Type of Support:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['Mail', 'Phone', 'Dedicated']
+                                        - var inputName ='support_type'
+                                        include components/form/form-radio
+
+                                        - var title = 'Affiliate Marketing:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'affiliate_marketing'
+                                        - var label = 'Toggle to enable'
+                                        include components/form/form-toggle
+
+                                        - var title = 'Business Process Management:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'process_management'
+                                        - var label = 'Toggle to enable'
+                                        include components/form/form-toggle
+
+                                        - var title = 'Workflow Management:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'workflow_management'
+                                        - var label = 'Toggle to enable'
+                                        include components/form/form-toggle
+
+                                        - var title = 'eCommerce:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'workflow_management'
+                                        - var label = 'Toggle to enable'
+                                        include components/form/form-toggle
+
+                                        - var title = 'Governance, Risk & Compliance (GRC):'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'gov_risk_compliance'
+                                        - var label = 'Toggle to enable'
+                                        include components/form/form-toggle
+
+                                        - var title = 'Compliance'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'compliance'
+                                        - var label = 'Toggle to enable'
+                                        include components/form/form-toggle
+
+                                        - var title = 'Unified Communications'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var inputName = 'unified_communications'
+                                        - var label = 'Toggle to enable'
+                                        include components/form/form-toggle
+
+                                    .w-full.flex.justify-end.gap-20px
+
+                                        a(href='#triggerStep2' class='step-nav-btn btn large font-bold text-sm bg-blue text-white justify-center')
+                                            span Next Step
+
+
+                                div(id='step2' class='flex hidden').w-full.flex-col.gap-30px.step-content
+
+                                    <!----------- Title Start ------------------------------>
+                                    .w-full.flex.flex-col.gap-15px
+                                        h2(class='font-inter font-bold text-2xl') 2. Optional Criteria
+                                        .divider
+                                    <!----------- Title End ------------------------------>
+
+                                    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'Training:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='training'
+                                        include components/form/form-radio
+
+                                        - var title = 'Free Training:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='free_training'
+                                        include components/form/form-radio
+
+                                        - var title = 'Partner Program Maturity:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['Less than 1 Year', '1-3 Years', '4+ Years']
+                                        - var inputName ='program_maturity'
+                                        include components/form/form-radio
+
+                                        - var title = 'Partner Program Maturity:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['Less than 1 Year', '1-5 Years', '6+ Years']
+                                        - var inputName ='company_maturity'
+                                        include components/form/form-radio
+
+                                        - var title = 'Marketing Material:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='marketing_material'
+                                        include components/form/form-radio
+
+                                        - var title = 'Localization:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='localization:'
+                                        include components/form/form-radio
+
+                                    .w-full.flex.justify-end.gap-20px
+
+                                        a(href='#triggerStep1' class='step-nav-btn btn large font-bold text-sm justify-center text-blue')
+
+                                            span Previous Step
+
+                                        a(href='#triggerStep3' class='step-nav-btn btn large font-bold text-sm bg-blue text-white justify-center')
+                                            span Next Step
+
+
+                                div(id='step3' class='flex hidden').w-full.flex-col.gap-30px.step-content
+
+                                    <!----------- Title Start ------------------------------>
+                                    .w-full.flex.flex-col.gap-15px
+                                        h2(class='font-inter font-bold text-2xl') Step <span class='text-blue'>3</span> of 4: Industry Products
+                                        .divider
+                                    <!----------- Title End ------------------------------>
+                                    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'Partner Program Presentation:'
+                                        - var desc = 'Upload a partner program presentation on your profile to help them understand your company.'
+                                        div(class='flex flex-col gap-15px w-full')
+                                            include components/form/form-text
+                                            div.flex.items-start.gap-10px
+                                                button(class="relative border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 font-semibold cursor-pointer") Browse & Upload
+                                                    input(class="opacity-0 absolute top-0 left-0 w-full h-full" type="file")
+                                                .flex.gap-10px
+                                                    img( src="../assets/images/file-icons/pdf.svg" width="35" height="35")
+                                                    .flex.flex-col
+                                                        div.text-sm.font-semibold presentation.pdf
+                                                        div.text-xs.text-textGray 1.1 mB
+
+                                        - var title = 'Exclude Partners:'
+                                        - var desc = 'Upload the domains of your current partners to be excluded from the targeting data.'
+                                        div(class='flex flex-col gap-15px w-full')
+                                            include components/form/form-text
+                                            div.flex.items-start.gap-10px
+                                                button(class="relative border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 font-semibold cursor-pointer") Browse & Upload
+                                                    input(class="opacity-0 absolute top-0 left-0 w-full h-full" type="file")
+                                                .flex.gap-10px
+                                                    img( src="../assets/images/file-icons/xls.svg" width="35" height="35")
+                                                    .flex.flex-col
+                                                        div.text-sm.font-semibold partners-list.csv
+                                                        div.text-xs.text-textGray 682 KB
+
+
+
+
+                                    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'Marketing Development Funds:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='marketing_funds'
+                                        include components/form/form-radio
+
+                                        - var title = 'Certification Required:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='certification'
+                                        include components/form/form-radio
+
+                                        - var title = 'Partner Portal/Resources:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='partner_resources'
+                                        include components/form/form-radio
+
+                                    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30px')
+
+
+                                        - var title = 'Marketing Development Funds:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['No', 'Yes']
+                                        - var inputName ='marketing_funds'
+                                        include components/form/form-radio
+
+                                        - var title = 'No. of Partners:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['< 50', '50 - 100', '100 <']
+                                        - var inputName ='certification'
+                                        include components/form/form-radio
+
+
+                                    .w-full
+                                        - var title = 'Regions/ Countries:'
+                                        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+                                        - var options = ['Africa', 'Asia Pacific', 'Europe', 'Middle East', 'North America', 'South America', 'Canada', 'Australia', 'United States', 'Germany', 'Japan', 'Greece']
+                                        - var cols = 4
+                                        - var inputName ='regions_countries'
+                                        include components/form/form-checkbox-cols
+
+
+
+
+
+                                    .w-full.flex.justify-end.gap-20px
+
+                                        a(href='#triggerStep2' class='step-nav-btn btn large font-bold text-sm justify-center text-blue')
+
+                                            span Previous Step
+
+                                        a(href='#triggerStep4' class='step-nav-btn btn large font-bold text-sm bg-blue text-white justify-center')
+                                            span Next Step
+
+                                div(id='step4' class='flex hidden').w-full.flex-col.gap-30px.step-content
+
+                                    <!----------- Title Start ------------------------------>
+                                    .w-full.flex.flex-col.gap-15px
+                                        h2(class='font-inter font-bold text-2xl') 4. Summary
+                                        .divider
+                                    <!----------- Title End ------------------------------>
+
+                                    .flex.flex-col.gap-15px
+                                        h3(class='text-base font-bold') 1. Basic Criteria
+                                        div(class='w-full flex gap-30px lg:gap-50px')
+
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Industry verticals:
+                                                span(class='text-base-15 font-bold') Business Process Management, Workflow Management, eCommerce, Unified Communications
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Set up fee:
+                                                span(class='text-base-15 font-bold') No
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Revenue model:
+                                                span(class='text-base-15 font-bold') Commission
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Support:
+                                                span(class='text-base-15 font-bold') Dedicated
+
+
+                                    .divider
+
+                                    .flex.flex-col.gap-15px
+                                        h3(class='text-base font-bold') 2. Optional Criteria
+                                        div(class='w-full flex gap-30px lg:gap-50px')
+
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Training
+                                                span(class='text-base-15 font-bold') Yes
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Free training:
+                                                span(class='text-base-15 font-bold') Yes
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Company maturity:
+                                                span(class='text-base-15 font-bold') 6+ years
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Partner program maturity:
+                                                span(class='text-base-15 font-bold') 4+ years
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Marketing material:
+                                                span(class='text-base-15 font-bold') No
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Localization:
+                                                span(class='text-base-15 font-bold') Yes
+
+                                    .divider
+
+                                    .flex.flex-col.gap-15px
+                                        h3(class='text-base font-bold') 3. Advanced Criteria
+                                        div(class='w-full flex gap-30px lg:gap-50px')
+
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Marketing development funds:
+                                                span(class='text-base-15 font-bold') No
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Certification required:
+                                                span(class='text-base-15 font-bold') No
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Partner portal / resources:
+                                                span(class='text-base-15 font-bold') Yes
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Number of partners:
+                                                span(class='text-base-15 font-bold') <50
+
+                                            div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Partner program tiers:
+                                                span(class='text-base-15 font-bold') 1
+
+                                        div(class='flex flex-col gap-5px w-max')
+                                                span(class='text-textGray text-sm') Countries:
+                                                span(class='text-base-15 font-bold') Asia-Pacific, North America, Canada
+
+                                    .w-full.flex.justify-end.gap-20px
+
+                                        a(href='#triggerStep2' class='step-nav-btn btn large font-bold text-sm justify-center text-blue')
+
+                                            span Previous Step
+
+                                        button(type='submit' class='step-nav-btn btn large font-bold text-sm bg-blue text-white justify-center')
+                                            span Complete Registration
+
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug

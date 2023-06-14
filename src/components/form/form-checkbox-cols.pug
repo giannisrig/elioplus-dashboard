@@ -1,0 +1,12 @@
+mixin radioOptions(options, inputName, cols)
+    div(class='grid bg-transparent font-semibold gap-15px grid-cols-'+cols)
+        each option in options ? options : []
+            div.flex.gap-3px.items-center
+                input(type="checkbox" id=option name=inputName value=option)
+                label.text-sm.font-semibold=option
+
+div(class='flex flex-col gap-15px w-full')
+    include ../form/form-text
+    +radioOptions(options, inputName, cols)
+
+
