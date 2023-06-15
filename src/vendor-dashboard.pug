@@ -18,31 +18,20 @@ html(lang="en")
                         - var title = 'Good Morning, Giannis'
                         include components/text-block.pug
 
-                        div(class='grid grid-cols-2 lg:grid-cols-analytics gap-30px')
-                            include components/cards/card-analytics-overview
-                            include components/cards/card-analytics-deal-overview
-                            include components/cards/card-analytics-leads-overview
-
-
-                        div(class='grid grid-cols-2 lg:grid-cols-2 gap-30px')
-                            div.flex.flex-col.gap-25px
-                                include components/cards/card-analytics-messages
-                                div(class='grid grid-cols-2 lg:grid-cols-5-7 gap-15px mt-auto')
-                                    include components/cards/card-analytics-partners-overview
-                                    include components/cards/card-analytics-tiers-overview
-                            include components/cards/card-analytics-revenue-tier
-
                         div(class='grid grid-cols-2 lg:grid-cols-8-4 gap-30px')
+                            div.flex.flex-col.gap-20px
+                                include components/cards/card-post-feed
+                                include components/cards/card-dashboard-feed
+                            div.flex.flex-col.gap-20px
+                                include components/cards/card-dashboard-messages
+                                include components/cards/card-dashboard-prm
+                                include components/cards/card-dashboard-pr
+                                include components/cards/card-dashboard-deals-overview
+                                include components/cards/card-dashboard-leads-overview
+                                include components/cards/card-dashboard-invitations
+                                include components/cards/card-dashboard-team
 
-                            include components/cards/card-analytics-active-partners
-                            include components/cards/card-analytics-partners-country
 
-                        div(class='w-full')
-                            include components/cards/card-analytics-partners-revenue
-
-                        div(class='grid grid-cols-2 gap-30px')
-                            include components/cards/card-analytics-deals-closed
-                            include components/cards/card-analytics-leads-closed
 
 
                         <!----------- Content End ------------------------------>

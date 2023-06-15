@@ -1,0 +1,15 @@
+div(class='flex flex-col gap-25px rounded-12px border border-gray p-25px')
+    div(class='flex justify-between items-center')
+        div(class='flex items-start gap-10px w-max h-40px')
+            img(src=img alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+            div(class='flex flex-col gap-5px mb-5px')
+                span(class='text-sm font-semibold leading-[13px]')=name
+                a( href='#' class='text-blue text-sm leading-[13px]') View Partner Profile
+
+        div(class='flex flex-col text-right text-sm')
+            span.font-semibold=cat
+            span.text-textGray.italic 2023/05/21 14:32 pm
+
+    p=desc
+        if(linkText)
+            a(href='#' class='font-semibold text-blue inline')=linkText

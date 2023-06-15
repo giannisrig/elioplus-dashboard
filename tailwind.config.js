@@ -54,6 +54,7 @@ module.exports = {
       'blueChart': '#C4E9FB',
       'blueChart2': '#0088C9',
       'greenChart': '#BCF7E2',
+      'yellowChart': '#FFEABA',
     },
     fontFamily: {
       'inter': ['Inter'],

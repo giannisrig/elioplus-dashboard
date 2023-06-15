@@ -1,5 +1,6 @@
 div(class='w-full flex flex-col gap-15px')
     h1(class='text-3xl font-inter font-bold')=title
-    p=desc
+    if(desc)
+        p=desc
     if(btn)
         a(href='#' class='btn border-blue hover:text-blue')=btn

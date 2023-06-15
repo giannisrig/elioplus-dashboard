@@ -1,0 +1,30 @@
+
+<div class="card">
+  <div class="flex gap-15px flex-col w-full">
+    <div class="flex items-center gap-10px justify-between w-full">
+      <h2 class="font-inter font-bold text-lg">Leads Overview</h2><a class="text-blue hover:text-blueChart2 underline font-bold text-sm" href="#">View All Leads</a>
+    </div>
+    <div class="divider"></div>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-8-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-20px">
+      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Total Leads:</span><span class="text-base-15 font-bold">4,245</span></div>
+      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Leads Won:</span><span class="text-base-15 font-bold">1,522 <span class='text-xs text-blue'>(72%)</span></span></div>
+      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Total Lead size:</span><span class="text-base-15 font-bold">$48,000,000</span></div>
+      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Leads Closed:</span><span class="text-base-15 font-bold">3,746</span></div>
+    </div>
+    <div class="flex flex-col gap-15px items-center">
+      <div class="w-[90px]">
+        <canvas class="doughnut-chart" data-labels="Won,Lost" data-values="2815,1322" data-colors="#39B4EF,#C4E9FB" data-label="Leads"></canvas>
+      </div>
+      <div class="flex items-center gap-10px justify-center">
+        <div class="flex items-center gap-5px">
+          <div class="w-[12px] h-[12px] block bg-blue rounded-full"></div><span class="text-sm font-semibold">Won</span>
+        </div>
+        <div class="flex items-center gap-5px">
+          <div class="w-[12px] h-[12px] block bg-blueChart rounded-full"></div><span class="text-sm font-semibold">Lost</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
