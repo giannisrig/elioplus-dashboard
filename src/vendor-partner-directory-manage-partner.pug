@@ -1,0 +1,76 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Partner Directory | Partner Management | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Partner Directory'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Manage Partner Account'
+                        include components/text-block.pug
+
+                        div(class='grid grid-cols-2 lg:grid-cols-9-3 gap-30px w-full')
+                            div
+                                include components/cards/card-partner
+                            div
+                                div.flex.flex-col.gap-15px.w-full
+                                    include components/cards/card-partner-request
+                                    include components/cards/card-partner-manager
+
+                        div(class='tabs-section flex flex-col gap-30px')
+                            div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+                                div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+                                    a(href='#activity' class='tab-item active') Partner Activity
+                                    a(href='#analytics' class='tab-item') Analytics
+                                    a(href='#goals' class='tab-item') Goals
+                                    a(href='#team' class='tab-item') Team
+
+
+                            div(id='activity' class='tab-content')
+                                div(class='grid grid-cols-2 lg:grid-cols-7-5 gap-30px w-full')
+                                    div
+                                        include components/cards/card-partner-latest-activity
+                                    div
+                                        div.flex.flex-col.gap-25px.w-full.sticky.top-0
+                                            include components/cards/card-partner-status
+                                            include components/cards/card-partner-activity-overview
+                            div(id='analytics' class='tab-content hidden')
+                                div.flex.flex-col.gap-30px.w-full
+                                    div(class='grid grid-cols-2 lg:grid-cols-analytics gap-30px w-full')
+                                        include components/partner-directory/card-partner-analytics-overview
+                                        include components/partner-directory/card-partner-deals-overview
+                                        include components/partner-directory/card-partner-leads-overview
+
+                                    div(class='w-full')
+                                        include components/partner-directory/card-partner-revenue
+
+                                    div(class='grid grid-cols-2 gap-30px w-full')
+                                        include components/cards/card-analytics-deals-closed
+                                        include components/cards/card-analytics-leads-closed
+                            div(id='goals' class='tab-content hidden')
+                                div(class='grid grid-cols-2 gap-30px w-full')
+                                    div
+                                        div.flex.flex-col.gap-25px.w-full.sticky.top-0
+                                            include components/partner-directory/card-goals-overview
+                                            include components/partner-directory/card-goals-configure
+                                    div
+                                        include components/partner-directory/card-goals
+
+                            div(id='team' class='tab-content hidden')
+                                include components/partner-directory/card-partner-team-vendor
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug

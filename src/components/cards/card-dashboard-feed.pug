@@ -19,54 +19,55 @@
 
     div(id='all' class='tab-content')
 
-        -var name = 'Partner Name 1'
-        -var img = '../assets/images/global/company.png'
-        -var cat = 'Vendor Posts'
-        -var desc = 'Hi everyone, get ready for some new updates on our product. We’ll be updating the content library this week with all the material you need.'
-        -var linkText = null
-        include ../../components/feed-item
+        .flex.gap-15px.flex-col.w-full
+            -var name = 'Partner Name 1'
+            -var img = '../assets/images/global/company.png'
+            -var cat = 'Vendor Posts'
+            -var desc = 'Hi everyone, get ready for some new updates on our product. We’ll be updating the content library this week with all the material you need.'
+            -var linkText = null
+            include ../../components/feed-item
 
-        -var name = 'Partner Name 2'
-        -var img = '../assets/images/global/company-2.png'
-        -var cat = 'Deal Registration'
-        -var desc = 'A new deal has been added by your channel partner Partner Name 2 at 21/05/23, view the deal details and accept or reject the deal.'
-        -var linkText = 'View Deal'
-        include ../../components/feed-item
+            -var name = 'Partner Name 2'
+            -var img = '../assets/images/global/company-2.png'
+            -var cat = 'Deal Registration'
+            -var desc = 'A new deal has been added by your channel partner Partner Name 2 at 21/05/23, view the deal details and accept or reject the deal.'
+            -var linkText = 'View Deal'
+            include ../../components/feed-item
 
-        -var name = 'Partner Name 3'
-        -var img = '../assets/images/global/company-3.png'
-        -var cat = 'Lead Distribution'
-        -var desc = 'A new lead has been added by your channel partner Partner Name 1 at 21/05/23, view the lead details and accept or reject the lead.'
-        -var linkText = 'View Lead'
-        include ../../components/feed-item
+            -var name = 'Partner Name 3'
+            -var img = '../assets/images/global/company-3.png'
+            -var cat = 'Lead Distribution'
+            -var desc = 'A new lead has been added by your channel partner Partner Name 1 at 21/05/23, view the lead details and accept or reject the lead.'
+            -var linkText = 'View Lead'
+            include ../../components/feed-item
 
-        -var name = 'Partner Name 2'
-        -var img = '../assets/images/global/company-2.png'
-        -var cat = 'Requests'
-        -var desc = 'You have a new pending request from channel partner Partner Name 3 to join your network, view the partner profile and accept or reject their request for partnership.'
-        -var linkText = 'View Request'
-        include ../../components/feed-item
+            -var name = 'Partner Name 2'
+            -var img = '../assets/images/global/company-2.png'
+            -var cat = 'Requests'
+            -var desc = 'You have a new pending request from channel partner Partner Name 3 to join your network, view the partner profile and accept or reject their request for partnership.'
+            -var linkText = 'View Request'
+            include ../../components/feed-item
 
-        -var name = 'Partner Name 4'
-        -var img = '../assets/images/global/company-4.png'
-        -var cat = 'Call Messages'
-        -var desc = 'You have a new call message from your channel partner Partner Name 3, view your partner’s message and respond with a reply.'
-        -var linkText = 'View Message'
-        include ../../components/feed-item
+            -var name = 'Partner Name 4'
+            -var img = '../assets/images/global/company-4.png'
+            -var cat = 'Call Messages'
+            -var desc = 'You have a new call message from your channel partner Partner Name 3, view your partner’s message and respond with a reply.'
+            -var linkText = 'View Message'
+            include ../../components/feed-item
 
-        -var name = 'Partner Name 5'
-        -var img = '../assets/images/global/company-5.png'
-        -var cat = 'Inbox Messages'
-        -var desc = 'You have a new email message on your inbox from your channel partner Partner Name 4, view your partner’s message and respond with a reply.'
-        -var linkText = 'View Message'
-        include ../../components/feed-item
+            -var name = 'Partner Name 5'
+            -var img = '../assets/images/global/company-5.png'
+            -var cat = 'Inbox Messages'
+            -var desc = 'You have a new email message on your inbox from your channel partner Partner Name 4, view your partner’s message and respond with a reply.'
+            -var linkText = 'View Message'
+            include ../../components/feed-item
 
-        -var name = 'Partner Name 1'
-        -var img = '../assets/images/global/company.png'
-        -var cat = 'Files'
-        -var desc = 'Your channel partner Partner Name 1 has uploaded a new file on the content library, view the file and download it.'
-        -var linkText = 'View File'
-        include ../../components/feed-item
+            -var name = 'Partner Name 1'
+            -var img = '../assets/images/global/company.png'
+            -var cat = 'Files'
+            -var desc = 'Your channel partner Partner Name 1 has uploaded a new file on the content library, view the file and download it.'
+            -var linkText = 'View File'
+            include ../../components/feed-item
 
     div(id='posts' class='tab-content hidden')
         h2 Only Posts

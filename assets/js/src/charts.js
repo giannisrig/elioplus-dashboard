@@ -48,14 +48,14 @@
                             data: $(this).attr('data-values').split(','),
                             backgroundColor: $(this).attr('data-colors').split(',')[0],
                             borderWidth: 0,
-                            maxBarThickness: 12,
+                            maxBarThickness: ( $(this).attr('data-width') ? $(this).attr('data-width') : 12 ),
                         },
                         {
                             label: $(this).attr('data-datalabels').split(',')[1],
                             data: $(this).attr('data-values2').split(','),
                             backgroundColor: $(this).attr('data-colors').split(',')[1],
                             borderWidth: 0,
-                            maxBarThickness: 12,
+                            maxBarThickness: ( $(this).attr('data-width') ? $(this).attr('data-width') : 12 ),
                         },
                     ]
                 },

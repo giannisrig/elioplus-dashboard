@@ -1,0 +1,57 @@
+.card
+
+    .flex.gap-15px.flex-col.w-full
+        div(class='flex items-center gap-10px justify-between w-full')
+            h2(class='font-inter font-bold text-lg') New Partners
+            a(href='#' class='text-blue hover:text-blueChart2 underline font-bold').text-sm View Partners
+        .table-container
+            table
+                thead
+                    th Vendor
+                    th.text-center Date
+                    th Actions
+                tbody
+                    tr
+                        td
+                            div(class='flex flex-col gap-5px w-max h-40px')
+                                span(class='leading-[14px]')=name
+                                a( href='#' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+
+                        td.text-center.text-xs 2023/04/15
+                        td
+                            include ../../components/table-cell/actions-manage-partner-channel-partner
+
+                    tr
+                        td
+                            div(class='flex flex-col gap-5px w-max h-40px')
+                                span(class='leading-[14px]')=name
+                                a( href='#' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+
+                        td.text-center.text-xs 2023/04/15
+                        td
+                            include ../../components/table-cell/actions-manage-partner-channel-partner
+
+                    tr
+                        td
+                            div(class='flex flex-col gap-5px w-max h-40px')
+                                span(class='leading-[14px]')=name
+                                a( href='#' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+
+                        td.text-center.text-xs 2023/04/15
+                        td
+                            include ../../components/table-cell/actions-manage-partner-channel-partner
+
+                    tr
+                        td
+                            div(class='flex flex-col gap-5px w-max h-40px')
+                                span(class='leading-[14px]')=name
+                                a( href='#' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+
+                        td.text-center.text-xs 2023/04/15
+                        td
+                            include ../../components/table-cell/actions-manage-partner-channel-partner
+

@@ -127,6 +127,7 @@ module.exports = {
         '5-7': '5fr 7fr',
         '7-5': '7fr 5fr',
         '3-9': '3fr 9fr',
+        '9-3': '9fr 3fr',
         '8-4': '8fr 4fr',
         '4-8': '4fr 8fr',
         'analytics': '270px 1fr 1fr',

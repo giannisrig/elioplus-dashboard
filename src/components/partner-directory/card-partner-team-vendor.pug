@@ -1,0 +1,68 @@
+div(class='card')
+    h2(class='font-inter font-bold text-2xl') Partner Team
+
+    .table-container
+        table
+            thead
+                th Name
+                th Email
+                th Assigned to
+                th User Role
+                th Position
+                th
+                    span.text-left.w-full.block Actions
+            tbody
+                tr
+                    td
+                        -var name = 'Team Member 1'
+                        include ../../components/table-cell/user
+                    td someusermail1@domain.com
+                    td
+                        .flex.items-center.gap-5px
+                            strong 232
+                            span Partners
+                    td Channel Manager
+                    td CTO
+                    td
+                        strong.text-blue.text-left.block.w-full Assign user as account manager
+                tr
+                    td
+                        -var name = 'Team Member 2'
+                        include ../../components/table-cell/user
+                    td someusermail2@domain.com
+                      td
+                        .flex.items-center.gap-5px
+                            strong 232
+                            span Partners
+                    td Channel Manager
+                    td CFO
+                    td
+                        strong.text-blue.text-left.block.w-full Assign user as account manager
+                tr
+                    td
+                        -var name = 'Team Member 3'
+                        include ../../components/table-cell/user
+                    td someusermail3@domain.com
+                    td
+                        strong 232
+                            span Partners
+                    td Channel Manager
+                    td CTO
+                    td
+                        strong.text-blue.text-left.block.w-full Assign user as account manager
+                tr
+                    td
+                        -var name = 'Team Member 4'
+                        include ../../components/table-cell/user
+                    td someusermail4@domain.com
+                      td
+                        .flex.items-center.gap-5px
+                            strong 232
+                            span Partners
+                    td Channel Manager
+                    td CTO
+                    td
+                        strong.text-blue.text-left.block.w-full Assign user as account manager
+
+
+

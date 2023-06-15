@@ -1,0 +1,40 @@
+div(class='card gap-15px')
+
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+
+        h2(class='font-inter font-semibold text-lg') Latest Activity
+
+        div(class='card-filter w-full md:w-max bg-transparent border-transparent px-5px')
+            label(for='activity_year' class='w-max') Select a year:
+            select(id='activity_year' name='activity_year').bg-transparent.text-blackBlue.font-bold
+                option 2023
+                option 2022
+                option 2021
+                option 2020
+                option 2019
+                option 2018
+                option 2017
+                option 2016
+
+
+    .flex.gap-15px.flex-col.w-full
+        -var desc = 'New deal registration for $2,500 with Company Name.'
+        -var linkText = 'View Deal'
+        include ../../components/partner-directory/activity-item
+
+        -var desc = 'Viewed a document from Onboarding Library.'
+        -var linkText = 'View Document'
+        include ../../components/partner-directory/activity-item
+
+        -var desc = 'Viewed a document from Onboarding Library.'
+        -var linkText = 'View Document'
+        include ../../components/partner-directory/activity-item
+
+        -var desc = 'New deal registration for $2,500 with Company Name.'
+        -var linkText = 'View Deal'
+        include ../../components/partner-directory/activity-item
+
+        -var desc = 'New deal registration for $2,500 with Company Name.'
+        -var linkText = 'View Deal'
+        include ../../components/partner-directory/activity-item
+
