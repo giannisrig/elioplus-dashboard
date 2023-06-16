@@ -179,17 +179,196 @@
         <div class="container">
           <div class="w-full flex flex-col gap-60px" id="dashboardPageContent"><!----------- Content Start ------------------------------>
             <div class="w-full flex flex-col gap-15px">
-              <h1 class="text-3xl font-inter font-bold">Matching Criteria</h1><a class="btn border-blue hover:text-blue" href="#">Back to My Matches</a>
+              <h1 class="text-3xl font-inter font-bold">Viewing Connection</h1><a class="btn border-blue hover:text-blue" href="#">Back to My Matches</a>
             </div>
-            <div class="px-10px lg:px-25px flex items-center justify-between w-full relative" id="steps"><a class="stepTab flex flex-col gap-10px items-center justify-center text-center relative z-2 active" id="triggerStep1" href="#step1">
-                <div class="w-[30px] h-[30px]  rounded-full border-2 border-blue bg-white circle"></div>
-                <h4 class="text-sm lg:text-base font-semibold text-textGray">Company Information</h4></a><a class="stepTab flex flex-col gap-10px items-center justify-center text-center relative z-2" id="triggerStep2" href="#step2">
-                <div class="w-[30px] h-[30px]  rounded-full border-2 border-blue bg-white circle"></div>
-                <h4 class="text-sm lg:text-base font-semibold text-textGray">Business Interests</h4></a><a class="stepTab flex flex-col gap-10px items-center justify-center text-center relative z-2" id="triggerStep3" href="#step3">
-                <div class="w-[30px] h-[30px]  rounded-full border-2 border-blue bg-white circle"></div>
-                <h4 class="text-sm lg:text-base font-semibold text-textGray">Industry Products</h4></a><a class="stepTab flex flex-col gap-10px items-center justify-center text-center relative z-2" id="triggerStep4" href="#step4">
-                <div class="w-[30px] h-[30px]  rounded-full border-2 border-blue bg-white circle"></div>
-                <h4 class="text-sm lg:text-base font-semibold text-textGray">Profile Descriptions</h4></a></div><!----------- Content End ------------------------------>
+            <div class="grid grid-cols-9-3 gap-30px">
+              <div class="flex flex-col gap-25px">
+                <div class="card w-full">
+                  <div class="flex flex-col gap-15px">
+                    <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
+                      <div class="flex gap-15px items-center w-max"><img class="rounded-8px border border-gray" src="../assets/images/users/user-big.png" alt="user image" title="user image" width="70" height="70">
+                        <div class="flex flex-col gap-0 w-max"><span class="text-textGray text-sm">Contact:</span><span class="text-base font-bold">Abdalhadi Widad</span></div>
+                      </div>
+                      <div class="flex flex-col text-right text-sm"><span class="text-textGray">Position</span><span class="font-semibold">Marketing Manager</span></div>
+                    </div>
+                    <p class="text-sm">Moro Digital Data Hub provides IT, digital & data centre solutions in the Middle East. Deploy tomorrow today with our digital & information technology services.</p>
+                    <div class="divider"></div>
+                  </div>
+                  <div class="flex flex-col gap-30px">
+                    <div class="w-full flex gap-30px lg:gap-50px">
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Timezone</span><span class="text-sm font-bold">Asia/Dubai</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Country:</span><span class="text-sm font-bold">United States</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Email:</span><span class="text-sm font-bold">info@partnerwebsite.com</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Phone:</span><span class="text-sm font-bold">+03 123456789</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Website:</span><span class="text-sm font-bold">https://partnerwebsite.com</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card w-full">
+                  <div class="flex flex-col gap-15px">
+                    <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
+                      <div class="flex gap-15px items-center w-max"><img class="rounded-8px border border-gray" src="../assets/images/global/company-2.png" alt="Company icon" title="Company icon" width="70" height="70">
+                        <div class="flex flex-col gap-0 w-max"><span class="text-textGray text-sm">Company:</span><span class="text-base font-bold">Moro Digital Data Hub</span></div>
+                      </div>
+                      <div class="flex flex-col text-right text-sm"><span class="text-textGray">Company Type</span><span class="font-semibold">Channel Partner</span></div>
+                    </div>
+                    <p class="text-sm">Moro Digital Data Hub provides IT, digital & data centre solutions in the Middle East. Deploy tomorrow today with our digital & information technology services.</p>
+                    <div class="divider"></div>
+                  </div>
+                  <div class="flex flex-col gap-30px">
+                    <div class="w-full grid grid-cols-4 gap-30px lg:gap-50px">
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Country:</span><span class="text-sm font-bold">United States</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Email:</span><span class="text-sm font-bold">info@partnerwebsite.com</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Phone:</span><span class="text-sm font-bold">+03 123456789</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Website:</span><span class="text-sm font-bold">https://partnerwebsite.com</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Employees number:</span><span class="text-sm font-bold">215</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Employees range:</span><span class="text-sm font-bold">51-250</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Estimated revenue:</span><span class="text-sm font-bold">Not Available</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Annual range:</span><span class="text-sm font-bold">$10M-$50M</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Founded year:</span><span class="text-sm font-bold">2017</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Fund amount:</span><span class="text-sm font-bold">Not Available</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Company tags:</span><span class="text-sm font-bold">Technology, Internet, B2B, B2C</span></div>
+                      <div></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Sector:</span><span class="text-sm font-bold">Information Technology</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Industry:</span><span class="text-sm font-bold">Internet Software & Services</span></div>
+                      <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Sub industry</span><span class="text-sm font-bold">Internet Software & Services</span></div>
+                      <div></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card"><!----------- Title Start ------------------------------>
+                  <h2 class="font-inter font-semibold text-lg">Employees</h2><!----------- Title End ------------------------------>
+                  <div class="table-container">
+                    <table>
+                      <thead>
+                        <th>Partner Company</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th><span class="text-left w-full block">Company Role</span></th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]"></span><a class="text-blue text-[13px] leading-[13px]" href="#">View Linkedin</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">Call Partner</a></div>
+                            </div>
+                          </td>
+                          <td class="text-left">
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">Marketing Manager</span><span class="text-textGray text-[13px] leading-[13px]">Position</span></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Linkedin</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">Call Partner</a></div>
+                            </div>
+                          </td>
+                          <td class="text-left">
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">Marketing Manager</span><span class="text-textGray text-[13px] leading-[13px]">Position</span></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Linkedin</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">Call Partner</a></div>
+                            </div>
+                          </td>
+                          <td class="text-left">
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">Marketing Manager</span><span class="text-textGray text-[13px] leading-[13px]">Position</span></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Linkedin</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">info@partner1domain.com</span><a class="text-blue text-[13px] leading-[13px]" href="#">Send email</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">+30 987456987</span><a class="text-blue text-[13px] leading-[13px]" href="#">Call Partner</a></div>
+                            </div>
+                          </td>
+                          <td class="text-left">
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">Marketing Manager</span><span class="text-textGray text-[13px] leading-[13px]">Position</span></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="flex-col sm:flex-row flex items-center gap-15px text-textGray font-semibold text-base-15 justify-between">
+                    <div class="w-full sm:w-max justify-between sm:justify-start flex items-center gap-15px">
+                      <div class="card-filter rounded-40px gap-5px bg-white py-5px">
+                        <label class="w-max" for="dealsItemsPerPage">Items per page:</label>
+                        <select class="bg-transparent text-blackBlue font-bold" id="dealsItemsPerPage" name="dealsItemsPerPage">
+                          <option>10</option>
+                          <option>25</option>
+                          <option>50</option>
+                          <option>100</option>
+                        </select>
+                      </div>
+                      <div class="flex justify-center gap-15px"><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">&lt;</span></a>
+                                              <div class="w-[30px] h-[30px] rounded-full border border-blue bg-blue flex justify-center text-center items-center text-white"><span class="text-xs lg:text-sm font-semibold">1</span></div><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">2</span></a><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">3</span></a><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">&gt;</span></a>
+                      </div>
+                    </div>
+                    <div class="text-right sm:text-left w-full sm:w-max text-sm"><span class='text-blackBlue'>98</span> items in <span class='text-blackBlue'>10</span> Pages</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="sticky top-80px">
+                  <div class="card gap-15px">
+                    <div class="flex flex-col gap-5px">
+                      <h2 class="font-inter font-semibold text-lg">Quick Actions</h2>
+                      <p class="text-textGray text-sm">Add this connection to your matches list and keep it as a potential opportunity.</p>
+                    </div>
+                    <div class="flex flex-col gap-15px"><a class="btn border-blue bg-white text-sm w-full justify-center" href="#"><img src="../assets/images/global/elio-icon.svg" alt="Delete Icon" title="Delete Icon" width="17" height="17"><span>View Elioplus Profile</span></a><a class="btn border-blue bg-blue text-white hover:bg-blueDark text-sm w-full justify-center" href="#"><img src="../assets/images/global/add-white.svg" alt="download Icon" title="download Icon" width="17" height="17"><span>Add to Matches</span></a></div>
+                  </div>
+                </div>
+              </div>
+            </div><!----------- Content End ------------------------------>
           </div>
         </div>
       </div>

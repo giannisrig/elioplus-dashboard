@@ -15,23 +15,18 @@ html(lang="en")
 
                         <!----------- Content Start ------------------------------>
 
-                        - var title = 'Matching Criteria'
+                        - var title = 'Viewing Connection'
                         - var btn = 'Back to My Matches'
                         include components/text-block.pug
 
-                        div(id='steps' class='px-10px lg:px-25px').flex.items-center.justify-between.w-full.relative
-                            a(id='triggerStep1' href='#step1').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2.active
-                                div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
-                                h4(class='text-sm lg:text-base').font-semibold.text-textGray Company Information
-                            a(id='triggerStep2' href='#step2').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
-                                div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
-                                h4(class='text-sm lg:text-base').font-semibold.text-textGray Business Interests
-                            a(id='triggerStep3' href='#step3').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
-                                div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
-                                h4(class='text-sm lg:text-base').font-semibold.text-textGray Industry Products
-                            a(id='triggerStep4' href='#step4').stepTab.flex.flex-col.gap-10px.items-center.justify-center.text-center.relative.z-2
-                                div(class='w-[30px] h-[30px] ').rounded-full.border-2.border-blue.bg-white.circle
-                                h4(class='text-sm lg:text-base').font-semibold.text-textGray Profile Descriptions
+                        div(class='grid grid-cols-9-3 gap-30px')
+                            div.flex.flex-col.gap-25px
+                                include components/connection/contact
+                                include components/connection/company
+                                include components/connection/employees
+                            div
+                                div.sticky.top-80px
+                                    include components/connection/quick-actions
 
 
                         <!----------- Content End ------------------------------>
