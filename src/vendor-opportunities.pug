@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Opportunities | Partner Recruitment | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Recruitment'
+            - var breadcrumbsCurrent = 'Opportunities'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Opportunities'
+                        - var desc = 'We provide you with a number of channel partners that exact match your selected criteria. We start providing you the best matches directly in your dashboard along with contact details from each company and more than 30 attributes about the company and the contact person.'
+                        - var btn = 'Read more about the Opportunities'
+                        include components/text-block.pug
+
+                        div(class='flex gap-30px')
+
+                            div(class='card')
+                                div(class='sortable')
+                                    div Item 1
+                                    div Item 2
+                                    div Item 3
+                                    div Item 4
+
+                            div(class='card')
+                                div(class='sortable')
+                                    div Item 1
+                                    div Item 2
+                                    div Item 3
+                                    div Item 4
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        include components/scripts.pug
+

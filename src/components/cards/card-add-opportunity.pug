@@ -1,0 +1,73 @@
+div(class='card')
+
+    h2(class='font-inter font-bold text-xl') Edit Opportunity
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30px')
+
+
+        - var title = 'Status/Pipeline:'
+        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+        - var inputName = 'deal_available_for'
+        - var options = ['Presentation', 'Calls', 'Proposal', 'Closed']
+        include ../../components/form/form-radio
+
+    h2(class='font-inter font-bold text-xl') Personal Information
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+
+        - var title = 'First Name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your first name...'
+        include ../../components/form/form-input
+
+        - var title = 'Last Name:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your last address...'
+        include ../../components/form/form-input
+
+        - var title = 'Company/Organisation:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your company name...'
+        include ../../components/form/form-input
+
+
+        - var title = 'Role/Position:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your company role...'
+        include ../../components/form/form-input
+
+    h2(class='font-inter font-bold text-xl') Contact Information
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+        - var title = 'Email:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'My input placeholder here...'
+        include ../../components/form/form-input
+
+        - var title = 'Address:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'My input placeholder here...'
+        include ../../components/form/form-input
+
+        - var title = 'Website:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'My input placeholder here...'
+        include ../../components/form/form-input
+
+        - var title = 'Phone:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'My input placeholder here...'
+        include ../../components/form/form-input
+
+        - var title = 'LinkedIn:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'My input placeholder here...'
+        include ../../components/form/form-input
+
+        - var title = 'Twitter:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'My input placeholder here...'
+        include ../../components/form/form-input
+

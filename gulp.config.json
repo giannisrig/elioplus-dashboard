@@ -24,9 +24,11 @@
       "name" : "script.min",
       "src" : [
         "/libs/jquery.slim.min.js",
+        "/libs/jQuery-ui.js",
         "/libs/owl.carousel.js",
         "/libs/chart.js",
         "/base.js",
+        "/dragtable.js",
         "/media-upload.js",
         "/charts.js"
       ]

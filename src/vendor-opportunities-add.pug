@@ -1,0 +1,75 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Add Opportunity | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Deal Registration'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Add Opportunity'
+                        - var btn = 'Back to Opportunities'
+                        include components/text-block.pug
+
+                        include components/cards/card-add-opportunity
+
+                        div(class='grid grid-cols-2 gap-30px')
+
+                            div(class='card')
+
+                                div(class='flex justify-between gap-15px w-full')
+                                    h2(class='font-inter font-bold text-xl') Add Notes
+                                    a(href='#' class='text-blue font-semibold text-sm flex items-center gap-5px')
+                                        img(src="../assets/images/global/add-blue.svg" alt="upload Icon" title="upload Icon" width="17" height="17")
+                                        span Add Note
+
+                                - var title = 'Note Subject:'
+                                - var desc = null
+                                - var placeholder = 'Your inpute placeholder here...'
+                                include components/form/form-input
+
+                                - var title = 'Note Content:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Partner program overview: We are looking for resellers in Africa and we promise the best support and training experience'
+                                include components/form/form-textarea
+
+
+                            div(class='card')
+
+                                div(class='flex justify-between gap-15px w-full')
+                                    h2(class='font-inter font-bold text-xl') Add Tasks
+                                    a(href='#' class='text-blue font-semibold text-sm flex items-center gap-5px')
+                                        img(src="../assets/images/global/add-blue.svg" alt="upload Icon" title="upload Icon" width="17" height="17")
+                                        span Add Task
+
+                                div(class='grid grid-cols-2 gap-30px w-full')
+
+                                    - var title = 'Task Subject:'
+                                    - var desc = null
+                                    - var placeholder = 'Your inpute placeholder here...'
+                                    include components/form/form-input
+
+                                    - var title = 'Task Date'
+                                    - var desc = null
+                                    - var label = 'Select a date:'
+                                    include components/form/form-date
+
+                                - var title = 'Task Description:'
+                                - var desc = 'Some short description about this setting.'
+                                - var placeholder = 'Partner program overview: We are looking for resellers in Africa and we promise the best support and training experience'
+                                include components/form/form-textarea
+
+
+                        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark') Add Opportunity
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
