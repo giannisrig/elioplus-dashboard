@@ -4,11 +4,11 @@ html(lang="en")
         - var title = 'Partner Directory | Partner Management | Elioplus'
         include components/head.pug
     body.text-blackBlue.overflow-x-hidden.bg-gray2
-        include components/header/menu-vendor.pug
+        include components/header/menu-channel-partner.pug
         main
             - var breadcrumbsParent = 'Partner Management'
             - var breadcrumbsCurrent = 'Partner Directory'
-            include components/header/header-vendor
+            include components/header/header-channel-partner.pug
             div(id="dashboardPage" class='py-50px lg:py-80px w-full')
                 .container
                     div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
@@ -20,12 +20,12 @@ html(lang="en")
 
                         div(class='grid grid-cols-2 lg:grid-cols-9-3 gap-30px w-full')
                             div
-                                - var type ='Channel Partner'
+                                - var type ='Vendor'
                                 include components/cards/card-partner
                             div
                                 div.flex.flex-col.gap-15px.w-full
                                     include components/cards/card-partner-request
-                                    include components/cards/card-partner-manager
+                                    include components/partner-directory/card-partner-manager
 
                         div(class='tabs-section flex flex-col gap-30px')
                             div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
@@ -35,6 +35,7 @@ html(lang="en")
                                     a(href='#analytics' class='tab-item') Analytics
                                     a(href='#goals' class='tab-item') Goals
                                     a(href='#team' class='tab-item') Team
+                                    a(href='#reporting' class='tab-item') Reporting
 
 
                             div(id='activity' class='tab-content')
@@ -43,15 +44,16 @@ html(lang="en")
                                         include components/cards/card-partner-latest-activity
                                     div
                                         div.flex.flex-col.gap-25px.w-full.sticky.top-0
-                                            - var status ='Offline'
+                                            - var status ='Online'
                                             include components/cards/card-partner-status
                                             include components/cards/card-partner-activity-overview
+
                             div(id='analytics' class='tab-content hidden')
                                 div.flex.flex-col.gap-30px.w-full
                                     div(class='grid grid-cols-2 lg:grid-cols-analytics gap-30px w-full')
-                                        include components/partner-directory/card-partner-analytics-overview
-                                        include components/partner-directory/card-partner-deals-overview
-                                        include components/partner-directory/card-partner-leads-overview
+                                        include components/cards/card-analytics-overview
+                                        include components/cards/card-analytics-deal-overview
+                                        include components/cards/card-analytics-leads-overview
 
                                     div(class='w-full')
                                         include components/partner-directory/card-partner-revenue
@@ -59,17 +61,33 @@ html(lang="en")
                                     div(class='grid grid-cols-2 gap-30px w-full')
                                         include components/cards/card-analytics-deals-closed
                                         include components/cards/card-analytics-leads-closed
+
                             div(id='goals' class='tab-content hidden')
                                 div(class='grid grid-cols-2 gap-30px w-full')
                                     div
                                         div.flex.flex-col.gap-25px.w-full.sticky.top-0
                                             include components/partner-directory/card-goals-overview
-                                            include components/partner-directory/card-goals-configure
+                                            include components/partner-directory/card-current-goals
                                     div
                                         include components/partner-directory/card-goals
 
                             div(id='team' class='tab-content hidden')
                                 include components/partner-directory/card-partner-team-vendor
+
+                            div(id='reporting' class='tab-content hidden')
+                                .w-full.flex.flex-col.gap-30px
+                                    .flex.items-center.gap-5px
+                                        h2(class='text-2xl font-inter font-bold') Reporting
+                                        a(href='#' class='hover:text-blackBlue underline') View History
+                                    include components/partner-directory/card-reporting-top-customers
+                                    include components/partner-directory/card-reporting-market-size
+                                    include components/partner-directory/card-reporting-employee-capacity
+                                    include components/partner-directory/card-reporting-sales
+                                    include components/partner-directory/card-reporting-marketing-initiatives
+                                    include components/partner-directory/card-reporting-issues
+
+                                    a(href='#' class='btn border-blue text-blackBlue text-sm hover:text-blue')
+                                        span Send Report
 
 
                         <!----------- Content End ------------------------------>

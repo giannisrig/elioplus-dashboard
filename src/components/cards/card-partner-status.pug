@@ -1,8 +1,13 @@
+
+
 .card
     div(class='flex items-center gap-10px justify-between w-full')
         .flex.items-center.gap-5px
-            div(class='w-[12px] h-[12px] block bg-iconGray rounded-full')
+            if( status === 'Online' )
+                div(class='w-[12px] h-[12px] block bg-green rounded-full')
+            else
+                div(class='w-[12px] h-[12px] block bg-iconGray rounded-full')
             span.text-sm.text-textGray Status:
-            span.text-sm.font-semibold Offline
+            span.text-sm.font-semibold=status
         span.text-sm.text-textGray Last time active: <span class='text-blackBlue font-semibold'>2hrs ago</span>
 

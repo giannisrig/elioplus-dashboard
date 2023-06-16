@@ -1,0 +1,29 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-lg') 2. Market Size
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-30px')
+
+        - var title = 'Revenue of Customers:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Enter a number:'
+        - var value = '1000'
+        include ../../components/form/form-number
+
+        - var title = 'Total amount spend on you:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Enter a number:'
+        - var value = '25000'
+        include ../../components/form/form-number
+
+        - var title = 'Market share: (%)'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Enter a number:'
+        - var value = '75'
+        include ../../components/form/form-number
+
+

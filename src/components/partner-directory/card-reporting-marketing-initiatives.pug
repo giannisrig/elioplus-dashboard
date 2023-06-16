@@ -1,0 +1,35 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-lg') 5. Marketing Initiatives
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 gap-30px')
+
+
+        - var title = 'Activity:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Enter your activity here...'
+        include ../../components/form/form-input
+
+        - var title = 'Date of Initiative:'
+        - var desc = 'Some short description about this setting.'
+        - var label = 'Select a date:'
+        include ../../components/form/form-date
+
+        - var title = 'Objectives:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Partner program overview: We are looking for resellers in Africa and we promise the best support and training experience'
+        include ../../components/form/form-textarea
+
+        - var title = 'Costs & Expenses:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Partner program overview: We are looking for resellers in Africa and we promise the best support and training experience'
+        include ../../components/form/form-textarea
+
+
+    a(href='#' class='btn border-blue text-blue bg-white text-sm hover:text-blackBlue')
+        span Add New Initiative
+

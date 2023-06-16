@@ -1,0 +1,21 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-lg') 6. Issues
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 md:grid-cols-2 gap-30px')
+
+
+        - var title = 'Technical support issues:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Partner program overview: We are looking for resellers in Africa and we promise the best support and training experience'
+        include ../../components/form/form-textarea
+
+        - var title = 'General Issues:'
+        - var desc = 'Some short description about this setting.'
+        - var placeholder = 'Partner program overview: We are looking for resellers in Africa and we promise the best support and training experience'
+        include ../../components/form/form-textarea
+

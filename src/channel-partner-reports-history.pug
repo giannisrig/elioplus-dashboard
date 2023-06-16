@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Reports History | Partner Management | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-channel-partner.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Deal Registration'
+            include components/header/header-channel-partner.pug
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Reports History'
+                        - var btn = 'Back to Reports'
+                        include components/text-block.pug
+
+                        include components/cards/card-reports-history
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
