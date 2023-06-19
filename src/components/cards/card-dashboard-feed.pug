@@ -3,18 +3,19 @@
     .flex.gap-15px.flex-col.w-full
         h2(class='font-inter font-bold text-lg') Newsfeed & Notifications
         .divider
-    .flex.gap-15px.flex-col.w-full.tabs
-        div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
-            a(href='#all' class='tab-item active') All
-            a(href='#posts' class='tab-item') Posts
-            a(href='#leads' class='tab-item' ) Leads
-            a(href='#deals' class='tab-item' ) Deals
-            a(href='#requests' class='tab-item' ) Requests
-            a(href='#messages' class='tab-item' ) Messages
-            a(href='#inbox' class='tab-item' ) Inbox
-            a(href='#files' class='tab-item' ) Files
-            a(href='#commissions' class='tab-item' ) Commissions
-            a(href='#payouts' class='tab-item' ) Payouts
+    .flex.gap-15px.flex-col.w-full
+        div(class='tabs overflow-x-auto w-full')
+            div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px w-max')
+                a(href='#all' class='tab-item active') All
+                a(href='#posts' class='tab-item') Posts
+                a(href='#leads' class='tab-item' ) Leads
+                a(href='#deals' class='tab-item' ) Deals
+                a(href='#requests' class='tab-item' ) Requests
+                a(href='#messages' class='tab-item' ) Messages
+                a(href='#inbox' class='tab-item' ) Inbox
+                a(href='#files' class='tab-item' ) Files
+                a(href='#commissions' class='tab-item' ) Commissions
+                a(href='#payouts' class='tab-item' ) Payouts
 
 
     div(id='all' class='tab-content')

@@ -80,6 +80,18 @@
             el.removeClass('hidden');
         })
 
+        $(".go-to-trigger").click(function(e) {
+            e.preventDefault();
+
+            let id = $(this).attr('href');
+            $(id).trigger('click');
+
+            $('html, body').animate({
+                scrollTop: $(id).closest('.tabs').offset().top - 120
+            }, 700);
+
+        });
+
         $('.trigger-filters').on('click', function(e){
             e.preventDefault();
             $(this).parent().find('.filters').toggleClass('hidden');

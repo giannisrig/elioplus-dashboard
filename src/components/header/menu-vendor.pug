@@ -16,7 +16,7 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
     .flex.flex-col.w-full
 
         div(class="w-full h-[60px] px-20px border-b border-gray flex items-center")
-            a(class="w-[80px] pb-5px block header-logo" href="../templates/index.html")
+            a(class="w-[80px] pb-5px block header-logo" href="../templates/vendor-dashboard.html")
                 img(class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52")
 
         .flex.flex-col.pl-20px.pr-10px.py-20px.grow.overflow-y-auto.gap-15px
@@ -33,13 +33,18 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
                     span.font-bold Partner Recruitment
 
                 ul.flex.flex-col.gap-10px.pl-15px
-                    +menuItem('My Matches', '#')
+                    li.flex.flex-col.gap-10px
+                        +menuLinkPrimary('My Matches', '#')
+                        ul.pl-10px.hidden
+                            +menuSubItem('My Matches', '../templates/vendor-my-matches-pr-automate.html')
+                            +menuSubItem('Matching Criteria', '../templates/vendor-pr-matching-criteria.html')
                     li.flex.flex-col.gap-10px
                         +menuLinkPrimary('Opportunities', '#')
                         ul.pl-10px.hidden
-                            +menuSubItem('Opportunities', '../templates/productPRautomate.html')
-                            +menuSubItem('Tasks', '../templates/productPRdatabase.html')
-                    +menuItem('Messages', '#')
+                            +menuSubItem('Opportunities', '../templates/vendor-opportunities.html')
+                            +menuSubItem('Add Opportunity', '../templates/vendor-opportunities-add.html')
+                            +menuSubItem('Tasks', '../templates/vendor-opportunities-tasks.html')
+                    +menuItem('Messages', '../templates/vendor-messages.html')
 
             .divider
 
@@ -52,41 +57,27 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
                     li.flex.flex-col.gap-10px
                         +menuLinkPrimary('Partner Directory', '#')
                         ul.pl-10px.hidden
-                            +menuSubItem('Manage Partners', '../templates/productPRautomate.html')
-                            +menuSubItem('Partner Requests', '../templates/productPRdatabase.html')
-                            +menuSubItem('Send Invitations', '../templates/productPRdatabase.html')
+                            +menuSubItem('Manage Partners', '../templates/vendor-partner-directory.html')
+                            +menuSubItem('Partner Requests', '../templates/vendor-partner-directory-requests.html')
+                            +menuSubItem('Send Invitations', '../templates/vendor-partner-directory-invite.html')
                     li.flex.flex-col.gap-10px
                         +menuLinkPrimary('Analytics', '#')
                         ul.pl-10px.hidden
-                            +menuSubItem('General Analytics', '../templates/productPRautomate.html')
-                            +menuSubItem('Sales Leaderboard', '../templates/productPRdatabase.html')
-                            +menuSubItem('Active Partners', '../templates/productPRdatabase.html')
-                    li.flex.flex-col.gap-10px
-                        +menuLinkPrimary('Content Library', '#')
-                        ul.pl-10px.hidden
-                            +menuSubItem('My Files', '../templates/productPRautomate.html')
-                            +menuSubItem('Send new file', '../templates/productPRdatabase.html')
-                            +menuSubItem('My Partner Files', '../templates/productPRdatabase.html')
-                    li.flex.flex-col.gap-10px
-                        +menuLinkPrimary('Partner Onboarding', '#')
-                        ul.pl-10px.hidden
-                            +menuSubItem('Onboarding Files', '../templates/productPRautomate.html')
-                            +menuSubItem('Add new file', '../templates/productPRdatabase.html')
-                    +menuItem('Deal Registration', '#')
+                            +menuSubItem('General Analytics', '../templates/vendor-analytics.html')
+                            +menuSubItem('Sales Leaderboard', '../templates/vendor-prm-analytics-sales-leaderboard.html')
+                            +menuSubItem('Active Partners', '../templates/vendor-prm-analytics-active-partners.html')
+                    +menuItem('Content Library', '../templates/vendor-content-library.html')
+                    +menuItem('Partner Onboarding', '../templates/vendor-partner-onboarding.html')
+                    +menuItem('Deal Registration', '../templates/vendor-deal-registration.html')
                     li.flex.flex-col.gap-10px
                         +menuLinkPrimary('Lead Distribution', '#')
                         ul.pl-10px.hidden
-                            +menuSubItem('Manage Leads', '../templates/productPRautomate.html')
-                            +menuSubItem('Add new lead', '../templates/productPRdatabase.html')
-                    +menuItem('Collaborate', '#')
-                    li.flex.flex-col.gap-10px
-                        +menuLinkPrimary('Payouts', '#')
-                        ul.pl-10px.hidden
-                            +menuSubItem('Payments & Commissions', '../templates/productPRautomate.html')
-                            +menuSubItem('Payout Settings', '../templates/productPRdatabase.html')
-                            +menuSubItem('Fees & Terms', '../templates/productPRdatabase.html')
-                    +menuItem('Tier Management', '#')
-                    +menuItem('Partner Locator', '#')
+                            +menuSubItem('Manage Leads', '../templates/vendor-lead-distribution.html')
+                            +menuSubItem('Add new lead', '../templates/vendor-lead-distribution-add.html')
+                    +menuItem('Collaborate', '../templates/vendor-collaboration.html')
+                    +menuItem('Payouts', '../templates/vendor-payouts.html')
+                    +menuItem('Tier Management', '../templates/vendor-tier-management.html')
+                    +menuItem('Partner Locator', '../templates/vendor-partner-locator.html')
 
             .divider
 
@@ -96,9 +87,9 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
                     span.font-bold Team & Integrations
 
                 ul.flex.flex-col.gap-10px.pl-15px
-                    +menuItem('Integrations', '#')
-                    +menuItem('Team Management', '#')
-                    +menuItem('Role Management', '#')
+                    +menuItem('Integrations', '../templates/vendor-integrations.html')
+                    +menuItem('Team Management', '../templates/vendor-team-managment.html')
+                    +menuItem('Role Management', '../templates/vendor-role-management.html')
 
             .divider
 
@@ -108,9 +99,9 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
                     span.font-bold Settings
 
                 ul.flex.flex-col.gap-10px.pl-15px
-                    +menuItem('Account Settings', '#')
-                    +menuItem('Business Preferences', '#')
-                    +menuItem('Billing Information', '#')
+                    +menuItem('Account Settings', '../templates/vendor-settings-account.html')
+                    +menuItem('Business Preferences', '../templates/vendor-business-preferences.html')
+                    +menuItem('Billing Information', '../templates/vendor-billing.html')
 
 
 

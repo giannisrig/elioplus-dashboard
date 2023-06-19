@@ -27,20 +27,26 @@
   <body class="text-blackBlue overflow-x-hidden bg-gray2">
     <nav class="bg-white fixed top-0 left-0 h-screen w-screen max-w-[250px] border-r border-gray z-40 flex text-base-15" id="mobileMenu">
       <div class="flex flex-col w-full">
-        <div class="w-full h-[60px] px-20px border-b border-gray flex items-center"><a class="w-[80px] pb-5px block header-logo" href="../templates/index.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a></div>
+        <div class="w-full h-[60px] px-20px border-b border-gray flex items-center"><a class="w-[80px] pb-5px block header-logo" href="../templates/vendor-dashboard.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a></div>
         <div class="flex flex-col pl-20px pr-10px py-20px grow overflow-y-auto gap-15px"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-bold" href="../templates/vendor-dashboard.html"><img src="../assets/images/global/dashboard.svg" alt="chevron icon"><span>Dashboard</span><img src="../assets/images/global/arrow-right-menu.svg" alt="chevron icon"></a>
           <div class="divider"></div>
           <div class="flex flex-col gap-10px"><a class="flex items-center gap-5px" href="">
               <div class="bg-blue rounded-full w-[10px] h-[10px]"></div><span class="font-bold">Partner Recruitment</span></a>
             <ul class="flex flex-col gap-10px pl-15px">
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>My Matches</span></a></li>
-              <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>Opportunities</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
+              <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>My Matches</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
                 <ul class="pl-10px hidden">
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRautomate.html">Opportunities</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Tasks</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-my-matches-pr-automate.html">My Matches</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-pr-matching-criteria.html">Matching Criteria</a></li>
                 </ul>
               </li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Messages</span></a></li>
+              <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>Opportunities</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
+                <ul class="pl-10px hidden">
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-opportunities.html">Opportunities</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-opportunities-add.html">Add Opportunity</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-opportunities-tasks.html">Tasks</a></li>
+                </ul>
+              </li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-messages.html"><span>Messages</span></a></li>
             </ul>
           </div>
           <div class="divider"></div>
@@ -49,66 +55,49 @@
             <ul class="flex flex-col gap-10px pl-15px">
               <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>Partner Directory</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
                 <ul class="pl-10px hidden">
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRautomate.html">Manage Partners</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Partner Requests</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Send Invitations</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-partner-directory.html">Manage Partners</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-partner-directory-requests.html">Partner Requests</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-partner-directory-invite.html">Send Invitations</a></li>
                 </ul>
               </li>
               <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>Analytics</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
                 <ul class="pl-10px hidden">
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRautomate.html">General Analytics</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Sales Leaderboard</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Active Partners</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-analytics.html">General Analytics</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-prm-analytics-sales-leaderboard.html">Sales Leaderboard</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-prm-analytics-active-partners.html">Active Partners</a></li>
                 </ul>
               </li>
-              <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>Content Library</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
-                <ul class="pl-10px hidden">
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRautomate.html">My Files</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Send new file</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">My Partner Files</a></li>
-                </ul>
-              </li>
-              <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>Partner Onboarding</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
-                <ul class="pl-10px hidden">
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRautomate.html">Onboarding Files</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Add new file</a></li>
-                </ul>
-              </li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Deal Registration</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-content-library.html"><span>Content Library</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-partner-onboarding.html"><span>Partner Onboarding</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-deal-registration.html"><span>Deal Registration</span></a></li>
               <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>Lead Distribution</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
                 <ul class="pl-10px hidden">
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRautomate.html">Manage Leads</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Add new lead</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-lead-distribution.html">Manage Leads</a></li>
+                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/vendor-lead-distribution-add.html">Add new lead</a></li>
                 </ul>
               </li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Collaborate</span></a></li>
-              <li class="flex flex-col gap-10px"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 has-submenu w-full flex items-center gap-5px" href="#"><span>Payouts</span><img class="ml-auto mr-10px" src="../assets/images/global/arrow-down-menu.svg" alt="chevron icon"></a>
-                <ul class="pl-10px hidden">
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRautomate.html">Payments &amp; Commissions</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Payout Settings</a></li>
-                      <li class="w-full"><a class="hover:text-blue text-sm transition-colors duration-200 py-5px text-textGray w-full" href="../templates/productPRdatabase.html">Fees &amp; Terms</a></li>
-                </ul>
-              </li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Tier Management</span></a></li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Partner Locator</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-collaboration.html"><span>Collaborate</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-payouts.html"><span>Payouts</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-tier-management.html"><span>Tier Management</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-partner-locator.html"><span>Partner Locator</span></a></li>
             </ul>
           </div>
           <div class="divider"></div>
           <div class="flex flex-col gap-10px"><a class="flex items-center gap-5px" href="">
               <div class="bg-blue rounded-full w-[10px] h-[10px]"></div><span class="font-bold">Team & Integrations</span></a>
             <ul class="flex flex-col gap-10px pl-15px">
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Integrations</span></a></li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Team Management</span></a></li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Role Management</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-integrations.html"><span>Integrations</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-team-managment.html"><span>Team Management</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-role-management.html"><span>Role Management</span></a></li>
             </ul>
           </div>
           <div class="divider"></div>
           <div class="flex flex-col gap-10px"><a class="flex items-center gap-5px" href="">
               <div class="bg-blue rounded-full w-[10px] h-[10px]"></div><span class="font-bold">Settings</span></a>
             <ul class="flex flex-col gap-10px pl-15px">
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Account Settings</span></a></li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Business Preferences</span></a></li>
-                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="#"><span>Billing Information</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-settings-account.html"><span>Account Settings</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-business-preferences.html"><span>Business Preferences</span></a></li>
+                  <li class="w-full"><a class="hover:text-blue text-textGray text-sm font-semibold transition-colors duration-200 w-full flex items-center gap-5px" href="../templates/vendor-billing.html"><span>Billing Information</span></a></li>
             </ul>
           </div>
         </div>
@@ -117,11 +106,11 @@
     <main>
       <header class="bg-white z-10 sticky w-full top-0 left-0 border-b border-gray h-[60px] text-sm">
         <div class="flex w-full h-full">
-          <div class="px-10px md:px-20px border-r border-gray flex items-center" id="headerLogo"><a class="w-[70px] md:w-[80px] pb-5px block header-logo" href="../templates/index.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a></div>
+          <div class="px-10px md:px-20px border-r border-gray flex items-center" id="headerLogo"><a class="w-[70px] md:w-[80px] pb-5px block header-logo" href="../templates/vendor-dashboard.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a></div>
           <div class="px-10px md:px-20px  grow flex justify-between">
             <div class="flex gap-15px">
               <ul class="hidden mdl:flex items-center gap-5px">
-                <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Dashboard</a></li>
+                <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="../templates/vendor-dashboard.html">Dashboard</a></li>
                 <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
                 <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Partner Management</a></li>
                 <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
@@ -137,12 +126,12 @@
               </div>
               <div class="relative"><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px open-menu" href="#quickActionsMenu" id="quickActionsToggle"><img src="../assets/images/global/quick-actions.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="20" height="20"><span class="hidden xl:block">Quick Actions</span></a>
                 <div class="absolute right-1/2 translate-x-[50%] top-full bg-white shadow-card w-max rounded-8px  mt-10px text-center overflow-hidden hidden menu-group" id="quickActionsMenu">
-                  <div class="grid grid-cols-2 bg-gray gap-1px"><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/partner-locator.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Partner Locator</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/portal-login.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="32" height="32"><span class="text-sm font-semibold">Partner Portal Login</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/roles-management.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="32" height="32"><span class="text-sm font-semibold">Add Team Members</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/team-management.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Roles Management</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/tiers.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Tier Management</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/integrations.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Integrations</span></a></div>
+                  <div class="grid grid-cols-2 bg-gray gap-1px"><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="../templates/vendor-partner-locator.html"><img src="../assets/images/global/partner-locator.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Partner Locator</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="https://elioplus.com/"><img src="../assets/images/global/portal-login.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="32" height="32"><span class="text-sm font-semibold">Partner Portal Login</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="../templates/vendor-team-managment.html"><img src="../assets/images/global/roles-management.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="32" height="32"><span class="text-sm font-semibold">Add Team Members</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="../templates/vendor-role-management.html"><img src="../assets/images/global/team-management.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Roles Management</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="../templates/vendor-tier-management.html"><img src="../assets/images/global/tiers.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Tier Management</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="../templates/vendor-integrations.html"><img src="../assets/images/global/integrations.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Integrations</span></a></div>
                 </div>
-              </div><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px" href="#"><img src="../assets/images/global/help.svg" alt="Help Icon" title="Click to visit the help center" width="20" height="20"><span class="hidden xl:block">Help Center</span></a>
+              </div><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px" href="../templates/vendor-help-center.html"><img src="../assets/images/global/help.svg" alt="Help Icon" title="Click to visit the help center" width="20" height="20"><span class="hidden xl:block">Help Center</span></a>
               <div class="h-full">
                 <div class="separator"></div>
-              </div><a class="hidden lg:block text-[13px] font-semibold text-textGray p-[8px] bg-gray rounded-[6px] transition-colors duration-200 hover:bg-blue  hover:text-white " href="#" id="subscriptionPlan">Startup Plan</a>
+              </div><a class="hidden lg:block text-[13px] font-semibold text-textGray p-[8px] bg-gray rounded-[6px] transition-colors duration-200 hover:bg-blue  hover:text-white " href="../templates/vendor-billing.html" id="subscriptionPlan">Startup Plan</a>
               <div class="h-full hidden lg:block">
                 <div class="separator"></div>
               </div>
@@ -162,10 +151,10 @@
                       <div class="divider"></div>
                     </div>
                     <ul class="flex flex-col gap-15px w-full px-25px py-10px">
-                      <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="#"><img src="../assets/images/global/dashboard.svg" alt="dashboard icon"><span>Dashboard</span></a><span class="text-textGray font-normal text-[13px]">View your partners updates and your account overview.</span></li>
-                      <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="#"><img src="../assets/images/global/view.svg" alt="view icon" width="20" height="20"><span>View Profile</span></a><span class="text-textGray font-normal text-[13px]">View your public Elioplus profile and how users see it.</span></li>
-                      <li class="flex-col w-ful"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="#"><img src="../assets/images/global/edit-profile.svg" alt="edit profile icon" width="20" height="20"><span>Edit Profile</span></a><span class="text-textGray font-normal text-[13px]">Edit your profile and your account settings.</span></li>
-                      <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="#"><img src="../assets/images/global/billing.svg" alt="billing icon" width="20" height="20"><span>Billing & Subscriptions</span></a><span class="text-textGray font-normal text-[13px]">Manage your subscriptions & billing information.</span></li>
+                      <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="../templates/vendor-dashboard.html"><img src="../assets/images/global/dashboard.svg" alt="dashboard icon"><span>Dashboard</span></a><span class="text-textGray font-normal text-[13px]">View your partners updates and your account overview.</span></li>
+                      <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="https://elioplus.com"><img src="../assets/images/global/view.svg" alt="view icon" width="20" height="20"><span>View Profile</span></a><span class="text-textGray font-normal text-[13px]">View your public Elioplus profile and how users see it.</span></li>
+                      <li class="flex-col w-ful"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="../templates/vendor-settings-account.html"><img src="../assets/images/global/edit-profile.svg" alt="edit profile icon" width="20" height="20"><span>Edit Profile</span></a><span class="text-textGray font-normal text-[13px]">Edit your profile and your account settings.</span></li>
+                      <li class="flex-col w-full"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-semibold" href="../templates/vendor-billing.html"><img src="../assets/images/global/billing.svg" alt="billing icon" width="20" height="20"><span>Billing & Subscriptions</span></a><span class="text-textGray font-normal text-[13px]">Manage your subscriptions & billing information.</span></li>
                     </ul>
                     <div class="w-full">
                       <div class="divider"></div>
@@ -367,7 +356,7 @@
                       <tr>
                         <td>
                           <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
                           </div>
                         </td>
                         <td>
@@ -394,7 +383,7 @@
                       <tr>
                         <td>
                           <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
                           </div>
                         </td>
                         <td>
@@ -421,7 +410,7 @@
                       <tr>
                         <td>
                           <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
                           </div>
                         </td>
                         <td>
@@ -448,7 +437,7 @@
                       <tr>
                         <td>
                           <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="#">View Partner Profile</a></div>
+                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
                           </div>
                         </td>
                         <td>
@@ -586,8 +575,8 @@
               <div class="card">
                 <div class="flex gap-10px flex-col w-full">
                   <div class="flex items-center gap-10px justify-between w-full">
-                    <h2 class="font-inter font-bold text-lg">Deals Registered/Closed</h2>
-                    <div class="card-filter w-full md:w-max bg-transparent border-transparent px-5px">
+                    <h2 class="font-inter font-bold text-base lg:text-lg"> Deals Registered/Closed</h2>
+                    <div class="card-filter w-max bg-transparent border-transparent px-5px">
                       <label class="w-max" for="deals_chart_year">Select a year:</label>
                       <select class="bg-transparent text-blackBlue font-bold" id="deals_chart_year" name="deals_chart_year">
                         <option>2023</option>
@@ -620,8 +609,8 @@
               <div class="card">
                 <div class="flex gap-10px flex-col w-full">
                   <div class="flex items-center gap-10px justify-between w-full">
-                    <h2 class="font-inter font-bold text-lg">Leads Registered/Closed</h2>
-                    <div class="card-filter w-full md:w-max bg-transparent border-transparent px-5px">
+                    <h2 class="font-inter font-bold text-base lg:text-lg">Leads Registered/Closed</h2>
+                    <div class="card-filter w-max bg-transparent border-transparent px-5px">
                       <label class="w-max" for="leads_chart_year">Select a year:</label>
                       <select class="bg-transparent text-blackBlue font-bold" id="leads_chart_year" name="leads_chart_year">
                         <option>2023</option>
