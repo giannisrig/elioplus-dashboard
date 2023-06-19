@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'Alerts & Notification Messages | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-channel-partner.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Deal Registration'
+            include components/header/header-channel-partner.pug
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Alerts & Notification Messages'
+                        include components/text-block.pug
+
+                        .flex.gap-15px
+                            a(href='#' class='btn border-blue hover:text-blue toast-demo' data-type='simple') Simple Alert
+                            a(href='#' class='btn border-blue hover:text-blue toast-demo' data-type='info') Information Alert
+                            a(href='#' class='btn border-blue hover:text-blue toast-demo' data-type='success') Success Alert
+                            a(href='#' class='btn border-blue hover:text-blue toast-demo' data-type='warning') Warning Alert
+                            a(href='#' class='btn border-blue hover:text-blue toast-demo' data-type='error') Error Alert
+
+
+
+            include components/footer/footer.pug
+        include components/scripts.pug

@@ -27,6 +27,7 @@
         "/libs/jQuery-ui.js",
         "/libs/owl.carousel.js",
         "/libs/chart.js",
+        "/libs/toasts.js",
         "/base.js",
         "/dragtable.js",
         "/media-upload.js",
