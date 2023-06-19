@@ -28,7 +28,7 @@
     <nav class="bg-white fixed top-0 left-0 h-screen w-screen max-w-[250px] border-r border-gray z-40 flex text-base-15" id="mobileMenu">
       <div class="flex flex-col w-full">
         <div class="w-full h-[60px] px-20px border-b border-gray flex items-center"><a class="w-[80px] pb-5px block header-logo" href="../templates/index.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a></div>
-        <div class="flex flex-col pl-20px pr-10px py-20px grow overflow-y-auto gap-15px"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-bold" href="#"><img src="../assets/images/global/dashboard.svg" alt="chevron icon"><span>Dashboard</span><img src="../assets/images/global/arrow-right-menu.svg" alt="chevron icon"></a>
+        <div class="flex flex-col pl-20px pr-10px py-20px grow overflow-y-auto gap-15px"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-bold" href="../templates/vendor-dashboard.html"><img src="../assets/images/global/dashboard.svg" alt="chevron icon"><span>Dashboard</span><img src="../assets/images/global/arrow-right-menu.svg" alt="chevron icon"></a>
           <div class="divider"></div>
           <div class="flex flex-col gap-10px"><a class="flex items-center gap-5px" href="">
               <div class="bg-blue rounded-full w-[10px] h-[10px]"></div><span class="font-bold">Partner Recruitment</span></a>
@@ -119,10 +119,7 @@
         <div class="flex w-full h-full">
           <div class="px-10px md:px-20px border-r border-gray flex items-center" id="headerLogo"><a class="w-[70px] md:w-[80px] pb-5px block header-logo" href="../templates/index.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a></div>
           <div class="px-10px md:px-20px  grow flex justify-between">
-            <div class="flex gap-15px"><a class="flex items-center gap-5px hamburger transition-colors duration-200 hover:text-blue" id="toggleMobileMenu" href="#mobileMenu"><img class="w-full h-auto" src="../assets/images/global/hamburger.svg" alt="Hamburger Menu Icon" title="Click to toggle the navigation menu" width="110" height="52"><span class="font-semibold">Menu</span></a>
-              <div class="h-full">
-                <div class="separator"></div>
-              </div>
+            <div class="flex gap-15px">
               <ul class="hidden mdl:flex items-center gap-5px">
                 <li><a class="text-textGray transition-colors duration-200 hover:text-blue" href="#">Dashboard</a></li>
                 <li><img class="w-full h-auto" src="../assets/images/global/arrow-right.svg"></li>
@@ -130,6 +127,12 @@
               </ul>
             </div>
             <div class="flex gap-15px items-center">
+              <div class="h-full">
+                <div class="separator"></div>
+              </div><a class="flex items-center gap-5px hamburger transition-colors duration-200 hover:text-blue" id="toggleMobileMenu" href="#mobileMenu"><img class="w-full h-auto" src="../assets/images/global/hamburger.svg" alt="Hamburger Menu Icon" title="Click to toggle the navigation menu" width="110" height="52"><span class="hidden sm:block font-semibold">Menu</span></a>
+              <div class="h-full">
+                <div class="separator"></div>
+              </div>
               <div class="relative"><a class="font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px open-menu" href="#quickActionsMenu" id="quickActionsToggle"><img src="../assets/images/global/quick-actions.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="20" height="20"><span class="hidden xl:block">Quick Actions</span></a>
                 <div class="absolute right-1/2 translate-x-[50%] top-full bg-white shadow-card w-max rounded-8px  mt-10px text-center overflow-hidden hidden menu-group" id="quickActionsMenu">
                   <div class="grid grid-cols-2 bg-gray gap-1px"><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/partner-locator.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Partner Locator</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/portal-login.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="32" height="32"><span class="text-sm font-semibold">Partner Portal Login</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/roles-management.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="32" height="32"><span class="text-sm font-semibold">Add Team Members</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/team-management.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Roles Management</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/tiers.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Tier Management</span></a><a class="flex flex-col gap-10px justify-center items-center px-15px py-20px bg-white hover:text-blue transition-colors duration-200" href="#"><img src="../assets/images/global/integrations.svg" alt="Quick Actions Icon" title="Click to toggle the quick actions menu" width="35" height="35"><span class="text-sm font-semibold">Integrations</span></a></div>

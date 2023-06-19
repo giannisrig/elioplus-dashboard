@@ -5,11 +5,7 @@ header(class="bg-white z-10 sticky w-full top-0 left-0 border-b border-gray h-[6
                 img(class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52")
         div(class='px-10px md:px-20px ').grow.flex.justify-between
             .flex.gap-15px
-                a(class="flex items-center gap-5px hamburger transition-colors duration-200 hover:text-blue" id="toggleMobileMenu" href="#mobileMenu")
-                    img(class="w-full h-auto" src="../assets/images/global/hamburger.svg" alt="Hamburger Menu Icon" title="Click to toggle the navigation menu" width="110" height="52")
-                    span(class="font-semibold") Menu
-                .h-full
-                    .separator
+
                 ul(class="hidden mdl:flex items-center gap-5px")
                     li
                         a(class="text-textGray transition-colors duration-200 hover:text-blue" href="#") Dashboard
@@ -23,6 +19,15 @@ header(class="bg-white z-10 sticky w-full top-0 left-0 border-b border-gray h-[6
                     li
                         span(class="font-semibold")=breadcrumbsCurrent
             .flex.gap-15px.items-center
+
+                .h-full
+                    .separator
+                a(class="flex items-center gap-5px hamburger transition-colors duration-200 hover:text-blue" id="toggleMobileMenu" href="#mobileMenu")
+                    img(class="w-full h-auto" src="../assets/images/global/hamburger.svg" alt="Hamburger Menu Icon" title="Click to toggle the navigation menu" width="110" height="52")
+                    span(class="hidden sm:block font-semibold") Menu
+                .h-full
+                    .separator
+
                 include ../../components/header/header-quick-actions-channel-partner
                 a( href='#' class='font-semibold transition-colors duration-200 hover:text-blue flex items-center gap-5px')
                     img(src="../assets/images/global/help.svg" alt="Help Icon" title="Click to visit the help center" width="20" height="20")
