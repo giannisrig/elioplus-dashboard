@@ -27,7 +27,7 @@
   <body class="text-blackBlue overflow-x-hidden bg-gray2">
     <nav class="bg-white fixed top-0 left-0 h-screen w-screen max-w-[250px] border-r border-gray z-40 flex text-base-15" id="mobileMenu">
       <div class="flex flex-col w-full">
-        <div class="w-full h-[60px] px-20px border-b border-gray flex items-center"><a class="w-[80px] pb-5px block header-logo" href="../templates/vendor-dashboard.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a></div>
+        <div class="w-full h-[60px] px-20px border-b border-gray flex items-center justify-between"><a class="w-[80px] pb-5px block header-logo" href="../templates/vendor-dashboard.html"><img class="w-full h-auto" src="../assets/images/global/logo.svg" alt="Elioplus Logo" title="Elioplus Logo" width="110" height="52"></a><a class="flex md:hidden text-sm font-semibold items-center gap-3px" href="#" id="closeMobileMenu"><img src="../assets/images/global/close-gray.svg" width="15" height="15"><span>Close</span></a></div>
         <div class="flex flex-col pl-20px pr-10px py-20px grow overflow-y-auto gap-15px"><a class="hover:text-blue transition-colors duration-200 flex items-center gap-5px font-bold" href="../templates/vendor-dashboard.html"><img src="../assets/images/global/dashboard.svg" alt="chevron icon"><span>Dashboard</span><img src="../assets/images/global/arrow-right-menu.svg" alt="chevron icon"></a>
           <div class="divider"></div>
           <div class="flex flex-col gap-10px"><a class="flex items-center gap-5px" href="">
@@ -174,13 +174,13 @@
               <h1 class="text-3xl font-inter font-bold">Role Management</h1>
               <p>The vast majority of vendors choose to create different tiers for their channel partners in order to create incentives for the top performing partners. These incentives may come in the form of payouts or access to specific areas in the partner portal. While many vendors opt in for 3 tiers such as Silver, Gold and Platinum you can create unlimited tiers on the Elioplus PRM to better manage your partners and commissions.</p><a class="btn border-blue hover:text-blue">Read more about Role Management</a>
             </div>
-            <div class="grid grid-cols-8-4 w-full gap-30px">
+            <div class="grid grid-cols-1 xl:grid-cols-8-4 w-full gap-30px">
               <div class="card"><!----------- Title Start ------------------------------>
                 <div class="w-full flex flex-col gap-15px">
                   <h2 class="font-inter font-bold text-2xl">Create User Role</h2>
                   <div class="divider"></div>
                 </div><!----------- Title End ------------------------------>
-                <div class="w-full flex gap-30px">
+                <div class="w-full flex flex-col sm:flex-row gap-15px md:gap-30px">
                   <div class="flex flex-col gap-15px w-full">
                     <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Role Name:</span><span class="text-textGray text-sm">Some short description about this setting.</span>
                     </div>
@@ -191,13 +191,13 @@
                     </div>
                     <input class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-full rounded-30px px-15px h-[35px] outline-0" placeholder="Enter a description...">
                   </div>
-                  <div class="h-full flex items-end"><a class="btn bg-blue border-blue text-white hover:bg-blueDark" href="#">Add new user  Role</a></div>
+                  <div class="h-full flex items-end"><a class="btn bg-blue border-blue text-white hover:bg-blueDark w-full justify-center sm:w-max toast-demo" href="#" data-type="success">Add new user  Role</a></div>
                 </div>
               </div>
-              <div class="card"><!----------- Title Start ------------------------------>
-                <div class="w-full flex flex-col gap-5px">
-                  <h4 class="text-base-15 text-textGray">Roles Overview:</h4>
-                  <h2 class="font-inter font-bold text-2xl">9 User Roles</h2>
+              <div class="card flex-col sm:flex-row sm:items-center xl:items-start xl:flex-col"><!----------- Title Start ------------------------------>
+                <div class="w-max flex flex-col gap-5px">
+                  <h4 class="text-base-15 text-textGray w-max">Roles Overview:</h4>
+                  <h2 class="font-inter font-bold text-2xl w-max">9 User Roles</h2>
                 </div><!----------- Title End ------------------------------>
                 <div class="w-full flex flex-col gap-10px">
                   <h4 class="text-base-15 text-textGray">Usage:</h4>
@@ -220,81 +220,83 @@
                 <div class="divider"></div>
               </div><!----------- Title End ------------------------------>
               <div class="w-full flex flex-col gap-20px"><!----------- Tier Item ------------------------------>
-                <div class="bg-gray py-15px px-20px flex gap-30px items-center rounded-8px text-sm w-max">
+                <div class="bg-gray py-15px px-20px flex flex-col lg:flex-row gap-15px lg:gap-30px items-start lg:items-center rounded-8px text-sm w-full">
                   <div class="flex gap-10px items-center"><img src="../assets/images/global/user-role.svg" alt="Tier Icon" title="Tier Icon" width="25" height="25">
                     <div class="flex gap-3px items-center">
                       <div class="font-semibold">Name:</div>
                       <div class="font-bold text-blue">CM</div>
                     </div>
                   </div>
-                  <div class="flex gap-10px items-center">
+                  <div class="flex flex-col w-full mdl:w-max mdl:flex-row gap-10px">
                     <div class="bg-white border border-iconGray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
                       <label class="text-textGray">Role Name:</label>
-                      <input class="bg-transparent font-semibold w-[150px]" type="text" value="CM">
+                      <input class="bg-transparent font-semibold w-max xl:w-[150px]" type="text" value="CM">
                     </div>
                     <div class="bg-white border border-iconGray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
                       <label class="text-textGray">Role Description:</label>
-                      <input class="bg-transparent font-semibold w-[150px]" type="text" value="Channel Manager">
+                      <input class="bg-transparent font-semibold w-max xl:w-[150px]" type="text" value="Channel Manager">
+                    </div>
+                    <div class="flex gap-5px items-center"><a class="bg-iconGray flex items-center justify-center w-[32px] h-[32px] rounded-full" href="#"><img src="../assets/images/global/delete-white.svg" alt="Tier Icon" title="Tier Icon" width="18" height="18"></a>
+                      <div class="text-textGray font-semibold">Remove user role</div>
                     </div>
                   </div>
-                  <div class="flex gap-5px items-center"><a class="bg-iconGray flex items-center justify-center w-[32px] h-[32px] rounded-full" href="#"><img src="../assets/images/global/delete-white.svg" alt="Tier Icon" title="Tier Icon" width="18" height="18"></a>
-                    <div class="text-textGray font-semibold">Remove user role</div>
-                  </div>
                 </div><!----------- Tier Item ------------------------------>
-                <div class="bg-gray py-15px px-20px flex gap-30px items-center rounded-8px text-sm w-max">
+                <div class="bg-gray py-15px px-20px flex flex-col lg:flex-row gap-15px lg:gap-30px items-start lg:items-center rounded-8px text-sm w-full">
                   <div class="flex gap-10px items-center"><img src="../assets/images/global/user-role.svg" alt="Tier Icon" title="Tier Icon" width="25" height="25">
                     <div class="flex gap-3px items-center">
                       <div class="font-semibold">Name:</div>
                       <div class="font-bold text-blue">CTO</div>
                     </div>
                   </div>
-                  <div class="flex gap-10px items-center">
+                  <div class="flex flex-col mdl:flex-row gap-10px">
                     <div class="bg-white border border-iconGray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
                       <label class="text-textGray">Role Name:</label>
-                      <input class="bg-transparent font-semibold w-[150px]" type="text" value="CTO">
+                      <input class="bg-transparent font-semibold w-max xl:w-[150px]" type="text" value="CTO">
                     </div>
                     <div class="bg-white border border-iconGray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
                       <label class="text-textGray">Role Description:</label>
-                      <input class="bg-transparent font-semibold w-[150px]" type="text" value="Chief Technology Officer">
+                      <input class="bg-transparent font-semibold w-max xl:w-[150px]" type="text" value="Chief Technology Officer">
+                    </div>
+                    <div class="flex gap-5px items-center"><a class="bg-iconGray flex items-center justify-center w-[32px] h-[32px] rounded-full" href="#"><img src="../assets/images/global/delete-white.svg" alt="Tier Icon" title="Tier Icon" width="18" height="18"></a>
+                      <div class="text-textGray font-semibold">Remove user role</div>
                     </div>
                   </div>
-                  <div class="flex gap-5px items-center"><a class="bg-iconGray flex items-center justify-center w-[32px] h-[32px] rounded-full" href="#"><img src="../assets/images/global/delete-white.svg" alt="Tier Icon" title="Tier Icon" width="18" height="18"></a>
-                    <div class="text-textGray font-semibold">Remove user role</div>
-                  </div>
                 </div><!----------- Tier Item ------------------------------>
-                <div class="bg-gray py-15px px-20px flex gap-30px items-center rounded-8px text-sm w-max">
+                <div class="bg-gray py-15px px-20px flex flex-col lg:flex-row gap-15px lg:gap-30px items-start lg:items-center rounded-8px text-sm w-full">
                   <div class="flex gap-10px items-center"><img src="../assets/images/global/user-role.svg" alt="Tier Icon" title="Tier Icon" width="25" height="25">
                     <div class="flex gap-3px items-center">
                       <div class="font-semibold">Name:</div>
                       <div class="font-bold text-blue">Test</div>
                     </div>
                   </div>
-                  <div class="flex gap-10px items-center">
+                  <div class="flex flex-col mdl:flex-row gap-10px">
                     <div class="bg-white border border-iconGray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
                       <label class="text-textGray">Role Name:</label>
-                      <input class="bg-transparent font-semibold w-[150px]" type="text" value="Test">
+                      <input class="bg-transparent font-semibold w-max xl:w-[150px]" type="text" value="Test">
                     </div>
                     <div class="bg-white border border-iconGray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
                       <label class="text-textGray">Role Description:</label>
-                      <input class="bg-transparent font-semibold w-[150px]" type="text" value="Test Role">
+                      <input class="bg-transparent font-semibold w-max xl:w-[150px]" type="text" value="Test Role">
                     </div>
-                  </div>
-                  <div class="flex gap-5px items-center"><a class="bg-iconGray flex items-center justify-center w-[32px] h-[32px] rounded-full" href="#"><img src="../assets/images/global/delete-white.svg" alt="Tier Icon" title="Tier Icon" width="18" height="18"></a>
-                    <div class="text-textGray font-semibold">Remove user role</div>
+                    <div class="flex gap-5px items-center"><a class="bg-iconGray flex items-center justify-center w-[32px] h-[32px] rounded-full" href="#"><img src="../assets/images/global/delete-white.svg" alt="Tier Icon" title="Tier Icon" width="18" height="18"></a>
+                      <div class="text-textGray font-semibold">Remove user role</div>
+                    </div>
                   </div>
                 </div>
               </div><a class="btn bg-blue border-blue text-white hover:bg-blueDark" href="#">Save Changes</a>
             </div>
             <div class="card">
-              <h2 class="font-inter font-bold text-2xl">Role Permissions</h2>
-              <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#marketing">Marketing</a><a class="tab-item" href="#sales">Sales</a><a class="tab-item" href="#channelManager">Channel Manager</a><a class="tab-item" href="#channelManager">Business Development</a><a class="tab-item" href="#channelManager">Admin</a><a class="tab-item" href="#channelManager">CFO</a><a class="tab-item" href="#channelManager">CTO</a><a class="tab-item" href="#channelManager">CEO</a><a class="tab-item" href="#channelManager">Test</a></div>
+              <h2 class="font-inter font-bold text-base mdl:text-2xl">Role Permissions</h2>
+              <div class="flex justify-between tabs w-full overflow-x-auto text-sm mdl:text-base-15">
+                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px w-max"><a class="tab-item active" href="#marketing">Marketing</a><a class="tab-item" href="#sales">Sales</a><a class="tab-item w-max" href="#channelManager">Channel Manager</a><a class="tab-item w-max" href="#channelManager">Business Development</a><a class="tab-item" href="#channelManager">Admin</a><a class="tab-item" href="#channelManager">CFO</a><a class="tab-item" href="#channelManager">CTO</a><a class="tab-item" href="#channelManager">CEO</a><a class="tab-item" href="#channelManager">Test</a></div>
               </div>
               <div class="tab-content" id="marketing">
                 <div class="table-container">
                   <table>
                     <thead>
-                      <th>Permission Actions</th>
+                      <th>
+                        <div class="w-max">Permission Actions</div>
+                      </th>
                       <th class="text-center">View</th>
                       <th class="text-center">Add</th>
                       <th class="text-center">Edit</th>
@@ -307,45 +309,9 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Deal Registration</td>
                         <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
+                          <div class="w-max">Deal Registration</div>
                         </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Lead Distribution</td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -383,45 +349,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Team Member</td>
                         <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
+                          <div class="w-max"> Lead Distribution</div>
                         </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Manage Partner</td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -459,7 +389,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Manage Tier</td>
+                        <td>
+                          <div class="w-max"> Team Member</div>
+                        </td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -497,7 +429,89 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Partner Onboarding</td>
+                        <td>
+                          <div class="w-max">Manage Partner</div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="w-max"> Manage Tier</div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="w-max"> Partner Onboarding</div>
+                        </td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -542,7 +556,9 @@
                 <div class="table-container">
                   <table>
                     <thead>
-                      <th>Permission Actions</th>
+                      <th>
+                        <div class="w-max">Permission Actions</div>
+                      </th>
                       <th class="text-center">View</th>
                       <th class="text-center">Add</th>
                       <th class="text-center">Edit</th>
@@ -555,45 +571,9 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Deal Registration</td>
                         <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
+                          <div class="w-max">Deal Registration</div>
                         </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Lead Distribution</td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -631,45 +611,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Team Member</td>
                         <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
+                          <div class="w-max"> Lead Distribution</div>
                         </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Manage Partner</td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -707,7 +651,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Manage Tier</td>
+                        <td>
+                          <div class="w-max"> Team Member</div>
+                        </td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -745,7 +691,89 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Partner Onboarding</td>
+                        <td>
+                          <div class="w-max">Manage Partner</div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="w-max"> Manage Tier</div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="w-max"> Partner Onboarding</div>
+                        </td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -790,7 +818,9 @@
                 <div class="table-container">
                   <table>
                     <thead>
-                      <th>Permission Actions</th>
+                      <th>
+                        <div class="w-max">Permission Actions</div>
+                      </th>
                       <th class="text-center">View</th>
                       <th class="text-center">Add</th>
                       <th class="text-center">Edit</th>
@@ -803,45 +833,9 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>Deal Registration</td>
                         <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
+                          <div class="w-max">Deal Registration</div>
                         </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Lead Distribution</td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -879,45 +873,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Team Member</td>
                         <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
+                          <div class="w-max"> Lead Distribution</div>
                         </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-center gap-10px w-full h-40px">
-                            <input type="checkbox" id="partnerID" name="partner_requests">
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>Manage Partner</td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -955,7 +913,9 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Manage Tier</td>
+                        <td>
+                          <div class="w-max"> Team Member</div>
+                        </td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">
@@ -993,7 +953,89 @@
                         </td>
                       </tr>
                       <tr>
-                        <td>Partner Onboarding</td>
+                        <td>
+                          <div class="w-max">Manage Partner</div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="w-max"> Manage Tier</div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                        <td>
+                          <div class="flex items-center justify-center gap-10px w-full h-40px">
+                            <input type="checkbox" id="partnerID" name="partner_requests">
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="w-max"> Partner Onboarding</div>
+                        </td>
                         <td>
                           <div class="flex items-center justify-center gap-10px w-full h-40px">
                             <input type="checkbox" id="partnerID" name="partner_requests">

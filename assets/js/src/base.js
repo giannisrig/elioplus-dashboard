@@ -38,7 +38,7 @@
         const activeItems = $('#mobileMenu, main');
         const overlay = $('#overlay');
 
-        $('#toggleMobileMenu').on('click', function (e) {
+        $('#toggleMobileMenu, #closeMobileMenu').on('click', function (e) {
             e.preventDefault();
             activeItems.toggleClass('active');
             $('#headerLogo').toggleClass('hidden');

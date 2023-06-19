@@ -6,7 +6,7 @@ div(class='card')
         .divider
     <!----------- Title End ------------------------------>
 
-    div(class='w-full flex gap-30px')
+    div(class='w-full flex flex-col sm:flex-row gap-15px md:gap-30px')
 
         - var title = 'Role Name:'
         - var desc = 'Some short description about this setting.'
@@ -20,4 +20,4 @@ div(class='card')
 
 
         div.h-full.flex.items-end
-            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Add new user  Role
+            a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark w-full justify-center sm:w-max toast-demo' data-type='success') Add new user  Role

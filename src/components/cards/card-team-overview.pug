@@ -1,14 +1,14 @@
-div(class='card')
+div(class='card flex-col sm:flex-row sm:items-center xl:items-start xl:flex-col')
 
     <!----------- Title Start ------------------------------>
-    .w-full.flex.flex-col.gap-5px
-        h4(class='text-base-15 text-textGray') Team Overview:
-        h2(class='font-inter font-bold text-2xl') 2 Members
+    .w-max.flex.flex-col.gap-5px
+        h4(class='text-base-15 text-textGray w-max') Team Overview:
+        h2(class='font-inter font-bold text-2xl w-max') 2 Members
     <!----------- Title End ------------------------------>
 
     div(class='w-full flex flex-col gap-10px')
         h4(class='text-base-15 text-textGray') Invitations:
-        div(class='w-full gap-15px flex items-center')
+        div(class='w-full gap-15px flex flex-col sm:flex-row sm:items-center')
             .flex.gap-5px.items-center
                 div(class='w-[10px] h-[10px] rounded-full bg-green ')
                 div(class='text-sm font-semibold') 2 Confirmed

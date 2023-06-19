@@ -63,7 +63,7 @@
   }
 
   .tab-item {
-    @apply pb-10px px-5px border-b-2 border-white transition-colors duration-200 hover:text-blackBlue
+    @apply pb-10px px-5px border-b-2 border-white transition-colors duration-200 hover:text-blackBlue text-center sm:text-left
   }
 
   .tab-item.active {
