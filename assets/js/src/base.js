@@ -101,8 +101,10 @@
 
             if($(e.target).closest('.cell-actions').length)
                 return;
+            if($(e.target).closest('.menu-group, .open-menu').length)
+                return;
 
-            $('.actions-content').addClass('hidden');
+            $('.actions-content, .menu-group').addClass('hidden');
 
 
         });
