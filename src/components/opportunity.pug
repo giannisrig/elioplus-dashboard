@@ -1,4 +1,4 @@
-div(class='bg-white border-2 border-white transition-colors duration hover:border-blue rounded-8px p-10px flex flex-col gap-10px')
+div(class='bg-white border-2 border-white transition-colors duration hover:border-blue rounded-8px p-10px flex flex-col gap-10px relative')
 
     div(class='flex justify-between w-full items-start')
 
@@ -6,7 +6,7 @@ div(class='bg-white border-2 border-white transition-colors duration hover:borde
             img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="30" height="30")
             div(class='flex flex-col gap-5px mb-5px')
                 span(class='leading-[14px] font-semibold')=name
-                a( href='#' class='text-blue text-[13px] leading-[13px] transition-all hover:underline') View Connection
+                a( href='../templates/vendor-view-match.html' class='text-blue text-[13px] leading-[13px] transition-all hover:underline') View Connection
 
         div(class='flex items-center justify-end gap-10px cell-actions')
 
@@ -15,7 +15,7 @@ div(class='bg-white border-2 border-white transition-colors duration hover:borde
 
             div(class='actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1 text-sm font-semibold')
                 a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Delete
-                a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Edit
+                a(href='../templates/vendor-opportunities-edit.html' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Edit
                 a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Move Back
                 a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Move next
 

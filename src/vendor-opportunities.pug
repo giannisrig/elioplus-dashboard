@@ -24,21 +24,21 @@ html(lang="en")
                             div(class='card')
 
                                 <!----------- Title Start ------------------------------>
-                                div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+                                div(class='flex justify-between tabs w-full overflow-hidden flex-col gap-10px sm:flex-row sm:items-center text-sm mdl:text-base-15')
 
-                                    h2(class='font-inter font-bold text-2xl') Manage Opportunities
+                                    h2(class='font-inter text-center sm:text-left font-bold text-2xl') Manage Opportunities
 
 
-                                    a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+                                    a(href='../templates/vendor-opportunities-add.html' class='btn border-blue bg-blue text-white w-full justify-center sm:justify-start sm:w-max hover:bg-blueDark text-sm')
                                         img(src="../assets/images/global/add-white.svg" alt="Invite Icon" title="Invite Icon" width="17" height="17")
-                                        span Add New Opportunity
+                                        span Add Opportunity
 
                                 <!----------- Filters Start ------------------------------>
 
                                 div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
 
-                                    div(class="flex gap-15px flex-col md:flex-row md:gap-10px")
-                                        a(href='#' class='hover:text-blue').flex.items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-filters
+                                    div(class="flex gap-15px flex-col md:flex-row md:gap-10px w-full")
+                                        a(href='#' class='hover:text-blue w-full sm:w-max justify-center sm:justify-start').flex.items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-filters
                                             img(src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
                                             span(class='text-sm sm:text-base-15') Filters
                                         div(class='filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px').items-center.text-textGray.font-semibold.text-base-15
@@ -46,125 +46,126 @@ html(lang="en")
                                                 input(placeholder="Type a name, email, phone to search for a partner...").grow.text-sm.outline-none
                                                 img(src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
 
-                                            div(class='card-filter w-full md:w-max')
+                                            div(class='card-filter w-max')
                                                 label(for='dealsVendor' class='w-max') Select Opportunities:
                                                 select(id='dealsVendor' name='dealsVendor').bg-transparent.text-blackBlue.font-bold
                                                     option All Opportunities
                                                     option With Open Tasks
 
 
-                            div(class='grid grid-cols-4 lg:grid-cols-4 gap-30px')
+                            div(class='overflow-x-auto w-full pb-30px')
+                                div(class='grid grid-cols-4 lg:grid-cols-4 gap-30px w-[1290px]')
 
-                                div(class='card p-20px gap-15px')
-                                    div(class='flex gap-15px w-full items-center justify-between')
-                                        .flex.items-center.gap-5px
-                                            h3.text-lg.font-semibold Presentation
-                                            div(class='bg-blue w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 6
-                                        a(href='#' class='hover:text-blue flex items-center gap-3px text-sm text-textGray')
-                                            img(src="../assets/images/global/edit-gray.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
-                                            span Edit
-                                    .divider
-                                    div(class='flex gap-10px w-full items-center')
-                                        div(class='card-filter w-full md:w-max')
-                                            label(for='orderby' class='w-max') Order by:
-                                            select(id='orderby' name='orderby').bg-transparent.text-blackBlue.font-bold
-                                                option Date
-                                                option Title
-                                                option Notes
-                                                option Tasks
-                                        a(href='#' class='text-blue text-sm font-semibold underline hover:text-blackBlue') Sort
+                                    div(class='card p-20px gap-15px')
+                                        div(class='flex gap-15px w-full items-center justify-between')
+                                            .flex.items-center.gap-5px
+                                                h3.text-lg.font-semibold Presentation
+                                                div(class='bg-blue w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 6
+                                            a(href='#' class='hover:text-blue flex items-center gap-3px text-sm text-textGray')
+                                                img(src="../assets/images/global/edit-gray.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
+                                                span Edit
+                                        .divider
+                                        div(class='flex gap-10px w-full items-center')
+                                            div(class='card-filter w-full md:w-max')
+                                                label(for='orderby' class='w-max') Order by:
+                                                select(id='orderby' name='orderby').bg-transparent.text-blackBlue.font-bold
+                                                    option Date
+                                                    option Title
+                                                    option Notes
+                                                    option Tasks
+                                            a(href='#' class='text-blue text-sm font-semibold underline hover:text-blackBlue') Sort
 
-                                    div(class='sortable bg-gray p-15px flex flex-col gap-15px grow rounded-8px')
-                                        -var name ='Company name 1'
-                                        include components/opportunity
-                                        -var name ='Company name 2'
-                                        include components/opportunity
-                                        -var name ='Company name 3'
-                                        include components/opportunity
-                                        -var name ='Company name 4'
-                                        include components/opportunity
-                                        -var name ='Company name 5'
-                                        include components/opportunity
-                                        -var name ='Company name 6'
-                                        include components/opportunity
+                                        div(class='sortable bg-gray p-15px flex flex-col gap-15px grow rounded-8px')
+                                            -var name ='Company name 1'
+                                            include components/opportunity
+                                            -var name ='Company name 2'
+                                            include components/opportunity
+                                            -var name ='Company name 3'
+                                            include components/opportunity
+                                            -var name ='Company name 4'
+                                            include components/opportunity
+                                            -var name ='Company name 5'
+                                            include components/opportunity
+                                            -var name ='Company name 6'
+                                            include components/opportunity
 
 
-                                div(class='card p-20px gap-15px')
-                                    div(class='flex gap-15px w-full items-center justify-between')
-                                        .flex.items-center.gap-5px
-                                            h3.text-lg.font-semibold Call
-                                            div(class='bg-blue w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 4
-                                        a(href='#' class='hover:text-blue flex items-center gap-3px text-sm text-textGray')
-                                            img(src="../assets/images/global/edit-gray.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
-                                            span Edit
-                                    .divider
-                                    div(class='flex gap-10px w-full items-center')
-                                        div(class='card-filter w-full md:w-max')
-                                            label(for='orderby2' class='w-max') Order by:
-                                            select(id='orderby2' name='orderby2').bg-transparent.text-blackBlue.font-bold
-                                                option Date
-                                                option Title
-                                                option Notes
-                                                option Tasks
-                                        a(href='#' class='text-blue text-sm font-semibold underline hover:text-blackBlue') Sort
+                                    div(class='card p-20px gap-15px')
+                                        div(class='flex gap-15px w-full items-center justify-between')
+                                            .flex.items-center.gap-5px
+                                                h3.text-lg.font-semibold Call
+                                                div(class='bg-blue w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 4
+                                            a(href='#' class='hover:text-blue flex items-center gap-3px text-sm text-textGray')
+                                                img(src="../assets/images/global/edit-gray.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
+                                                span Edit
+                                        .divider
+                                        div(class='flex gap-10px w-full items-center')
+                                            div(class='card-filter w-full md:w-max')
+                                                label(for='orderby2' class='w-max') Order by:
+                                                select(id='orderby2' name='orderby2').bg-transparent.text-blackBlue.font-bold
+                                                    option Date
+                                                    option Title
+                                                    option Notes
+                                                    option Tasks
+                                            a(href='#' class='text-blue text-sm font-semibold underline hover:text-blackBlue') Sort
 
-                                    div(class='sortable bg-gray p-15px flex flex-col gap-15px grow rounded-8px')
-                                        -var name ='Company name 7'
-                                        include components/opportunity
-                                        -var name ='Company name 8'
-                                        include components/opportunity
-                                        -var name ='Company name 9'
-                                        include components/opportunity
-                                        -var name ='Company name 10'
-                                        include components/opportunity
+                                        div(class='sortable bg-gray p-15px flex flex-col gap-15px grow rounded-8px')
+                                            -var name ='Company name 7'
+                                            include components/opportunity
+                                            -var name ='Company name 8'
+                                            include components/opportunity
+                                            -var name ='Company name 9'
+                                            include components/opportunity
+                                            -var name ='Company name 10'
+                                            include components/opportunity
 
-                                div(class='card p-20px gap-15px')
-                                    div(class='flex gap-15px w-full items-center justify-between')
-                                        .flex.items-center.gap-5px
-                                            h3.text-lg.font-semibold Proposal
-                                            div(class='bg-blue w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 1
-                                        a(href='#' class='hover:text-blue flex items-center gap-3px text-sm text-textGray')
-                                            img(src="../assets/images/global/edit-gray.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
-                                            span Edit
-                                    .divider
-                                    div(class='flex gap-10px w-full items-center')
-                                        div(class='card-filter w-full md:w-max')
-                                            label(for='orderby3' class='w-max') Order by:
-                                            select(id='orderby3' name='orderby3').bg-transparent.text-blackBlue.font-bold
-                                                option Date
-                                                option Title
-                                                option Notes
-                                                option Tasks
-                                        a(href='#' class='text-blue text-sm font-semibold underline hover:text-blackBlue') Sort
+                                    div(class='card p-20px gap-15px')
+                                        div(class='flex gap-15px w-full items-center justify-between')
+                                            .flex.items-center.gap-5px
+                                                h3.text-lg.font-semibold Proposal
+                                                div(class='bg-blue w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 1
+                                            a(href='#' class='hover:text-blue flex items-center gap-3px text-sm text-textGray')
+                                                img(src="../assets/images/global/edit-gray.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
+                                                span Edit
+                                        .divider
+                                        div(class='flex gap-10px w-full items-center')
+                                            div(class='card-filter w-full md:w-max')
+                                                label(for='orderby3' class='w-max') Order by:
+                                                select(id='orderby3' name='orderby3').bg-transparent.text-blackBlue.font-bold
+                                                    option Date
+                                                    option Title
+                                                    option Notes
+                                                    option Tasks
+                                            a(href='#' class='text-blue text-sm font-semibold underline hover:text-blackBlue') Sort
 
-                                    div(class='sortable bg-gray p-15px flex flex-col gap-15px grow rounded-8px')
-                                        -var name ='Company name 11'
-                                        include components/opportunity
+                                        div(class='sortable bg-gray p-15px flex flex-col gap-15px grow rounded-8px')
+                                            -var name ='Company name 11'
+                                            include components/opportunity
 
-                                div(class='card p-20px gap-15px')
-                                    div(class='flex gap-15px w-full items-center justify-between')
-                                        .flex.items-center.gap-5px
-                                            h3.text-lg.font-semibold Won
-                                            div(class='bg-blue w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 2
-                                        a(href='#' class='hover:text-blue flex items-center gap-3px text-sm text-textGray')
-                                            img(src="../assets/images/global/edit-gray.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
-                                            span Edit
-                                    .divider
-                                    div(class='flex gap-10px w-full items-center')
-                                        div(class='card-filter w-full md:w-max')
-                                            label(for='orderby4' class='w-max') Order by:
-                                            select(id='orderby4' name='orderby4').bg-transparent.text-blackBlue.font-bold
-                                                option Date
-                                                option Title
-                                                option Notes
-                                                option Tasks
-                                        a(href='#' class='text-blue text-sm font-semibold underline hover:text-blackBlue') Sort
+                                    div(class='card p-20px gap-15px')
+                                        div(class='flex gap-15px w-full items-center justify-between')
+                                            .flex.items-center.gap-5px
+                                                h3.text-lg.font-semibold Won
+                                                div(class='bg-blue w-[20px] h-[20px] rounded-full text-center flex items-center text-xs justify-center text-white') 2
+                                            a(href='#' class='hover:text-blue flex items-center gap-3px text-sm text-textGray')
+                                                img(src="../assets/images/global/edit-gray.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
+                                                span Edit
+                                        .divider
+                                        div(class='flex gap-10px w-full items-center')
+                                            div(class='card-filter w-full md:w-max')
+                                                label(for='orderby4' class='w-max') Order by:
+                                                select(id='orderby4' name='orderby4').bg-transparent.text-blackBlue.font-bold
+                                                    option Date
+                                                    option Title
+                                                    option Notes
+                                                    option Tasks
+                                            a(href='#' class='text-blue text-sm font-semibold underline hover:text-blackBlue') Sort
 
-                                    div(class='sortable bg-gray p-15px flex flex-col gap-15px grow rounded-8px')
-                                        -var name ='Company name 12'
-                                        include components/opportunity
-                                        -var name ='Company name 13'
-                                        include components/opportunity
+                                        div(class='sortable bg-gray p-15px flex flex-col gap-15px grow rounded-8px')
+                                            -var name ='Company name 12'
+                                            include components/opportunity
+                                            -var name ='Company name 13'
+                                            include components/opportunity
 
 
 

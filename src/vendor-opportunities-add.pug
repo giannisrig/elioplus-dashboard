@@ -1,13 +1,13 @@
 doctype html
 html(lang="en")
     head
-        - var title = 'Add Opportunity | Elioplus'
+        - var title = 'Add Opportunity | Partner Recruitment | Elioplus'
         include components/head.pug
     body.text-blackBlue.overflow-x-hidden.bg-gray2
         include components/header/menu-vendor.pug
         main
-            - var breadcrumbsParent = 'Partner Management'
-            - var breadcrumbsCurrent = 'Deal Registration'
+            - var breadcrumbsParent = 'Partner Recruitment'
+            - var breadcrumbsCurrent = 'Opportunities'
             include components/header/header-vendor
             div(id="dashboardPage" class='py-50px lg:py-80px w-full')
                 .container
@@ -17,11 +17,12 @@ html(lang="en")
 
                         - var title = 'Add Opportunity'
                         - var btn = 'Back to Opportunities'
+                        - var href = '../templates/vendor-opportunities.html'
                         include components/text-block.pug
 
                         include components/cards/card-add-opportunity
 
-                        div(class='grid grid-cols-2 gap-30px')
+                        div(class='grid grid-cols-1 mdl:grid-cols-2 gap-30px')
 
                             div(class='card')
 
@@ -50,7 +51,7 @@ html(lang="en")
                                         img(src="../assets/images/global/add-blue.svg" alt="upload Icon" title="upload Icon" width="17" height="17")
                                         span Add Task
 
-                                div(class='grid grid-cols-2 gap-30px w-full')
+                                div(class='grid grid-cols-1 lg:grid-cols-2 gap-30px w-full')
 
                                     - var title = 'Task Subject:'
                                     - var desc = null
