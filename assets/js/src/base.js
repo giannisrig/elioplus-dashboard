@@ -18,7 +18,7 @@
 
         });
 
-        $('#triggerClose, #overlay').on('click', function (e) {
+        $('#triggerClose, #overlay, .trigger-close').on('click', function (e) {
             e.preventDefault();
             blurItemsMenu.removeClass('blur-md overflow-hidden');
             overlay.addClass('hidden');
@@ -78,6 +78,7 @@
             $(this).closest('.tabs').find('.tab-item.active').removeClass('active');
             $(this).addClass('active');
             el.removeClass('hidden');
+            el.find('.tabs .tab-item.active').trigger('click');
         })
 
         $(".go-to-trigger").click(function(e) {

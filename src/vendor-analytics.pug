@@ -18,29 +18,32 @@ html(lang="en")
                         - var title = 'Analytics'
                         include components/text-block.pug
 
-                        div(class='grid grid-cols-2 lg:grid-cols-analytics gap-30px')
-                            include components/cards/card-analytics-overview
+                        div(class='grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-analytics gap-30px w-full')
+                            div(class='col-span-1 mdl:col-span-2 lg:col-span-1')
+                                include components/cards/card-analytics-overview
                             include components/cards/card-analytics-deal-overview
                             include components/cards/card-analytics-leads-overview
 
 
-                        div(class='grid grid-cols-2 lg:grid-cols-2 gap-30px')
+                        div(class='grid grid-cols-1 xl:grid-cols-2 gap-30px')
                             div.flex.flex-col.gap-25px
                                 include components/cards/card-analytics-messages
-                                div(class='grid grid-cols-2 lg:grid-cols-5-7 gap-15px mt-auto')
+                                div(class='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5-7 gap-15px mt-auto')
                                     include components/cards/card-analytics-partners-overview
                                     include components/cards/card-analytics-tiers-overview
                             include components/cards/card-analytics-revenue-tier
 
-                        div(class='grid grid-cols-2 lg:grid-cols-8-4 gap-30px')
+                        div(class='grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-8-4 gap-30px')
 
-                            include components/cards/card-analytics-active-partners
-                            include components/cards/card-analytics-partners-country
+                            div
+                                include components/cards/card-analytics-active-partners
+                            div
+                                include components/cards/card-analytics-partners-country
 
                         div(class='w-full')
                             include components/cards/card-analytics-partners-revenue
 
-                        div(class='grid grid-cols-2 gap-30px')
+                        div(class='grid grid-cols-1 mdl:grid-cols-2 gap-30px w-full')
                             include components/cards/card-analytics-deals-closed
                             include components/cards/card-analytics-leads-closed
 

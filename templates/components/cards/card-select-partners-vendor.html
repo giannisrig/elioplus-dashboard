@@ -2,11 +2,11 @@
 <div class="card"><!----------- Title Start ------------------------------>
   <h2 class="font-inter font-bold text-2xl">1. Select Partners</h2><!----------- Title End ------------------------------>
 <!----------- Filters Start ------------------------------>
-  <div class="flex justify-between w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-    <div class="flex gap-15px flex-col md:flex-row md:gap-10px"><a class="hover:text-blue flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/><span class="text-sm sm:text-base-15">Partner Filters</span></a>
-      <div class="filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px items-center text-textGray font-semibold text-base-15">
+  <div class="flex justify-between w-full overflow-hidden items-center text-sm mdl:text-base-15">
+    <div class="flex gap-15px flex-col lg:flex-row md:gap-10px w-full"><a class="hover:text-blue flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/><span class="text-sm sm:text-base-15">Partner Filters</span></a>
+      <div class="filters grid hidden md:grid-cols-3 lg:flex lg:items-center gap-10px text-textGray font-semibold text-base-15">
         <div class="card-filter w-full lg:w-max px-5px">
-          <label class="w-max" for="tiers">Filter Partners by tier:</label>
+          <label class="w-max" for="tiers">Filter by Tier:</label>
           <select class="bg-transparent text-blackBlue font-bold" id="tiers" name="opportunities">
             <option>All Tiers</option>
             <option>Silver</option>
@@ -23,7 +23,7 @@
             <option>Partner 3</option>
           </select>
         </div>
-        <div class="card-filter w-full md:w-[380px]">
+        <div class="card-filter w-full xl:w-[380px]">
           <input class="grow text-sm outline-none" placeholder="Type a name, email, phone to search for a partner..."/><img src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/>
         </div>
       </div>
@@ -79,5 +79,5 @@
       <input type="checkbox" id="Partner Name 8" name="selected_partners"/>
     </label>
   </div>
-  <div class="flex justify-between w-full"><a class="btn border-blackBlue bg-white text-blackBlue hover:text--blue hover:border-blue text-sm" href="#"><span>Load More Partners</span></a><a class="btn border-blue bg-blue text-white hover:bg-blueDark text-sm" href="#"><span>Continue with selected partners</span></a></div>
+  <div class="flex flex-col sm:flex-row sm:justify-between w-full gap-10px"><a class="btn border-blackBlue bg-white text-blackBlue justify-center w-full sm:w-max hover:text--blue hover:border-blue text-sm" href="#"><span>Load More Partners</span></a><a class="btn border-blue bg-blue text-white hover:bg-blueDark text-sm w-full justify-center sm:w-max" href="#"><span>Continue with selected partners</span></a></div>
 </div>

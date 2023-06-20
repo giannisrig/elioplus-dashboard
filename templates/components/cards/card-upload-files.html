@@ -7,7 +7,7 @@
     </div>
     <div class="divider"></div>
   </div><!----------- Title End ------------------------------>
-  <div class="grid grid-cols-2 lg:grid-cols-5-7 gap-30px"><div class="drop-zone border-blue bg-gray w-full">
+  <div class="grid grid-cols-1 xl:grid-cols-5-7 gap-30px"><div class="drop-zone border-blue bg-gray w-full">
 <span class="drop-zone__prompt font-bold text-base">Drag & drop files or <span class="text-blue">Browse</span>
 <span class="block w-full text-sm text-center text-textGray font-normal">Supported formats: JPEG, PNG, XLS, PDF, PSD, AI, Word, PPT</span>
 </span>
@@ -15,22 +15,24 @@
 </div>
     <div>
       <div class="flex w-full flex-col gap-15px"><!----------- Upload Item ------------------------------>
-        <div class="upload-item flex gap-15px">
-          <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px"><img src="../assets/images/global/folder.svg" width="20" height="20"/>
-            <label class="text-textGray">Category:</label>
-                    <select class="bg-transparent font-semibold">
-                      <option value="Documentation PDF">Documentation PDF</option>
-                      <option value="Marketing">Marketing</option>
-                      <option value="Newsletter">Newsletter</option>
-                      <option value="Campaign">Campaign</option>
-                      <option value="Assets">Assets</option>
-                    </select>
+        <div class="upload-item flex flex-col lg:flex-row gap-15px">
+          <div class="flex flex-col sm:flex-row gap-5px sm:gap-15px">
+            <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px"><img src="../assets/images/global/folder.svg" width="20" height="20"/>
+              <label class="text-textGray">Category:</label>
+                      <select class="bg-transparent font-semibold">
+                        <option value="Documentation PDF">Documentation PDF</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Newsletter">Newsletter</option>
+                        <option value="Campaign">Campaign</option>
+                        <option value="Assets">Assets</option>
+                      </select>
+            </div>
+            <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px relative"><img src="../assets/images/global/upload-file.svg" width="20" height="20"/>
+              <label class="text-textGray">File:</label>
+              <input class="uploaded-file w-fit bg-transparent font-semibold" value="filename.pdf"/><a class="delete " href="#"><img src="../assets/images/global/delete-red-circle.svg" width="20" height="20"/></a>
+            </div>
           </div>
-          <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px relative"><img src="../assets/images/global/upload-file.svg" width="20" height="20"/>
-            <label class="text-textGray">File:</label>
-            <input class="uploaded-file w-fit bg-transparent font-semibold" value="filename.pdf"/><a class="delete " href="#"><img src="../assets/images/global/delete-red-circle.svg" width="20" height="20"/></a>
-          </div>
-          <div class="flex flex-col w-max">
+          <div class="flex items-center gap-5px lg:gap-0 lg:flex-col lg:items-start w-max">
             <div class="flex gap-5px items-center upload-status">
               <div class="w-[10px] h-[10px] rounded-full bg-green "></div>
               <div class="text-sm font-semibold">Uploaded</div>
@@ -38,22 +40,24 @@
             <div class="text-textGray text-xs w-max">File size: 4.25 MB</div>
           </div>
         </div><!----------- Upload Item ------------------------------>
-        <div class="upload-item flex gap-15px">
-          <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px"><img src="../assets/images/global/folder.svg" width="20" height="20"/>
-            <label class="text-textGray">Category:</label>
-                    <select class="bg-transparent font-semibold">
-                      <option value="Documentation PDF">Documentation PDF</option>
-                      <option value="Marketing">Marketing</option>
-                      <option value="Newsletter">Newsletter</option>
-                      <option value="Campaign">Campaign</option>
-                      <option value="Assets">Assets</option>
-                    </select>
+        <div class="upload-item flex flex-col lg:flex-row gap-15px">
+          <div class="flex flex-col sm:flex-row gap-5px sm:gap-15px">
+            <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px"><img src="../assets/images/global/folder.svg" width="20" height="20"/>
+              <label class="text-textGray">Category:</label>
+                      <select class="bg-transparent font-semibold">
+                        <option value="Documentation PDF">Documentation PDF</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Newsletter">Newsletter</option>
+                        <option value="Campaign">Campaign</option>
+                        <option value="Assets">Assets</option>
+                      </select>
+            </div>
+            <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px relative"><img src="../assets/images/global/upload-file.svg" width="20" height="20"/>
+              <label class="text-textGray">File:</label>
+              <input class="uploaded-file w-fit bg-transparent font-semibold" value="filename.pdf"/><a class="delete " href="#"><img src="../assets/images/global/delete-red-circle.svg" width="20" height="20"/></a>
+            </div>
           </div>
-          <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px relative"><img src="../assets/images/global/upload-file.svg" width="20" height="20"/>
-            <label class="text-textGray">File:</label>
-            <input class="uploaded-file w-fit bg-transparent font-semibold" value="filename.pdf"/><a class="delete " href="#"><img src="../assets/images/global/delete-red-circle.svg" width="20" height="20"/></a>
-          </div>
-          <div class="flex flex-col w-max">
+          <div class="flex items-center gap-5px lg:gap-0 lg:flex-col lg:items-start w-max">
             <div class="flex gap-5px items-center upload-status">
               <div class="w-[10px] h-[10px] rounded-full bg-green "></div>
               <div class="text-sm font-semibold">Uploaded</div>
@@ -61,22 +65,24 @@
             <div class="text-textGray text-xs w-max">File size: 4.25 MB</div>
           </div>
         </div><!----------- Upload Item ------------------------------>
-        <div class="upload-item flex gap-15px">
-          <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px"><img src="../assets/images/global/folder.svg" width="20" height="20"/>
-            <label class="text-textGray">Category:</label>
-                    <select class="bg-transparent font-semibold">
-                      <option value="Documentation PDF">Documentation PDF</option>
-                      <option value="Marketing">Marketing</option>
-                      <option value="Newsletter">Newsletter</option>
-                      <option value="Campaign">Campaign</option>
-                      <option value="Assets">Assets</option>
-                    </select>
+        <div class="upload-item flex flex-col lg:flex-row gap-15px">
+          <div class="flex flex-col sm:flex-row gap-5px sm:gap-15px">
+            <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px"><img src="../assets/images/global/folder.svg" width="20" height="20"/>
+              <label class="text-textGray">Category:</label>
+                      <select class="bg-transparent font-semibold">
+                        <option value="Documentation PDF">Documentation PDF</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Newsletter">Newsletter</option>
+                        <option value="Campaign">Campaign</option>
+                        <option value="Assets">Assets</option>
+                      </select>
+            </div>
+            <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px relative"><img src="../assets/images/global/upload-file.svg" width="20" height="20"/>
+              <label class="text-textGray">File:</label>
+              <input class="uploaded-file w-fit bg-transparent font-semibold" value="filename.pdf"/><a class="delete " href="#"><img src="../assets/images/global/delete-red-circle.svg" width="20" height="20"/></a>
+            </div>
           </div>
-          <div class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px relative"><img src="../assets/images/global/upload-file.svg" width="20" height="20"/>
-            <label class="text-textGray">File:</label>
-            <input class="uploaded-file w-fit bg-transparent font-semibold" value="filename.pdf"/><a class="delete " href="#"><img src="../assets/images/global/delete-red-circle.svg" width="20" height="20"/></a>
-          </div>
-          <div class="flex flex-col w-max">
+          <div class="flex items-center gap-5px lg:gap-0 lg:flex-col lg:items-start w-max">
             <div class="flex gap-5px items-center upload-status">
               <div class="w-[10px] h-[10px] rounded-full bg-green "></div>
               <div class="text-sm font-semibold">Uploaded</div>

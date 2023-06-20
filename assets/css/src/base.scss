@@ -14,7 +14,7 @@
   }
 
   a, input {
-    @apply block transition-colors duration-200 focus:outline-0 focus:shadow-transparent focus:drop-shadow-none;
+    @apply block transition-colors duration-200 focus:outline-none focus:shadow-transparent focus:drop-shadow-none focus-visible:outline-none outline-none;
   }
 
   table {

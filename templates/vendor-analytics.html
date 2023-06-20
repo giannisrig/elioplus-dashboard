@@ -173,37 +173,39 @@
             <div class="w-full flex flex-col gap-15px">
               <h1 class="text-3xl font-inter font-bold">Analytics</h1>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-analytics gap-30px">
-              <div class="card">
-                <div class="flex gap-15px flex-col w-full">
-                  <h2 class="font-inter font-bold text-lg">Analytics Overview</h2>
-                  <div class="divider"></div>
-                </div>
-                <div class="flex flex-col gap-20px">
-                  <div class="flex items-center gap-10px w-full"><img src="../assets/images/global/total-revenue.svg" alt="Total Revenue" title="Total Revenue" width="30" height="30">
-                    <div class="flex flex-col w-max"><span class="text-textGray text-sm">Total Revenue:</span><span class="text-base-15 font-bold text-blue">$275,000,000</span></div>
+            <div class="grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-analytics gap-30px w-full">
+              <div class="col-span-1 mdl:col-span-2 lg:col-span-1">
+                <div class="card">
+                  <div class="flex gap-15px flex-col w-full">
+                    <h2 class="font-inter font-bold text-base lg:text-lg">Analytics Overview</h2>
+                    <div class="divider"></div>
                   </div>
-                  <div class="flex items-center gap-10px w-full"><img src="../assets/images/global/open-opportunities.svg" alt="open opportunities" title="open opportunities" width="30" height="30">
-                    <div class="flex flex-col w-max"><span class="text-textGray text-sm">Open Opportunities:</span><span class="text-base-15 font-normal"><span class='text-blue font-semibold'>127</span> Leads, <span class='text-blue font-semibold'>82</span> Deals</span></div>
+                  <div class="grid grid-cols-1 sm:flex sm:flex-row lg:flex-col gap-20px">
+                    <div class="flex items-center gap-10px w-max lg:w-full"><img src="../assets/images/global/total-revenue.svg" alt="Total Revenue" title="Total Revenue" width="30" height="30">
+                      <div class="flex flex-col w-max"><span class="text-textGray text-sm">Total Revenue:</span><span class="text-base-15 font-bold text-blue">$275,000,000</span></div>
+                    </div>
+                    <div class="flex items-center gap-10px w-max lg:w-full"><img src="../assets/images/global/open-opportunities.svg" alt="open opportunities" title="open opportunities" width="30" height="30">
+                      <div class="flex flex-col w-max"><span class="text-textGray text-sm">Open Opportunities:</span><span class="text-base-15 font-normal"><span class='text-blue font-semibold'>127</span> Leads, <span class='text-blue font-semibold'>82</span> Deals</span></div>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="card">
                 <div class="flex gap-15px flex-col w-full">
                   <div class="flex items-center gap-10px justify-between w-full">
-                    <h2 class="font-inter font-bold text-lg">Deals Overview</h2><span class="text-sm text-textGray">Last Updated: 1hr ago</span>
+                    <h2 class="font-inter font-bold text-base lg:text-lg">Deals Overview</h2><span class="text-sm text-textGray">Last Updated: 1hr ago</span>
                   </div>
                   <div class="divider"></div>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-8-4">
-                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-20px">
+                <div class="grid grid-cols-7-5 sm:grid-cols-8-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-20px">
                     <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Total Deals:</span><span class="text-base-15 font-bold">1,138</span></div>
                     <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Deals Won:</span><span class="text-base-15 font-bold">815 <span class='text-xs text-blue'>(72%)</span></span></div>
                     <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Total Deal size:</span><span class="text-base-15 font-bold">$175,000,000</span></div>
                     <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Avg. Deal Size:</span><span class="text-base-15 font-bold">$22,000</span></div>
                   </div>
                   <div class="flex flex-col gap-15px items-center">
-                    <div class="w-[90px]">
+                    <div class="w-[120px]">
                       <canvas class="doughnut-chart" data-labels="Won,Lost" data-values="815,322" data-colors="#39B4EF,#C4E9FB" data-label="Deals"></canvas>
                     </div>
                     <div class="flex items-center gap-10px justify-center">
@@ -220,19 +222,19 @@
               <div class="card">
                 <div class="flex gap-15px flex-col w-full">
                   <div class="flex items-center gap-10px justify-between w-full">
-                    <h2 class="font-inter font-bold text-lg">Leads Overview</h2><span class="text-sm text-textGray">Last Updated: 1hr ago</span>
+                    <h2 class="font-inter font-bold text-base lg:text-lg">Leads Overview</h2><span class="text-sm text-textGray">Last Updated: 1hr ago</span>
                   </div>
                   <div class="divider"></div>
                 </div>
-                <div class="grid grid-cols-1 lg:grid-cols-8-4">
-                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-20px">
+                <div class="grid grid-cols-7-5 sm:grid-cols-8-4">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-20px ">
                     <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Total Leads:</span><span class="text-base-15 font-bold">4,245</span></div>
                     <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Leads Won:</span><span class="text-base-15 font-bold">1,522 <span class='text-xs text-blue'>(72%)</span></span></div>
                     <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Total Lead size:</span><span class="text-base-15 font-bold">$48,000,000</span></div>
                     <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Leads Closed:</span><span class="text-base-15 font-bold">3,746</span></div>
                   </div>
                   <div class="flex flex-col gap-15px items-center">
-                    <div class="w-[90px]">
+                    <div class="w-[120px]">
                       <canvas class="doughnut-chart" data-labels="Won,Lost" data-values="2815,1322" data-colors="#39B4EF,#C4E9FB" data-label="Leads"></canvas>
                     </div>
                     <div class="flex items-center gap-10px justify-center">
@@ -247,21 +249,21 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-2 gap-30px">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-30px">
               <div class="flex flex-col gap-25px">
                 <div class="card">
                   <div class="flex gap-15px flex-col w-full">
                     <h2 class="font-inter font-bold text-lg">Messages</h2>
                     <div class="divider"></div>
                   </div>
-                  <div class="flex items-center gap-10px justify-between w-full">
+                  <div class="flex flex-col sm:flex-row sm:items-center gap-10px sm:justify-between w-full">
                     <div class="flex items-center gap-5px w-max"><img src="../assets/images/global/message-blue.svg" alt="Total Revenue" title="Total Revenue" width="20" height="20"><span class="text-sm text-textGray">Total Messages:</span><span class="text-sm">4,238</span></div>
                     <div class="flex items-center gap-5px">
                       <div class="w-[12px] h-[12px] block bg-yellow rounded-full"></div><span class="text-sm text-textGray">New Messages:</span><span class="text-sm font-semibold">4</span>
                     </div><span class="text-sm text-textGray">Last Updated: <span class='text-blackBlue font-semibold'>1hr ago</span></span>
                   </div>
                 </div>
-                <div class="grid grid-cols-2 lg:grid-cols-5-7 gap-15px mt-auto">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5-7 gap-15px mt-auto">
                   <div class="card">
                     <div class="flex gap-15px flex-col w-full">
                       <h2 class="font-inter font-bold text-lg">Partners</h2>
@@ -338,202 +340,206 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-8-4 gap-30px">
-              <div class="card"><!----------- Title Start ------------------------------>
-                <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-                  <h2 class="font-inter font-bold text-lg">Active Partners</h2><a class="btn border-blue bg-blue text-white hover:bg-blackBlue hover:border-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm" href="#"><span>View All Partners Statistics</span></a>
-                </div><!----------- Title End ------------------------------>
-                <div class="table-container">
-                  <table>
-                    <thead>
-                      <th>Company</th>
-                      <th class="w-[120px]">Deals</th>
-                      <th class="w-[120px]">Leads</th>
-                      <th class="w-[150px]">Logins</th>
-                      <th>Actions</th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">129</span><span class="text-textGray text-[13px] leading-[13px]">Last login: 2023/04/01</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Assign Account Manager</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">129</span><span class="text-textGray text-[13px] leading-[13px]">Last login: 2023/04/01</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Assign Account Manager</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">129</span><span class="text-textGray text-[13px] leading-[13px]">Last login: 2023/04/01</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Assign Account Manager</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
-                            <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-start gap-10px w-max h-40px">
-                            <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">129</span><span class="text-textGray text-[13px] leading-[13px]">Last login: 2023/04/01</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
-                            <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Assign Account Manager</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+            <div class="grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-8-4 gap-30px">
+              <div>
+                <div class="card"><!----------- Title Start ------------------------------>
+                  <div class="flex justify-between tabs w-full overflow-hidden items-center text-sm mdl:text-base-15">
+                    <h2 class="font-inter font-bold text-lg">Active Partners</h2><a class="btn border-blue bg-blue text-white hover:bg-blackBlue hover:border-blackBlue text-sm" href="#"><span>View Statistics</span></a>
+                  </div><!----------- Title End ------------------------------>
+                  <div class="table-container">
+                    <table>
+                      <thead>
+                        <th>Company</th>
+                        <th class="w-[120px]">Deals</th>
+                        <th class="w-[120px]">Leads</th>
+                        <th class="w-[150px]">Logins</th>
+                        <th>Actions</th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
+                              <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">129</span><span class="text-textGray text-[13px] leading-[13px]">Last login: 2023/04/01</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
+                              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Assign Account Manager</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
+                              <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">129</span><span class="text-textGray text-[13px] leading-[13px]">Last login: 2023/04/01</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
+                              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Assign Account Manager</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
+                              <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">129</span><span class="text-textGray text-[13px] leading-[13px]">Last login: 2023/04/01</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
+                              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Assign Account Manager</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px"><img class="rounded-full border border-blackBlue" src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" width="35" height="35">
+                              <div class="flex flex-col gap-5px mb-5px"><span class="leading-[14px]">Partner Name 1</span><a class="text-blue text-[13px] leading-[13px]" href="../templates/vendor-partner-directory-manage-partner.html">View Partner Profile</a></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">46</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">32</span><span class="text-textGray text-[13px] leading-[13px]">$25,000</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-start gap-10px w-max h-40px">
+                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">129</span><span class="text-textGray text-[13px] leading-[13px]">Last login: 2023/04/01</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"></a>
+                              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Assign Account Manager</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
-              <div class="card"><!----------- Title Start ------------------------------>
-                <h2 class="font-inter font-bold text-lg">Partners/Country</h2><!----------- Title End ------------------------------>
-                <div class="table-container">
-                  <table>
-                    <thead>
-                      <th>Country</th>
-                      <th>
-                        <div class="text-left">Partners</div>
-                      </th>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>
-                          <div class="flex items-center gap-10px w-max h-40px"><img class="w-[25px] lg:w-[38px]" src="../assets/images/flags/Australia.svg" alt="country flag for Australia" loading="lazy" width="35" height="36">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Australia</span><span class="text-textGray text-[13px] leading-[13px]">Asia Pacific</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="text-left">
-                            <div class="flex items-start gap-10px w-max h-40px">
-                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">35</span><span class="text-textGray text-[13px] leading-[13px]">Partners</span></div>
+              <div>
+                <div class="card"><!----------- Title Start ------------------------------>
+                  <h2 class="font-inter font-bold text-lg">Partners/Country</h2><!----------- Title End ------------------------------>
+                  <div class="table-container">
+                    <table>
+                      <thead>
+                        <th>Country</th>
+                        <th>
+                          <div class="text-left">Partners</div>
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="flex items-center gap-10px w-max h-40px"><img class="w-[25px] lg:w-[38px]" src="../assets/images/flags/Australia.svg" alt="country flag for Australia" loading="lazy" width="35" height="36">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">Australia</span><span class="text-textGray text-[13px] leading-[13px]">Asia Pacific</span></div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-center gap-10px w-max h-40px"><img class="w-[25px] lg:w-[38px]" src="../assets/images/flags/United_States_of_America.svg" alt="country flag for United States" loading="lazy" width="35" height="36">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">United States</span><span class="text-textGray text-[13px] leading-[13px]">North America</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="text-left">
-                            <div class="flex items-start gap-10px w-max h-40px">
-                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">35</span><span class="text-textGray text-[13px] leading-[13px]">Partners</span></div>
+                          </td>
+                          <td>
+                            <div class="text-left">
+                              <div class="flex items-start gap-10px w-max h-40px">
+                                <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">35</span><span class="text-textGray text-[13px] leading-[13px]">Partners</span></div>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-center gap-10px w-max h-40px"><img class="w-[25px] lg:w-[38px]" src="../assets/images/flags/Australia.svg" alt="country flag for Canada" loading="lazy" width="35" height="36">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Canada</span><span class="text-textGray text-[13px] leading-[13px]">North America</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="text-left">
-                            <div class="flex items-start gap-10px w-max h-40px">
-                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">35</span><span class="text-textGray text-[13px] leading-[13px]">Partners</span></div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-center gap-10px w-max h-40px"><img class="w-[25px] lg:w-[38px]" src="../assets/images/flags/United_States_of_America.svg" alt="country flag for United States" loading="lazy" width="35" height="36">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">United States</span><span class="text-textGray text-[13px] leading-[13px]">North America</span></div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <div class="flex items-center gap-10px w-max h-40px"><img class="w-[25px] lg:w-[38px]" src="../assets/images/flags/Germany.svg" alt="country flag for Germany" loading="lazy" width="35" height="36">
-                            <div class="flex flex-col gap-5px"><span class="leading-[14px]">Germany</span><span class="text-textGray text-[13px] leading-[13px]">Europe</span></div>
-                          </div>
-                        </td>
-                        <td>
-                          <div class="text-left">
-                            <div class="flex items-start gap-10px w-max h-40px">
-                              <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">35</span><span class="text-textGray text-[13px] leading-[13px]">Partners</span></div>
+                          </td>
+                          <td>
+                            <div class="text-left">
+                              <div class="flex items-start gap-10px w-max h-40px">
+                                <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">35</span><span class="text-textGray text-[13px] leading-[13px]">Partners</span></div>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-center gap-10px w-max h-40px"><img class="w-[25px] lg:w-[38px]" src="../assets/images/flags/Australia.svg" alt="country flag for Canada" loading="lazy" width="35" height="36">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">Canada</span><span class="text-textGray text-[13px] leading-[13px]">North America</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-left">
+                              <div class="flex items-start gap-10px w-max h-40px">
+                                <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">35</span><span class="text-textGray text-[13px] leading-[13px]">Partners</span></div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="flex items-center gap-10px w-max h-40px"><img class="w-[25px] lg:w-[38px]" src="../assets/images/flags/Germany.svg" alt="country flag for Germany" loading="lazy" width="35" height="36">
+                              <div class="flex flex-col gap-5px"><span class="leading-[14px]">Germany</span><span class="text-textGray text-[13px] leading-[13px]">Europe</span></div>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="text-left">
+                              <div class="flex items-start gap-10px w-max h-40px">
+                                <div class="flex flex-col gap-5px text-left"><span class="leading-[14px]">35</span><span class="text-textGray text-[13px] leading-[13px]">Partners</span></div>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -571,7 +577,7 @@
                 </div>
               </div>
             </div>
-            <div class="grid grid-cols-2 gap-30px">
+            <div class="grid grid-cols-1 mdl:grid-cols-2 gap-30px w-full">
               <div class="card">
                 <div class="flex gap-10px flex-col w-full">
                   <div class="flex items-center gap-10px justify-between w-full">
@@ -595,7 +601,7 @@
                 <div>
                   <canvas class="bar-chart-double" data-labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" data-values="577,322,400,523,348,349,546,485,194,345,148,567" data-values2="400,523,348,349,546,485,478,322,400,489,183,246" data-colors="#39B4EF,#C4E9FB" data-datalabels="Deal Registered,Deals Closed"></canvas>
                 </div>
-                <div class="flex items-center gap-10px justify-between w-full">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-10px sm:justify-between w-full">
                   <div class="flex items-center gap-10px">
                     <div class="flex items-center gap-5px">
                       <div class="w-[12px] h-[12px] block bg-blue rounded-full"></div><span class="text-sm font-semibold">Deals Registered</span>
@@ -629,7 +635,7 @@
                 <div>
                   <canvas class="bar-chart-double" data-labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" data-values="577,322,400,523,348,349,546,485,194,345,148,567" data-values2="400,523,348,349,546,485,478,322,400,489,183,246" data-colors="#1DE39C,#BCF7E2" data-datalabels="Leads Registered,Deals Closed"></canvas>
                 </div>
-                <div class="flex items-center gap-10px justify-between w-full">
+                <div class="flex flex-col sm:flex-row sm:items-center gap-10px sm:justify-between w-full">
                   <div class="flex items-center gap-10px">
                     <div class="flex items-center gap-5px">
                       <div class="w-[12px] h-[12px] block bg-green rounded-full"></div><span class="text-sm font-semibold">Leads Registered</span>

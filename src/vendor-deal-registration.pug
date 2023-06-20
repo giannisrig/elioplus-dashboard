@@ -26,4 +26,20 @@ html(lang="en")
                         <!----------- Content End ------------------------------>
 
             include components/footer/footer.pug
+
+        div(id='overlay' class='fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent')
+        div( id='editDurationModal' class='modal hidden w-full max-w-[400px] p-30px flex flex-col gap-20px')
+
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Default Duration:'
+                - var desc = 'Enter the months for the default duration of all deals...'
+                - var value = 6
+                include components/form/form-number
+
+                div(class='flex w-full justify-end gap-20px')
+                    a(href='#' id='triggerClose' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px')
+                        h4(class='text-sm font-semibold') Cancel
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Save Changes
         include components/scripts.pug

@@ -1,15 +1,15 @@
 
 <div class="bg-white rounded-10px px-20px md:px-30px py-25px flex flex-col gap-30px w-full shadow-card relative">
   <div class="flex gap-15px flex-col w-full">
-    <h2 class="font-inter font-bold text-2xl">My Files</h2>
+    <h2 class="font-inter font-bold text-base lg:text-2xl">My Files</h2>
     <div class="divider"></div><!----------- Tabs Start ------------------------------>
-    <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-      <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#allFiles">All Files</a><a class="tab-item" href="#receivedFiles">Received Files</a><a class="tab-item" href="#sentFiles">Sent Files</a></div><a class="btn border-blue bg-blue text-white hover:bg-blueDark absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm" href="#"><span>Send new file</span><img src="../assets/images/global/send-white.svg" alt="Add Icon" title="Add Icon" width="17" height="17"/></a>
+    <div class="flex justify-between tabs w-full overflow-hidden items-center text-sm">
+      <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#allFiles">All Files</a><a class="tab-item" href="#receivedFiles">Received Files</a><a class="tab-item" href="#sentFiles">Sent Files</a></div><a class="btn border-blue bg-blue text-white hover:bg-blueDark text-sm go-to-trigger" href="#uploadTab"><span>Send new file</span><img src="../assets/images/global/send-white.svg" alt="Add Icon" title="Add Icon" width="17" height="17"/></a>
     </div><!----------- Tabs End ------------------------------>
 <!----------- Filters Start ------------------------------>
-    <div class="flex justify-between w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm flex-wrap">
-      <div class="flex gap-15px flex-col md:flex-row md:gap-10px flex-wrap"><a class="hover:text-blue w-max flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/><span class="text-sm sm:text-base-15">Filters:</span></a>
-        <div class="filters grid hidden md:grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-10px md:gap-5px flex-wrap items-center text-textGray font-semibold text-base-15">
+    <div class="flex justify-between w-full overflow-hidden flex-col lg:flex-row items-start lg:items-center text-sm flex-wrap">
+      <div class="flex gap-15px flex-col lg:flex-row mdl:gap-10px flex-wrap w-full"><a class="hover:text-blue w-max flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/><span class="text-sm sm:text-base-15">Filters:</span></a>
+        <div class="filters grid hidden md:grid grid-cols-2 lg:grid-cols-4 xl:flex lg:flex-row gap-10px md:gap-5px flex-wrap items-center text-textGray font-semibold text-base-15">
           <div class="card-filter w-full lg:w-max px-5px">
             <label class="w-max" for="opportunities">Vendor:</label>
             <select class="bg-transparent text-blackBlue font-bold" id="opportunities" name="opportunities">
@@ -28,11 +28,11 @@
               <option>Docs</option>
             </select>
           </div>
-          <div class="card-filter w-full md:w-max">
+          <div class="card-filter w-full">
             <label class="w-max" for="date_from">From:</label>
             <input type="date" id="date_from" name="trip-date_from" value="2018-07-22" min="2018-01-01" max="2018-12-31"/>
           </div>
-          <div class="card-filter w-full md:w-max">
+          <div class="card-filter w-full">
             <label class="w-max" for="date_from">To:</label>
             <input type="date" id="date_from" name="trip-date_from" value="2018-07-22" min="2018-01-01" max="2018-12-31"/>
           </div>

@@ -197,9 +197,7 @@
                       <div class="flex items-center gap-10px w-max"><img src="../assets/images/global/partner-tier.svg" alt="Company icon" title="Company icon" width="30" height="30">
                         <div class="flex flex-col w-max text-sm">
                           <div class="flex items-center gap-3px"><span class="text-textGray">Tier:</span><span class="font-semibold">Platinum</span></div>
-                          <div class="flex items-center gap-3px"><span class="text-textGray">Commission:</span><span class="font-semibold">35%</span>
-                            <div class="flex items-center gap-3px ml-3px"><img src="../assets/images/global/edit-blue.svg" alt="Edit icon" title="Edit icon" width="14" height="14"><span class="font-semibold text-blue underline">Edit</span></div>
-                          </div>
+                          <div class="flex items-center gap-3px"><span class="text-textGray">Commission:</span><span class="font-semibold">35%</span><a class="flex items-center gap-3px ml-3px modal-trigger" href="#commissionModal"><img src="../assets/images/global/edit-blue.svg" alt="Edit icon" title="Edit icon" width="14" height="14"><span class="font-semibold text-blue underline">Edit</span></a></div>
                         </div>
                       </div>
                       <div class="flex items-center gap-10px w-max"><img src="../assets/images/global/partner-activity.svg" alt="Company icon" title="Company icon" width="30" height="30">
@@ -521,7 +519,7 @@
                       <div>
                         <canvas class="bar-chart-double" data-labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" data-values="577,322,400,523,348,349,546,485,194,345,148,567" data-values2="400,523,348,349,546,485,478,322,400,489,183,246" data-colors="#39B4EF,#C4E9FB" data-datalabels="Deal Registered,Deals Closed"></canvas>
                       </div>
-                      <div class="flex items-center gap-10px justify-between w-full">
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-10px sm:justify-between w-full">
                         <div class="flex items-center gap-10px">
                           <div class="flex items-center gap-5px">
                             <div class="w-[12px] h-[12px] block bg-blue rounded-full"></div><span class="text-sm font-semibold">Deals Registered</span>
@@ -555,7 +553,7 @@
                       <div>
                         <canvas class="bar-chart-double" data-labels="Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" data-values="577,322,400,523,348,349,546,485,194,345,148,567" data-values2="400,523,348,349,546,485,478,322,400,489,183,246" data-colors="#1DE39C,#BCF7E2" data-datalabels="Leads Registered,Deals Closed"></canvas>
                       </div>
-                      <div class="flex items-center gap-10px justify-between w-full">
+                      <div class="flex flex-col sm:flex-row sm:items-center gap-10px sm:justify-between w-full">
                         <div class="flex items-center gap-10px">
                           <div class="flex items-center gap-5px">
                             <div class="w-[12px] h-[12px] block bg-green rounded-full"></div><span class="text-sm font-semibold">Leads Registered</span>
@@ -612,46 +610,30 @@
                         <div class="flex flex-col gap-15px">
                           <div class="grid grid-cols-4 mdl:grid-cols-2 lg:grid-cols-4 gap-y-20px">
                             <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Q1 Goal:</span>
-                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$248</span>
-                                <div class="flex items-center gap-3px"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></div>
-                              </div>
+                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$248</span><a class="modal-trigger flex items-center gap-3px" href="#editGoalAmountModalQ1"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></a></div>
                             </div>
                             <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Q2 Goal:</span>
-                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$193</span>
-                                <div class="flex items-center gap-3px"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></div>
-                              </div>
+                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$193</span><a class="modal-trigger flex items-center gap-3px" href="#editGoalAmountModalQ1"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></a></div>
                             </div>
                             <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Q3 Goal:</span>
-                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$589</span>
-                                <div class="flex items-center gap-3px"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></div>
-                              </div>
+                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$589</span><a class="modal-trigger flex items-center gap-3px" href="#editGoalAmountModalQ1"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></a></div>
                             </div>
                             <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Q4 Goal:</span>
-                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$395</span>
-                                <div class="flex items-center gap-3px"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></div>
-                              </div>
+                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$395</span><a class="modal-trigger flex items-center gap-3px" href="#editGoalAmountModalQ1"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></a></div>
                             </div>
                           </div>
                           <div class="grid grid-cols-4 mdl:grid-cols-2 lg:grid-cols-4 gap-y-20px">
                             <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Q1 Result:</span>
-                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$204</span>
-                                <div class="flex items-center gap-3px"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></div>
-                              </div>
+                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$204</span><a class="modal-trigger flex items-center gap-3px" href="#editGoalAmountModalQ1"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></a></div>
                             </div>
                             <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Q2 Result:</span>
-                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$532</span>
-                                <div class="flex items-center gap-3px"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></div>
-                              </div>
+                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$532</span><a class="modal-trigger flex items-center gap-3px" href="#editGoalAmountModalQ1"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></a></div>
                             </div>
                             <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Q3 Result:</span>
-                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$374</span>
-                                <div class="flex items-center gap-3px"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></div>
-                              </div>
+                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$374</span><a class="modal-trigger flex items-center gap-3px" href="#editGoalAmountModalQ1"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></a></div>
                             </div>
                             <div class="flex flex-col gap-5px w-max"><span class="text-textGray text-sm">Q4 Result:</span>
-                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$550</span>
-                                <div class="flex items-center gap-3px"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></div>
-                              </div>
+                              <div class="flex items-center gap-5px"><span class="text-sm font-bold">$550</span><a class="modal-trigger flex items-center gap-3px" href="#editGoalAmountModalQ1"><img src="../assets/images/global/edit-blackBlue.svg" width="14" height="14"><span class="text-textGray text-sm">Edit</span></a></div>
                             </div>
                           </div>
                         </div>
@@ -788,6 +770,43 @@
           <div class="flex gap-15px justify-center"><a href="#">Terms of Use</a><a href="#">Privacy Policy</a></div><span class="w-full md:w-max text-center md:text-left font-semibold">Contact Support: info@elioplus.com</span>
         </div>
       </footer>
-    </main><script src="../assets/js/dist/script.min.js"></script>
+    </main>
+    <div class="fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent" id="overlay"></div>
+    <div class="modal hidden w-full max-w-[450px] p-30px flex flex-col gap-20px" id="editGoalAmountModalQ1">
+      <form class="w-full flex flex-col gap-20px">
+        <div class="flex flex-col gap-15px w-full">
+          <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Q1 Goal:</span><span class="text-textGray text-sm">Enter the goal amount for the first quarter (Q1) of 2023.</span>
+          </div>
+          <div class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
+            <label class="text-textGray">Amount is USD($):</label>
+            <input class="bg-transparent font-semibold w-[100px]" type="number" value="285">
+          </div>
+        </div>
+        <div class="flex w-full justify-end gap-20px"><a class="btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close" href="#">
+            <h4 class="text-sm font-semibold">Cancel</h4></a>
+          <button class="btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center" type="submit">
+            <h4 class="text-sm font-semibold">Save Changes</h4>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="modal hidden w-full max-w-[450px] p-30px flex flex-col gap-20px" id="commissionModal">
+      <form class="w-full flex flex-col gap-20px">
+        <div class="flex flex-col gap-15px w-full">
+          <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Commission:</span><span class="text-textGray text-sm">Enter the commission amount for the current partner.</span>
+          </div>
+          <div class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
+            <label class="text-textGray">Percentage amount:</label>
+            <input class="bg-transparent font-semibold w-[100px]" type="number" value="35">
+          </div>
+        </div>
+        <div class="flex w-full justify-end gap-20px"><a class="btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close" href="#">
+            <h4 class="text-sm font-semibold">Cancel</h4></a>
+          <button class="btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center" type="submit">
+            <h4 class="text-sm font-semibold">Save Changes</h4>
+          </button>
+        </div>
+      </form>
+    </div><script src="../assets/js/dist/script.min.js"></script>
   </body>
 </html>

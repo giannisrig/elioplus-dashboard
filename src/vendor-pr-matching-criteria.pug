@@ -176,7 +176,7 @@ html(lang="en")
 
                                     <!----------- Title Start ------------------------------>
                                     .w-full.flex.flex-col.gap-15px
-                                        h2(class='font-inter font-bold text-2xl') Step <span class='text-blue'>3</span> of 4: Industry Products
+                                        h2(class='font-inter font-bold text-2xl') 4. Industry Products
                                         .divider
                                     <!----------- Title End ------------------------------>
                                     div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-30px')
@@ -279,12 +279,16 @@ html(lang="en")
 
                                     .flex.flex-col.gap-15px
                                         h3(class='text-base font-bold') 1. Basic Criteria
-                                        div(class='w-full flex gap-30px lg:gap-50px')
+                                        div(class='w-full grid grid-cols-1 sm:grid-cols-3 lg:flex gap-30px lg:gap-50px')
 
 
-                                            div(class='flex flex-col gap-5px w-max')
+                                            div(class='flex flex-col gap-5px w-full xl:w-max sm:col-span-3')
                                                 span(class='text-textGray text-sm') Industry verticals:
-                                                span(class='text-base-15 font-bold') Business Process Management, Workflow Management, eCommerce, Unified Communications
+                                                div(class='text-base-15 font-bold flex gap-5px flex-wrap')
+                                                    span Business Process Management
+                                                    span Workflow Management
+                                                    span eCommerce
+                                                    span Unified Communications
 
                                             div(class='flex flex-col gap-5px w-max')
                                                 span(class='text-textGray text-sm') Set up fee:
@@ -303,7 +307,7 @@ html(lang="en")
 
                                     .flex.flex-col.gap-15px
                                         h3(class='text-base font-bold') 2. Optional Criteria
-                                        div(class='w-full flex gap-30px lg:gap-50px')
+                                        div(class='w-full grid grid-cols-1 sm:grid-cols-3 lg:flex gap-30px lg:gap-50px')
 
 
                                             div(class='flex flex-col gap-5px w-max')
@@ -334,7 +338,7 @@ html(lang="en")
 
                                     .flex.flex-col.gap-15px
                                         h3(class='text-base font-bold') 3. Advanced Criteria
-                                        div(class='w-full flex gap-30px lg:gap-50px')
+                                        div(class='w-full grid grid-cols-1 sm:grid-cols-3 lg:flex gap-30px lg:gap-50px')
 
 
                                             div(class='flex flex-col gap-5px w-max')
@@ -357,11 +361,11 @@ html(lang="en")
                                                 span(class='text-textGray text-sm') Partner program tiers:
                                                 span(class='text-base-15 font-bold') 1
 
-                                        div(class='flex flex-col gap-5px w-max')
+                                        div(class='flex flex-col gap-5px xl:w-max col-span-3')
                                                 span(class='text-textGray text-sm') Countries:
                                                 span(class='text-base-15 font-bold') Asia-Pacific, North America, Canada
 
-                                    .w-full.flex.justify-end.gap-20px
+                                    div(class='flex-col items-center sm:flex-row sm:justify-end').w-full.flex.gap-20px
 
                                         a(href='#triggerStep2' class='step-nav-btn btn large font-bold text-sm justify-center text-blue')
 

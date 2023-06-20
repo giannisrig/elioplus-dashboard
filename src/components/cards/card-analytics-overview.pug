@@ -1,22 +1,22 @@
 .card
 
     .flex.gap-15px.flex-col.w-full
-        h2(class='font-inter font-bold text-lg') Analytics Overview
+        h2(class='font-inter font-bold text-base lg:text-lg') Analytics Overview
         .divider
 
-    div(class='flex flex-col gap-20px')
-        div(class='flex items-center gap-10px w-full')
+    div(class='grid grid-cols-1 sm:flex sm:flex-row lg:flex-col gap-20px')
+
+        div(class='flex items-center gap-10px w-max lg:w-full')
             img(src="../assets/images/global/total-revenue.svg" alt="Total Revenue" title="Total Revenue"  width="30" height="30")
             div(class='flex flex-col w-max')
                 span(class='text-textGray text-sm') Total Revenue:
                 span(class='text-base-15 font-bold text-blue') $275,000,000
-        div(class='flex items-center gap-10px w-full')
+
+        div(class='flex items-center gap-10px w-max lg:w-full')
             img(src="../assets/images/global/open-opportunities.svg" alt="open opportunities" title="open opportunities"  width="30" height="30")
             div(class='flex flex-col w-max')
                 span(class='text-textGray text-sm') Open Opportunities:
                 span(class='text-base-15 font-normal') <span class='text-blue font-semibold'>127</span> Leads, <span class='text-blue font-semibold'>82</span> Deals
-
-
 
 
 

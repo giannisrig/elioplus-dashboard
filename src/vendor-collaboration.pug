@@ -29,22 +29,25 @@ html(lang="en")
 
 
                             div(id='partnersList' class='tab-content')
-                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px')
+                                div(class='grid grid-col-1 mdl:grid-cols-3-9 w-full gap-30px')
                                     div
-                                        include components/cards/card-collaboration-partners
+                                        div.sticky.top-80px
+                                            include components/cards/card-collaboration-partners
 
                                     div.w-full
-                                        div.flex.flex-col.gap-50px.w-full
-                                            include components/cards/card-chat-1-1
+                                        include components/cards/card-chat-1-1
+
+
                             div(id='groups' class='tab-content hidden')
 
-                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px')
+                                div(class='grid grid-col-1 lg:grid-cols-3-9 w-full gap-30px')
                                     div
-                                        include components/cards/card-collaboration-groups
+                                        div.sticky.top-80px
+                                            include components/cards/card-collaboration-groups
 
                                     div.w-full
-                                        div.flex.flex-col.gap-50px.w-full
-                                            include components/cards/card-chat-group
+                                        include components/cards/card-chat-group
+
 
 
                         <!----------- Content End ------------------------------>

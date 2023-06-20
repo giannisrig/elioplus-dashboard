@@ -1,5 +1,5 @@
 div(class='card')
-    h2(class='font-inter font-bold text-2xl') Deals
+    h2(class='font-inter font-bold text-base lg:text-2xl') Deals
 
     <!----------- Tabs Start ------------------------------>
 
@@ -10,26 +10,29 @@ div(class='card')
             a(href='#openDeals' class='tab-item') Open Deals
             a(href='#pastDeals' class='tab-item' ) Past Deals
 
-        a(href='#' class='btn border-transparent bg-transparent text-textGray absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+        a(href='#editDurationModal' class='btn border-transparent bg-transparent text-textGray absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm modal-trigger')
             img(src="../assets/images/global/calendar-blackBlue.svg" alt="Calendar Icon" title="Calendar Icon" width="17" height="17")
-            span.font-normal Default Month Duration:
+            span.font-normal Default Duration:
             span(class='text-blackBlue') 6 months
             img(src="../assets/images/global/edit-blue.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17")
 
     <!----------- Tabs End ------------------------------>
 
 
-
     <!----------- Filters Start ------------------------------>
 
     div(class="flex gap-15px flex-col md:flex-row md:gap-10px")
+
         a(href='#' class='hover:text-blue').flex.items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-filters
             img(src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
             span(class='text-sm sm:text-base-15') Partner Filters
+
         div(class='filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px').items-center.text-textGray.font-semibold.text-base-15
+
             div(class='card-filter w-full md:w-[380px]')
                 input(placeholder="Type a name, email, phone to search for a partner...").grow.text-sm.outline-none
                 img(src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
+
             div(class='card-filter w-full md:w-max')
                 label(for='dealsVendor' class='w-max') Select a partner:
                 select(id='dealsVendor' name='dealsVendor').bg-transparent.text-blackBlue.font-bold

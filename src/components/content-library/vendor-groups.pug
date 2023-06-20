@@ -5,9 +5,9 @@ div(class='card px-15px lg:px-25px w-full').gap-20px
 
             h2(class='font-inter font-bold text-base lg:text-2xl') Groups
 
-            a(href='#' class='text-sm font-semibold text-blue flex gap-5px')
-                img(src="../assets/images/global/filters.svg" alt="filters Icon" title="filters Icon" width="17" height="17")
-                span Filters
+            a(href='#createGroupModal' class='text-sm font-semibold text-blue flex gap-3px modal-trigger')
+                img(src="../assets/images/global/add-blue.svg" alt="upload Icon" title="upload Icon" width="17" height="17")
+                span Add Group
 
         .divider
 
@@ -34,9 +34,4 @@ div(class='card px-15px lg:px-25px w-full').gap-20px
         -var text1 = 'Product 1'
         -var text2 = '3 Partners'
         include ../../components/collaboration/group-item
-
-
-    a(href='#modalNewCollaborationGroup' class='btn bg-blue text-white hover:bg-blueDark hover:border-blueDark w-full justify-center h-[40px] items-center modal-trigger')
-        span(class='text-sm font-semibold') Create new Group
-        img( src='../assets/images/global/group-add-white.svg' alt='Add Group icon' loading='lazy' width="18" height="18")
 

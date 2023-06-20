@@ -26,17 +26,19 @@ html(lang="en")
                                 div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
                                     a(href='#myFiles' class='tab-item active') My Files
                                     a(href='#partnerFiles' class='tab-item') Partner Files
-                                    a(href='#sendFile' class='tab-item') Send new file
+                                    a(href='#uploadFiles' id='uploadTab' class='tab-item') Send new file
 
 
                             div(id='myFiles' class='tab-content')
 
-                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px tabs-section')
+                                div(class='grid grid-col-1 mdl:grid-cols-4-8 lg:grid-cols-3-9 w-full gap-25px tabs-section')
                                     div
-                                        include components/content-library/vendor-folders
+                                        div.sticky.top-80px.w-full.flex.flex-col.gap-20px
+                                            include components/content-library/vendor-folders
+                                            include components/content-library/vendor-groups
 
                                     div.w-full
-                                        div.flex.flex-col.gap-50px.w-full
+                                        div.flex.flex-col.gap-50px.w-full.sticky.top-80px
                                             include components/cards/card-content-library-my-files
                                             div(id='allFiles' class='tab-content')
                                                 include components/content-library/vendor-media-items
@@ -48,7 +50,7 @@ html(lang="en")
 
                             div(id='partnerFiles' class='tab-content hidden')
                                 include components/content-library/partner-files
-                            div(id='sendFile' class='tab-content hidden')
+                            div(id='uploadFiles' class='tab-content hidden')
                                 div.w-full.flex.flex-col.gap-50px
                                     include components/cards/card-select-partners-vendor
                                     include components/cards/card-send-files
@@ -56,4 +58,112 @@ html(lang="en")
                         <!----------- Content End ------------------------------>
 
             include components/footer/footer.pug
+
+        div(id='overlay' class='fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent')
+        div( id='editFolderModal' class='modal hidden w-full max-w-[450px] p-30px flex flex-col gap-20px')
+
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Edit Folder
+                .divider
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Folder Name:'
+                - var desc = null
+                - var placeholder = 'Enter the new folder name...'
+                include components/form/form-input
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Save Changes
+
+
+        div( id='createFolderModal' class='modal hidden w-full max-w-[450px] p-30px flex flex-col gap-20px')
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Folder Name:'
+                - var desc = null
+                - var placeholder = 'Enter the new folder name...'
+                include components/form/form-input
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Create Folder
+
+        div( id='createGroupModal' class='modal hidden w-full max-w-[600px] p-30px flex flex-col gap-20px')
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Group Name:'
+                - var desc = null
+                - var placeholder = 'Enter the group name...'
+                include components/form/form-input
+
+                - var title = 'Select Partners:'
+                - var inputName = 'select_partners'
+                - var cols = 3
+                -var options = ['Partner Name 1', 'Partner Name 2', 'Partner Name 3', 'Partner Name 4', 'Partner Name 5', 'Partner Name 6', 'Partner Name 7', 'Partner Name 8', 'Partner Name 9', 'Partner Name 10', 'Partner Name 11', 'Partner Name 12']
+                include components/form/form-radio-cols
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Create Group
+
+        div( id='editGroupModal' class='modal hidden w-full max-w-[600px] p-30px flex flex-col gap-20px')
+
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Edit Group
+                .divider
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Group Name:'
+                - var desc = null
+                - var placeholder = 'Enter the group name...'
+                include components/form/form-input
+
+                - var title = 'Select Partners:'
+                - var inputName = 'select_partners'
+                - var cols = 3
+                -var options = ['Partner Name 1', 'Partner Name 2', 'Partner Name 3', 'Partner Name 4', 'Partner Name 5', 'Partner Name 6', 'Partner Name 7', 'Partner Name 8', 'Partner Name 9', 'Partner Name 10', 'Partner Name 11', 'Partner Name 12']
+                include components/form/form-radio-cols
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Save Changes
+
+        div( id='uploadPreviewModal' class='modal hidden w-full max-w-[600px] p-30px flex flex-col gap-20px')
+
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Upload a Preview
+                .divider
+
+            form.w-full.flex.flex-col.gap-20px
+                <div class="drop-zone border-blue bg-gray w-full">
+                <span class="drop-zone__prompt font-bold text-base">Drag & drop files or <span class="text-blue">Browse</span>
+                <span class="block w-full text-sm text-center text-textGray font-normal">Supported formats: JPEG, PNG, XLS, PDF, PSD, AI, Word, PPT</span>
+                </span>
+                <input type="file" name="myFile" class="drop-zone__input">
+                </div>
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Save Changes
         include components/scripts.pug

@@ -1,10 +1,10 @@
 div(class='card')
 
-    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+    div(class='flex justify-between tabs w-full overflow-hidden gap-10px flex-col sm:flex-row items-start sm:items-center text-sm mdl:text-base-15')
 
-        h2(class='font-inter font-bold text-2xl') 2. Fill in the Lead Details
+        h2(class='font-inter font-bold text-lg mdl:text-2xl') 2. Fill in the Lead Details
 
-        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blackBlue hover:border-blackBlue text-sm toast-demo' data-type='error')
             span Pull Data from CRM
             img(src="../assets/images/global/cloud-download.svg" alt="download Icon" title="download Icon" width="17" height="17")
 
@@ -53,5 +53,5 @@ div(class='card')
     div(class='flex justify-between w-full')
         a(href='#' class='btn border-blackBlue bg-white text-blackBlue hover:text--blue hover:border-blue text-sm')
             span Clear Fields
-        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark text-sm')
+        a(href='#' class='btn border-blue bg-blue text-white hover:bg-blueDark text-sm toast-demo' data-type='success')
             span Add New Lead

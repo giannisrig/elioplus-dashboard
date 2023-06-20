@@ -26,4 +26,34 @@ html(lang="en")
                         <!----------- Content End ------------------------------>
 
             include components/footer/footer.pug
+
+
+        div(id='overlay' class='fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent')
+        div( id='editTaskModal' class='modal hidden w-[600px] p-30px flex flex-col gap-20px')
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Edit Task
+                .divider
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Task Name:'
+                - var desc = null
+                - var placeholder = 'Enter an email address or company name...'
+                include components/form/form-input
+
+                - var title =  'Task Date:'
+                - var desc = null
+                - var label = 'Select Date'
+                include components/form/form-date
+
+                - var title = 'Description:'
+                - var desc = null
+                - var placeholder = 'Type your message here...'
+                include components/form/form-textarea
+
+                div(class='flex w-full justify-end gap-20px')
+                    a(href='#' id='triggerClose' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px')
+                        h4(class='text-sm font-semibold') Cancel
+                    button(type='submit' class='btn bg-blue text-white hover:bg-darkBlue justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Send message
+                        img( src='../assets/images/global/send-white.svg' alt='location icon' loading='lazy' width="20" height="20")
         include components/scripts.pug

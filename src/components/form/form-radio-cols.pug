@@ -1,5 +1,5 @@
 mixin radioOptions(options, inputName, cols)
-    div(class='grid bg-transparent font-semibold gap-15px grid-cols-'+cols)
+    div(class='grid bg-transparent font-semibold gap-15px grid-cols-2 md:grid-cols-'+cols)
         each option in options ? options : []
             div.flex.gap-3px.items-center
                 input(type="radio" id=option name=inputName value=option)

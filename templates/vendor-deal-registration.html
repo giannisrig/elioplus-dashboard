@@ -175,9 +175,9 @@
               <p>Deal registration is a feature that must be included in a Partner Relationship Management software. It is the feature that a channel partner is using in order to avoid any conflict with you or your channel partners when they are trying to close a deal.</p><a class="btn border-blue hover:text-blue">Read more about the Deal Registration</a>
             </div>
             <div class="card">
-              <h2 class="font-inter font-bold text-2xl">Deals</h2><!----------- Tabs Start ------------------------------>
+              <h2 class="font-inter font-bold text-base lg:text-2xl">Deals</h2><!----------- Tabs Start ------------------------------>
               <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#pendingDeals">Pending Deals</a><a class="tab-item" href="#openDeals">Open Deals</a><a class="tab-item" href="#pastDeals">Past Deals</a></div><a class="btn border-transparent bg-transparent text-textGray absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm" href="#"><img src="../assets/images/global/calendar-blackBlue.svg" alt="Calendar Icon" title="Calendar Icon" width="17" height="17"><span class="font-normal">Default Month Duration:</span><span class="text-blackBlue">6 months</span><img src="../assets/images/global/edit-blue.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17"></a>
+                <div class="flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px"><a class="tab-item active" href="#pendingDeals">Pending Deals</a><a class="tab-item" href="#openDeals">Open Deals</a><a class="tab-item" href="#pastDeals">Past Deals</a></div><a class="btn border-transparent bg-transparent text-textGray absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm modal-trigger" href="#editDurationModal"><img src="../assets/images/global/calendar-blackBlue.svg" alt="Calendar Icon" title="Calendar Icon" width="17" height="17"><span class="font-normal">Default Duration:</span><span class="text-blackBlue">6 months</span><img src="../assets/images/global/edit-blue.svg" alt="Edit Icon" title="Edit Icon" width="17" height="17"></a>
               </div><!----------- Tabs End ------------------------------>
 <!----------- Filters Start ------------------------------>
               <div class="flex gap-15px flex-col md:flex-row md:gap-10px"><a class="hover:text-blue flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"><span class="text-sm sm:text-base-15">Partner Filters</span></a>
@@ -704,8 +704,8 @@
                   </table>
                 </div>
               </div>
-              <div class="flex-col sm:flex-row flex items-center gap-15px text-textGray font-semibold text-base-15 justify-between">
-                <div class="w-full sm:w-max justify-between sm:justify-start flex items-center gap-15px">
+              <div class="flex-col sm:flex-row flex-wrap w-full flex items-center gap-15px text-textGray font-semibold text-base-15 justify-between">
+                <div class="w-full sm:w-max flex-col md:flex-row justify-between sm:justify-start flex items-center gap-15px">
                   <div class="card-filter rounded-40px gap-5px bg-white py-5px">
                     <label class="w-max" for="dealsItemsPerPage">Items per page:</label>
                     <select class="bg-transparent text-blackBlue font-bold" id="dealsItemsPerPage" name="dealsItemsPerPage">
@@ -719,7 +719,7 @@
                                       <div class="w-[30px] h-[30px] rounded-full border border-blue bg-blue flex justify-center text-center items-center text-white"><span class="text-xs lg:text-sm font-semibold">1</span></div><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">2</span></a><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">3</span></a><a class="w-[30px] h-[30px] rounded-full hover:bg-blue hover:border-blue hover:text-white border border-gray bg-white flex justify-center text-center items-center" href="#"><span class="text-xs lg:text-sm  font-semibold">&gt;</span></a>
                   </div>
                 </div>
-                <div class="text-right sm:text-left w-full sm:w-max text-sm"><span class='text-blackBlue'>98</span> items in <span class='text-blackBlue'>10</span> Pages</div>
+                <div class="text-center sm:text-left w-full sm:w-max text-sm"><span class='text-blackBlue'>98</span> items in <span class='text-blackBlue'>10</span> Pages</div>
               </div>
             </div><!----------- Content End ------------------------------>
           </div>
@@ -730,6 +730,25 @@
           <div class="flex gap-15px justify-center"><a href="#">Terms of Use</a><a href="#">Privacy Policy</a></div><span class="w-full md:w-max text-center md:text-left font-semibold">Contact Support: info@elioplus.com</span>
         </div>
       </footer>
-    </main><script src="../assets/js/dist/script.min.js"></script>
+    </main>
+    <div class="fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent" id="overlay"></div>
+    <div class="modal hidden w-full max-w-[400px] p-30px flex flex-col gap-20px" id="editDurationModal">
+      <form class="w-full flex flex-col gap-20px">
+        <div class="flex flex-col gap-15px w-full">
+          <div class="flex flex-col gap-5px w-full"><span class="text-base-15 font-bold">Default Duration:</span><span class="text-textGray text-sm">Enter the months for the default duration of all deals...</span>
+          </div>
+          <div class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px">
+            <label class="text-textGray"></label>
+            <input class="bg-transparent font-semibold w-[100px]" type="number" value="6">
+          </div>
+        </div>
+        <div class="flex w-full justify-end gap-20px"><a class="btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px" href="#" id="triggerClose">
+            <h4 class="text-sm font-semibold">Cancel</h4></a>
+          <button class="btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center" type="submit">
+            <h4 class="text-sm font-semibold">Save Changes</h4>
+          </button>
+        </div>
+      </form>
+    </div><script src="../assets/js/dist/script.min.js"></script>
   </body>
 </html>

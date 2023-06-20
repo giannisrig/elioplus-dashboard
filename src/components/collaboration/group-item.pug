@@ -2,7 +2,7 @@ div( class='relative flex items-center gap-10px border-b border-gray w-full py-1
     <div class="flex -space-x-5">
     <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="../assets/images/users/profile-picture-5.jpg" alt="">
     <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="../assets/images/users/profile-picture-2.jpg" alt="">
-    <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800" src="../assets/images/users/profile-picture-3.jpg" alt="">
+    <img class="w-10 h-10 border-2 border-white rounded-full dark:border-gray-800 block lg:hidden xl:block" src="../assets/images/users/profile-picture-3.jpg" alt="">
 
     </div>
     a(href='#' class='flex flex-col gap-5px mb-5px ')
@@ -13,5 +13,5 @@ div( class='relative flex items-center gap-10px border-b border-gray w-full py-1
         a(href='#' class='actions-trigger')
             img(src='../assets/images/global/dots-vertical-gray.svg')
         div(class='actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1 text-sm font-semibold' )
-            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Delete Group
-            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Edit Group
+            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo' data-type='success') Delete Group
+            a(href='#editGroupModal' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px modal-trigger') Edit Group

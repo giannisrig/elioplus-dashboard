@@ -25,7 +25,7 @@ html(lang="en")
 
                                 div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
                                     a(href='#onBoardingFiles' class='tab-item active') Onboarding files
-                                    a(href='#uploadFiles' class='tab-item') Upload new file
+                                    a(href='#uploadFiles' id='uploadTab' class='tab-item') Upload new file
 
 
                             div(id='onBoardingFiles' class='tab-content')
@@ -47,4 +47,67 @@ html(lang="en")
                         <!----------- Content End ------------------------------>
 
             include components/footer/footer.pug
+
+        div(id='overlay' class='fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent')
+
+        div( id='editFolderModal' class='modal hidden w-full max-w-[450px] p-30px flex flex-col gap-20px')
+
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Edit Folder
+                .divider
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Folder Name:'
+                - var desc = null
+                - var placeholder = 'Enter the new folder name...'
+                include components/form/form-input
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Save Changes
+
+        div( id='createFolderModal' class='modal hidden w-full max-w-[450px] p-30px flex flex-col gap-20px')
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Folder Name:'
+                - var desc = null
+                - var placeholder = 'Enter the new folder name...'
+                include components/form/form-input
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Create Folder
+
+
+        div( id='uploadPreviewModal' class='modal hidden w-full max-w-[600px] p-30px flex flex-col gap-20px')
+
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Upload a Preview
+                .divider
+
+            form.w-full.flex.flex-col.gap-20px
+                <div class="drop-zone border-blue bg-gray w-full">
+                <span class="drop-zone__prompt font-bold text-base">Drag & drop files or <span class="text-blue">Browse</span>
+                <span class="block w-full text-sm text-center text-textGray font-normal">Supported formats: JPEG, PNG, XLS, PDF, PSD, AI, Word, PPT</span>
+                </span>
+                <input type="file" name="myFile" class="drop-zone__input">
+                </div>
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Save Changes
+
+
         include components/scripts.pug

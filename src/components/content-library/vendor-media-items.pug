@@ -1,4 +1,4 @@
-div(class='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-25px')
+div(class='grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-25px')
 
     -var type = 'png'
     -var title = 'Logo.png'
@@ -34,7 +34,7 @@ div(class='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-25p
     include ../../components/content-library/media-item
 
     <!----------- Media Item ------------------------------>
-    a(href='#uploadFiles' class='border-2 border-dashed border-blue tab-item').card.items-center.justify-center.text-center.bg-gray
+    a(href='#uploadTab' class='border-2 border-dashed border-blue go-to-trigger').card.items-center.justify-center.text-center.bg-gray
         div(class='w-[70px] flex justify-center')
             img(src='../assets/images/file-icons/upload.svg')
         h3.text-base.text-blue.font-bold Upload New File

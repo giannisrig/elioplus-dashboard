@@ -4,18 +4,23 @@ mixin selectDropdown(options)
             option(value=option)= option
 
 <!----------- Upload Item ------------------------------>
-.upload-item.flex.gap-15px
-    div(class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px")
-        img(src='../assets/images/global/folder.svg' width="20" height="20")
-        label.text-textGray Category:
-        +selectDropdown(cats)
-    div(class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px relative")
-        img(src='../assets/images/global/upload-file.svg' width="20" height="20")
-        label.text-textGray File:
-        input(value=uploadedFile class='uploaded-file w-fit').bg-transparent.font-semibold
-        a(href='#' class='delete ')
-            img(src='../assets/images/global/delete-red-circle.svg' width="20" height="20")
-    div(class='flex flex-col w-max')
+div(class='upload-item flex flex-col lg:flex-row gap-15px')
+
+    div(class='flex flex-col sm:flex-row gap-5px sm:gap-15px')
+
+        div(class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px")
+            img(src='../assets/images/global/folder.svg' width="20" height="20")
+            label.text-textGray Category:
+            +selectDropdown(cats)
+
+        div(class="border-2 border-gray text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-8px px-10px h-[40px] outline-0 flex items-center gap-5px relative")
+            img(src='../assets/images/global/upload-file.svg' width="20" height="20")
+            label.text-textGray File:
+            input(value=uploadedFile class='uploaded-file w-fit').bg-transparent.font-semibold
+            a(href='#' class='delete ')
+                img(src='../assets/images/global/delete-red-circle.svg' width="20" height="20")
+
+    div(class='flex items-center gap-5px lg:gap-0 lg:flex-col lg:items-start w-max')
         .flex.gap-5px.items-center.upload-status
             div(class='w-[10px] h-[10px] rounded-full bg-green ')
             div(class='text-sm font-semibold') Uploaded
