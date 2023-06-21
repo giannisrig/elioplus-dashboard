@@ -5,22 +5,22 @@ div(class='card')
 
         <!----------- Filters Start ------------------------------>
 
-        div(class='flex justify-between w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm flex-wrap')
+        div(class='flex justify-between w-full overflow-hidden flex-col lg:flex-row items-start lg:items-center text-sm flex-wrap')
 
-            div(class="flex gap-15px flex-col md:flex-row md:gap-10px flex-wrap")
+            div(class="flex gap-15px flex-col flex-wrap w-full")
                 a(href='#' class='hover:text-blue w-max').flex.items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-filters
                     img(src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15")
                     span(class='text-sm sm:text-base-15') Filters:
 
-                div(class='filters grid hidden md:grid grid-cols-1 md:grid-cols-2 lg:flex lg:flex-row gap-10px md:gap-5px flex-wrap').items-center.text-textGray.font-semibold.text-base-15
+                div(class='filters grid hidden md:grid grid-cols-2 lg:grid-cols-4 gap-10px md:gap-5px flex-wrap').items-center.text-textGray.font-semibold.text-base-15
 
                     div(class='card-filter w-full lg:w-max px-5px')
                         label(for='opportunities' class='w-max') Vendor:
                         select(id='opportunities' name='opportunities').bg-transparent.text-blackBlue.font-bold
-                            option All Vendors
-                            option Vendor 1
-                            option Vendor 2
-                            option Vendor 3
+                            option Partners
+                            option Partner 1
+                            option Partner 2
+                            option Partner 3
 
                     div(class='card-filter w-full lg:w-max px-5px')
                         label(for='status_pipeline' class='w-max') File type:
@@ -35,7 +35,5 @@ div(class='card')
 
                     - var text1= 'To:'
                     include ../filters/datepicker
-
-
 
         <!----------- Filters End ------------------------------>

@@ -26,14 +26,15 @@ html(lang="en")
                                 div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
                                     a(href='#myFiles' class='tab-item active') My Files
                                     a(href='#partnerFiles' class='tab-item') Partner Files
-                                    a(href='#sendFile' class='tab-item') Send new file
+                                    a(href='#uploadFiles' id='uploadTab' class='tab-item') Send new file
 
 
                             div(id='myFiles' class='tab-content')
 
-                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px tabs-section')
+                                div(class='grid grid-col-1 md:grid-cols-5-7 mdl:grid-cols-4-8 lg:grid-cols-3-9 w-full gap-25px tabs-section')
                                     div
-                                        include components/content-library/channel-partner-folders
+                                        div.sticky.top-80px.w-full
+                                            include components/content-library/channel-partner-folders
 
                                     div.w-full
                                         div.flex.flex-col.gap-50px.w-full
@@ -48,7 +49,7 @@ html(lang="en")
 
                             div(id='partnerFiles' class='tab-content hidden')
                                 include components/content-library/partner-files
-                            div(id='sendFile' class='tab-content hidden')
+                            div(id='uploadFiles' class='tab-content hidden')
                                 div.w-full.flex.flex-col.gap-50px
                                     include components/cards/card-select-partners
                                     include components/cards/card-send-files

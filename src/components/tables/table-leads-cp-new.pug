@@ -1,0 +1,166 @@
+.table-container
+    table
+        thead
+            th Vendor
+            th Client
+            th Location
+            th(class='w-[175px]') Website
+            th(class='w-[100px] text-center') State
+            th(class='w-[100px] text-center') Status
+            th.text-center Date
+            th Actions
+        tbody
+            tr
+                td
+                    div(class='flex items-start gap-10px w-max h-40px')
+                        img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                        div(class='flex flex-col gap-5px mb-5px')
+                            span(class='leading-[14px]') Partner Name 1
+                            a( href='../templates/channel-partner-partner-directory-manage-partner.html' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+                td
+                    -var text1 = 'Test Lead Client 1'
+                    -var text2 = 'someusermail1@domain.com'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'United Kingdom'
+                    -var text2 = 'North Europe'
+                    include ../../components/table-cell/double-text
+
+                td
+                    -var website = 'https://somelongwebs...'
+                    include ../../components/table-cell/website
+
+                td
+                    -var text = 'Open'
+                    include ../../components/table-cell/status
+                td
+                    -var className = 'bg-yellow'
+                    -var text = 'Pending'
+                    include ../../components/table-cell/status
+                td.text-center 2023/04/15
+                td
+                    div(class='flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px')
+                        a(href='#' class='actions-trigger')
+                            img(src='../assets/images/global/dots-actions.svg' alt='dots icon')
+                        div(class='actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1')
+                            a(href='../templates/channel-partner-lead-distribution-edit.html' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Edit Lead
+                            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo' data-type='success') Delete Lead
+
+            tr
+                td
+                    div(class='flex items-start gap-10px w-max h-40px')
+                        img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                        div(class='flex flex-col gap-5px mb-5px')
+                            span(class='leading-[14px]') Partner Name 2
+                            a( href='../templates/channel-partner-partner-directory-manage-partner.html' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+                td
+                    -var text1 = 'Test Lead Client 1'
+                    -var text2 = 'someusermail1@domain.com'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'United Kingdom'
+                    -var text2 = 'North Europe'
+                    include ../../components/table-cell/double-text
+
+                td
+                    -var website = 'https://somelongwebs...'
+                    include ../../components/table-cell/website
+
+                td
+                    -var className = 'bg-elioGreen'
+                    -var text = 'Open'
+                    include ../../components/table-cell/status
+                td
+                    -var className = 'bg-yellow'
+                    -var text = 'Pending'
+                    include ../../components/table-cell/status
+                td.text-center 2023/04/15
+                td
+                    div(class='flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px')
+                        a(href='#' class='actions-trigger')
+                            img(src='../assets/images/global/dots-actions.svg' alt='dots icon')
+                        div(class='actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1')
+                            a(href='../templates/channel-partner-lead-distribution-edit.html' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Edit Lead
+                            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo' data-type='success') Delete Lead
+
+
+
+            tr
+                td
+                    div(class='flex items-start gap-10px w-max h-40px')
+                        img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                        div(class='flex flex-col gap-5px mb-5px')
+                            span(class='leading-[14px]') Partner Name 1
+                            a( href='../templates/channel-partner-partner-directory-manage-partner.html' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+                td
+                    -var text1 = 'Test Lead Client 1'
+                    -var text2 = 'someusermail1@domain.com'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'United Kingdom'
+                    -var text2 = 'North Europe'
+                    include ../../components/table-cell/double-text
+
+                td
+                    -var website = 'https://somelongwebs...'
+                    include ../../components/table-cell/website
+
+                td
+                    -var className = 'bg-elioGreen'
+                    -var text = 'Open'
+                    include ../../components/table-cell/status
+                td
+                    -var className = 'bg-yellow'
+                    -var text = 'Pending'
+                    include ../../components/table-cell/status
+                td.text-center 2023/04/15
+                td
+                    div(class='flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px')
+                        a(href='#' class='actions-trigger')
+                            img(src='../assets/images/global/dots-actions.svg' alt='dots icon')
+                        div(class='actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1')
+                            a(href='../templates/channel-partner-lead-distribution-edit.html' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Edit Lead
+                            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo' data-type='success') Delete Lead
+
+
+
+            tr
+                td
+                    div(class='flex items-start gap-10px w-max h-40px')
+                        img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                        div(class='flex flex-col gap-5px mb-5px')
+                            span(class='leading-[14px]') Partner Name 1
+                            a( href='../templates/channel-partner-partner-directory-manage-partner.html' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+                td
+                    -var text1 = 'Test Lead Client 1'
+                    -var text2 = 'someusermail1@domain.com'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'United Kingdom'
+                    -var text2 = 'North Europe'
+                    include ../../components/table-cell/double-text
+
+                td
+                    -var website = 'https://somelongwebs...'
+                    include ../../components/table-cell/website
+
+                td
+                    -var className = 'bg-elioGreen'
+                    -var text = 'Open'
+                    include ../../components/table-cell/status
+                td
+                    -var className = 'bg-yellow'
+                    -var text = 'Pending'
+                    include ../../components/table-cell/status
+                td.text-center 2023/04/15
+                td
+                    div(class='flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px')
+                        a(href='#' class='actions-trigger')
+                            img(src='../assets/images/global/dots-actions.svg' alt='dots icon')
+                        div(class='actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1')
+                            a(href='../templates/channel-partner-lead-distribution-edit.html' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px') Edit Lead
+                            a(href='#' class='hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo' data-type='success') Delete Lead

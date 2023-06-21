@@ -1,11 +1,15 @@
 div(class='card px-15px lg:px-25px sticky top-0').gap-10px
+
     .flex.gap-15px.flex-col.w-full
         h2(class='font-inter font-bold text-2xl') Folders
         .divider
+
     div.flex.flex-col.w-full
+
         a(href='#' class='hover:text-blue w-max flex md:hidden').items-center.gap-5px.text-textGray.font-semibold.text-base-15.trigger-folders
             img(src="../assets/images/global/folder.svg" alt="folder Icon" title="folder Icon" width="15" height="15")
             span(class='text-sm sm:text-base-15') Show Folders:
+
         div(class="flex hidden md:flex").flex-col.w-full.folders
             -var title='All Files'
             -var files='7 Files'

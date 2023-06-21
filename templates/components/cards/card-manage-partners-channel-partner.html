@@ -1,13 +1,13 @@
 
 <div class="card"><!----------- Title Start ------------------------------>
-  <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-    <h2 class="font-inter font-bold text-2xl">Manage Partners & Vendors</h2>
+  <div class="flex justify-between tabs w-full overflow-hidden flex-col  sm:flex-row sm:items-center text-sm mdl:text-base-15">
+    <h2 class="font-inter font-bold text-2xl">Manage Partners & Vendors</h2><a class="btn border-blue text-blue hover:text-blackBlue text-sm" href="#"><span>Export Data</span><img src="../assets/images/global/export-blue.svg" alt="Export Icon" title="Export Icon" width="17" height="17"/></a>
   </div><!----------- Title End ------------------------------>
 <!----------- Filters Start ------------------------------>
   <div class="flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15">
-    <div class="flex gap-15px flex-col md:flex-row md:gap-10px"><a class="hover:text-blue flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/><span class="text-sm sm:text-base-15">Partner Filters</span></a>
-      <div class="filters flex hidden md:flex flex-col md:flex-row gap-10px md:gap-5px items-center text-textGray font-semibold text-base-15">
-        <div class="card-filter w-full md:w-[380px]">
+    <div class="flex gap-15px flex-col md:flex-row md:gap-10px w-full"><a class="hover:text-blue flex items-center gap-5px text-textGray font-semibold text-base-15 trigger-filters" href="#"><img src="../assets/images/global/filters.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/><span class="text-sm sm:text-base-15">Partner Filters</span></a>
+      <div class="filters grid hidden grid-cols sm:grid-cols-2 xl:flex gap-10px xl:items-center text-textGray font-semibold text-base-15">
+        <div class="card-filter w-full lg:w-[380px]">
           <input class="grow text-sm outline-none" placeholder="Type a name, email, phone to search for a partner..."/><img src="../assets/images/global/search.svg" alt="Filters Icon" title="Filters Icon" width="15" height="15"/>
         </div>
         <div class="card-filter w-full md:w-max">
@@ -18,7 +18,7 @@
           </select>
         </div>
       </div>
-    </div><a class="btn border-blue text-blue hover:text-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm" href="#"><span>Export Data</span><img src="../assets/images/global/export-blue.svg" alt="Export Icon" title="Export Icon" width="17" height="17"/></a>
+    </div>
   </div><!----------- Filters End ------------------------------>
   <div class="table-container">
     <table>
@@ -63,7 +63,7 @@
           <td class="text-center">2023/04/15</td>
           <td>
             <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"/></a>
-              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
+              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="../templates/channel-partner-partner-directory-manage-partner.html">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="../templates/channel-partner-collaboration.html">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo" href="#" data-type="success">Delete Partner</a></div>
             </div>
           </td>
         </tr>
@@ -98,7 +98,7 @@
           <td class="text-center">2023/04/15</td>
           <td>
             <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"/></a>
-              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
+              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="../templates/channel-partner-partner-directory-manage-partner.html">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="../templates/channel-partner-collaboration.html">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo" href="#" data-type="success">Delete Partner</a></div>
             </div>
           </td>
         </tr>
@@ -133,7 +133,7 @@
           <td class="text-center">2023/04/15</td>
           <td>
             <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"/></a>
-              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
+              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="../templates/channel-partner-partner-directory-manage-partner.html">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="../templates/channel-partner-collaboration.html">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo" href="#" data-type="success">Delete Partner</a></div>
             </div>
           </td>
         </tr>
@@ -168,7 +168,7 @@
           <td class="text-center">2023/04/15</td>
           <td>
             <div class="flex items-center justify-end gap-10px w-full h-40px relative cell-actions pr-15px"><a class="actions-trigger" href="#"><img src="../assets/images/global/dots-actions.svg" alt="dots icon"/></a>
-              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="#">Delete Partner</a></div>
+              <div class="actions-content flex flex-col rounded-8px py-20px px-10px absolute top-0 right-0 bg-white shadow-card w-max text-left hidden z-1"><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="../templates/channel-partner-partner-directory-manage-partner.html">Manage Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px" href="../templates/channel-partner-collaboration.html">Chat with Partner</a><a class="hover:bg-gray hover:text-blue py-10px px-10px rounded-4px toast-demo" href="#" data-type="success">Delete Partner</a></div>
             </div>
           </td>
         </tr>

@@ -1,0 +1,27 @@
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-2xl') Tier Settings
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 lg:grid-cols-3 gap-30px')
+
+
+        - var title = 'Annual Sales:'
+        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+        - var inputName = 'annual_sales'
+        - var label = 'Toggle to enable'
+        include ../../components/form/form-toggle
+
+
+        - var title = 'Total Revenues:'
+        - var desc = 'Some description about this setting which is more or less the same length as this one which is around 113 chars.'
+        - var inputName = 'total_revenues'
+        - var label = 'Toggle to enable'
+        include ../../components/form/form-toggle
+
+
+
+    a(href='#' class='btn bg-blue border-blue text-white hover:bg-blueDark') Save Changes

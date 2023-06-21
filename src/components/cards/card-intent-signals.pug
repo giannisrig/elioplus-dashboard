@@ -1,11 +1,11 @@
 div(class='card')
 
     <!----------- Title Start ------------------------------>
-    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+    div(class='flex justify-between tabs w-full overflow-hidden flex-col sm:flex-row items-start sm:items-center text-sm mdl:text-base-15')
 
         h2(class='font-inter font-bold text-2xl') Intent Signals
 
-        a(href='#' class='btn border-blue text-blue hover:text-blackBlue  absolute top-20px right-15px sm:relative sm:top-0 sm:right-0 text-sm')
+        a(href='#' class='btn border-blue text-blue hover:text-blackBlu text-sm')
             span Export Data
             img(src="../assets/images/global/export-blue.svg" alt="Export Icon" title="Export Icon" width="17" height="17")
 
@@ -14,13 +14,14 @@ div(class='card')
 
     <!----------- Tabs Start ------------------------------>
 
-    div(class='flex justify-between tabs w-full overflow-hidden flex-col-reverse md:flex-row items-start md:items-center text-sm mdl:text-base-15')
+    div(class='flex justify-between tabs w-full overflow-hidden gap-10px flex-col md:flex-row items-start md:items-center text-sm mdl:text-base-15 gap-10px')
 
-        div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
-            a(href='#allLeads' class='tab-item active') All Leads
-            a(href='#intentData' class='tab-item') Intent Data
-            a(href='#rfqs' class='tab-item' ) RFQs
-            a(href='#messages' class='tab-item' ) Messages
+        div(class='w-full overflow-x-auto')
+            div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px w-max')
+                a(href='#allLeads' class='tab-item active') All Leads
+                a(href='#intentData' class='tab-item') Intent Data
+                a(href='#rfqs' class='tab-item' ) RFQs
+                a(href='#messages' class='tab-item' ) Messages
 
         div(class='card-filter w-full md:w-max')
             label(for='dealsVendor' class='w-max') Showing:

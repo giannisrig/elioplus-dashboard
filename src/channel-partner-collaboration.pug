@@ -29,50 +29,78 @@ html(lang="en")
 
 
                             div(id='partnersList' class='tab-content')
-                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px')
+                                div(class='grid grid-col-1 mdl:grid-cols-3-9 w-full gap-30px')
                                     div
-                                        include components/cards/card-collaboration-partners
+                                        div.sticky.top-80px
+                                            include components/cards/card-collaboration-partners
 
                                     div.w-full
-                                        div.flex.flex-col.gap-50px.w-full
-                                            include components/cards/card-chat-1-1
+                                        include components/cards/card-chat-1-1
+
                             div(id='groups' class='tab-content hidden')
 
-                                div(class='grid grid-col-1 md:grid-cols-3-9 w-full gap-30px')
+                                div(class='grid grid-col-1 lg:grid-cols-3-9 w-full gap-30px')
                                     div
-                                        include components/cards/card-collaboration-groups
+                                        div.sticky.top-80px
+                                            include components/cards/card-collaboration-groups
 
                                     div.w-full
-                                        div.flex.flex-col.gap-50px.w-full
-                                            include components/cards/card-chat-group
+                                        include components/cards/card-chat-group
 
 
                         <!----------- Content End ------------------------------>
 
                 include components/footer/footer.pug
 
-            div(id='overlay' class='fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent')
-            div( id='modalNewCollaborationGroup' class='modal hidden w-[600px] p-30px flex flex-col gap-20px')
-                .flex.gap-15px.flex-col.w-full
-                    h2(class='font-inter font-bold text-2xl') Create a new collaboration group
-                    .divider
+        div(id='overlay' class='fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent')
+        div( id='modalNewCollaborationGroup' class='modal hidden w-[600px] p-30px flex flex-col gap-20px')
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Create a new collaboration group
+                .divider
 
-                form.w-full.flex.flex-col.gap-20px
-                    - var title = 'Group Name:'
-                    - var desc = 'Enter the name of the group...'
-                    - var placeholder = 'Enter an email address or company name...'
-                    include components/form/form-input
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Group Name:'
+                - var desc = 'Enter the name of the group...'
+                - var placeholder = 'Enter an email address or company name...'
+                include components/form/form-input
 
-                    - var title = 'Select Partners:'
-                    - var inputName = 'select_partners'
-                    - var cols = 3
-                    -var options = ['Partner Name 1', 'Partner Name 2', 'Partner Name 3', 'Partner Name 4', 'Partner Name 5', 'Partner Name 6', 'Partner Name 7', 'Partner Name 8', 'Partner Name 9', 'Partner Name 10', 'Partner Name 11', 'Partner Name 12']
-                    include components/form/form-radio-cols
+                - var title = 'Select Partners:'
+                - var inputName = 'select_partners'
+                - var cols = 3
+                -var options = ['Partner Name 1', 'Partner Name 2', 'Partner Name 3', 'Partner Name 4', 'Partner Name 5', 'Partner Name 6', 'Partner Name 7', 'Partner Name 8', 'Partner Name 9', 'Partner Name 10', 'Partner Name 11', 'Partner Name 12']
+                include components/form/form-radio-cols
 
-                    div(class='flex w-full justify-end gap-20px')
-                        a(href='#' id='triggerClose' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px')
-                            h4(class='text-sm font-semibold') Cancel
-                        button(type='submit' class='btn bg-blue text-white hover:bg-darkBlue justify-center h-[40px] items-center')
-                            h4(class='text-sm font-semibold') Create new group
-                            img( src='../assets/images/global/group-add-white.svg' alt='location icon' loading='lazy' width="20" height="20")
+                div(class='flex w-full justify-end gap-20px')
+                    a(href='#' id='triggerClose' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px')
+                        h4(class='text-sm font-semibold') Cancel
+                    button(type='submit' class='btn bg-blue text-white hover:bg-darkBlue justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Create new group
+                        img( src='../assets/images/global/group-add-white.svg' alt='location icon' loading='lazy' width="20" height="20")
+
+        div( id='editGroupModal' class='modal hidden w-full max-w-[600px] p-30px flex flex-col gap-20px')
+
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Edit Group
+                .divider
+
+            form.w-full.flex.flex-col.gap-20px
+                - var title = 'Group Name:'
+                - var desc = null
+                - var placeholder = 'Enter the group name...'
+                include components/form/form-input
+
+                - var title = 'Select Partners:'
+                - var inputName = 'select_partners'
+                - var cols = 3
+                -var options = ['Partner Name 1', 'Partner Name 2', 'Partner Name 3', 'Partner Name 4', 'Partner Name 5', 'Partner Name 6', 'Partner Name 7', 'Partner Name 8', 'Partner Name 9', 'Partner Name 10', 'Partner Name 11', 'Partner Name 12']
+                include components/form/form-radio-cols
+
+                div(class='flex w-full justify-end gap-20px')
+
+                    a(href='#' class='btn text-blackBlue border-blackBlue hover:border-blue hover:text-blue h-[40px] text-center justify-center px-25px trigger-close')
+                        h4(class='text-sm font-semibold') Cancel
+
+                    button(type='submit' class='btn bg-blue text-white hover:bg-blueDark border:bg-blueDark justify-center h-[40px] items-center')
+                        h4(class='text-sm font-semibold') Save Changes
+
         include components/scripts.pug
