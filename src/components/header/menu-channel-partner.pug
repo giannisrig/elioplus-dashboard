@@ -21,17 +21,19 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
 
         .flex.flex-col.pl-20px.pr-10px.py-20px.grow.overflow-y-auto.gap-20px
 
-            a(href='#' class='hover:text-blue transition-colors duration-200').flex.items-center.gap-5px.font-bold
+            a(href='../templates/channel-partner-dashboard.html' class='hover:text-blue transition-colors duration-200').flex.items-center.gap-5px.font-bold
                 img(src='../assets/images/global/dashboard.svg' alt='chevron icon')
                 span Dashboard
                 img(src='../assets/images/global/arrow-right-menu.svg' alt='chevron icon')
             .divider
 
             div(class='flex flex-col gap-10px')
-                a(href='' class='flex items-center gap-5px')
+
+                a(href='../templates/channel-partner-intent-signals.html' class='flex items-center gap-5px')
                     div(class='bg-blue rounded-full w-[10px] h-[10px]')
                     span.font-bold Leads & RFQs
-                a(href='' class='flex items-center gap-5px')
+
+                a(href='https://elioplus.com/mergers-acquisition-marketplace' class='flex items-center gap-5px')
                     div(class='bg-blue rounded-full w-[10px] h-[10px]')
                     span.font-bold M&A Marketplace
 
@@ -47,32 +49,18 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
                     li.flex.flex-col.gap-10px
                         +menuLinkPrimary('Partner Directory', '#')
                         ul.pl-10px.hidden
-                            +menuSubItem('Manage Partners', '../templates/productPRautomate.html')
-                            +menuSubItem('Partner Requests', '../templates/productPRdatabase.html')
-                            +menuSubItem('Send Invitations', '../templates/productPRdatabase.html')
-                    +menuItem('Vendor Resources', '#')
-                    +menuItem('Deal Registration', '#')
-                    li.flex.flex-col.gap-10px
-                        +menuLinkPrimary('Lead Distribution', '#')
-                        ul.pl-10px.hidden
-                            +menuSubItem('Manage Leads', '../templates/productPRautomate.html')
-                            +menuSubItem('Add new lead', '../templates/productPRdatabase.html')
-                    +menuItem('Messages', '#')
-                    +menuItem('Collaborate', '#')
-                    li.flex.flex-col.gap-10px
-                        +menuLinkPrimary('Content Library', '#')
-                        ul.pl-10px.hidden
-                            +menuSubItem('My Files', '../templates/productPRautomate.html')
-                            +menuSubItem('Send new file', '../templates/productPRdatabase.html')
-                            +menuSubItem('My Partner Files', '../templates/productPRdatabase.html')
+                            +menuSubItem('Manage Partners', '../templates/channel-partner-partner-directory.html')
+                            +menuSubItem('Partner Requests', '../templates/channel-partner-partner-directory-requests.html')
+                            +menuSubItem('Send Invitations', '../templates/channel-partner-partner-directory-invite.html')
+                    +menuItem('Vendor Resources', '../templates/channel-partner-vendor-resources.html')
+                    +menuItem('Deal Registration', '../templates/channel-partner-deal-registration.html')
+                    +menuItem('Lead Distribution', '../templates/channel-partner-lead-distribution.html')
+                    +menuItem('Messages', '../templates/channel-partner-messages.html')
+                    +menuItem('Collaborate', '../templates/channel-partner-collaboration.html')
+                    +menuItem('Content Library', '../templates/channel-partner-content-library.html')
                     +menuItem('Partner to Partner', '#')
-                    li.flex.flex-col.gap-10px
-                        +menuLinkPrimary('Payouts', '#')
-                        ul.pl-10px.hidden
-                            +menuSubItem('Payments & Commissions', '../templates/productPRautomate.html')
-                            +menuSubItem('Payout Settings', '../templates/productPRdatabase.html')
-                            +menuSubItem('Fees & Terms', '../templates/productPRdatabase.html')
-                    +menuItem('Tier Management', '#')
+                    +menuItem('Payouts', '../templates/channel-partner-payouts.html')
+                    +menuItem('Tier Management', '../templates/channel-partner-tier-management.html')
 
             .divider
 
@@ -82,8 +70,8 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
                     span.font-bold Team & Integrations
 
                 ul.flex.flex-col.gap-10px.pl-15px
-                    +menuItem('Integrations', '#')
-                    +menuItem('Team Management', '#')
+                    +menuItem('Integrations', '../templates/channel-partner-integrations.html')
+                    +menuItem('Team Management', '../templates/channel-partner-team-management.html')
 
             .divider
 
@@ -93,9 +81,9 @@ nav(id='mobileMenu' class='bg-white fixed top-0 left-0 h-screen w-screen max-w-[
                     span.font-bold Settings
 
                 ul.flex.flex-col.gap-10px.pl-15px
-                    +menuItem('Account Settings', '#')
-                    +menuItem('Business Preferences', '#')
-                    +menuItem('Billing Information', '#')
+                    +menuItem('Account Settings', '../templates/channel-partner-settings-account.html')
+                    +menuItem('Business Preferences', '../templates/channle-partner-business-preferences.html')
+                    +menuItem('Billing Information', '../templates/channel-partner-billing.html')
 
 
 
