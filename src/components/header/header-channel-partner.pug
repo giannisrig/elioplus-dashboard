@@ -14,10 +14,11 @@ header(class="bg-white z-10 sticky w-full top-0 left-0 border-b border-gray h-[6
                             img(class="w-full h-auto" src="../assets/images/global/arrow-right.svg")
                         li
                             a(class="text-textGray transition-colors duration-200 hover:text-blue" href="#")=breadcrumbsParent
-                    li
-                        img(class="w-full h-auto" src="../assets/images/global/arrow-right.svg")
-                    li
-                        span(class="font-semibold")=breadcrumbsCurrent
+                    if(breadcrumbsCurrent)
+                        li
+                            img(class="w-full h-auto" src="../assets/images/global/arrow-right.svg")
+                        li
+                            span(class="font-semibold")=breadcrumbsCurrent
             .flex.gap-15px.items-center
 
                 .h-full

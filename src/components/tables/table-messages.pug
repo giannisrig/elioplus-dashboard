@@ -3,125 +3,105 @@
         thead
             th Company
             th Country
-            th Lead Type
             th Category/Technology
-            th Contacts
+            th Users/Units
+            th Message
             th
                 div.text-center Date
         tbody
             tr
                 td
-                    -var name = 'Partner Name 1'.table - container
-                        table
-                            thead
-                                th Company
-                                th Country
-                                th Category/Technology
-                                th Users/Units
-                                th Message
-                                th
-                                    div.text-center Date
-                            tbody
-                                tr
-                                    td
-                                        -var name = 'Partner Name 1'
-                                        include ../../components/table-cell/company
-                                    td
-                                        -var text1 = 'United Kingdom'
-                                        -var text2 = 'North Europe'
-                                        include ../../components/table-cell/double-text
-                                    td
-                                        -var text1 = 'Microsoft, Microsoft 365'
-                                        -var text2 = 'View Categories'
-                                        include ../../components/table-cell/categories
-                                    td
-                                        -var text1 = '25'
-                                        -var text2 = 'View Details'
-                                        include ../../components/table-cell/link
-                                    td
-                                        -var text1 = 'Microsoft Office 365 E3 licenses require...'
-                                        -var text2 = 'View Full Message'
-                                        include ../../components/table-cell/link
-                                    td.text-center 2023/04/15
-                                tr
-                                    td
-                                        -var name = 'Partner Name 1'
-                                        include ../../components/table-cell/company
-                                    td
-                                        -var text1 = 'United Kingdom'
-                                        -var text2 = 'North Europe'
-                                        include ../../components/table-cell/double-text
-                                    td
-                                        -var text1 = 'Microsoft, Microsoft 365'
-                                        -var text2 = 'View Categories'
-                                        include ../../components/table-cell/categories
-                                    td
-                                        -var text1 = '25'
-                                        -var text2 = 'View Details'
-                                        include ../../components/table-cell/link
-                                    td
-                                        -var text1 = 'Microsoft Office 365 E3 licenses require...'
-                                        -var text2 = 'View Full Message'
-                                        include ../../components/table-cell/link
-                                    td.text-center 2023/04/15
-                                tr
-                                    td
-                                        -var name = 'Partner Name 1'
-                                        include ../../components/table-cell/company
-                                    td
-                                        -var text1 = 'United Kingdom'
-                                        -var text2 = 'North Europe'
-                                        include ../../components/table-cell/double-text
-                                    td
-                                        -var text1 = 'Microsoft, Microsoft 365'
-                                        -var text2 = 'View Categories'
-                                        include ../../components/table-cell/categories
-                                    td
-                                        -var text1 = '25'
-                                        -var text2 = 'View Details'
-                                        include ../../components/table-cell/link
-                                    td
-                                        -var text1 = 'Microsoft Office 365 E3 licenses require...'
-                                        -var text2 = 'View Full Message'
-                                        include ../../components/table-cell/link
-                                    td.text-center 2023/04/15
-                                tr
-                                    td
-                                        -var name = 'Partner Name 1'
-                                        include ../../components/table-cell/company
-                                    td
-                                        -var text1 = 'United Kingdom'
-                                        -var text2 = 'North Europe'
-                                        include ../../components/table-cell/double-text
-                                    td
-                                        -var text1 = 'Microsoft, Microsoft 365'
-                                        -var text2 = 'View Categories'
-                                        include ../../components/table-cell/categories
-                                    td
-                                        -var text1 = '25'
-                                        -var text2 = 'View Details'
-                                        include ../../components/table-cell/link
-                                    td
-                                        -var text1 = 'Microsoft Office 365 E3 licenses require...'
-                                        -var text2 = 'View Full Message'
-                                        include ../../components/table-cell/link
-                                    td.text-center 2023/04/15
-
-                    include ../../components/table-cell/company
+                    div(class='flex items-start gap-10px w-max h-40px')
+                        img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                        div(class='flex flex-col gap-5px mb-5px')
+                            span(class='leading-[14px]') Company Name 1
+                            a( href='../templates/channel-partner-intent-signals-view-lead.html' class='text-blue text-[13px] leading-[13px]') View Lead
                 td
                     -var text1 = 'United Kingdom'
                     -var text2 = 'North Europe'
                     include ../../components/table-cell/double-text
                 td
-                    -var text1 = 'Intent Data'
-                    -var text2 = 'View all Intent Data'
-                    include ../../components/table-cell/link
-                td
-                    -var text1 = 'Microsoft'
+                    -var text1 = 'Microsoft, Microsoft 365'
                     -var text2 = 'View Categories'
                     include ../../components/table-cell/categories
                 td
-                    -var text1 = '15 Contacts'
-                    -var text2 = 'View all Contacts'
+                    -var text1 = '25'
+                    -var text2 = 'View Details'
+                    include ../../components/table-cell/link
+                td
+                    -var text1 = 'Microsoft Office 365 E3 licenses require...'
+                    -var text2 = 'View Full Message'
+                    include ../../components/table-cell/link
+                td.text-center 2023/04/15
+            tr
+                td
+                    div(class='flex items-start gap-10px w-max h-40px')
+                        img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                        div(class='flex flex-col gap-5px mb-5px')
+                            span(class='leading-[14px]') Company Name 1
+                            a( href='../templates/channel-partner-intent-signals-view-lead.html' class='text-blue text-[13px] leading-[13px]') View Lead
+                td
+                    -var text1 = 'United Kingdom'
+                    -var text2 = 'North Europe'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'Microsoft, Microsoft 365'
+                    -var text2 = 'View Categories'
+                    include ../../components/table-cell/categories
+                td
+                    -var text1 = '25'
+                    -var text2 = 'View Details'
+                    include ../../components/table-cell/link
+                td
+                    -var text1 = 'Microsoft Office 365 E3 licenses require...'
+                    -var text2 = 'View Full Message'
+                    include ../../components/table-cell/link
+                td.text-center 2023/04/15
+            tr
+                td
+                    div(class='flex items-start gap-10px w-max h-40px')
+                        img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                        div(class='flex flex-col gap-5px mb-5px')
+                            span(class='leading-[14px]') Company Name 1
+                            a( href='../templates/channel-partner-intent-signals-view-lead.html' class='text-blue text-[13px] leading-[13px]') View Lead
+                td
+                    -var text1 = 'United Kingdom'
+                    -var text2 = 'North Europe'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'Microsoft, Microsoft 365'
+                    -var text2 = 'View Categories'
+                    include ../../components/table-cell/categories
+                td
+                    -var text1 = '25'
+                    -var text2 = 'View Details'
+                    include ../../components/table-cell/link
+                td
+                    -var text1 = 'Microsoft Office 365 E3 licenses require...'
+                    -var text2 = 'View Full Message'
+                    include ../../components/table-cell/link
+                td.text-center 2023/04/15
+            tr
+                td
+                    div(class='flex items-start gap-10px w-max h-40px')
+                        img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                        div(class='flex flex-col gap-5px mb-5px')
+                            span(class='leading-[14px]') Company Name 1
+                            a( href='../templates/channel-partner-intent-signals-view-lead.html' class='text-blue text-[13px] leading-[13px]') View Lead
+                td
+                    -var text1 = 'United Kingdom'
+                    -var text2 = 'North Europe'
+                    include ../../components/table-cell/double-text
+                td
+                    -var text1 = 'Microsoft, Microsoft 365'
+                    -var text2 = 'View Categories'
+                    include ../../components/table-cell/categories
+                td
+                    -var text1 = '25'
+                    -var text2 = 'View Details'
+                    include ../../components/table-cell/link
+                td
+                    -var text1 = 'Microsoft Office 365 E3 licenses require...'
+                    -var text2 = 'View Full Message'
                     include ../../components/table-cell/link
                 td.text-center 2023/04/15

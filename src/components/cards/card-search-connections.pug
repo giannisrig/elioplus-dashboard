@@ -1,0 +1,180 @@
+div(class='card')
+
+    div(class='flex justify-between w-full overflow-hidden flex-col sm:flex-row sm:items-center text-sm mdl:text-base-15 gap-10px')
+
+        h2(class='font-inter font-bold md:text-lg text-2xl') My Connections
+
+        a(href='../templates/vendor-pr-matching-criteria.html' class='btn border-blackBlue bg-white text-blackBlue hover:border-blue hover:text-blue text-sm toast-demo' data-type='success')
+            img(src="../assets/images/global/add-blackBlue.svg" alt="Add Icon" title="Add Icon" width="17" height="17")
+            span Add selected companies to matches
+
+
+
+    .table-container
+        table
+            thead
+                th
+                    span.text-center.w-full.block Select
+                th Partner Company
+                th Location
+                th Industries
+                th Categories
+                th Products
+                th(class='w-[250px]')
+                    span.text-center.w-full.block Actions
+            tbody
+                tr
+                    td
+                        include ../../components/table-cell/checkbox
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                            div(class='flex flex-col gap-5px mb-5px')
+                                span(class='leading-[14px]') Company Name 1
+                                a( href='../templates/channel-partner-directory-manage-partner.html' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+                    td
+                        -var text1 = 'United Kingdom'
+                        -var text2 = 'North Europe'
+                        include ../../components/table-cell/double-text
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') Architecture, 3+
+                                a( href='#modalIndustries' class='text-blue text-[13px] leading-[13px] modal-trigger') View Industries
+
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') 3D Cad, 2+
+                                a( href='#modalCategories' class='text-blue text-[13px] leading-[13px] modal-trigger') View Categories
+
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') Bentley, 4+
+                                a( href='#modalProducts' class='text-blue text-[13px] leading-[13px] modal-trigger') View Products
+
+
+                    td
+                        include ../../components/table-cell/actions-connections
+
+                tr
+                    td
+                        include ../../components/table-cell/checkbox
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                            div(class='flex flex-col gap-5px mb-5px')
+                                span(class='leading-[14px]') Company Name 1
+                                a( href='../templates/channel-partner-directory-manage-partner.html' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+                    td
+                        -var text1 = 'United Kingdom'
+                        -var text2 = 'North Europe'
+                        include ../../components/table-cell/double-text
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') Architecture, 3+
+                                a( href='#modalIndustries' class='text-blue text-[13px] leading-[13px] modal-trigger') View Industries
+
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') 3D Cad, 2+
+                                a( href='#modalCategories' class='text-blue text-[13px] leading-[13px] modal-trigger') View Categories
+
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') Bentley, 4+
+                                a( href='#modalProducts' class='text-blue text-[13px] leading-[13px] modal-trigger') View Products
+
+
+                    td
+                        include ../../components/table-cell/actions-connections
+
+                tr
+                    td
+                        include ../../components/table-cell/checkbox
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                            div(class='flex flex-col gap-5px mb-5px')
+                                span(class='leading-[14px]') Company Name 1
+                                a( href='../templates/channel-partner-directory-manage-partner.html' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+                    td
+                        -var text1 = 'United Kingdom'
+                        -var text2 = 'North Europe'
+                        include ../../components/table-cell/double-text
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') Architecture, 3+
+                                a( href='#modalIndustries' class='text-blue text-[13px] leading-[13px] modal-trigger') View Industries
+
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') 3D Cad, 2+
+                                a( href='#modalCategories' class='text-blue text-[13px] leading-[13px] modal-trigger') View Categories
+
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') Bentley, 4+
+                                a( href='#modalProducts' class='text-blue text-[13px] leading-[13px] modal-trigger') View Products
+
+
+                    td
+                        include ../../components/table-cell/actions-connections
+
+                tr
+                    td
+                        include ../../components/table-cell/checkbox
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            img(src="../assets/images/global/company.png" alt="Profile Image" title="Your profile image" class='rounded-full border border-blackBlue' width="35" height="35")
+                            div(class='flex flex-col gap-5px mb-5px')
+                                span(class='leading-[14px]') Company Name 1
+                                a( href='../templates/channel-partner-directory-manage-partner.html' class='text-blue text-[13px] leading-[13px]') View Partner Profile
+
+                    td
+                        -var text1 = 'United Kingdom'
+                        -var text2 = 'North Europe'
+                        include ../../components/table-cell/double-text
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') Architecture, 3+
+                                a( href='#modalIndustries' class='text-blue text-[13px] leading-[13px] modal-trigger') View Industries
+
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') 3D Cad, 2+
+                                a( href='#modalCategories' class='text-blue text-[13px] leading-[13px] modal-trigger') View Categories
+
+
+                    td
+                        div(class='flex items-start gap-10px w-max h-40px')
+                            div(class='flex flex-col gap-5px')
+                                span(class='leading-[14px]') Bentley, 4+
+                                a( href='#modalProducts' class='text-blue text-[13px] leading-[13px] modal-trigger') View Products
+
+
+                    td
+                        include ../../components/table-cell/actions-connections

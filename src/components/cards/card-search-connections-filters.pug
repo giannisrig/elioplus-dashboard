@@ -1,0 +1,91 @@
+mixin selectDropdown(options)
+    select.bg-transparent.font-semibold
+        each option in options ? options : []
+            option(value=option)= option
+
+div(class='card')
+
+    <!----------- Title Start ------------------------------>
+    .w-full.flex.flex-col.gap-15px
+        h2(class='font-inter font-bold text-2xl') Search Criteria
+        .divider
+    <!----------- Title End ------------------------------>
+
+    div(class='w-full grid grid-cols-1 lg:grid-cols-3 gap-30px')
+
+
+        div(class='flex flex-col gap-15px w-full text-sm connection-filter')
+            - var title = 'Country:'
+            - var desc = null
+            include ../form/form-text
+            div.flex.items-center.gap-10px
+                div(class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px")
+                    label.text-textGray Country:
+                    +selectDropdown(['United States', 'Canada', 'Australia', 'Germany'])
+
+                a(href='#').flex.items.center.gap-5px
+                    img(src="../assets/images/global/add-blue.svg" alt="Add Icon" title="Add Icon" width="17" height="17")
+                    span.font-semibold.text-blue Add Country
+
+            div.flex.flex-col.gap-5px
+                label.text-textGray Selected:
+                div.flex.items-center.gap-10px.flex-wrap
+                    .flex.items.center.gap-5px
+                        span.font-semibold United States
+                        img(src="../assets/images/global/close-gray.svg" alt="Remove Icon" title="Remove Icon" width="17" height="17")
+                    .flex.items.center.gap-5px
+                        span.font-semibold Canada
+                        img(src="../assets/images/global/close-gray.svg" alt="Remove Icon" title="Remove Icon" width="17" height="17")
+
+
+
+
+
+        div(class='flex flex-col gap-15px w-full text-sm connection-filter')
+            - var title = 'Select a Category:'
+            - var desc = null
+            include ../form/form-text
+            div.flex.items-center.gap-10px
+                div(class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px")
+                    label.text-textGray Category:
+                    +selectDropdown(['IBM', 'IBM2', 'IBM3', 'IBM4'])
+
+                a(href='#').flex.items.center.gap-5px
+                    img(src="../assets/images/global/add-blue.svg" alt="Add Icon" title="Add Icon" width="17" height="17")
+                    span.font-semibold.text-blue Add Category
+
+            div.flex.flex-col.gap-5px
+                label.text-textGray Selected:
+                div.flex.items-center.gap-10px.flex-wrap
+                    .flex.items.center.gap-5px
+                        span.font-semibold IBM
+                        img(src="../assets/images/global/close-gray.svg" alt="Remove Icon" title="Remove Icon" width="17" height="17")
+
+
+
+
+
+        div(class='flex flex-col gap-15px w-full text-sm connection-filter')
+            - var title = 'Select a Product:'
+            - var desc = null
+            include ../form/form-text
+            div.flex.items-center.gap-10px
+                div(class="border border-blackBlue text-blackBlue text-sm hover:border-blue focus:border-blue w-max rounded-30px px-15px h-[35px] outline-0 flex items-center gap-5px")
+                    label.text-textGray Product:
+                    +selectDropdown(['Bentley', 'Bentley2', 'Bentley3', 'Bentley4'])
+
+                a(href='#').flex.items.center.gap-5px
+                    img(src="../assets/images/global/add-blue.svg" alt="Add Icon" title="Add Icon" width="17" height="17")
+                    span.font-semibold.text-blue Add Product
+
+            div.flex.flex-col.gap-5px
+                label.text-textGray Selected:
+                div.flex.items-center.gap-10px.flex-wrap
+                    .flex.items.center.gap-5px
+                        span.font-semibold Bentley
+                        img(src="../assets/images/global/close-gray.svg" alt="Remove Icon" title="Remove Icon" width="17" height="17")
+
+
+
+
+

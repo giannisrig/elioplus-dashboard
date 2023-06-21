@@ -1,0 +1,67 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'My Matches | Partner Recruitment Database | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-vendor.pug
+        main
+            - var breadcrumbsParent = 'Partner Recruitment'
+            - var breadcrumbsCurrent = 'My Matches'
+            include components/header/header-vendor
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'My Matches'
+                        - var desc = 'We provide you with a number of channel partners that exact match your selected criteria. We start providing you the best matches directly in your dashboard along with contact details from each company and more than 30 attributes about the company and the contact person.'
+                        - var btn = 'Read more about Partner Recruitment Matches'
+                        include components/text-block.pug
+
+                        div(class='tabs-section flex flex-col gap-30px')
+
+                            div(class='flex flex-col sm:flex-row sm:justify-between text-sm mdl:text-base-15 gap-10px w-full')
+
+                                div(class='tabs w-full sm:w-max overflow-x-auto')
+                                    div(class='flex items-start text-textGray font-semibold gap-20px pt-0 sm:pt-10px')
+                                        a(href='#searchConnections' class='tab-item active') Search for Connections
+                                        a(href='#matches' class='tab-item') My Matches
+
+                                a(href='../templates/vendor-pr-matching-criteria.html' class='btn border-blue bg-blue text-white hover:bg-blueDark  text-sm')
+                                    img(src="../assets/images/global/settings-white.svg" alt="Invite Icon" title="Invite Icon" width="17" height="17")
+                                    span Edit matching criteria
+
+
+                            div(id='searchConnections' class='tab-content')
+                                div.w-full.flex.flex-col.gap-30px
+                                    include components/cards/card-search-connections-filters
+                                    include components/cards/card-search-connections
+                            div(id='matches' class='tab-content hidden')
+                                include components/cards/card-matches-automate
+
+
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+
+        div(id='overlay' class='fixed top-0 right-0 h-screen w-screen hidden z-20 bg-transparent')
+        div( id='modalCategories' class='modal hidden w-[600px] p-30px flex flex-col gap-20px')
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Categories:
+                .divider
+
+        div( id='modalIndustries' class='modal hidden w-[600px] p-30px flex flex-col gap-20px')
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Industries:
+                .divider
+
+        div( id='modalProducts' class='modal hidden w-[600px] p-30px flex flex-col gap-20px')
+            .flex.gap-15px.flex-col.w-full
+                h2(class='font-inter font-bold text-2xl') Products:
+                .divider
+
+        include components/scripts.pug

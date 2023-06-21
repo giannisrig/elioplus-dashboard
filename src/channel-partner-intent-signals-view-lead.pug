@@ -1,0 +1,34 @@
+doctype html
+html(lang="en")
+    head
+        - var title = 'View Lead | Elioplus'
+        include components/head.pug
+    body.text-blackBlue.overflow-x-hidden.bg-gray2
+        include components/header/menu-channel-partner.pug
+        main
+            - var breadcrumbsParent = 'Partner Management'
+            - var breadcrumbsCurrent = 'Deal Registration'
+            include components/header/header-channel-partner.pug
+            div(id="dashboardPage" class='py-50px lg:py-80px w-full')
+                .container
+                    div(id="dashboardPageContent" class='w-full flex flex-col gap-60px')
+
+                        <!----------- Content Start ------------------------------>
+
+                        - var title = 'Viewing Intent Data'
+                        - var btn = 'Back to Leads'
+                        include components/text-block.pug
+
+                        div(class='grid grid-cols-1 xl:grid-cols-7-5 gap-30px')
+                            div(class='row-span-2 xl:row-span-1').flex.flex-col.gap-25px
+                                include components/cards/card-lead-product
+                                include components/cards/card-lead-company
+                            div(class='row-span-1 xl:row-span-2')
+                                div.sticky.top-80px
+                                    include components/cards/card-lead-contacts
+
+
+                        <!----------- Content End ------------------------------>
+
+            include components/footer/footer.pug
+        include components/scripts.pug
