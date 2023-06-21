@@ -26,14 +26,15 @@ html(lang="en")
                             div.w-full
                                 div.flex.flex-col.gap-20px
                                     include components/cards/card-dashboard-messages
-                                    include components/cards/card-dashboard-prm
-                                    include components/cards/card-dashboard-pr
-                                    include components/cards/card-dashboard-deals-overview
-                                    include components/cards/card-dashboard-leads-overview
-                                    include components/cards/card-dashboard-invitations
-                                    include components/cards/card-dashboard-team
-
-
+                                    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-30px')
+                                        include components/cards/card-dashboard-prm
+                                        include components/cards/card-dashboard-pr
+                                    div(class='w-full grid grid-cols-1 mdl:grid-cols-2 lg:grid-cols-1 gap-30px')
+                                        include components/cards/card-dashboard-deals-overview
+                                        include components/cards/card-dashboard-leads-overview
+                                    div(class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 gap-30px')
+                                        include components/cards/card-dashboard-invitations
+                                        include components/cards/card-dashboard-team
 
 
                         <!----------- Content End ------------------------------>
